@@ -63,20 +63,12 @@ int main(int argc, char *argv[]) {
 	}
 
 	//make_daemon();
-    
-    int s_sock = create_ssocket(atoi(argv[1]));
-    
-   	struct sockaddr_in c_addr;
-   	socklen_t addr_size = sizeof(struct sockaddr_in);
-   	int c_sock;
 
-    while(1) {
-    	if((c_sock = accept(s_sock, (struct sockaddr*) &c_addr, &addr_size)) != -1) {
-    		mx_printstr("new connection\n");
-    	} else {
-
-    	}
-    }
+	//init database
+	//init openssl
+	//init other things
+   
+   	mx_run_serv(create_ssocket(atoi(argv[1])));
 
 	return 0;
 }
