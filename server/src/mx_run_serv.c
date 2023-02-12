@@ -8,7 +8,7 @@ static inline void handle_new_connection(int c_sock, SSL* ssl) {
 	client->ssl = ssl;
 
 	if(SSL_accept(ssl) == -1) {
-		printf("SSL_accept() error\n");
+		mx_log(SERV_LOG_FILE, LOG_ERROR, strerror(errno));
 	}
 
 	pthread_create(&thread, NULL, &mx_client_handler, (void*)client);
@@ -24,12 +24,15 @@ void mx_run_serv(int s_sock) {
    	ossl_t ossl;
    	mx_init_openssl(&ossl);
 
-   //	SSL_library_init();
-   //	ctx = mx_init_serv_ctx();
-   //	mx_load_key(ctx);
-
    	 while(1) {
     	if((c_sock = accept(s_sock, (struct sockaddr*) &c_addr, &addr_size)) != -1){
+
+    		const char* ip = inet_ntoa(c_addr.sin_addr);
+    		char* log = mx_strjoin("New client was connected: ", ip);
+    		mx_log(SERV_LOG_FILE, LOG_INFO, log);
+    		mx_strdel(&log);
+
+
     		ossl.ssl = SSL_new(ossl.ctx);
     		SSL_set_fd(ossl.ssl, c_sock);
 

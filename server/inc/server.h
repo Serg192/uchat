@@ -24,6 +24,8 @@
 #define SSL_SERT_FILE "server/cert.pem"
 #define SSL_KEY_FILE "server/cert.pem"
 
+#define SERV_LOG_FILE "server/log/log.txt"
+
 typedef struct request_s {
 	request_type type;
 	char* str_req;

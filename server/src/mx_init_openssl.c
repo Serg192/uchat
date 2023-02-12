@@ -3,18 +3,19 @@
 static inline void load_key(SSL_CTX *ctx) {
 
 	if(SSL_CTX_use_certificate_file(ctx, SSL_SERT_FILE, SSL_FILETYPE_PEM) <= 0) {
-		//TODO: better error handling (in a  case of running this server as a daemon process)
-		ERR_print_errors_fp(stderr);
+        mx_log(SERV_LOG_FILE, LOG_ERROR, ERR_error_string(ERR_get_error(), NULL));
+		//ERR_print_errors_fp(stderr);
 		abort();
 	}
 
     if(SSL_CTX_use_PrivateKey_file(ctx, SSL_KEY_FILE, SSL_FILETYPE_PEM) <= 0){
-        ERR_print_errors_fp(stderr);
+        mx_log(SERV_LOG_FILE, LOG_ERROR, ERR_error_string(ERR_get_error(), NULL));
+       // ERR_print_errors_fp(stderr);
         abort();
     }
   
     if (!SSL_CTX_check_private_key(ctx)){
-        fprintf(stderr, "Private key does not match the public certificaten");
+        mx_log(SERV_LOG_FILE, LOG_ERROR, "Private key does not match the public cert");
         abort();
     }
 }

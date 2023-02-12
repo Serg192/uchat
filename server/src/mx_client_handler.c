@@ -7,8 +7,7 @@ void mx_client_handler(void* client) {
 
 	bool client_disconnect_req = false;
 
-	//
-	printf("Client connected\n");
+	//mx_log(SERV_LOG_FILE, "New client was connected");
 	//
 
 	while(!client_disconnect_req) {

@@ -16,6 +16,13 @@ typedef struct s_list {
     struct s_list *next;
 }              t_list;
 
+enum log_level_e {
+    LOG_INFO,
+    LOG_WARNING,
+    LOG_ERROR,
+    LOG_TRACE
+};
+
 void mx_printchar(char c);
 
 bool mx_isspace(char c);
@@ -135,6 +142,9 @@ void mx_pop_back(t_list **head);
 int mx_list_size(t_list **list);
 
 t_list *mx_sort_list(t_list *lst, bool(*cmp)(void*, void*));
+
+void mx_log(const char* file, int level, char* text);
+
 #endif
 
 

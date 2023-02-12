@@ -2,19 +2,23 @@
 
 
 static inline void make_daemon() {
+
+	mx_log(SERV_LOG_FILE, LOG_TRACE, "Creating daemon process");
+
 	pid_t pid;
 	pid_t sid = 0;
 
 	pid = fork();
 	if(pid < 0) {
-		mx_printerr("fork() failed\n");
+		mx_log(SERV_LOG_FILE, LOG_ERROR, "fork() failed");
 		exit(-1);
 	}	
 
 	if(pid > 0) {
-		mx_printstr("child pid: ");
-		mx_printint(pid);
-		mx_printstr("\n");
+		char* log = mx_strjoin("Child pid: ", mx_itoa(pid));
+		mx_log(SERV_LOG_FILE, LOG_TRACE, log);
+		mx_strdel(&log);
+
 		exit(0);
 	}
 	umask(0);
@@ -35,20 +39,17 @@ static inline int create_ssocket(int port) {
 	address.sin_port = htons(port);
 
 	if((r_sock = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
-		mx_printerr(strerror(errno));
-		mx_printerr("\n");
+		mx_log(SERV_LOG_FILE, LOG_ERROR, strerror(errno));
 		exit(-1);
 	}
 
 	if(bind(r_sock, (struct sockaddr*) &address, sizeof(struct sockaddr_in)) == -1) {
-		mx_printerr(strerror(errno));
-		mx_printerr("\n");
+		mx_log(SERV_LOG_FILE, LOG_ERROR, strerror(errno));
 		exit(-1);
 	}
 
 	if(listen(r_sock, 15) == -1) {
-		mx_printerr(strerror(errno));
-		mx_printerr("\n");
+		mx_log(SERV_LOG_FILE, LOG_ERROR, strerror(errno));
 		exit(-1);
 	}
 
@@ -61,8 +62,9 @@ int main(int argc, char *argv[]) {
 		mx_printerr("usage: ./uchat_server [port]\n");
 		exit(-1);
 	}
-
-	//make_daemon();
+    
+    mx_log(SERV_LOG_FILE, LOG_TRACE, "Starting the server");
+	make_daemon();
 
 	//init database
 	//init openssl
