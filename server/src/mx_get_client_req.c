@@ -32,7 +32,11 @@ request_t* mx_get_client_req(client_t* client) {
 	request_t* client_req = malloc(sizeof(request_t));
 	read_client_req(client_req, client->ssl, req_length);
 
-	printf("Client request: %s\n", client_req->str_req);
+	char* log = mx_strjoin("Request was received: ", client_req->str_req);
+	mx_log(SERV_LOG_FILE, LOG_TRACE, log);
+	mx_strdel(&log);
+
+	
 
 	return client_req;
 }

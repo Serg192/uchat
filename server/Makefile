@@ -10,9 +10,12 @@ $(NAME): install
 
 install: clean
 	mkdir -p obj
-	clang $(FLAGS) -c src/*.c -I ../lib/libmx/inc -I ../lib/openssl -I ../lib/cjson/inc
+	clang $(FLAGS) -c src/*.c -I ../lib/libmx/inc \
+	               -I ../lib/openssl \
+	               -I ../lib/cjson/inc \
+	               -I ../lib/sqlite/inc
 	mv *.o obj/
-	clang $(FLAGS) obj/*.o -L ../lib/libmx -lmx -lssl -lcrypto -lpthread -L ../lib/cjson -lcjson -o $(NAME)
+	clang $(FLAGS) obj/*.o -L ../lib/libmx -lmx -lssl -lcrypto -lpthread -L ../lib/cjson -lcjson -L ../lib/sqlite -lsqlite3 -o $(NAME)
 
 uninstall: clean
 	rm -rf obj
