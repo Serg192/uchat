@@ -25,5 +25,14 @@
 
 #include "../../common/common.h"
 
+#define CLIENT_LOG_FILE "client/log/log.txt"
+
+typedef struct serv_res_s {
+	cJSON* json;
+	const char* str_res;
+	int type;
+}			   serv_res_t;
+
+serv_res_t* mx_get_server_response(SSL* ssl);
 
 #endif

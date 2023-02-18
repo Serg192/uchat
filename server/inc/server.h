@@ -14,6 +14,7 @@
 
 #include <openssl/ssl.h>
 #include <openssl/err.h>
+#include <sqlite3.h>
 #include <cJSON.h>
 
 #include <libmx.h>
@@ -25,16 +26,20 @@
 #define SSL_KEY_FILE "server/cert.pem"
 
 #define SERV_LOG_FILE "server/log/log.txt"
+#define DATABASE_FILE "server/db/database.db"
 
 typedef struct request_s {
-	request_type type;
+	int type;
 	char* str_req;
+	cJSON* json;
 }              request_t;
 
 
 typedef struct client_s {
 	int sock;
 	SSL* ssl;
+	const char* username;
+	int user_id;
 }              client_t;
 
 typedef struct ossl_s {
@@ -47,9 +52,28 @@ void mx_init_openssl(ossl_t* ossl);
 
 void mx_run_serv(int s_sock);
 
-void mx_client_handler(void* client);
+void* mx_client_handler(void* client);
 
 request_t* mx_get_client_req(client_t* client);
+
+void mx_send_response(client_t* client, const char* response);
+
+//database utils
+
+sqlite3* mx_open_db();
+
+void mx_close_db(sqlite3* db);
+
+void mx_init_database();
+
+bool mx_table_has_user(const char* login);
+
+
+//handlers
+
+void mx_handle_registration(client_t* client, request_t* req);
+
+void mx_handle_logging_in(client_t* client, request_t* req);
 
 #endif
 

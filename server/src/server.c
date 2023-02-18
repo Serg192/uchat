@@ -66,10 +66,6 @@ int main(int argc, char *argv[]) {
     mx_log(SERV_LOG_FILE, LOG_TRACE, "Starting the server");
 	make_daemon();
 
-	//init database
-	//init openssl
-	//init other things
-   
    	mx_run_serv(create_ssocket(atoi(argv[1])));
 
 	return 0;

@@ -8,8 +8,14 @@ static inline void handle_new_connection(int c_sock, SSL* ssl) {
 	client->ssl = ssl;
 
 	if(SSL_accept(ssl) == -1) {
+		mx_log(SERV_LOG_FILE, LOG_ERROR, "Server SSL_accept() failed");
 		mx_log(SERV_LOG_FILE, LOG_ERROR, strerror(errno));
 	}
+
+
+	int flags = fcntl(c_sock, F_GETFL, 0);
+	fcntl(c_sock, F_SETFL, flags | O_NONBLOCK);
+	fcntl(c_sock, F_SETFD, O_NONBLOCK);
 
 	pthread_create(&thread, NULL, &mx_client_handler, (void*)client);
 }
@@ -23,8 +29,10 @@ void mx_run_serv(int s_sock) {
 
    	ossl_t ossl;
    	mx_init_openssl(&ossl);
+   	mx_init_database();
 
    	 while(1) {
+   	 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Wainitng for connection ...");
     	if((c_sock = accept(s_sock, (struct sockaddr*) &c_addr, &addr_size)) != -1){
 
     		const char* ip = inet_ntoa(c_addr.sin_addr);

@@ -48,7 +48,20 @@ static inline SSL_CTX* init_ctx(void) {
 //TEST METHOD
 static inline char* test_create_singup_req(const char* login, const char* password){
     cJSON* req = cJSON_CreateObject();
-    cJSON_AddNumberToObject(req, "rtype", SINGUP_REQ);
+    cJSON_AddNumberToObject(req, "rtype", SIGNUP_REQ);
+    cJSON_AddStringToObject(req, "login", login);
+    cJSON_AddStringToObject(req, "password", password);
+
+    char* req_str = cJSON_PrintUnformatted(req);
+    cJSON_Delete(req);
+
+    return req_str;
+}
+
+//TEST METHOD
+static inline char* test_create_login_req(const char* login, const char* password) {
+    cJSON* req = cJSON_CreateObject();
+    cJSON_AddNumberToObject(req, "rtype", LOGIN_REQ);
     cJSON_AddStringToObject(req, "login", login);
     cJSON_AddStringToObject(req, "password", password);
 
@@ -76,21 +89,47 @@ int main(int argc, char* argv[]) {
     int serv = create_connection_with_serv(host, port);
 
     SSL* ssl = SSL_new(ctx);
+    SSL_set_mode(ssl, SSL_MODE_ASYNC);
     SSL_set_fd(ssl, serv);
 
     if(SSL_connect(ssl) == -1) {
         ERR_print_errors_fp(stderr);
     }
 
+    int flags = fcntl(serv, F_GETFL,0);
+    fcntl(serv, F_SETFL, flags | O_NONBLOCK);
+    fcntl(serv, F_SETFD, O_NONBLOCK);
 
+
+
+    /*
     //TEST 
     //Sending singup request
-    char* singup_req = test_create_singup_req("User1", "123456");
+    char* singup_req = test_create_singup_req("User123", "123456");
     int singup_ilen = strlen(singup_req);
     char* singup_req_len = mx_itoa(singup_ilen);
     
+
     SSL_write(ssl, singup_req_len, strlen(singup_req_len));
     SSL_write(ssl, singup_req, singup_ilen);
+
+   */
+
+    //TEST
+    //Sending login request
+    char* login_req = test_create_login_req("User123", "12345");
+    int login_req_ilen = strlen(login_req);
+    char* login_req_strlen = mx_itoa(login_req_ilen);
+
+    SSL_write(ssl, login_req_strlen, strlen(login_req_strlen));
+    SSL_write(ssl, login_req, strlen(login_req));
+
+   
+
+    while(1){
+
+        serv_res_t* res = mx_get_server_response(ssl);
+    }
 
     SSL_free(ssl);
     
