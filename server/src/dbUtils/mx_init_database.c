@@ -29,8 +29,9 @@ void mx_init_database() {
 						"'id' INTEGER PRIMARY KEY AUTOINCREMENT,"
 						"'from_id' INTEGER NOT NULL,"
 						"'room_id' INTEGER NOT NULL,"
-						"'sent_datetime' INTEGER NOT NULL,"
-						"'contex' BLOB NOT NULL);";
+						"'sent_date' INTEGER NOT NULL,"
+						"'sent_time' INTEGER NOT_NULL,"
+						"'context' TEXT NOT NULL);";
 
 	char* room_member = "CREATE TABLE IF NOT EXISTS 'room_member' ("
 						"'client_id' INTEGER NOT NULL,"

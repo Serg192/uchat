@@ -43,7 +43,7 @@ static inline bool add_user(const char* username, const char* password){
     
     char* err;
 	 if (sqlite3_exec(db, sql_req, NULL, NULL, &err) != SQLITE_OK) {
-       fprintf(stderr, "Failed to execute sql: %s", err);
+        fprintf(stderr, "Failed to execute sql: %s", err);
         mx_close_db(db);
         exit(-1);
     }
@@ -69,6 +69,9 @@ void mx_handle_registration(client_t* client, request_t* req) {
 
 	cJSON* response = cJSON_CreateObject();
 
+	char* sql_req;
+	asprintf(&sql_req, "SELECT * FROM user WHERE username = '%s'", username);
+
 
 	if(username_len <= 3 || username_len >= 32) {
 		mx_log(SERV_LOG_FILE, LOG_TRACE, "login <= 3 | >= 32");
@@ -80,12 +83,12 @@ void mx_handle_registration(client_t* client, request_t* req) {
 		cJSON_AddNumberToObject(response, "rtype", SIGNUP_ERR_RESP);
 		cJSON_AddStringToObject(response, "message", "Password length should be less than 32 characters");
 	}
-	else if(!mx_table_has_user(username)) {
+	else if(!mx_check_if_row_exists(sql_req)) {
 		    mx_log(SERV_LOG_FILE, LOG_TRACE, "add user");
 			add_user(username, password);
 			cJSON_AddNumberToObject(response, "rtype", SIGNUP_SUCCESS_RESP);
 			client->username = username;
-
+			client->user_id = mx_atoi(mx_get_str_field_val("user", "id", "username", username));
 
 	} else {
 		mx_log(SERV_LOG_FILE, LOG_TRACE, "user exist");

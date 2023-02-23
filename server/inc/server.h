@@ -66,7 +66,13 @@ void mx_close_db(sqlite3* db);
 
 void mx_init_database();
 
-bool mx_table_has_user(const char* login);
+bool mx_check_if_row_exists(char* sql_req);
+
+bool mx_sql_ex(const char* sql_req);
+
+char* mx_get_str_field_val(const char* table, const char* fieldname, const char* key, const char* val);
+
+void mx_add_room_member(int client_id, int room_id);
 
 
 //handlers
@@ -74,6 +80,16 @@ bool mx_table_has_user(const char* login);
 void mx_handle_registration(client_t* client, request_t* req);
 
 void mx_handle_logging_in(client_t* client, request_t* req);
+
+void mx_handle_chat_creation(client_t* client, request_t* req);
+
+void mx_handle_add_room_member(client_t* client, request_t* req);
+
+void mx_handle_send_msg(client_t* client, request_t* req);
+
+void mx_handle_chat_search(client_t* client, request_t* req);
+
+void mx_handle_get_chat_participants(client_t* client, request_t* req);
 
 #endif
 

@@ -1,14 +1,10 @@
-#include "../inc/server.h"
+#include "../../inc/server.h"
 
-bool mx_table_has_user(const char* login) {
-	mx_log(SERV_LOG_FILE, LOG_TRACE, "Checking if database has this user");
+bool mx_check_if_row_exists(char* sql_req) {
+	
 	bool result;
 
 	sqlite3* db = mx_open_db();
-
-	char* sql_req = NULL;
-
-	asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", login);
 
 	sqlite3_stmt* answ;
 
@@ -25,8 +21,6 @@ bool mx_table_has_user(const char* login) {
     sqlite3_finalize(answ);
 
 	mx_close_db(db);
-
-	mx_log(SERV_LOG_FILE, LOG_TRACE, mx_itoa(result));
 
 	return result;
 }

@@ -46,6 +46,18 @@ static inline SSL_CTX* init_ctx(void) {
 }
 
 //TEST METHOD
+static inline char* test_create_chat_req(const char* chat_name) {
+    cJSON* req = cJSON_CreateObject();
+    cJSON_AddNumberToObject(req, "rtype", CREATE_CHAT_REQ);
+    cJSON_AddStringToObject(req, "name", chat_name);
+
+    char* req_str = cJSON_PrintUnformatted(req);
+    cJSON_Delete(req);
+
+    return req_str;
+}
+
+//TEST METHOD
 static inline char* test_create_singup_req(const char* login, const char* password){
     cJSON* req = cJSON_CreateObject();
     cJSON_AddNumberToObject(req, "rtype", SIGNUP_REQ);
@@ -69,6 +81,60 @@ static inline char* test_create_login_req(const char* login, const char* passwor
     cJSON_Delete(req);
 
     return req_str;
+}
+
+static inline char* test_create_search_chat_req(const char* pattern) {
+    cJSON* req = cJSON_CreateObject();
+
+    cJSON_AddNumberToObject(req, "rtype", CHAT_SEARCH_REQ);
+    cJSON_AddStringToObject(req, "pattern", pattern);
+
+    char* req_str = cJSON_PrintUnformatted(req);
+    cJSON_Delete(req);
+    return req_str;
+}
+
+static inline char* test_create_join_chat_req(const int chat_id) {
+    cJSON* req = cJSON_CreateObject();
+
+    cJSON_AddNumberToObject(req, "rtype", JOIN_CHAT_REQ);
+    cJSON_AddNumberToObject(req, "room_id", chat_id);
+
+    char* req_str = cJSON_PrintUnformatted(req);
+    cJSON_Delete(req);
+    return req_str;
+
+}
+
+static inline char* test_create_get_chat_participants_req(int chat_id) {
+     cJSON* req = cJSON_CreateObject();
+
+    cJSON_AddNumberToObject(req, "rtype", GET_CHAT_PARTICIPANTS_REQ);
+    cJSON_AddNumberToObject(req, "room_id", chat_id);
+
+    char* req_str = cJSON_PrintUnformatted(req);
+    cJSON_Delete(req);
+    return req_str;
+}
+
+static inline void send_req(SSL* ssl, const char* req) {
+
+    printf("Sending request\n");
+
+    int req_ilen = mx_strlen(req);
+    char* req_strlen = mx_itoa(req_ilen);
+
+    SSL_write(ssl, req_strlen, mx_strlen(req_strlen));
+    SSL_write(ssl, req, mx_strlen(req));
+
+}
+
+static inline void print_res(serv_res_t* res) {
+    char* resp = cJSON_PrintUnformatted(res->json);
+
+    printf("Serv response: %s\n", resp);
+
+    free(resp);
 }
 
 int main(int argc, char* argv[]) {
@@ -102,10 +168,12 @@ int main(int argc, char* argv[]) {
 
 
 
-    /*
+    
     //TEST 
     //Sending singup request
-    char* singup_req = test_create_singup_req("User123", "123456");
+
+    /*
+    char* singup_req = test_create_singup_req("Admin", "123456");
     int singup_ilen = strlen(singup_req);
     char* singup_req_len = mx_itoa(singup_ilen);
     
@@ -113,22 +181,108 @@ int main(int argc, char* argv[]) {
     SSL_write(ssl, singup_req_len, strlen(singup_req_len));
     SSL_write(ssl, singup_req, singup_ilen);
 
-   */
+    */
+   
+
 
     //TEST
     //Sending login request
-    char* login_req = test_create_login_req("User123", "12345");
+    /*
+    char* login_req = test_create_login_req("user123", "123456");
     int login_req_ilen = strlen(login_req);
     char* login_req_strlen = mx_itoa(login_req_ilen);
 
     SSL_write(ssl, login_req_strlen, strlen(login_req_strlen));
     SSL_write(ssl, login_req, strlen(login_req));
+    */
 
-   
+    //TEST
+    //Sending create chat request
+
+    
+   bool can_send_next_req = true;
+    char login[32], password[32], chat_name[32], search_str[32];
 
     while(1){
 
-        serv_res_t* res = mx_get_server_response(ssl);
+        if(can_send_next_req) {
+
+            //Just for test
+
+            int i;
+
+            printf("Choose req type\n");
+            scanf("%d", &i);
+
+            char* req;
+
+            switch(i) {
+                case 0:
+                    printf("Creating SIGNUP_REQ, enter login and password\n");
+                    //char* login, password;
+                    scanf("%s", login);
+                    scanf("%s", password);
+                    send_req(ssl, test_create_singup_req(login, password));
+                    break;
+                case 1:
+                    printf("Creating LOGIN_REQ, enter login and password\n");
+                    //char* login, password;
+                    scanf("%s", login);
+                    scanf("%s", password);
+                    send_req(ssl, test_create_login_req(login, password));
+                    break;
+
+                case 2:
+                    printf("Creating new chat, enter chat name\n");
+                   // char* chat_name;
+                    scanf("%s", chat_name);
+                    send_req(ssl, test_create_chat_req(chat_name));
+                    break;
+
+                case 3:
+                    printf("Find existing chat, enter chat name\n");
+                    //char* search_str;
+                    scanf("%s", search_str);
+                    send_req(ssl, test_create_search_chat_req(search_str));
+                    break;
+
+                case 4:
+
+                    printf("Join chat req, enter chat id (received as a result of chat searching)\n");
+                    int r_id;
+                    scanf("%d", &r_id);
+                    send_req(ssl, test_create_join_chat_req(r_id));
+                    break;
+
+                case 5:
+                    printf("Send get chat participants request, enter chat id\n");
+                    int c_id;
+                    scanf("%d", &c_id);
+                    send_req(ssl, test_create_get_chat_participants_req(c_id));
+                    break;
+                default:
+                    break;
+            }
+
+
+            can_send_next_req = false;
+        } else {
+            serv_res_t* res = mx_get_server_response(ssl);
+
+            if(res != NULL) {
+                //handling
+                //
+
+                print_res(res);
+
+                can_send_next_req = true;
+                free(res);
+
+               // usleep(4000);
+            } 
+             
+        }
+ 
     }
 
     SSL_free(ssl);

@@ -22,6 +22,7 @@ static inline bool check_password_for(const char* username, const char* password
     if(sqlite3_step(stmt) == SQLITE_ROW) {
     	const char* db_pass = mx_strdup((const char*)sqlite3_column_text(stmt, 2));
     	result = mx_strcmp(db_pass, password) == 0;
+    	mx_strdel(&db_pass);
     
     }
 
@@ -45,7 +46,10 @@ void mx_handle_logging_in(client_t* client, request_t* req) {
 
 	cJSON* response = cJSON_CreateObject();
 
-	if(!mx_table_has_user(username)) {
+	char* sql_req;
+	asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", username);
+
+	if(!mx_check_if_row_exists(sql_req)) {
 		cJSON_AddNumberToObject(response, "rtype", LOGIN_ERR_RESP);
 		cJSON_AddStringToObject(response, "message", error_msg);
 		mx_log(SERV_LOG_FILE, LOG_TRACE, "There is no such user");
@@ -57,6 +61,7 @@ void mx_handle_logging_in(client_t* client, request_t* req) {
 		cJSON_AddNumberToObject(response, "rtype", LOGIN_SUCESS_RESP);
 		mx_log(SERV_LOG_FILE, LOG_TRACE, "Everything is fine");
 		client->username = username;
+		client->user_id = mx_atoi(mx_get_str_field_val("user", "id", "username", username));
 	}
 
 	char* response_str = cJSON_PrintUnformatted(response);

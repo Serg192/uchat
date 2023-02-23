@@ -10,6 +10,18 @@ static inline void dispatch(client_t* client, request_t* req) {
 				case LOGIN_REQ:
 					mx_handle_logging_in(client, req);
 					break;
+				case CREATE_CHAT_REQ:
+					mx_handle_chat_creation(client, req);
+					break;
+				case CHAT_SEARCH_REQ:
+					mx_handle_chat_search(client, req);
+					break;
+				case JOIN_CHAT_REQ:
+					mx_handle_add_room_member(client, req);
+					break;
+				case GET_CHAT_PARTICIPANTS_REQ:
+					mx_handle_get_chat_participants(client, req);
+					break;
 				default:
 					break;
 
@@ -28,6 +40,7 @@ void* mx_client_handler(void* client) {
 		if(client_req != NULL) {
 			dispatch(client, client_req);
 			cJSON_Delete(client_req->json);
+			free(client_req->str_req);
 			free(client_req);
 		}
 	}
