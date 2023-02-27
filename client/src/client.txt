@@ -107,10 +107,47 @@ static inline char* test_create_join_chat_req(const int chat_id) {
 }
 
 static inline char* test_create_get_chat_participants_req(int chat_id) {
-     cJSON* req = cJSON_CreateObject();
+    cJSON* req = cJSON_CreateObject();
 
     cJSON_AddNumberToObject(req, "rtype", GET_CHAT_PARTICIPANTS_REQ);
     cJSON_AddNumberToObject(req, "room_id", chat_id);
+
+    char* req_str = cJSON_PrintUnformatted(req);
+    cJSON_Delete(req);
+    return req_str;
+}
+
+//DATE FORMAT IS YY|MM|DATE
+//TIME FORMAT IS HH|MM|SS in 24 hour format
+static inline char* test_create_send_msg_req(const int room_id, 
+                                             const int sending_date,
+                                             const int sending_time,
+                                             const char* context) {
+    cJSON* req = cJSON_CreateObject();
+
+    cJSON_AddNumberToObject(req, "rtype", SEND_MSG_REQ);
+    cJSON_AddNumberToObject(req, "room_id", room_id);
+    cJSON_AddNumberToObject(req, "sending_time", sending_time);
+    cJSON_AddNumberToObject(req, "sending_date", sending_date);
+    cJSON_AddStringToObject(req, "context", context);
+
+    char* req_str = cJSON_PrintUnformatted(req);
+    cJSON_Delete(req);
+    return req_str;
+}
+
+static inline char* test_create_get_chat_msg_req(const int chat_id,
+                                                 const int flag,
+                                                 const int start_id,
+                                                 const int count){
+
+    cJSON* req = cJSON_CreateObject();
+
+    cJSON_AddNumberToObject(req, "rtype", GET_CHAT_MSG_REQ);
+    cJSON_AddNumberToObject(req, "room_id", chat_id);
+    cJSON_AddNumberToObject(req, "flag", flag);
+    cJSON_AddNumberToObject(req, "start_id", start_id);
+    cJSON_AddStringToObject(req, "count", count);
 
     char* req_str = cJSON_PrintUnformatted(req);
     cJSON_Delete(req);
@@ -126,7 +163,6 @@ static inline void send_req(SSL* ssl, const char* req) {
 
     SSL_write(ssl, req_strlen, mx_strlen(req_strlen));
     SSL_write(ssl, req, mx_strlen(req));
-
 }
 
 static inline void print_res(serv_res_t* res) {
@@ -166,42 +202,15 @@ int main(int argc, char* argv[]) {
     fcntl(serv, F_SETFL, flags | O_NONBLOCK);
     fcntl(serv, F_SETFD, O_NONBLOCK);
 
-
-
     
-    //TEST 
-    //Sending singup request
-
-    /*
-    char* singup_req = test_create_singup_req("Admin", "123456");
-    int singup_ilen = strlen(singup_req);
-    char* singup_req_len = mx_itoa(singup_ilen);
-    
-
-    SSL_write(ssl, singup_req_len, strlen(singup_req_len));
-    SSL_write(ssl, singup_req, singup_ilen);
-
-    */
-   
-
-
-    //TEST
-    //Sending login request
-    /*
-    char* login_req = test_create_login_req("user123", "123456");
-    int login_req_ilen = strlen(login_req);
-    char* login_req_strlen = mx_itoa(login_req_ilen);
-
-    SSL_write(ssl, login_req_strlen, strlen(login_req_strlen));
-    SSL_write(ssl, login_req, strlen(login_req));
-    */
-
-    //TEST
-    //Sending create chat request
-
-    
-   bool can_send_next_req = true;
+    bool can_send_next_req = true;
     char login[32], password[32], chat_name[32], search_str[32];
+
+    request_t* client_req = malloc(sizeof(client_req));
+    client_req->handled = false;
+
+    clock_t sending_req_time;
+
 
     while(1){
 
@@ -222,28 +231,32 @@ int main(int argc, char* argv[]) {
                     //char* login, password;
                     scanf("%s", login);
                     scanf("%s", password);
-                    send_req(ssl, test_create_singup_req(login, password));
+                    client_req->req = test_create_singup_req(login, password);
+                    send_req(ssl, client_req->req);
                     break;
                 case 1:
                     printf("Creating LOGIN_REQ, enter login and password\n");
                     //char* login, password;
                     scanf("%s", login);
                     scanf("%s", password);
-                    send_req(ssl, test_create_login_req(login, password));
+                    client_req->req = test_create_login_req(login, password);
+                    send_req(ssl, client_req->req);
                     break;
 
                 case 2:
                     printf("Creating new chat, enter chat name\n");
                    // char* chat_name;
                     scanf("%s", chat_name);
-                    send_req(ssl, test_create_chat_req(chat_name));
+                    client_req->req = test_create_chat_req(chat_name);
+                    send_req(ssl, client_req->req);
                     break;
 
                 case 3:
                     printf("Find existing chat, enter chat name\n");
                     //char* search_str;
                     scanf("%s", search_str);
-                    send_req(ssl, test_create_search_chat_req(search_str));
+                    client_req->req = test_create_search_chat_req(search_str);
+                    send_req(ssl, client_req->req);
                     break;
 
                 case 4:
@@ -251,14 +264,32 @@ int main(int argc, char* argv[]) {
                     printf("Join chat req, enter chat id (received as a result of chat searching)\n");
                     int r_id;
                     scanf("%d", &r_id);
-                    send_req(ssl, test_create_join_chat_req(r_id));
+                    client_req->req = test_create_join_chat_req(r_id);
+                    send_req(ssl, client_req->req);
                     break;
 
                 case 5:
                     printf("Send get chat participants request, enter chat id\n");
                     int c_id;
                     scanf("%d", &c_id);
-                    send_req(ssl, test_create_get_chat_participants_req(c_id));
+                    client_req->req = test_create_get_chat_participants_req(c_id);
+                    send_req(ssl, client_req->req);
+                    break;
+                case 6:
+                    printf("Send message, enter chat id and message\n");
+                    int room_id;
+                    scanf("%d", &room_id);
+                    char message[1024];
+                    scanf("%s", message);
+                    client_req->req = test_create_send_msg_req(room_id, 101, 101, message);
+                    send_req(ssl, client_req->req);
+                    break;
+                case 7:
+                    printf("Get chat messages, enter chat_id\n");
+                    int chat_i;
+                    scanf("%d", &chat_i);
+                    client_req->req = test_create_get_chat_msg_req(chat_i, 0, 0, 0);
+                    send_req(ssl, client_req->req);
                     break;
                 default:
                     break;
@@ -266,6 +297,9 @@ int main(int argc, char* argv[]) {
 
 
             can_send_next_req = false;
+            client_req->handled = false;
+
+            sending_req_time =  clock();
         } else {
             serv_res_t* res = mx_get_server_response(ssl);
 
@@ -276,13 +310,24 @@ int main(int argc, char* argv[]) {
                 print_res(res);
 
                 can_send_next_req = true;
+                client_req->handled = true;
                 free(res);
 
                // usleep(4000);
-            } 
-             
+            } else if(!client_req->handled) {
+
+                clock_t diff = clock() - sending_req_time;
+                int time_taken = ((int)diff)/CLOCKS_PER_SEC;
+
+                printf("Taken time: %d\n", time_taken);
+                //if server doesn't send respond more that 3 sec resend request
+                if(time_taken >= 3) {
+                    printf("Resending request\n");
+                    send_req(ssl, client_req->req);
+                    sending_req_time = clock();
+                }
+            }
         }
- 
     }
 
     SSL_free(ssl);

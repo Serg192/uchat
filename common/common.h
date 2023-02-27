@@ -8,9 +8,15 @@ typedef enum request_type_e {
 	CHAT_SEARCH_REQ,
 	JOIN_CHAT_REQ,
 	GET_CHAT_PARTICIPANTS_REQ,
+	SEND_MSG_REQ,
+	GET_CHAT_MSG_REQ,
 	QUIT_REQ
 }            request_type;
 
+
+
+//Change to OK | ERROR
+//because this is stupid  
 typedef enum respond_type_e {
 	LOGIN_ERR_RESP,
 	SIGNUP_ERR_RESP,
@@ -21,7 +27,9 @@ typedef enum respond_type_e {
 	ADD_CHAT_MEM_ERR_RESP,
 	ADD_CHAT_MEM_SUCCESS_RESP,
 	CHAT_SEARCH_RESP,
-	PARTICIPANTS_RESP
+	PARTICIPANTS_RESP,
+	MSG_SEND_SUCCESS_RESP,
+	GET_CHAT_MSG_RES,
 }			  respond_type;
 
 

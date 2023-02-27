@@ -16,10 +16,12 @@
 #include <sys/socket.h>
 #include <resolv.h> 
 #include <netdb.h>
+#include <time.h>
 
 #include <openssl/ssl.h>
 #include <openssl/err.h>
 #include <cJSON.h>
+#include <gtk/gtk.h>
 
 #include <libmx.h>
 
@@ -32,6 +34,11 @@ typedef struct serv_res_s {
 	const char* str_res;
 	int type;
 }			   serv_res_t;
+
+typedef struct request_s {
+	bool handled;
+	char* req;
+}			   request_t;
 
 serv_res_t* mx_get_server_response(SSL* ssl);
 

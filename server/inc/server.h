@@ -66,6 +66,8 @@ void mx_close_db(sqlite3* db);
 
 void mx_init_database();
 
+void mx_exec_sql(char* sql_req);
+
 bool mx_check_if_row_exists(char* sql_req);
 
 bool mx_sql_ex(const char* sql_req);
@@ -90,6 +92,8 @@ void mx_handle_send_msg(client_t* client, request_t* req);
 void mx_handle_chat_search(client_t* client, request_t* req);
 
 void mx_handle_get_chat_participants(client_t* client, request_t* req);
+
+void mx_handle_get_chat_msg(client_t* client, request_t* req);
 
 #endif
 

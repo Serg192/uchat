@@ -22,6 +22,12 @@ static inline void dispatch(client_t* client, request_t* req) {
 				case GET_CHAT_PARTICIPANTS_REQ:
 					mx_handle_get_chat_participants(client, req);
 					break;
+				case SEND_MSG_REQ:
+					mx_handle_send_msg(client, req);
+					break;
+				case GET_CHAT_MSG_REQ:
+					mx_handle_get_chat_msg(client, req);
+					break;
 				default:
 					break;
 

@@ -44,6 +44,7 @@ static inline void read_server_res(serv_res_t* res, SSL* ssl, int res_length) {
 	}
 
 	res->type = cJSON_GetObjectItem(res->json, "rtype")->valueint;
+
 }
 
 serv_res_t* mx_get_server_response(SSL* ssl) {
@@ -53,7 +54,7 @@ serv_res_t* mx_get_server_response(SSL* ssl) {
 	if(res_len == 0)
 		return NULL;
 	else
-		printf("%d\n", res_len);
+		printf("Response length %d\n", res_len);
 
 	serv_res_t* serv_res = malloc(sizeof(serv_res_t));
 	read_server_res(serv_res, ssl, res_len);
