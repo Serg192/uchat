@@ -1,5 +1,7 @@
 #include "../inc/client.h"
 
+/*
+
 int main(int argc, char** argv) {
 
 	gtk_init(&argc, &argv);
@@ -16,3 +18,5 @@ int main(int argc, char** argv) {
 
 	return 0;
 }
+
+*/
