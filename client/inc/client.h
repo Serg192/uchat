@@ -62,4 +62,27 @@ void mx_on_signup_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_login_btn_clicked(GtkButton* b, gpointer data);
 
+
+//
+char* mx_create_chat_req(const char* chat_name);
+
+char* mx_create_signup_req(const char* login, const char* password);
+
+char* mx_create_login_req(const char* login, const char* password);
+
+char* mx_create_search_chat_req(const char* pattern);
+
+char* mx_create_join_chat_req(const int chat_id);
+
+char* mx_create_get_chat_participants_req(int chat_id);
+
+
+//DATE FORMAT IS YY|MM|DATE
+//TIME FORMAT IS HH|MM|SS in 24 hour format
+char* mx_create_send_msg_req(const int room_id, const int sending_date, const int sending_time, const char* context);
+
+char* mx_create_get_chat_msg_req(const int chat_id, const int flag, const int start_id, const int count);
+
+
+
 #endif

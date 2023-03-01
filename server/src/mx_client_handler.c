@@ -28,6 +28,9 @@ static inline void dispatch(client_t* client, request_t* req) {
 				case GET_CHAT_MSG_REQ:
 					mx_handle_get_chat_msg(client, req);
 					break;
+				case DEL_CHAT_MSG_REQ:
+					mx_handle_delete_chat_msg(client, req);
+					break;
 				default:
 					break;
 

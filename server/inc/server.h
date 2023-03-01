@@ -95,5 +95,7 @@ void mx_handle_get_chat_participants(client_t* client, request_t* req);
 
 void mx_handle_get_chat_msg(client_t* client, request_t* req);
 
+void mx_handle_delete_chat_msg(client_t* client, request_t* req);
+
 #endif
 
