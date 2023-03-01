@@ -56,11 +56,17 @@ serv_res_t* mx_get_server_response(SSL* ssl);
 
 auth_window_t* mx_build_auth_window();
 
+void mx_send_req(SSL* ssl, const char* req);
+
 //btn handlers
 
 void mx_on_signup_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_login_btn_clicked(GtkButton* b, gpointer data);
+
+int mx_create_connection_with_serv(const char* host, int port);
+
+SSL_CTX* mx_init_ctx(void);
 
 
 //
