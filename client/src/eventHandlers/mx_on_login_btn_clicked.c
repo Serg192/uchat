@@ -1,4 +1,4 @@
-#include "../inc/client.h"
+#include "../../inc/client.h"
 
 void mx_on_login_btn_clicked(GtkButton* b, gpointer data) {
 		char username_buffer[33];
