@@ -5,12 +5,16 @@ static inline int get_res_len(SSL* ssl) {
     char buffer[256];
     int bytes_was_read = 0;
 
+    //printf("Start\n");
+
     while((bytes_was_read = SSL_read(ssl, buffer, 256)) <= 0) {
     	if ((errno == EAGAIN) || (errno == EWOULDBLOCK)) {
             continue;
         }
         return 0;
     }
+
+    //printf("End\n");
 
     return atoi(buffer);
 }
@@ -51,10 +55,10 @@ serv_res_t* mx_get_server_response(SSL* ssl) {
 
 	int res_len = get_res_len(ssl);
 
+
 	if(res_len == 0)
 		return NULL;
-	else
-		printf("Response length %d\n", res_len);
+
 
 	serv_res_t* serv_res = malloc(sizeof(serv_res_t));
 	read_server_res(serv_res, ssl, res_len);
