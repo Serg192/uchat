@@ -154,6 +154,18 @@ static inline char* test_create_get_chat_msg_req(const int chat_id,
     return req_str;
 }
 
+
+static inline char* test_create_get_joined_chats_req(){
+
+    cJSON* req = cJSON_CreateObject();
+
+    cJSON_AddNumberToObject(req, "rtype", GET_JOINED_CHATS);
+
+    char* req_str = cJSON_PrintUnformatted(req);
+    cJSON_Delete(req);
+    return req_str;
+}
+
 static inline void send_req(SSL* ssl, const char* req) {
 
     printf("Sending request\n");
@@ -289,6 +301,11 @@ int main(int argc, char* argv[]) {
                     int chat_i;
                     scanf("%d", &chat_i);
                     client_req->req = test_create_get_chat_msg_req(chat_i, 0, 0, 0);
+                    send_req(ssl, client_req->req);
+                    break;
+                case 8:
+                    printf("Get joined chats\n");
+                    client_req->req = test_create_get_joined_chats_req();
                     send_req(ssl, client_req->req);
                     break;
                 default:

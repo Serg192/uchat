@@ -11,6 +11,7 @@ typedef enum request_type_e {
 	SEND_MSG_REQ,
 	GET_CHAT_MSG_REQ,
 	DEL_CHAT_MSG_REQ,
+	GET_JOINED_CHATS,
 	QUIT_REQ
 }            request_type;
 
@@ -31,6 +32,7 @@ typedef enum respond_type_e {
 	PARTICIPANTS_RESP,
 	MSG_SEND_SUCCESS_RESP,
 	GET_CHAT_MSG_RES,
+	JOINED_CHATS_RESP,
 	OK_RESP
 }			  respond_type;
 

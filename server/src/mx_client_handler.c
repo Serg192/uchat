@@ -31,6 +31,9 @@ static inline void dispatch(client_t* client, request_t* req) {
 				case DEL_CHAT_MSG_REQ:
 					mx_handle_delete_chat_msg(client, req);
 					break;
+				case GET_JOINED_CHATS:
+					mx_handle_get_joined_chats(client, req);
+					break;
 				default:
 					break;
 

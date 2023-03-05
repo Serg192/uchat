@@ -39,6 +39,9 @@ typedef struct serv_res_s {
 
 typedef struct request_s {
 	char* req;
+
+	//for test purpose
+	bool handled;
 }			   request_t;
 
 typedef struct auth_window_s {

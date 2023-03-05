@@ -79,6 +79,8 @@ void mx_add_room_member(int client_id, int room_id);
 
 //handlers
 
+void mx_get_chats_array(cJSON* parent_json, const char* search_condition);
+
 void mx_handle_registration(client_t* client, request_t* req);
 
 void mx_handle_logging_in(client_t* client, request_t* req);
@@ -96,6 +98,8 @@ void mx_handle_get_chat_participants(client_t* client, request_t* req);
 void mx_handle_get_chat_msg(client_t* client, request_t* req);
 
 void mx_handle_delete_chat_msg(client_t* client, request_t* req);
+
+void mx_handle_get_joined_chats(client_t* client, request_t* req);
 
 #endif
 
