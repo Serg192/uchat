@@ -1,6 +1,7 @@
 #include "../inc/client.h"
 
 chat_window_t* mx_build_chat_window(client_t* client) {
+
 	chat_window_t* window = malloc(sizeof(chat_window_t));
 
 	window->builder = gtk_builder_new_from_file(CHAT_WIND_XML_PATH);
@@ -11,5 +12,39 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 
 	gtk_builder_connect_signals(window->builder, NULL);
 
+	window->main_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "main_box"));
+	window->left_side_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "left_side_box"));
+	window->chats_list_scrlldwnd = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_scrlldwnd"));
+	window->chats_list_view = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_view"));
+	window->chats_list_grid = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_grid"));
+
+	//for test
+	FILE *f1;
+	if ((f1=fopen(CLIENT_LOG_FILE, "r") )==NULL) {
+		printf("Cannot open file.\n");
+		exit (1);
+	}
+	
+	GtkWidget *button;
+	char tmp[1028];
+	int row = 0; 
+	while (!feof(f1)) {
+		if (fgets(tmp, 1024, f1)) {
+
+			tmp[strlen(tmp) - 1] = 0;
+
+			gtk_grid_insert_row(GTK_GRID(window->chats_list_grid), row);
+		
+			button = gtk_button_new_with_label(tmp);
+			gtk_button_set_alignment(GTK_BUTTON(button), 0.0, 0.5);
+			gtk_grid_attach(GTK_GRID(window->chats_list_grid), button, 1, row, 1, 1);
+			//g_signal_connect(button, "clicked", G_CALLBACK(on_row), NULL);
+			
+			row++;
+		}
+	}
+	
+	fclose(f1);
 	return window;
 }
+

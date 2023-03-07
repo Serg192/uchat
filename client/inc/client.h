@@ -51,13 +51,18 @@ typedef struct auth_window_s {
 	GtkWidget *login_btn;
 	GtkWidget *username_entry;
 	GtkWidget *password_entry;
-
+	
 	GtkBuilder *builder;
 }			   auth_window_t;
 
 typedef struct chat_window_s {
 	GtkWidget* window;
-
+	GtkWidget *main_box;
+	GtkWidget *left_side_box;
+	GtkWidget *chats_list_scrlldwnd;
+	GtkWidget *chats_list_view;
+	GtkWidget *chats_list_grid;
+	
 	GtkBuilder *builder;
 }			   chat_window_t;
 
