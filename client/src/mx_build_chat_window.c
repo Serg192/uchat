@@ -26,6 +26,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	}
 	
 	GtkWidget *button;
+	GtkWidget *image;
 	char tmp[1028];
 	int row = 0; 
 	while (!feof(f1)) {
@@ -36,6 +37,10 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 			gtk_grid_insert_row(GTK_GRID(window->chats_list_grid), row);
 		
 			button = gtk_button_new_with_label(tmp);
+			image = gtk_image_new_from_file("/home/trubadur/Рабочий стол/uchat/client/src/input-mouse.png");
+			gtk_button_set_image(GTK_BUTTON(button), image);
+			gtk_button_set_always_show_image(GTK_BUTTON(button), TRUE);
+			gtk_widget_set_size_request(button, 200, 100);
 			gtk_button_set_alignment(GTK_BUTTON(button), 0.0, 0.5);
 			gtk_grid_attach(GTK_GRID(window->chats_list_grid), button, 1, row, 1, 1);
 			//g_signal_connect(button, "clicked", G_CALLBACK(on_row), NULL);
