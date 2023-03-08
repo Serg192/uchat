@@ -30,6 +30,7 @@
 #define CLIENT_LOG_FILE "client/log/log.txt"
 #define AUTH_WIND_XML_PATH "client/res/windows/auth_window.glade"
 #define CHAT_WIND_XML_PATH "client/res/windows/chat_window.glade"
+#define CREATE_CHAT_WIND_XML_PATH "client/res/windows/create_chat_window.glade"
 
 typedef struct serv_res_s {
 	cJSON* json;
@@ -41,7 +42,7 @@ typedef struct request_s {
 	char* req;
 
 	//for test purpose
-	bool handled;
+	//bool handled;
 }			   request_t;
 
 typedef struct auth_window_s {
@@ -51,9 +52,19 @@ typedef struct auth_window_s {
 	GtkWidget *login_btn;
 	GtkWidget *username_entry;
 	GtkWidget *password_entry;
-	
+
 	GtkBuilder *builder;
 }			   auth_window_t;
+
+typedef struct create_chat_window_s {
+	GtkWidget* window;
+	GtkWidget* create_btn;
+	GtkWidget* cancel_btn;
+	GtkWidget* chat_name_entry;
+
+	GtkBuilder* builder;
+}			   create_chat_window_t;
+
 
 typedef struct chat_window_s {
 	GtkWidget* window;
@@ -63,8 +74,20 @@ typedef struct chat_window_s {
 	GtkWidget *chats_list_view;
 	GtkWidget *chats_list_grid;
 	
+	GtkWidget* add_chat_btn;
+
 	GtkBuilder *builder;
 }			   chat_window_t;
+
+typedef struct chat_info_s {
+	int id;
+	const char* name;
+}			   chat_info_t;
+
+typedef struct disp_chats_container_s {
+	int count;
+	chat_info_t** chats;
+}			   disp_chats_container_t;
 
 typedef struct client_s {
 	int serv;
@@ -77,16 +100,24 @@ typedef struct client_s {
 
 	auth_window_t* a_window;
 	chat_window_t* c_window;
+	create_chat_window_t* create_chat_window;
+
+	bool destroy_cnw;
+
+	disp_chats_container_t* chat_container;
 
 }			   client_t;
 
 
+void mx_handle_get_joined_chats(client_t* client);
 
 serv_res_t* mx_get_server_response(SSL* ssl);
 
 auth_window_t* mx_build_auth_window(client_t* client);
 
 chat_window_t* mx_build_chat_window(client_t* client);
+
+create_chat_window_t* mx_build_create_chat_window(client_t* client);
 
 void mx_send_req(SSL* ssl, const char* req);
 
@@ -98,13 +129,23 @@ void mx_on_signup_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_login_btn_clicked(GtkButton* b, gpointer data);
 
+void mx_on_chat_btn_clicked(GtkButton* b, gpointer data);
+
+//button inside popup window
+void mx_on_create_new_chat_btn_clicked(GtkButton* b, gpointer data);
+
+//create new chat button
+void mx_on_create_chat_btn_clicked(GtkButton* b, gpointer data);
+
+//
+
 int mx_create_connection_with_serv(const char* host, int port);
 
 SSL_CTX* mx_init_ctx(void);
 
 void mx_main_background_loop(void* data);
 
-
+void mx_hide_hint_window(GtkWidget* widget, gpointer data);
 
 //
 char* mx_create_chat_req(const char* chat_name);
@@ -119,6 +160,12 @@ char* mx_create_join_chat_req(const int chat_id);
 
 char* mx_create_get_chat_participants_req(int chat_id);
 
+char* mx_create_get_joined_chats_req();
+
+//TEST
+void create_new_chat_window(client_t* client);
+//
+
 
 //DATE FORMAT IS YY|MM|DATE
 //TIME FORMAT IS HH|MM|SS in 24 hour format
@@ -132,6 +179,8 @@ void mx_handle_auth_err(client_t* client);
 
 //also used when signup success
 void mx_handle_auth_success(client_t* client);
+
+void mx_handle_chat_creation(client_t* client);
 
 
 #endif

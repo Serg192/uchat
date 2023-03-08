@@ -1,8 +1,15 @@
 #include "../inc/client.h"
 
+static inline void test(client_t* client) {
+	request_t* request = malloc(sizeof(request_t));
+	request->req =  mx_create_get_joined_chats_req();
+	client->current_request = request;
+}
+
 static inline void handle_response(client_t* client) {
 
 	serv_res_t* response = client->current_response;
+	client->can_send_req = true;
 
 	switch(response->type) {
 		case LOGIN_SUCESS_RESP:
@@ -17,6 +24,12 @@ static inline void handle_response(client_t* client) {
 		case SIGNUP_ERR_RESP:
 			mx_handle_auth_err(client);
 			break;
+		case CHAT_CREATION_SUCCESS_RESP:
+			mx_handle_chat_creation(client);
+			break;
+		case JOINED_CHATS_RESP:
+			mx_handle_get_joined_chats(client);
+			break;
 		default:
 			break;
 	}
@@ -26,7 +39,8 @@ static inline void handle_response(client_t* client) {
 	client->current_response->str_res = NULL;
 	free(client->current_response);
 	client->current_response = NULL;
-	client->can_send_req = true;
+
+	printf("Handled\n");
 }
 
 void mx_main_background_loop(void* data) {
@@ -49,6 +63,7 @@ void mx_main_background_loop(void* data) {
 			printf("Handling response\n");
 			handle_response(client);
 		}
+
 	}
 }
 

@@ -12,18 +12,21 @@ int main(int argc, char** argv) {
 
 	gtk_init(&argc, &argv);
 
-	auth_window_t*  a_window = mx_build_chat_window(&client);
-	client.a_window = a_window;
+	client.a_window = mx_build_auth_window(&client);
+	client.c_window = mx_build_chat_window(&client);
+	client.create_chat_window = mx_build_create_chat_window(&client);
+
 	client.current_request = NULL;
 	client.current_response = NULL;
 	client.can_send_req = true;
-	
+	client.chat_container = NULL;
 
 	pthread_t thread;
 	pthread_create(&thread, NULL, &mx_main_background_loop, (void*)&client);
 
+	//create_new_chat_window(&client);
 
-	gtk_widget_show_all(a_window->window);
+	gtk_widget_show(client.a_window->window);
 
 	gtk_main();
 

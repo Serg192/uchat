@@ -1,0 +1,149 @@
+TRACE: [Mar  8 2023 | 19:38:59] Starting the server
+TRACE: [Mar  8 2023 | 19:38:59] Creating daemon process
+TRACE: [Mar  8 2023 | 19:38:59] Child pid: 2981
+TRACE: [Mar  8 2023 | 19:38:59] Database initialization
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling logging in
+TRACE: [Mar  8 2023 | 19:38:59] Admin
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] There is no such user
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":1,"login":"Admin","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling registration
+TRACE: [Mar  8 2023 | 19:38:59] Admin
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] add user
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[],"rtype":12}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":2,"name":"Uchat_team"}
+TRACE: [Mar  8 2023 | 19:38:59] Creating new chat
+TRACE: [Mar  8 2023 | 19:38:59] Uchat_team
+TRACE: [Mar  8 2023 | 19:38:59] mx_add_room_member()
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":4}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[{"name":"Uchat_team","id":1}],"rtype":12}
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Starting the server
+TRACE: [Mar  8 2023 | 19:38:59] Creating daemon process
+TRACE: [Mar  8 2023 | 19:38:59] Child pid: 3017
+ERROR: [Mar  8 2023 | 19:38:59] Address already in use
+TRACE: [Mar  8 2023 | 19:38:59] Starting the server
+TRACE: [Mar  8 2023 | 19:38:59] Creating daemon process
+TRACE: [Mar  8 2023 | 19:38:59] Child pid: 3026
+TRACE: [Mar  8 2023 | 19:38:59] Database initialization
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling logging in
+TRACE: [Mar  8 2023 | 19:38:59] Admin
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] Checking password
+TRACE: [Mar  8 2023 | 19:38:59] Everything is fine
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":3}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[{"name":"Uchat_team","id":1}],"rtype":12}
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":0,"login":"Admin2","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling logging in
+TRACE: [Mar  8 2023 | 19:38:59] Admin2
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] There is no such user
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":0,"message":"The username or password is incorrect"}
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":0,"login":"Admin2","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling logging in
+TRACE: [Mar  8 2023 | 19:38:59] Admin2
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] There is no such user
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":1,"login":"Admin2","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling registration
+TRACE: [Mar  8 2023 | 19:38:59] Admin2
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] add user
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[],"rtype":12}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: 
+TRACE: [Mar  8 2023 | 19:38:59] Starting the server
+TRACE: [Mar  8 2023 | 19:38:59] Creating daemon process
+TRACE: [Mar  8 2023 | 19:38:59] Child pid: 3075
+TRACE: [Mar  8 2023 | 19:38:59] Database initialization
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling logging in
+TRACE: [Mar  8 2023 | 19:38:59] Admin
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] Checking password
+TRACE: [Mar  8 2023 | 19:38:59] Everything is fine
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":3}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[{"name":"Uchat_team","id":1}],"rtype":12}
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":0,"login":"Admin2","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling logging in
+TRACE: [Mar  8 2023 | 19:38:59] Admin2
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] Checking password
+TRACE: [Mar  8 2023 | 19:38:59] Everything is fine
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":3}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[],"rtype":12}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":2,"name":"Cucumber"}
+TRACE: [Mar  8 2023 | 19:38:59] Creating new chat
+TRACE: [Mar  8 2023 | 19:38:59] Cucumber
+TRACE: [Mar  8 2023 | 19:38:59] mx_add_room_member()
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":4}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[{"name":"Cucumber","id":2}],"rtype":12}
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":0,"login":"Admin3","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling logging in
+TRACE: [Mar  8 2023 | 19:38:59] Admin3
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] There is no such user
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":1,"login":"Admin3","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling registration
+TRACE: [Mar  8 2023 | 19:38:59] Admin3
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] add user
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[],"rtype":12}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":2,"name":"Ogirok"}
+TRACE: [Mar  8 2023 | 19:38:59] Creating new chat
+TRACE: [Mar  8 2023 | 19:38:59] Ogirok
+TRACE: [Mar  8 2023 | 19:38:59] mx_add_room_member()
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":4}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[{"name":"Ogirok","id":3}],"rtype":12}
+INFO: [Mar  8 2023 | 19:38:59] New client was connected: 127.0.0.1
+TRACE: [Mar  8 2023 | 19:38:59] Wainitng for connection ...
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar  8 2023 | 19:38:59] Handling logging in
+TRACE: [Mar  8 2023 | 19:38:59] Admin
+TRACE: [Mar  8 2023 | 19:38:59] 123456
+TRACE: [Mar  8 2023 | 19:38:59] Checking password
+TRACE: [Mar  8 2023 | 19:38:59] Everything is fine
+TRACE: [Mar  8 2023 | 19:38:59] {"rtype":3}
+TRACE: [Mar  8 2023 | 19:38:59] Request was received: {"rtype":9}
+TRACE: [Mar  8 2023 | 19:38:59] Get joined chats request
+TRACE: [Mar  8 2023 | 19:38:59] {"chats":[{"name":"Uchat_team","id":1}],"rtype":12}

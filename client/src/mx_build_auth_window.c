@@ -8,6 +8,8 @@ auth_window_t* mx_build_auth_window(client_t* client) {
 
 	window->window = GTK_WIDGET(gtk_builder_get_object(window->builder, "auth_window"));
 
+	gtk_window_set_position(GTK_WINDOW(window->window), GTK_WIN_POS_CENTER_ALWAYS);
+
 	//gtk_window_set_resizable(window->window, FALSE);
 
 	//JUST TEST, add own handler in the future
