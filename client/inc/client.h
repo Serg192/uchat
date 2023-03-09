@@ -73,10 +73,13 @@ typedef struct chat_window_s {
 	GtkWidget *chats_list_scrlldwnd;
 	GtkWidget *chats_list_view;
 	GtkWidget *chats_list_grid;
+	GtkWidget *search_entry;
 	
 	GtkWidget* add_chat_btn;
 
 	GtkBuilder *builder;
+
+	int elements_were_attached;
 }			   chat_window_t;
 
 typedef struct chat_info_s {
@@ -130,6 +133,8 @@ void mx_on_signup_btn_clicked(GtkButton* b, gpointer data);
 void mx_on_login_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_chat_btn_clicked(GtkButton* b, gpointer data);
+
+void mx_on_search_changed(GtkWidget *w, gpointer data);
 
 //button inside popup window
 void mx_on_create_new_chat_btn_clicked(GtkButton* b, gpointer data);

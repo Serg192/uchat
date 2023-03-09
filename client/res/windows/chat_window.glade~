@@ -10,11 +10,11 @@
       <placeholder/>
     </child>
     <child>
-      <object class="GtkBox">
+      <object class="GtkBox" id="main_box">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
-          <object class="GtkBox" id="left_side">
+          <object class="GtkBox" id="left_side_box">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
@@ -43,7 +43,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSearchEntry">
+                  <object class="GtkSearchEntry" id="search_entry">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="primary_icon_name">edit-find-symbolic</property>
@@ -64,88 +64,47 @@
               </packing>
             </child>
             <child>
-              <object class="GtkScrolledWindow">
+              <object class="GtkScrolledWindow" id="chats_list_scrlldwnd">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="shadow_type">in</property>
                 <child>
-                  <object class="GtkViewport">
+                  <object class="GtkViewport" id="chats_list_view">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="hscroll_policy">natural</property>
+                    <property name="vscroll_policy">natural</property>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkGrid" id="chats_list_grid">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
+                        <property name="column_homogeneous">True</property>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="height_request">30</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Поиск среди ваших чатов</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
+                          <placeholder/>
                         </child>
                         <child>
-                          <object class="GtkListBox">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
+                          <placeholder/>
                         </child>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="height_request">60</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">ничего не найдено</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">2</property>
-                          </packing>
+                          <placeholder/>
                         </child>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="height_request">30</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Глобальный поиск</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">3</property>
-                          </packing>
+                          <placeholder/>
                         </child>
                         <child>
-                          <object class="GtkListBox">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">4</property>
-                          </packing>
+                          <placeholder/>
                         </child>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="height_request">60</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">ничего не найдено</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">5</property>
-                          </packing>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
                         </child>
                       </object>
                     </child>
@@ -156,6 +115,20 @@
                 <property name="expand">True</property>
                 <property name="fill">True</property>
                 <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="add_chat_btn">
+                <property name="label" translatable="yes">Add chat</property>
+                <property name="height_request">50</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
               </packing>
             </child>
           </object>

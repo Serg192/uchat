@@ -1,9 +1,7 @@
 #include "../inc/client.h"
 
 static inline void test(client_t* client) {
-	request_t* request = malloc(sizeof(request_t));
-	request->req =  mx_create_get_joined_chats_req();
-	client->current_request = request;
+	
 }
 
 static inline void handle_response(client_t* client) {
@@ -27,16 +25,26 @@ static inline void handle_response(client_t* client) {
 		case CHAT_CREATION_SUCCESS_RESP:
 			mx_handle_chat_creation(client);
 			break;
-		case JOINED_CHATS_RESP:
+		case JOINED_CHATS_RESP: 
+		//case CHAT_SEARCH_RESP:
+			mx_handle_get_joined_chats(client);
+			printf("Joined chats resp\n");
+			break;
+		case CHAT_SEARCH_RESP: 
+			printf("Search resp\n");
+		//case CHAT_SEARCH_RESP:
 			mx_handle_get_joined_chats(client);
 			break;
 		default:
 			break;
 	}
 
+	printf("Deleting json\n");
 	cJSON_Delete(response->json);
+	printf("Deleting current_response_str\n");
 	free(client->current_response->str_res);
 	client->current_response->str_res = NULL;
+	printf("Deleting current_response\n");
 	free(client->current_response);
 	client->current_response = NULL;
 
