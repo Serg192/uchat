@@ -55,7 +55,7 @@ static inline void update_chat_list(client_t* client) {
 
 
 		g_signal_connect(G_OBJECT(icon), "draw", G_CALLBACK(draw_callback), NULL);
-		g_signal_connect(button, "released", G_CALLBACK(mx_on_chat_btn_clicked), client->chat_container->chats[i]);
+		g_signal_connect(button, "released", G_CALLBACK(mx_on_chat_btn_clicked), client/*->chat_container->chats[i]*/);
 		mx_strdel(&str);
 	}
 
