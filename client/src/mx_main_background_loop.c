@@ -35,6 +35,9 @@ static inline void handle_response(client_t* client) {
 		//case CHAT_SEARCH_RESP:
 			mx_handle_get_joined_chats(client);
 			break;
+		case ADD_CHAT_MEM_SUCCESS_RESP:
+			mx_handle_get_joined_chats(client);
+			break;
 		default:
 			break;
 	}

@@ -31,6 +31,7 @@
 #define AUTH_WIND_XML_PATH "client/res/windows/auth_window.glade"
 #define CHAT_WIND_XML_PATH "client/res/windows/chat_window.glade"
 #define CREATE_CHAT_WIND_XML_PATH "client/res/windows/create_chat_window.glade"
+#define DIALOG_WIND_XML_PATH "client/res/windows/dialog_window.glade"
 
 typedef struct serv_res_s {
 	cJSON* json;
@@ -65,6 +66,14 @@ typedef struct create_chat_window_s {
 	GtkBuilder* builder;
 }			   create_chat_window_t;
 
+typedef struct dialog_window_s {
+	GtkWidget* window;
+	GtkWidget* info_lable;
+	GtkWidget* ok_btn;
+	GtkWidget* cancel_btn;
+
+	GtkBuilder* builder;
+}			   dialog_window_t;
 
 typedef struct chat_window_s {
 	GtkWidget* window;
@@ -74,23 +83,16 @@ typedef struct chat_window_s {
 	GtkWidget *chats_list_view;
 	GtkWidget *chats_list_grid;
 	GtkWidget *search_entry;
+	GtkWidget* chat_name;
 	
 	GtkWidget* add_chat_btn;
 
 	GtkBuilder *builder;
 
 	int elements_were_attached;
+
+	clock_t search_t;
 }			   chat_window_t;
-
-typedef struct chat_info_s {
-	int id;
-	const char* name;
-}			   chat_info_t;
-
-typedef struct disp_chats_container_s {
-	int count;
-	chat_info_t** chats;
-}			   disp_chats_container_t;
 
 typedef struct client_s {
 	int serv;
@@ -104,13 +106,19 @@ typedef struct client_s {
 	auth_window_t* a_window;
 	chat_window_t* c_window;
 	create_chat_window_t* create_chat_window;
+	dialog_window_t* d_window;
 
 	bool destroy_cnw;
 
-	disp_chats_container_t* chat_container;
+	int* chat_id_chat_btn_map;
+	int join_chat_id;
+
+	bool search_mode;
 
 }			   client_t;
 
+
+int mx_get_chat_id_from_btn(GtkWidget* w, client_t* client);
 
 void mx_handle_get_joined_chats(client_t* client);
 
@@ -121,6 +129,8 @@ auth_window_t* mx_build_auth_window(client_t* client);
 chat_window_t* mx_build_chat_window(client_t* client);
 
 create_chat_window_t* mx_build_create_chat_window(client_t* client);
+
+dialog_window_t* mx_build_dialog_window(client_t* client);
 
 void mx_send_req(SSL* ssl, const char* req);
 
@@ -135,6 +145,10 @@ void mx_on_login_btn_clicked(GtkButton* b, gpointer data);
 void mx_on_chat_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_search_changed(GtkWidget *w, gpointer data);
+
+void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data);
+
+void mx_on_chat_list_clicked(GtkWidget* w, gpointer data);
 
 //button inside popup window
 void mx_on_create_new_chat_btn_clicked(GtkButton* b, gpointer data);

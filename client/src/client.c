@@ -15,11 +15,15 @@ int main(int argc, char** argv) {
 	client.a_window = mx_build_auth_window(&client);
 	client.c_window = mx_build_chat_window(&client);
 	client.create_chat_window = mx_build_create_chat_window(&client);
+	client.d_window = mx_build_dialog_window(&client);
 
 	client.current_request = NULL;
 	client.current_response = NULL;
 	client.can_send_req = true;
-	client.chat_container = NULL;
+	//client.chat_container = NULL;
+	client.search_mode = false;
+
+	client.chat_id_chat_btn_map = NULL;
 
 	pthread_t thread;
 	pthread_create(&thread, NULL, &mx_main_background_loop, (void*)&client);

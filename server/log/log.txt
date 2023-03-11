@@ -1,0 +1,1717 @@
+TRACE: [Mar 10 2023 | 16:37:29] Starting the server
+TRACE: [Mar 10 2023 | 16:37:29] Creating daemon process
+TRACE: [Mar 10 2023 | 16:37:29] Child pid: 11489
+ERROR: [Mar 10 2023 | 16:37:29] Address already in use
+TRACE: [Mar 10 2023 | 16:37:29] Starting the server
+TRACE: [Mar 10 2023 | 16:37:29] Creating daemon process
+TRACE: [Mar 10 2023 | 16:37:29] Child pid: 11498
+ERROR: [Mar 10 2023 | 16:37:29] Address already in use
+TRACE: [Mar 10 2023 | 16:37:29] Starting the server
+TRACE: [Mar 10 2023 | 16:37:29] Creating daemon process
+TRACE: [Mar 10 2023 | 16:37:29] Child pid: 11523
+TRACE: [Mar 10 2023 | 16:37:29] Database initialization
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+INFO: [Mar 10 2023 | 16:37:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 16:37:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:37:29] Admin
+TRACE: [Mar 10 2023 | 16:37:29] 123456
+TRACE: [Mar 10 2023 | 16:37:29] Checking password
+TRACE: [Mar 10 2023 | 16:37:29] Everything is fine
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":3}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: 
+TRACE: [Mar 10 2023 | 16:37:29] Starting the server
+TRACE: [Mar 10 2023 | 16:37:29] Creating daemon process
+TRACE: [Mar 10 2023 | 16:37:29] Child pid: 3608
+TRACE: [Mar 10 2023 | 16:37:29] Database initialization
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+INFO: [Mar 10 2023 | 16:37:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 16:37:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:37:29] Admin
+TRACE: [Mar 10 2023 | 16:37:29] 123456
+TRACE: [Mar 10 2023 | 16:37:29] Checking password
+TRACE: [Mar 10 2023 | 16:37:29] Everything is fine
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":3}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"  "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":2,"name":"room2"}
+TRACE: [Mar 10 2023 | 16:37:29] Creating new chat
+TRACE: [Mar 10 2023 | 16:37:29] room2
+TRACE: [Mar 10 2023 | 16:37:29] mx_add_room_member()
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":4}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"j"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+INFO: [Mar 10 2023 | 16:37:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":0,"login":"Serg","password":"123456"}
+TRACE: [Mar 10 2023 | 16:37:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:37:29] Serg
+TRACE: [Mar 10 2023 | 16:37:29] 123456
+TRACE: [Mar 10 2023 | 16:37:29] There is no such user
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":1,"login":"Serg","password":"123456"}
+TRACE: [Mar 10 2023 | 16:37:29] Handling registration
+TRACE: [Mar 10 2023 | 16:37:29] Serg
+TRACE: [Mar 10 2023 | 16:37:29] 123456
+TRACE: [Mar 10 2023 | 16:37:29] add user
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"o"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"R"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+INFO: [Mar 10 2023 | 16:37:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 16:37:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:37:29] Admin
+TRACE: [Mar 10 2023 | 16:37:29] 123456
+TRACE: [Mar 10 2023 | 16:37:29] Checking password
+TRACE: [Mar 10 2023 | 16:37:29] Everything is fine
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":3}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"  "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"    "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"   "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"U"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"k"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"lklk"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"kllklk"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"cc"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"c"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"s"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+INFO: [Mar 10 2023 | 16:37:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":0,"login":"Serg","password":"123456"}
+TRACE: [Mar 10 2023 | 16:37:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:37:29] Serg
+TRACE: [Mar 10 2023 | 16:37:29] 123456
+TRACE: [Mar 10 2023 | 16:37:29] Checking password
+TRACE: [Mar 10 2023 | 16:37:29] Everything is fine
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":3}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"ro"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"roo"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"room"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"roo"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"rrrrrr"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"rrrrr"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"rr"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"jhfskdjfkjfhkjsdf"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"jhfskdjfkjfhkjsd"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"m"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"room"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":2,"name":"Chess"}
+TRACE: [Mar 10 2023 | 16:37:29] Creating new chat
+TRACE: [Mar 10 2023 | 16:37:29] Chess
+TRACE: [Mar 10 2023 | 16:37:29] mx_add_room_member()
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":4}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"R"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"Room"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"pop"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"po"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+INFO: [Mar 10 2023 | 16:37:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 16:37:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:37:29] Admin
+TRACE: [Mar 10 2023 | 16:37:29] 123456
+TRACE: [Mar 10 2023 | 16:37:29] Checking password
+TRACE: [Mar 10 2023 | 16:37:29] Everything is fine
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":3}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+INFO: [Mar 10 2023 | 16:37:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:37:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":0,"login":"Serg","password":"123456"}
+TRACE: [Mar 10 2023 | 16:37:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:37:29] Serg
+TRACE: [Mar 10 2023 | 16:37:29] 123456
+TRACE: [Mar 10 2023 | 16:37:29] Checking password
+TRACE: [Mar 10 2023 | 16:37:29] Everything is fine
+TRACE: [Mar 10 2023 | 16:37:29] {"rtype":3}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"rr"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"rrrrr"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"rrrr"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"rr"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:37:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"roo,"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"roo"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"room"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"roo"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"opedofp[dsf[pf[p"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"opedofp[dsf[pf["}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"opedofp[dsf[pf"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:37:29] Request was received: {"rtype":3,"pattern":"opedofp[dsf"}
+TRACE: [Mar 10 2023 | 16:37:29] Chat search request
+TRACE: [Mar 10 2023 | 16:37:29] {"chats":[],"rtype":8}
+INFO: [Mar 10 2023 | 16:37:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:56:29] Starting the server
+TRACE: [Mar 10 2023 | 16:56:29] Creating daemon process
+TRACE: [Mar 10 2023 | 16:56:29] Child pid: 21082
+ERROR: [Mar 10 2023 | 16:56:29] Address already in use
+TRACE: [Mar 10 2023 | 16:56:29] Starting the server
+TRACE: [Mar 10 2023 | 16:56:29] Creating daemon process
+TRACE: [Mar 10 2023 | 16:56:29] Child pid: 21095
+TRACE: [Mar 10 2023 | 16:56:29] Database initialization
+TRACE: [Mar 10 2023 | 16:56:29] Wainitng for connection ...
+INFO: [Mar 10 2023 | 16:56:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:56:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":0,"login":"Serg","password":"123456"}
+TRACE: [Mar 10 2023 | 16:56:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:56:29] Serg
+TRACE: [Mar 10 2023 | 16:56:29] 123456
+TRACE: [Mar 10 2023 | 16:56:29] Checking password
+TRACE: [Mar 10 2023 | 16:56:29] Everything is fine
+TRACE: [Mar 10 2023 | 16:56:29] {"rtype":3}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: 
+TRACE: [Mar 10 2023 | 16:56:29] Starting the server
+TRACE: [Mar 10 2023 | 16:56:29] Creating daemon process
+TRACE: [Mar 10 2023 | 16:56:29] Child pid: 21125
+TRACE: [Mar 10 2023 | 16:56:29] Database initialization
+TRACE: [Mar 10 2023 | 16:56:29] Wainitng for connection ...
+INFO: [Mar 10 2023 | 16:56:29] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 16:56:29] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":0,"login":"Serg","password":"123456"}
+TRACE: [Mar 10 2023 | 16:56:29] Handling logging in
+TRACE: [Mar 10 2023 | 16:56:29] Serg
+TRACE: [Mar 10 2023 | 16:56:29] 123456
+TRACE: [Mar 10 2023 | 16:56:29] Checking password
+TRACE: [Mar 10 2023 | 16:56:29] Everything is fine
+TRACE: [Mar 10 2023 | 16:56:29] {"rtype":3}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"R"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"R"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Ro"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Roo"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Room"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Room1"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Room"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Room2"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Room"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Roo"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Ro"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"R"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":2,"name":"Chess2"}
+TRACE: [Mar 10 2023 | 16:56:29] Creating new chat
+TRACE: [Mar 10 2023 | 16:56:29] Chess2
+TRACE: [Mar 10 2023 | 16:56:29] mx_add_room_member()
+TRACE: [Mar 10 2023 | 16:56:29] {"rtype":4}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"R"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Room"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Roo"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"Ro"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"R"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":","}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"';"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"';;"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"';;'"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"';;';"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"';;'"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"';"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 16:56:29] Get joined chats request
+TRACE: [Mar 10 2023 | 16:56:29] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+TRACE: [Mar 10 2023 | 16:56:29] Request was received: {"rtype":3,"pattern":"'"}
+TRACE: [Mar 10 2023 | 16:56:29] Chat search request
+ERROR: [Mar 10 2023 | 16:56:29] near "%": syntax error
+TRACE: [Mar 10 2023 | 17:02:31] Starting the server
+TRACE: [Mar 10 2023 | 17:02:31] Creating daemon process
+TRACE: [Mar 10 2023 | 17:02:31] Child pid: 21586
+TRACE: [Mar 10 2023 | 17:02:31] Database initialization
+TRACE: [Mar 10 2023 | 17:02:31] Wainitng for connection ...
+INFO: [Mar 10 2023 | 17:02:31] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:02:31] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:02:31] Handling logging in
+TRACE: [Mar 10 2023 | 17:02:31] Admin
+TRACE: [Mar 10 2023 | 17:02:31] 123456
+TRACE: [Mar 10 2023 | 17:02:31] Checking password
+TRACE: [Mar 10 2023 | 17:02:31] Everything is fine
+TRACE: [Mar 10 2023 | 17:02:31] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ch"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"O"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room2","id":2}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ops"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"O"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room2","id":2}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"s"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"m,"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"d"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"d"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"ddd"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"ddddd"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"dddddddddd"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"U"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ucha"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Uch"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"d"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"d"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"m"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room2","id":2}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"i"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"j"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"jk"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"R"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room2","id":2}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ro"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room2","id":2}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"l"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"i"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"o"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room2","id":2}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"n"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"n"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"k"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+INFO: [Mar 10 2023 | 17:02:31] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:02:31] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:02:31] Handling logging in
+TRACE: [Mar 10 2023 | 17:02:31] Admin
+TRACE: [Mar 10 2023 | 17:02:31] 123456
+TRACE: [Mar 10 2023 | 17:02:31] Checking password
+TRACE: [Mar 10 2023 | 17:02:31] Everything is fine
+TRACE: [Mar 10 2023 | 17:02:31] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Che"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Chesss"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Chess"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"d"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ch"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"U"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Chess"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Chess"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":" ;l;"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":" ;l;djjj"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":" ;l;djjjsds"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"nn"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"Ch"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":2,"name":"room3"}
+TRACE: [Mar 10 2023 | 17:02:31] Creating new chat
+TRACE: [Mar 10 2023 | 17:02:31] room3
+TRACE: [Mar 10 2023 | 17:02:31] mx_add_room_member()
+TRACE: [Mar 10 2023 | 17:02:31] {"rtype":4}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"che"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"ches"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"sssss"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"ss"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":3,"pattern":"che"}
+TRACE: [Mar 10 2023 | 17:02:31] Chat search request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:02:31] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:02:31] Get joined chats request
+TRACE: [Mar 10 2023 | 17:02:31] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Starting the server
+TRACE: [Mar 10 2023 | 17:31:30] Creating daemon process
+TRACE: [Mar 10 2023 | 17:31:30] Child pid: 22882
+TRACE: [Mar 10 2023 | 17:31:30] Database initialization
+TRACE: [Mar 10 2023 | 17:31:30] Wainitng for connection ...
+INFO: [Mar 10 2023 | 17:31:30] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:31:30] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:31:30] Handling logging in
+TRACE: [Mar 10 2023 | 17:31:30] Admin
+TRACE: [Mar 10 2023 | 17:31:30] 123456
+TRACE: [Mar 10 2023 | 17:31:30] Checking password
+TRACE: [Mar 10 2023 | 17:31:30] Everything is fine
+TRACE: [Mar 10 2023 | 17:31:30] {"rtype":3}
+INFO: [Mar 10 2023 | 17:31:30] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:31:30] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:31:30] Handling logging in
+TRACE: [Mar 10 2023 | 17:31:30] Admin
+TRACE: [Mar 10 2023 | 17:31:30] 123456
+TRACE: [Mar 10 2023 | 17:31:30] Checking password
+TRACE: [Mar 10 2023 | 17:31:30] Everything is fine
+TRACE: [Mar 10 2023 | 17:31:30] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"  "}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"  h"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Chess"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Che"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Chess"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Che"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Che"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Che"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Ch"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"f"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"fk"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"che"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"c"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"d"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"ch"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 10 2023 | 17:31:30] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:31:30] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:31:30] Handling logging in
+TRACE: [Mar 10 2023 | 17:31:30] Admin
+TRACE: [Mar 10 2023 | 17:31:30] 123456
+TRACE: [Mar 10 2023 | 17:31:30] Checking password
+TRACE: [Mar 10 2023 | 17:31:30] Everything is fine
+TRACE: [Mar 10 2023 | 17:31:30] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Ches"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"c"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":3,"pattern":"Ch"}
+TRACE: [Mar 10 2023 | 17:31:30] Chat search request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:31:30] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:31:30] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:31:30] Handling logging in
+TRACE: [Mar 10 2023 | 17:31:30] Admin
+TRACE: [Mar 10 2023 | 17:31:30] 123456
+TRACE: [Mar 10 2023 | 17:31:30] Checking password
+TRACE: [Mar 10 2023 | 17:31:30] Everything is fine
+TRACE: [Mar 10 2023 | 17:31:30] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:31:30] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:31:30] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:31:30] Handling logging in
+TRACE: [Mar 10 2023 | 17:31:30] Admin
+TRACE: [Mar 10 2023 | 17:31:30] 123456
+TRACE: [Mar 10 2023 | 17:31:30] Checking password
+TRACE: [Mar 10 2023 | 17:31:30] Everything is fine
+TRACE: [Mar 10 2023 | 17:31:30] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:31:30] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:31:30] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:31:30] Handling logging in
+TRACE: [Mar 10 2023 | 17:31:30] Admin
+TRACE: [Mar 10 2023 | 17:31:30] 123456
+TRACE: [Mar 10 2023 | 17:31:30] Checking password
+TRACE: [Mar 10 2023 | 17:31:30] Everything is fine
+TRACE: [Mar 10 2023 | 17:31:30] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:31:30] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:31:30] Get joined chats request
+TRACE: [Mar 10 2023 | 17:31:30] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:31:30] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:50:28] Starting the server
+TRACE: [Mar 10 2023 | 17:50:28] Creating daemon process
+TRACE: [Mar 10 2023 | 17:50:28] Child pid: 24641
+TRACE: [Mar 10 2023 | 17:50:28] Database initialization
+TRACE: [Mar 10 2023 | 17:50:28] Wainitng for connection ...
+INFO: [Mar 10 2023 | 17:50:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:50:28] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:50:28] Handling logging in
+TRACE: [Mar 10 2023 | 17:50:28] Admin
+TRACE: [Mar 10 2023 | 17:50:28] 123456
+TRACE: [Mar 10 2023 | 17:50:28] Checking password
+TRACE: [Mar 10 2023 | 17:50:28] Everything is fine
+TRACE: [Mar 10 2023 | 17:50:28] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:50:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:50:28] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:50:28] Handling logging in
+TRACE: [Mar 10 2023 | 17:50:28] Admin
+TRACE: [Mar 10 2023 | 17:50:28] 123456
+TRACE: [Mar 10 2023 | 17:50:28] Checking password
+TRACE: [Mar 10 2023 | 17:50:28] Everything is fine
+TRACE: [Mar 10 2023 | 17:50:28] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 17:50:28] Chat search request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:50:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:50:28] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:50:28] Handling logging in
+TRACE: [Mar 10 2023 | 17:50:28] Admin
+TRACE: [Mar 10 2023 | 17:50:28] 123456
+TRACE: [Mar 10 2023 | 17:50:28] Checking password
+TRACE: [Mar 10 2023 | 17:50:28] Everything is fine
+TRACE: [Mar 10 2023 | 17:50:28] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 17:50:28] Chat search request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 10 2023 | 17:50:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:50:28] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:50:28] Handling logging in
+TRACE: [Mar 10 2023 | 17:50:28] Admin
+TRACE: [Mar 10 2023 | 17:50:28] 123456
+TRACE: [Mar 10 2023 | 17:50:28] Checking password
+TRACE: [Mar 10 2023 | 17:50:28] Everything is fine
+TRACE: [Mar 10 2023 | 17:50:28] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 17:50:28] Chat search request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:50:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:50:28] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:50:28] Handling logging in
+TRACE: [Mar 10 2023 | 17:50:28] Admin
+TRACE: [Mar 10 2023 | 17:50:28] 123456
+TRACE: [Mar 10 2023 | 17:50:28] Checking password
+TRACE: [Mar 10 2023 | 17:50:28] Everything is fine
+TRACE: [Mar 10 2023 | 17:50:28] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 17:50:28] Chat search request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:50:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 17:50:28] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 17:50:28] Handling logging in
+TRACE: [Mar 10 2023 | 17:50:28] Admin
+TRACE: [Mar 10 2023 | 17:50:28] 123456
+TRACE: [Mar 10 2023 | 17:50:28] Checking password
+TRACE: [Mar 10 2023 | 17:50:28] Everything is fine
+TRACE: [Mar 10 2023 | 17:50:28] {"rtype":3}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 17:50:28] Chat search request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 17:50:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 17:50:28] Get joined chats request
+TRACE: [Mar 10 2023 | 17:50:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 17:50:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:02:57] Starting the server
+TRACE: [Mar 10 2023 | 18:02:57] Creating daemon process
+TRACE: [Mar 10 2023 | 18:02:57] Child pid: 26272
+TRACE: [Mar 10 2023 | 18:02:57] Database initialization
+TRACE: [Mar 10 2023 | 18:02:57] Wainitng for connection ...
+INFO: [Mar 10 2023 | 18:02:57] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:02:57] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:02:57] Handling logging in
+TRACE: [Mar 10 2023 | 18:02:57] Admin
+TRACE: [Mar 10 2023 | 18:02:57] 123456
+TRACE: [Mar 10 2023 | 18:02:57] Checking password
+TRACE: [Mar 10 2023 | 18:02:57] Everything is fine
+TRACE: [Mar 10 2023 | 18:02:57] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:02:57] Get joined chats request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 18:02:57] Chat search request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:02:57] Get joined chats request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 18:02:57] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:02:57] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:02:57] Handling logging in
+TRACE: [Mar 10 2023 | 18:02:57] Admin
+TRACE: [Mar 10 2023 | 18:02:57] 123456
+TRACE: [Mar 10 2023 | 18:02:57] Checking password
+TRACE: [Mar 10 2023 | 18:02:57] Everything is fine
+TRACE: [Mar 10 2023 | 18:02:57] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:02:57] Get joined chats request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 10 2023 | 18:02:57] Chat search request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[],"rtype":8}
+INFO: [Mar 10 2023 | 18:02:57] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:02:57] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:02:57] Handling logging in
+TRACE: [Mar 10 2023 | 18:02:57] Admin
+TRACE: [Mar 10 2023 | 18:02:57] 123456
+TRACE: [Mar 10 2023 | 18:02:57] Checking password
+TRACE: [Mar 10 2023 | 18:02:57] Everything is fine
+TRACE: [Mar 10 2023 | 18:02:57] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:02:57] Get joined chats request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 18:02:57] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:02:57] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:02:57] Handling logging in
+TRACE: [Mar 10 2023 | 18:02:57] Admin
+TRACE: [Mar 10 2023 | 18:02:57] 123456
+TRACE: [Mar 10 2023 | 18:02:57] Checking password
+TRACE: [Mar 10 2023 | 18:02:57] Everything is fine
+TRACE: [Mar 10 2023 | 18:02:57] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:02:57] Get joined chats request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 18:02:57] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:02:57] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:02:57] Handling logging in
+TRACE: [Mar 10 2023 | 18:02:57] Admin
+TRACE: [Mar 10 2023 | 18:02:57] 123456
+TRACE: [Mar 10 2023 | 18:02:57] Checking password
+TRACE: [Mar 10 2023 | 18:02:57] Everything is fine
+TRACE: [Mar 10 2023 | 18:02:57] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:02:57] Get joined chats request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 18:02:57] Chat search request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:02:57] Get joined chats request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 18:02:57] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:02:57] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:02:57] Handling logging in
+TRACE: [Mar 10 2023 | 18:02:57] Admin
+TRACE: [Mar 10 2023 | 18:02:57] 123456
+TRACE: [Mar 10 2023 | 18:02:57] Checking password
+TRACE: [Mar 10 2023 | 18:02:57] Everything is fine
+TRACE: [Mar 10 2023 | 18:02:57] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:02:57] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:02:57] Get joined chats request
+TRACE: [Mar 10 2023 | 18:02:57] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 18:02:57] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:29:28] Starting the server
+TRACE: [Mar 10 2023 | 18:29:28] Creating daemon process
+TRACE: [Mar 10 2023 | 18:29:28] Child pid: 28733
+TRACE: [Mar 10 2023 | 18:29:28] Database initialization
+TRACE: [Mar 10 2023 | 18:29:28] Wainitng for connection ...
+INFO: [Mar 10 2023 | 18:29:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:29:28] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:29:28] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:29:28] Handling logging in
+TRACE: [Mar 10 2023 | 18:29:28] Admin
+TRACE: [Mar 10 2023 | 18:29:28] 123456
+TRACE: [Mar 10 2023 | 18:29:28] Checking password
+TRACE: [Mar 10 2023 | 18:29:28] Everything is fine
+TRACE: [Mar 10 2023 | 18:29:28] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:29:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:29:28] Get joined chats request
+TRACE: [Mar 10 2023 | 18:29:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+INFO: [Mar 10 2023 | 18:29:28] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:29:28] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:29:28] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:29:28] Handling logging in
+TRACE: [Mar 10 2023 | 18:29:28] Admin
+TRACE: [Mar 10 2023 | 18:29:28] 123456
+TRACE: [Mar 10 2023 | 18:29:28] Checking password
+TRACE: [Mar 10 2023 | 18:29:28] Everything is fine
+TRACE: [Mar 10 2023 | 18:29:28] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:29:28] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:29:28] Get joined chats request
+TRACE: [Mar 10 2023 | 18:29:28] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:29:28] Request was received: 
+TRACE: [Mar 10 2023 | 18:30:34] Starting the server
+TRACE: [Mar 10 2023 | 18:30:34] Creating daemon process
+TRACE: [Mar 10 2023 | 18:30:34] Child pid: 28956
+TRACE: [Mar 10 2023 | 18:30:34] Database initialization
+TRACE: [Mar 10 2023 | 18:30:34] Wainitng for connection ...
+INFO: [Mar 10 2023 | 18:30:34] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:30:34] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:30:34] Handling logging in
+TRACE: [Mar 10 2023 | 18:30:34] Admin
+TRACE: [Mar 10 2023 | 18:30:34] 123456
+TRACE: [Mar 10 2023 | 18:30:34] Checking password
+TRACE: [Mar 10 2023 | 18:30:34] Everything is fine
+TRACE: [Mar 10 2023 | 18:30:34] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":2,"name":"room4"}
+TRACE: [Mar 10 2023 | 18:30:34] Creating new chat
+TRACE: [Mar 10 2023 | 18:30:34] room4
+TRACE: [Mar 10 2023 | 18:30:34] mx_add_room_member()
+TRACE: [Mar 10 2023 | 18:30:34] {"rtype":4}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7}],"rtype":12}
+INFO: [Mar 10 2023 | 18:30:34] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:30:34] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:30:34] Handling logging in
+TRACE: [Mar 10 2023 | 18:30:34] Admin
+TRACE: [Mar 10 2023 | 18:30:34] 123456
+TRACE: [Mar 10 2023 | 18:30:34] Checking password
+TRACE: [Mar 10 2023 | 18:30:34] Everything is fine
+TRACE: [Mar 10 2023 | 18:30:34] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":2,"name":"room5"}
+TRACE: [Mar 10 2023 | 18:30:34] Creating new chat
+TRACE: [Mar 10 2023 | 18:30:34] room5
+TRACE: [Mar 10 2023 | 18:30:34] mx_add_room_member()
+TRACE: [Mar 10 2023 | 18:30:34] {"rtype":4}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+INFO: [Mar 10 2023 | 18:30:34] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:30:34] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:30:34] Handling logging in
+TRACE: [Mar 10 2023 | 18:30:34] Admin
+TRACE: [Mar 10 2023 | 18:30:34] 123456
+TRACE: [Mar 10 2023 | 18:30:34] Checking password
+TRACE: [Mar 10 2023 | 18:30:34] Everything is fine
+TRACE: [Mar 10 2023 | 18:30:34] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 10 2023 | 18:30:34] New client was connected: 127.0.0.1
+TRACE: [Mar 10 2023 | 18:30:34] Wainitng for connection ...
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 10 2023 | 18:30:34] Handling logging in
+TRACE: [Mar 10 2023 | 18:30:34] Admin
+TRACE: [Mar 10 2023 | 18:30:34] 123456
+TRACE: [Mar 10 2023 | 18:30:34] Checking password
+TRACE: [Mar 10 2023 | 18:30:34] Everything is fine
+TRACE: [Mar 10 2023 | 18:30:34] {"rtype":3}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"j"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"j"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"e"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"ess"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":3,"pattern":"e"}
+TRACE: [Mar 10 2023 | 18:30:34] Chat search request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 10 2023 | 18:30:34] Request was received: {"rtype":9}
+TRACE: [Mar 10 2023 | 18:30:34] Get joined chats request
+TRACE: [Mar 10 2023 | 18:30:34] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:18:08] Starting the server
+TRACE: [Mar 11 2023 | 15:18:08] Creating daemon process
+TRACE: [Mar 11 2023 | 15:18:08] Child pid: 5955
+TRACE: [Mar 11 2023 | 15:18:08] Database initialization
+TRACE: [Mar 11 2023 | 15:18:08] Wainitng for connection ...
+INFO: [Mar 11 2023 | 15:18:08] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 15:18:08] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 15:18:08] Handling logging in
+TRACE: [Mar 11 2023 | 15:18:08] Admin
+TRACE: [Mar 11 2023 | 15:18:08] 123456
+TRACE: [Mar 11 2023 | 15:18:08] Checking password
+TRACE: [Mar 11 2023 | 15:18:08] Everything is fine
+TRACE: [Mar 11 2023 | 15:18:08] {"rtype":3}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:18:08] Get joined chats request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":3,"pattern":" "}
+TRACE: [Mar 11 2023 | 15:18:08] Chat search request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[],"rtype":8}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:18:08] Get joined chats request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":3,"pattern":"U"}
+TRACE: [Mar 11 2023 | 15:18:08] Chat search request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[],"rtype":8}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:18:08] Get joined chats request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":3,"pattern":"Ch"}
+TRACE: [Mar 11 2023 | 15:18:08] Chat search request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 15:18:08] Chat search request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:18:08] Get joined chats request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+INFO: [Mar 11 2023 | 15:18:08] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 15:18:08] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 15:18:08] Handling logging in
+TRACE: [Mar 11 2023 | 15:18:08] Admin
+TRACE: [Mar 11 2023 | 15:18:08] 123456
+TRACE: [Mar 11 2023 | 15:18:08] Checking password
+TRACE: [Mar 11 2023 | 15:18:08] Everything is fine
+TRACE: [Mar 11 2023 | 15:18:08] {"rtype":3}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:18:08] Get joined chats request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:18:08] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 15:18:08] Chat search request
+TRACE: [Mar 11 2023 | 15:18:08] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 15:49:10] Starting the server
+TRACE: [Mar 11 2023 | 15:49:10] Creating daemon process
+TRACE: [Mar 11 2023 | 15:49:10] Child pid: 5444
+TRACE: [Mar 11 2023 | 15:49:10] Database initialization
+TRACE: [Mar 11 2023 | 15:49:10] Wainitng for connection ...
+INFO: [Mar 11 2023 | 15:49:10] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 15:49:10] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 15:49:10] Handling logging in
+TRACE: [Mar 11 2023 | 15:49:10] Admin
+TRACE: [Mar 11 2023 | 15:49:10] 123456
+TRACE: [Mar 11 2023 | 15:49:10] Checking password
+TRACE: [Mar 11 2023 | 15:49:10] Everything is fine
+TRACE: [Mar 11 2023 | 15:49:10] {"rtype":3}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:49:10] Get joined chats request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 15:49:10] Chat search request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 11 2023 | 15:49:10] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 15:49:10] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 15:49:10] Handling logging in
+TRACE: [Mar 11 2023 | 15:49:10] Admin
+TRACE: [Mar 11 2023 | 15:49:10] 123456
+TRACE: [Mar 11 2023 | 15:49:10] Checking password
+TRACE: [Mar 11 2023 | 15:49:10] Everything is fine
+TRACE: [Mar 11 2023 | 15:49:10] {"rtype":3}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:49:10] Get joined chats request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 15:49:10] Chat search request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 11 2023 | 15:49:10] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 15:49:10] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":0,"login":"Admin","password":"12345"}
+TRACE: [Mar 11 2023 | 15:49:10] Handling logging in
+TRACE: [Mar 11 2023 | 15:49:10] Admin
+TRACE: [Mar 11 2023 | 15:49:10] 12345
+TRACE: [Mar 11 2023 | 15:49:10] Checking password
+TRACE: [Mar 11 2023 | 15:49:10] Password is incorrect
+TRACE: [Mar 11 2023 | 15:49:10] {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 15:49:10] Handling logging in
+TRACE: [Mar 11 2023 | 15:49:10] Admin
+TRACE: [Mar 11 2023 | 15:49:10] 123456
+TRACE: [Mar 11 2023 | 15:49:10] Checking password
+TRACE: [Mar 11 2023 | 15:49:10] Everything is fine
+TRACE: [Mar 11 2023 | 15:49:10] {"rtype":3}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:49:10] Get joined chats request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 15:49:10] Chat search request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 11 2023 | 15:49:10] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 15:49:10] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 15:49:10] Handling logging in
+TRACE: [Mar 11 2023 | 15:49:10] Admin
+TRACE: [Mar 11 2023 | 15:49:10] 123456
+TRACE: [Mar 11 2023 | 15:49:10] Checking password
+TRACE: [Mar 11 2023 | 15:49:10] Everything is fine
+TRACE: [Mar 11 2023 | 15:49:10] {"rtype":3}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:49:10] Get joined chats request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 15:49:10] Chat search request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 11 2023 | 15:49:10] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 15:49:10] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 15:49:10] Handling logging in
+TRACE: [Mar 11 2023 | 15:49:10] Admin
+TRACE: [Mar 11 2023 | 15:49:10] 123456
+TRACE: [Mar 11 2023 | 15:49:10] Checking password
+TRACE: [Mar 11 2023 | 15:49:10] Everything is fine
+TRACE: [Mar 11 2023 | 15:49:10] {"rtype":3}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:49:10] Get joined chats request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 15:49:10] Chat search request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 11 2023 | 15:49:10] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 15:49:10] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 15:49:10] Handling logging in
+TRACE: [Mar 11 2023 | 15:49:10] Admin
+TRACE: [Mar 11 2023 | 15:49:10] 123456
+TRACE: [Mar 11 2023 | 15:49:10] Checking password
+TRACE: [Mar 11 2023 | 15:49:10] Everything is fine
+TRACE: [Mar 11 2023 | 15:49:10] {"rtype":3}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 15:49:10] Get joined chats request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 15:49:10] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 15:49:10] Chat search request
+TRACE: [Mar 11 2023 | 15:49:10] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 11 2023 | 15:49:10] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:12:21] Starting the server
+TRACE: [Mar 11 2023 | 16:12:21] Creating daemon process
+TRACE: [Mar 11 2023 | 16:12:21] Child pid: 8029
+TRACE: [Mar 11 2023 | 16:12:21] Database initialization
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+INFO: [Mar 11 2023 | 16:12:21] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:12:21] Handling logging in
+TRACE: [Mar 11 2023 | 16:12:21] Admin
+TRACE: [Mar 11 2023 | 16:12:21] 123456
+TRACE: [Mar 11 2023 | 16:12:21] Checking password
+TRACE: [Mar 11 2023 | 16:12:21] Everything is fine
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: 
+TRACE: [Mar 11 2023 | 16:12:21] Starting the server
+TRACE: [Mar 11 2023 | 16:12:21] Creating daemon process
+TRACE: [Mar 11 2023 | 16:12:21] Child pid: 8054
+TRACE: [Mar 11 2023 | 16:12:21] Database initialization
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+INFO: [Mar 11 2023 | 16:12:21] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:12:21] Handling logging in
+TRACE: [Mar 11 2023 | 16:12:21] Admin
+TRACE: [Mar 11 2023 | 16:12:21] 123456
+TRACE: [Mar 11 2023 | 16:12:21] Checking password
+TRACE: [Mar 11 2023 | 16:12:21] Everything is fine
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:12:21] Chat search request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+INFO: [Mar 11 2023 | 16:12:21] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:12:21] Handling logging in
+TRACE: [Mar 11 2023 | 16:12:21] Admin
+TRACE: [Mar 11 2023 | 16:12:21] 123456
+TRACE: [Mar 11 2023 | 16:12:21] Checking password
+TRACE: [Mar 11 2023 | 16:12:21] Everything is fine
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:12:21] Chat search request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":4,"room_id":0}
+TRACE: [Mar 11 2023 | 16:12:21] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":7}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:12:21] Chat search request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:12:21] Chat search request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":4,"room_id":0}
+TRACE: [Mar 11 2023 | 16:12:21] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":7}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+INFO: [Mar 11 2023 | 16:12:21] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:12:21] Handling logging in
+TRACE: [Mar 11 2023 | 16:12:21] Admin
+TRACE: [Mar 11 2023 | 16:12:21] 123456
+TRACE: [Mar 11 2023 | 16:12:21] Checking password
+TRACE: [Mar 11 2023 | 16:12:21] Everything is fine
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:12:21] Chat search request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":4,"room_id":0}
+TRACE: [Mar 11 2023 | 16:12:21] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":7}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":4,"room_id":0}
+TRACE: [Mar 11 2023 | 16:12:21] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":7}
+INFO: [Mar 11 2023 | 16:12:21] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:12:21] Handling logging in
+TRACE: [Mar 11 2023 | 16:12:21] Admin
+TRACE: [Mar 11 2023 | 16:12:21] 123456
+TRACE: [Mar 11 2023 | 16:12:21] Checking password
+TRACE: [Mar 11 2023 | 16:12:21] Everything is fine
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:12:21] Chat search request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":4,"room_id":0}
+TRACE: [Mar 11 2023 | 16:12:21] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":7}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":4,"room_id":0}
+TRACE: [Mar 11 2023 | 16:12:21] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":7}
+INFO: [Mar 11 2023 | 16:12:21] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:12:21] Handling logging in
+TRACE: [Mar 11 2023 | 16:12:21] Admin
+TRACE: [Mar 11 2023 | 16:12:21] 123456
+TRACE: [Mar 11 2023 | 16:12:21] Checking password
+TRACE: [Mar 11 2023 | 16:12:21] Everything is fine
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:12:21] Chat search request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":4,"room_id":0}
+TRACE: [Mar 11 2023 | 16:12:21] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":7}
+INFO: [Mar 11 2023 | 16:12:21] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:12:21] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:12:21] Handling logging in
+TRACE: [Mar 11 2023 | 16:12:21] Admin
+TRACE: [Mar 11 2023 | 16:12:21] 123456
+TRACE: [Mar 11 2023 | 16:12:21] Checking password
+TRACE: [Mar 11 2023 | 16:12:21] Everything is fine
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:12:21] Chat search request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":4,"room_id":5}
+TRACE: [Mar 11 2023 | 16:12:21] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:12:21] {"rtype":7}
+TRACE: [Mar 11 2023 | 16:12:21] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:12:21] Get joined chats request
+TRACE: [Mar 11 2023 | 16:12:21] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+INFO: [Mar 11 2023 | 16:12:21] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:35:26] Starting the server
+TRACE: [Mar 11 2023 | 16:35:26] Creating daemon process
+TRACE: [Mar 11 2023 | 16:35:26] Child pid: 11079
+TRACE: [Mar 11 2023 | 16:35:26] Database initialization
+TRACE: [Mar 11 2023 | 16:35:26] Wainitng for connection ...
+INFO: [Mar 11 2023 | 16:35:26] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:35:26] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:35:26] Handling logging in
+TRACE: [Mar 11 2023 | 16:35:26] Admin
+TRACE: [Mar 11 2023 | 16:35:26] 123456
+TRACE: [Mar 11 2023 | 16:35:26] Checking password
+TRACE: [Mar 11 2023 | 16:35:26] Everything is fine
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:35:26] Chat search request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"Chess","id":4}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":4,"room_id":4}
+TRACE: [Mar 11 2023 | 16:35:26] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":7}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+INFO: [Mar 11 2023 | 16:35:26] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:35:26] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":0,"login":"Admin","password":"123456"}
+TRACE: [Mar 11 2023 | 16:35:26] Handling logging in
+TRACE: [Mar 11 2023 | 16:35:26] Admin
+TRACE: [Mar 11 2023 | 16:35:26] 123456
+TRACE: [Mar 11 2023 | 16:35:26] Checking password
+TRACE: [Mar 11 2023 | 16:35:26] Everything is fine
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":3,"pattern":"C"}
+TRACE: [Mar 11 2023 | 16:35:26] Chat search request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[],"rtype":8}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":2,"name":"test404"}
+TRACE: [Mar 11 2023 | 16:35:26] Creating new chat
+TRACE: [Mar 11 2023 | 16:35:26] test404
+TRACE: [Mar 11 2023 | 16:35:26] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":4}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8},{"name":"test404","id":9}],"rtype":12}
+INFO: [Mar 11 2023 | 16:35:26] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:35:26] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":0,"login":"Serg","password":"123456"}
+TRACE: [Mar 11 2023 | 16:35:26] Handling logging in
+TRACE: [Mar 11 2023 | 16:35:26] Serg
+TRACE: [Mar 11 2023 | 16:35:26] 123456
+TRACE: [Mar 11 2023 | 16:35:26] Checking password
+TRACE: [Mar 11 2023 | 16:35:26] Everything is fine
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 11 2023 | 16:35:26] Chat search request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":4,"room_id":1}
+TRACE: [Mar 11 2023 | 16:35:26] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":7}
+INFO: [Mar 11 2023 | 16:35:26] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:35:26] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":0,"login":"Serg","password":"123456"}
+TRACE: [Mar 11 2023 | 16:35:26] Handling logging in
+TRACE: [Mar 11 2023 | 16:35:26] Serg
+TRACE: [Mar 11 2023 | 16:35:26] 123456
+TRACE: [Mar 11 2023 | 16:35:26] Checking password
+TRACE: [Mar 11 2023 | 16:35:26] Everything is fine
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":3,"pattern":"t"}
+TRACE: [Mar 11 2023 | 16:35:26] Chat search request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"test404","id":9}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+INFO: [Mar 11 2023 | 16:35:26] New client was connected: 127.0.0.1
+TRACE: [Mar 11 2023 | 16:35:26] Wainitng for connection ...
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":0,"login":"Serg","password":"123456"}
+TRACE: [Mar 11 2023 | 16:35:26] Handling logging in
+TRACE: [Mar 11 2023 | 16:35:26] Serg
+TRACE: [Mar 11 2023 | 16:35:26] 123456
+TRACE: [Mar 11 2023 | 16:35:26] Checking password
+TRACE: [Mar 11 2023 | 16:35:26] Everything is fine
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":3}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"Chess","id":4},{"name":"Chess2","id":5}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":3,"pattern":"t"}
+TRACE: [Mar 11 2023 | 16:35:26] Chat search request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"test404","id":9}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":4,"room_id":9}
+TRACE: [Mar 11 2023 | 16:35:26] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":7}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"test404","id":9}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":3,"pattern":"r"}
+TRACE: [Mar 11 2023 | 16:35:26] Chat search request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room2","id":2},{"name":"room2","id":3},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8}],"rtype":8}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":4,"room_id":2}
+TRACE: [Mar 11 2023 | 16:35:26] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":7}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"test404","id":9}],"rtype":12}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":2,"name":"blabla"}
+TRACE: [Mar 11 2023 | 16:35:26] Creating new chat
+TRACE: [Mar 11 2023 | 16:35:26] blabla
+TRACE: [Mar 11 2023 | 16:35:26] mx_add_room_member()
+TRACE: [Mar 11 2023 | 16:35:26] {"rtype":4}
+TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
+TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
+TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"test404","id":9},{"name":"blabla","id":10}],"rtype":12}

@@ -5,6 +5,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 
 
 	chat_window_t* window = malloc(sizeof(chat_window_t));
+	window->search_t = clock();
 
 	window->builder = gtk_builder_new_from_file(CHAT_WIND_XML_PATH);
 
@@ -23,7 +24,11 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->chats_list_grid = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_grid"));
 	window->add_chat_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "add_chat_btn"));
 	window->search_entry = GTK_WIDGET(gtk_builder_get_object(window->builder, "search_entry"));
+	window->chat_name = GTK_WIDGET(gtk_builder_get_object(window->builder, "chat_name"));
 	window->elements_were_attached = 0;
+
+	//gtk_search_entry_set_search_delay(window->search_entry, (guint)400);
+
 
 	g_signal_connect(window->add_chat_btn, "released", G_CALLBACK(mx_on_create_chat_btn_clicked), client);
 	g_signal_connect(window->search_entry, "search-changed", G_CALLBACK(mx_on_search_changed), client);
