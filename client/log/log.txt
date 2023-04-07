@@ -418,3 +418,53 @@ TRACE: [Mar 11 2023 | 16:41:55] Response was received: {"rtype":7}
 TRACE: [Mar 11 2023 | 16:41:55] Response was received: {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"test404","id":9}],"rtype":12}
 TRACE: [Mar 11 2023 | 16:41:55] Response was received: {"rtype":4}
 TRACE: [Mar 11 2023 | 16:41:55] Response was received: {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"test404","id":9},{"name":"blabla","id":10}],"rtype":12}
+TRACE: [Apr  7 2023 | 11:39:10] Response was received: {"rtype":2}
+TRACE: [Apr  7 2023 | 11:39:10] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 11:39:10] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 11:39:10] Response was received: {"chats":[{"name":"MY room","id":11}],"rtype":12}
+TRACE: [Apr  7 2023 | 11:39:10] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 11:39:10] Response was received: {"chats":[{"name":"MY room","id":11},{"name":"qwer","id":12}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:24:43] Response was received: {"rtype":2}
+TRACE: [Apr  7 2023 | 12:24:43] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:24:43] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:24:43] Response was received: {"chats":[{"name":"room","id":13}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:24:43] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:24:43] Response was received: {"chats":[{"name":"room","id":13},{"name":"rewq","id":14}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:28:39] Response was received: {"rtype":2}
+TRACE: [Apr  7 2023 | 12:28:39] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:28:39] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:28:39] Response was received: {"chats":[{"name":"kool","id":15}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:30:00] Response was received: {"rtype":2}
+TRACE: [Apr  7 2023 | 12:30:00] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:30:00] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:30:00] Response was received: {"chats":[{"name":"qwerty","id":16}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:31:20] Response was received: {"rtype":2}
+TRACE: [Apr  7 2023 | 12:31:20] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Response was received: {"rtype":2}
+TRACE: [Apr  7 2023 | 12:39:43] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Response was received: {"chats":[{"name":"room","id":18}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Response was received: {"chats":[{"name":"room","id":18},{"name":"chat","id":19}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"rtype":2}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"chats":[{"name":"qwert","id":20}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21},{"name":"loop","id":22}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"rtype":5,"message":"Chat name should have less than 32 characters"}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21},{"name":"loop","id":22},{"name":"123","id":23}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21},{"name":"loop","id":22},{"name":"123","id":23},{"name":"wtf","id":24}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 12:49:03] Response was received: {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21},{"name":"loop","id":22},{"name":"123","id":23},{"name":"wtf","id":24},{"name":"okay","id":25}],"rtype":12}
+TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"rtype":1,"message":"This username already exists"}
+TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"rtype":2}
+TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"chats":[{"name":"room2","id":26}],"rtype":12}
+TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"rtype":4}
+TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"chats":[{"name":"room2","id":26},{"name":"UCHAT","id":27}],"rtype":12}

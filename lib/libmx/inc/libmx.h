@@ -31,6 +31,8 @@ bool mx_isletter(char c);
 
 bool mx_isdigit(char c);
 
+int mx_toupper(int c);
+
 void mx_print_unicode(wchar_t c);
 
 void mx_printstr(const char *s);

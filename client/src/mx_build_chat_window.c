@@ -18,14 +18,19 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	gtk_builder_connect_signals(window->builder, NULL);
 
 	window->main_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "main_box"));
-	window->left_side_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "left_side_box"));
+	window->chats_list_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_box"));
 	window->chats_list_scrlldwnd = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_scrlldwnd"));
 	window->chats_list_view = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_view"));
 	window->chats_list_grid = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_grid"));
 	window->add_chat_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "add_chat_btn"));
 	window->search_entry = GTK_WIDGET(gtk_builder_get_object(window->builder, "search_entry"));
-	window->chat_name = GTK_WIDGET(gtk_builder_get_object(window->builder, "chat_name"));
 	window->elements_were_attached = 0;
+	
+	window->selected_chat_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_chat_box"));
+	window->chat_name_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "chat_name_label"));
+	window->chat_settings_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "chat_settings_btn"));
+	window->chat_info_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "chat_info_btn"));
+	window->msgs_list_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "msgs_list_box"));
 
 	//gtk_search_entry_set_search_delay(window->search_entry, (guint)400);
 
