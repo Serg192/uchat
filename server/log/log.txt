@@ -1715,3 +1715,247 @@ TRACE: [Mar 11 2023 | 16:35:26] {"rtype":4}
 TRACE: [Mar 11 2023 | 16:35:26] Request was received: {"rtype":9}
 TRACE: [Mar 11 2023 | 16:35:26] Get joined chats request
 TRACE: [Mar 11 2023 | 16:35:26] {"chats":[{"name":"room1","id":1},{"name":"room2","id":2},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"test404","id":9},{"name":"blabla","id":10}],"rtype":12}
+TRACE: [Apr  7 2023 | 11:39:10] Starting the server
+TRACE: [Apr  7 2023 | 11:39:10] Creating daemon process
+TRACE: [Apr  7 2023 | 11:39:10] Child pid: 3599
+TRACE: [Apr  7 2023 | 11:39:10] Database initialization
+TRACE: [Apr  7 2023 | 11:39:10] Wainitng for connection ...
+INFO: [Apr  7 2023 | 11:39:10] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 11:39:10] Wainitng for connection ...
+TRACE: [Apr  7 2023 | 11:39:10] Request was received: {"rtype":1,"login":"admin","password":"admin"}
+TRACE: [Apr  7 2023 | 11:39:10] Handling registration
+TRACE: [Apr  7 2023 | 11:39:10] admin
+TRACE: [Apr  7 2023 | 11:39:10] admin
+TRACE: [Apr  7 2023 | 11:39:10] add user
+TRACE: [Apr  7 2023 | 11:39:10] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 11:39:10] Get joined chats request
+TRACE: [Apr  7 2023 | 11:39:10] {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 11:39:10] Request was received: {"rtype":2,"name":"MY room"}
+TRACE: [Apr  7 2023 | 11:39:10] Creating new chat
+TRACE: [Apr  7 2023 | 11:39:10] MY room
+TRACE: [Apr  7 2023 | 11:39:10] mx_add_room_member()
+TRACE: [Apr  7 2023 | 11:39:10] {"rtype":4}
+TRACE: [Apr  7 2023 | 11:39:10] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 11:39:10] Get joined chats request
+TRACE: [Apr  7 2023 | 11:39:10] {"chats":[{"name":"MY room","id":11}],"rtype":12}
+TRACE: [Apr  7 2023 | 11:39:10] Request was received: {"rtype":2,"name":"qwer"}
+TRACE: [Apr  7 2023 | 11:39:10] Creating new chat
+TRACE: [Apr  7 2023 | 11:39:10] qwer
+TRACE: [Apr  7 2023 | 11:39:10] mx_add_room_member()
+TRACE: [Apr  7 2023 | 11:39:10] {"rtype":4}
+TRACE: [Apr  7 2023 | 11:39:10] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 11:39:10] Get joined chats request
+TRACE: [Apr  7 2023 | 11:39:10] {"chats":[{"name":"MY room","id":11},{"name":"qwer","id":12}],"rtype":12}
+INFO: [Apr  7 2023 | 11:39:10] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 12:24:43] Starting the server
+TRACE: [Apr  7 2023 | 12:24:43] Creating daemon process
+TRACE: [Apr  7 2023 | 12:24:43] Child pid: 4487
+TRACE: [Apr  7 2023 | 12:24:43] Database initialization
+TRACE: [Apr  7 2023 | 12:24:43] Wainitng for connection ...
+INFO: [Apr  7 2023 | 12:24:43] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 12:24:43] Wainitng for connection ...
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":1,"login":"login","password":"123456"}
+TRACE: [Apr  7 2023 | 12:24:43] Handling registration
+TRACE: [Apr  7 2023 | 12:24:43] login
+TRACE: [Apr  7 2023 | 12:24:43] 123456
+TRACE: [Apr  7 2023 | 12:24:43] add user
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:24:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:24:43] {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":2,"name":"room"}
+TRACE: [Apr  7 2023 | 12:24:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:24:43] room
+TRACE: [Apr  7 2023 | 12:24:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:24:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:24:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:24:43] {"chats":[{"name":"room","id":13}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":2,"name":"rewq"}
+TRACE: [Apr  7 2023 | 12:24:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:24:43] rewq
+TRACE: [Apr  7 2023 | 12:24:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:24:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:24:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:24:43] {"chats":[{"name":"room","id":13},{"name":"rewq","id":14}],"rtype":12}
+INFO: [Apr  7 2023 | 12:24:43] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 12:24:43] Wainitng for connection ...
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":1,"login":"qwerty","password":"123456"}
+TRACE: [Apr  7 2023 | 12:24:43] Handling registration
+TRACE: [Apr  7 2023 | 12:24:43] qwerty
+TRACE: [Apr  7 2023 | 12:24:43] 123456
+TRACE: [Apr  7 2023 | 12:24:43] add user
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:24:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:24:43] {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":2,"name":"kool"}
+TRACE: [Apr  7 2023 | 12:24:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:24:43] kool
+TRACE: [Apr  7 2023 | 12:24:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:24:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:24:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:24:43] {"chats":[{"name":"kool","id":15}],"rtype":12}
+INFO: [Apr  7 2023 | 12:24:43] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 12:24:43] Wainitng for connection ...
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":1,"login":"poioyyui","password":"123456"}
+TRACE: [Apr  7 2023 | 12:24:43] Handling registration
+TRACE: [Apr  7 2023 | 12:24:43] poioyyui
+TRACE: [Apr  7 2023 | 12:24:43] 123456
+TRACE: [Apr  7 2023 | 12:24:43] add user
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:24:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:24:43] {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":2,"name":"qwerty"}
+TRACE: [Apr  7 2023 | 12:24:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:24:43] qwerty
+TRACE: [Apr  7 2023 | 12:24:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:24:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:24:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:24:43] {"chats":[{"name":"qwerty","id":16}],"rtype":12}
+INFO: [Apr  7 2023 | 12:24:43] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 12:24:43] Wainitng for connection ...
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":1,"login":"iohlhioni","password":"123456"}
+TRACE: [Apr  7 2023 | 12:24:43] Handling registration
+TRACE: [Apr  7 2023 | 12:24:43] iohlhioni
+TRACE: [Apr  7 2023 | 12:24:43] 123456
+TRACE: [Apr  7 2023 | 12:24:43] add user
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:24:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:24:43] {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:24:43] Request was received: {"rtype":2,"name":"qwerty"}
+TRACE: [Apr  7 2023 | 12:24:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:24:43] qwerty
+TRACE: [Apr  7 2023 | 12:24:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:24:43] {"rtype":4}
+INFO: [Apr  7 2023 | 12:24:43] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 12:39:43] Starting the server
+TRACE: [Apr  7 2023 | 12:39:43] Creating daemon process
+TRACE: [Apr  7 2023 | 12:39:43] Child pid: 5744
+TRACE: [Apr  7 2023 | 12:39:43] Database initialization
+TRACE: [Apr  7 2023 | 12:39:43] Wainitng for connection ...
+INFO: [Apr  7 2023 | 12:39:43] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 12:39:43] Wainitng for connection ...
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":1,"login":"qwased","password":"123456"}
+TRACE: [Apr  7 2023 | 12:39:43] Handling registration
+TRACE: [Apr  7 2023 | 12:39:43] qwased
+TRACE: [Apr  7 2023 | 12:39:43] 123456
+TRACE: [Apr  7 2023 | 12:39:43] add user
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":"room"}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] room
+TRACE: [Apr  7 2023 | 12:39:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[{"name":"room","id":18}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":"chat"}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] chat
+TRACE: [Apr  7 2023 | 12:39:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[{"name":"room","id":18},{"name":"chat","id":19}],"rtype":12}
+INFO: [Apr  7 2023 | 12:39:43] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 12:39:43] Wainitng for connection ...
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":1,"login":"qwrsaf","password":"123456"}
+TRACE: [Apr  7 2023 | 12:39:43] Handling registration
+TRACE: [Apr  7 2023 | 12:39:43] qwrsaf
+TRACE: [Apr  7 2023 | 12:39:43] 123456
+TRACE: [Apr  7 2023 | 12:39:43] add user
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":"qwert"}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] qwert
+TRACE: [Apr  7 2023 | 12:39:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[{"name":"qwert","id":20}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":"chat"}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] chat
+TRACE: [Apr  7 2023 | 12:39:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":"loop"}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] loop
+TRACE: [Apr  7 2023 | 12:39:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21},{"name":"loop","id":22}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":""}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] 
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":5,"message":"Chat name should have less than 32 characters"}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":"123"}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] 123
+TRACE: [Apr  7 2023 | 12:39:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21},{"name":"loop","id":22},{"name":"123","id":23}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":"wtf"}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] wtf
+TRACE: [Apr  7 2023 | 12:39:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21},{"name":"loop","id":22},{"name":"123","id":23},{"name":"wtf","id":24}],"rtype":12}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":2,"name":"okay"}
+TRACE: [Apr  7 2023 | 12:39:43] Creating new chat
+TRACE: [Apr  7 2023 | 12:39:43] okay
+TRACE: [Apr  7 2023 | 12:39:43] mx_add_room_member()
+TRACE: [Apr  7 2023 | 12:39:43] {"rtype":4}
+TRACE: [Apr  7 2023 | 12:39:43] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 12:39:43] Get joined chats request
+TRACE: [Apr  7 2023 | 12:39:43] {"chats":[{"name":"qwert","id":20},{"name":"chat","id":21},{"name":"loop","id":22},{"name":"123","id":23},{"name":"wtf","id":24},{"name":"okay","id":25}],"rtype":12}
+TRACE: [Apr  7 2023 | 13:12:18] Starting the server
+TRACE: [Apr  7 2023 | 13:12:18] Creating daemon process
+TRACE: [Apr  7 2023 | 13:12:18] Child pid: 7271
+TRACE: [Apr  7 2023 | 13:12:18] Database initialization
+TRACE: [Apr  7 2023 | 13:12:18] Wainitng for connection ...
+INFO: [Apr  7 2023 | 13:12:18] New client was connected: 127.0.0.1
+TRACE: [Apr  7 2023 | 13:12:18] Wainitng for connection ...
+TRACE: [Apr  7 2023 | 13:12:18] Request was received: {"rtype":1,"login":"admin","password":"admin"}
+TRACE: [Apr  7 2023 | 13:12:18] Handling registration
+TRACE: [Apr  7 2023 | 13:12:18] admin
+TRACE: [Apr  7 2023 | 13:12:18] admin
+TRACE: [Apr  7 2023 | 13:12:18] user exist
+TRACE: [Apr  7 2023 | 13:12:18] Request was received: {"rtype":1,"login":"admin2","password":"admin"}
+TRACE: [Apr  7 2023 | 13:12:18] Handling registration
+TRACE: [Apr  7 2023 | 13:12:18] admin2
+TRACE: [Apr  7 2023 | 13:12:18] admin
+TRACE: [Apr  7 2023 | 13:12:18] add user
+TRACE: [Apr  7 2023 | 13:12:18] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 13:12:18] Get joined chats request
+TRACE: [Apr  7 2023 | 13:12:18] {"chats":[],"rtype":12}
+TRACE: [Apr  7 2023 | 13:12:18] Request was received: {"rtype":2,"name":"room2"}
+TRACE: [Apr  7 2023 | 13:12:18] Creating new chat
+TRACE: [Apr  7 2023 | 13:12:18] room2
+TRACE: [Apr  7 2023 | 13:12:18] mx_add_room_member()
+TRACE: [Apr  7 2023 | 13:12:18] {"rtype":4}
+TRACE: [Apr  7 2023 | 13:12:18] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 13:12:18] Get joined chats request
+TRACE: [Apr  7 2023 | 13:12:18] {"chats":[{"name":"room2","id":26}],"rtype":12}
+TRACE: [Apr  7 2023 | 13:12:18] Request was received: {"rtype":2,"name":"UCHAT"}
+TRACE: [Apr  7 2023 | 13:12:18] Creating new chat
+TRACE: [Apr  7 2023 | 13:12:18] UCHAT
+TRACE: [Apr  7 2023 | 13:12:18] mx_add_room_member()
+TRACE: [Apr  7 2023 | 13:12:18] {"rtype":4}
+TRACE: [Apr  7 2023 | 13:12:18] Request was received: {"rtype":9}
+TRACE: [Apr  7 2023 | 13:12:18] Get joined chats request
+TRACE: [Apr  7 2023 | 13:12:18] {"chats":[{"name":"room2","id":26},{"name":"UCHAT","id":27}],"rtype":12}

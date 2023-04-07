@@ -78,15 +78,21 @@ typedef struct dialog_window_s {
 typedef struct chat_window_s {
 	GtkWidget* window;
 	GtkWidget *main_box;
-	GtkWidget *left_side_box;
-	GtkWidget *chats_list_scrlldwnd;
-	GtkWidget *chats_list_view;
+	//Left side(chats list, search, add chat)
+	GtkWidget *chats_list_box;		//Not used anywhere
+	GtkWidget *chats_list_scrlldwnd;	//Not used anywhere
+	GtkWidget *chats_list_view;		//Not used anywhere
 	GtkWidget *chats_list_grid;
-	GtkWidget *search_entry;
-	GtkWidget* chat_name;
-	
+	GtkWidget *search_entry;	
 	GtkWidget* add_chat_btn;
-
+	//Right side(current chat)
+	GtkWidget *selected_chat_box;
+	GtkWidget *chat_name_label;
+	GtkWidget *chat_settings_btn;
+	GtkWidget *chat_info_btn;
+	
+	GtkWidget *msgs_list_box;
+	
 	GtkBuilder *builder;
 
 	int elements_were_attached;
