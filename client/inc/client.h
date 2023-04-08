@@ -90,8 +90,10 @@ typedef struct chat_window_s {
 	GtkWidget *chat_name_label;
 	GtkWidget *chat_settings_btn;
 	GtkWidget *chat_info_btn;
-	
+	GtkWidget *msgs_list_scrlld_wnd;
 	GtkWidget *msgs_list_box;
+	GtkWidget *message_input_field;
+	GtkWidget *send_message_btn;
 	
 	GtkBuilder *builder;
 
@@ -160,6 +162,8 @@ void mx_on_search_changed(GtkWidget *w, gpointer data);
 void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data);
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data);
+
+void mx_add_message_to_list(chat_window_t* window, const char *sender_name, const char *message_text, const char *sending_time, gboolean is_your_message);
 
 //button inside popup window
 void mx_on_create_new_chat_btn_clicked(GtkButton* b, gpointer data);
