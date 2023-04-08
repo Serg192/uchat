@@ -3,8 +3,8 @@
 void *mx_realloc(void *ptr, size_t size){
    
     void* new_ptr;
-    //size_t current_s = malloc_size(ptr);
-    size_t current_s = malloc_usable_size(ptr);
+    size_t current_s = malloc_size(ptr);
+    //size_t current_s = malloc_usable_size(ptr);
     if(ptr == 0)
       return malloc(size);
     

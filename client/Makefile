@@ -15,7 +15,7 @@ install: clean
 	mkdir -p obj
 	clang $(FLAGS) $(GTK_INC) -c  src/*.c  src/reqBuilders/*.c  src/eventHandlers/*.c  src/respHandlers/*.c -I ../lib/libmx/inc -I ../lib/openssl -I ../lib/cjson/inc -I ../lib/sqlite/inc
 	mv *.o obj/
-	clang $(FLAGS) obj/*.o -L ../lib/libmx -lmx -lssl -lcrypto -lpthread -L ../lib/cjson -lcjson  -L ../lib/sqlite -lsqlite3  $(GTK_LIBS) -o $(NAME) 
+	clang $(FLAGS) obj/*.o -L ../lib/libmx -lmx  -L ../local_lib/lib -lssl -lcrypto -lpthread -L ../lib/cjson -lcjson  -L ../lib/sqlite -lsqlite3  $(GTK_LIBS) -o $(NAME) 
 
 uninstall: clean
 	rm -rf obj

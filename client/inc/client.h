@@ -12,7 +12,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <errno.h> 
-#include <malloc.h> 
+#include <malloc/malloc.h> 
 #include <sys/socket.h>
 #include <resolv.h> 
 #include <netdb.h>
