@@ -8,8 +8,8 @@
 #include <fcntl.h>
 
 
-#include <malloc/malloc.h>
-//#include <malloc.h>
+//#include <malloc/malloc.h>
+#include <malloc.h>
 
 typedef struct s_list {
     void *data;
@@ -22,6 +22,26 @@ enum log_level_e {
     LOG_ERROR,
     LOG_TRACE
 };
+
+//________queue________
+
+typedef struct queue_s {
+    bool empty;
+    int size;
+    t_list* elements;
+}              queue_t;
+
+queue_t* mx_create_queue();
+
+void mx_queue_push(queue_t* queue, void* data);
+
+void* mx_queue_peek(queue_t* queue);
+
+void* mx_queue_pop(queue_t* queue);
+
+void mx_destroy_queue(queue_t** queue);
+
+//_____________________
 
 void mx_printchar(char c);
 

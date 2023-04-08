@@ -8,6 +8,8 @@ static inline void test(GtkWidget* w, gpointer data) {
 
 	request_t* request = (request_t*)malloc(sizeof(request_t));
 	request->req = mx_create_join_chat_req(client->join_chat_id);
+
+
 	client->current_request = request;
 
 	mx_hide_hint_window(client->d_window->window, NULL);

@@ -468,3 +468,10 @@ TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"rtype":4}
 TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"chats":[{"name":"room2","id":26}],"rtype":12}
 TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"rtype":4}
 TRACE: [Apr  7 2023 | 13:12:18] Response was received: {"chats":[{"name":"room2","id":26},{"name":"UCHAT","id":27}],"rtype":12}
+TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"rtype":3}
+TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8},{"name":"test404","id":9}],"rtype":12}
+TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"rtype":4}
+TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8},{"name":"test404","id":9},{"name":"random","id":28}],"rtype":12}
+TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"chat","id":19},{"name":"chat","id":21},{"name":"UCHAT","id":27}],"rtype":8}
+TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"chat","id":19},{"name":"chat","id":21},{"name":"UCHAT","id":27}],"rtype":8}
+TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8},{"name":"test404","id":9},{"name":"random","id":28}],"rtype":12}

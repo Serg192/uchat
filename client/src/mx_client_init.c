@@ -17,4 +17,6 @@ void mx_client_init(client_t* client, const char* host, const int port){
     int flags = fcntl(client->serv, F_GETFL,0);
     fcntl(client->serv, F_SETFL, flags | O_NONBLOCK);
     fcntl(client->serv, F_SETFD, O_NONBLOCK);
+
+    client->request_queue = mx_create_queue();
 }

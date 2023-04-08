@@ -12,7 +12,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <errno.h> 
-#include <malloc/malloc.h> 
+#include <malloc.h> 
 #include <sys/socket.h>
 #include <resolv.h> 
 #include <netdb.h>
@@ -105,6 +105,11 @@ typedef struct client_s {
 	SSL* ssl;
 	SSL_CTX* ctx;
 
+	/////////////////////////
+
+	queue_t* request_queue;
+
+	////////////////////////
 	request_t* current_request;
 	serv_res_t* current_response;
 	bool can_send_req;
