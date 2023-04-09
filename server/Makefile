@@ -12,7 +12,7 @@ $(NAME): install
 
 install: clean
 	mkdir -p obj
-	clang $(FLAGS) -c src/*.c src/dbUtils/*.c  src/req_handlers/*.c -I ../lib/libmx/inc \
+	clang $(FLAGS) -c src/*.c src/dbUtils/*.c  src/req_handlers/*.c  src/timeUtils/*.c -I ../lib/libmx/inc \
 	               -I ../lib/openssl \
 	               -I ../lib/cjson/inc \
 	               -I ../lib/sqlite/inc

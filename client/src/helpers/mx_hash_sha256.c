@@ -1,4 +1,4 @@
-#include "../inc/client.h"
+#include "../../inc/client.h"
 
 char* mx_hash_sha256(const char *password){
   
@@ -20,3 +20,4 @@ char* mx_hash_sha256(const char *password){
 
     return hash_str;
 }
+

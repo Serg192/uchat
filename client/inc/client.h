@@ -131,6 +131,8 @@ typedef struct client_s {
 
 	bool search_mode;
 
+	int current_chat_id;
+
 }			   client_t;
 
 
@@ -165,6 +167,8 @@ void mx_on_search_changed(GtkWidget *w, gpointer data);
 void mx_on_show_psw_btn_clicked(GtkWidget *w, gpointer data);
 
 void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data);
+
+void mx_on_send_msg_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data);
 
@@ -212,7 +216,7 @@ void create_new_chat_window(client_t* client);
 
 //DATE FORMAT IS YY|MM|DATE
 //TIME FORMAT IS HH|MM|SS in 24 hour format
-char* mx_create_send_msg_req(const int room_id, const int sending_date, const int sending_time, const char* context);
+char* mx_create_send_msg_req(const int room_id, const char* context);
 
 char* mx_create_get_chat_msg_req(const int chat_id, const int flag, const int start_id, const int count);
 
@@ -228,6 +232,8 @@ void mx_handle_chat_creation(client_t* client);
 //_____Pasword hash function______
 char* mx_hash_sha256(const char *password);
 //________________________________
+
+char *mx_prepare_str_for_sql(const char *input);
 
 
 #endif

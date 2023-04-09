@@ -11,6 +11,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <time.h>
 
 #include <openssl/ssl.h>
 #include <openssl/err.h>
@@ -47,6 +48,23 @@ typedef struct ossl_s {
 	SSL_CTX* ctx;
 }                ossl_t;
 
+//-----DATE AND TIME SECTION ---------------
+typedef struct date_and_time_s {
+	int day;
+	int month;
+	int year;
+
+	int hour;
+	int min;
+}              date_and_time_t;
+
+void mx_get_date_time(date_and_time_t* dt);
+
+int mx_format_time(date_and_time_t* dt);
+
+int mx_format_date(date_and_time_t* dt);
+
+//------------------------------------------
 
 void mx_init_openssl(ossl_t* ossl);
 

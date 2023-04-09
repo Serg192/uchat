@@ -36,13 +36,23 @@ static inline void create_msg(const int from_id,
 
 void mx_handle_send_msg(client_t* client, request_t* req) {
 
+	mx_log(SERV_LOG_FILE, LOG_TRACE, "Handling send msg request");
 
 	const int from_id =  client->user_id;//cJSON_GetObjectItem(req->json, "from_id")->valueint;
 	const int room_id = cJSON_GetObjectItem(req->json, "room_id")->valueint;
-	const int sending_date = cJSON_GetObjectItem(req->json, "sending_date")->valueint;
-	const int sending_time = cJSON_GetObjectItem(req->json, "sending_time")->valueint;
+	//const int sending_date = cJSON_GetObjectItem(req->json, "sending_date")->valueint;
+	//const int sending_time = cJSON_GetObjectItem(req->json, "sending_time")->valueint;
 	const char* context = cJSON_GetObjectItem(req->json, "context")->valuestring;
 
+	mx_log(SERV_LOG_FILE, LOG_TRACE, "Date and time get");
+
+	date_and_time_t dt;
+	mx_get_date_time(&dt);
+
+	const int sending_time = mx_format_time(&dt);
+	const int sending_date = mx_format_date(&dt);
+
+	//mx_logf(SERV_LOG_FILE, LOG_TRACE, "Date => %d, Time => %d", sending_date, sending_time);
 
 	//TODO: check if received data are valid
 

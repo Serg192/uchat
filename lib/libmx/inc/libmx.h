@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <fcntl.h>
-
+#include <stdarg.h>
 
 //#include <malloc/malloc.h>
 #include <malloc.h>
@@ -166,6 +166,7 @@ int mx_list_size(t_list **list);
 t_list *mx_sort_list(t_list *lst, bool(*cmp)(void*, void*));
 
 void mx_log(const char* file, int level, char* text);
+
 
 #endif
 

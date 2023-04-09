@@ -1,5 +1,6 @@
 #include "../inc/client.h"
 
+
 void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
     client_t* client = (client_t*)data;
 
@@ -10,7 +11,6 @@ void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
     gtk_widget_destroy(widget);
 	gtk_main_quit();
 }
-
 
 chat_window_t* mx_build_chat_window(client_t* client) {
 
@@ -46,6 +46,10 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->msgs_list_scrlld_wnd = GTK_WIDGET(gtk_builder_get_object(window->builder, "msgs_list_scrlld_wnd"));
 	window->send_message_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "send_message_btn"));
 	window->message_input_field = GTK_WIDGET(gtk_builder_get_object(window->builder, "message_input_field"));
+
+	//just test
+	g_signal_connect(window->send_message_btn, "released", G_CALLBACK(mx_on_send_msg_btn_clicked), client);
+	//
 
 	//gtk_search_entry_set_search_delay(window->search_entry, (guint)400);
 

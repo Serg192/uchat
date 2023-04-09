@@ -1228,3 +1228,78 @@ TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"UlsTea
 TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":7}
 TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":7}
 TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:35:04] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:35:04] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:38:48] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:38:48] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:39:48] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:39:48] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:43:15] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:43:15] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:43:15] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:43:15] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:52:05] Response was received: {"rtype":1,"message":"This username already exists"}
+TRACE: [Apr  9 2023 | 16:52:05] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:52:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:52:05] Response was received: {"rtype":1,"message":"This username already exists"}
+TRACE: [Apr  9 2023 | 16:52:05] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:52:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:52:05] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 16:52:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:56:43] Response was received: {"rtype":1,"message":"This username already exists"}
+TRACE: [Apr  9 2023 | 16:56:43] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 16:56:43] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:56:43] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 17:00:38] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 17:00:38] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 17:02:40] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 17:02:40] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 17:12:40] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 17:12:40] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 17:12:40] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 17:12:40] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 17:24:06] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 17:24:06] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 17:24:06] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 18:06:06] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 18:06:06] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 18:06:06] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 18:22:33] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 18:22:33] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 18:22:33] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 18:22:33] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 18:22:33] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 18:38:20] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 19:13:49] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:13:49] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:18:16] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:18:16] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:18:16] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 19:21:42] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:21:42] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:21:42] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:21:42] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 19:30:23] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:30:23] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:30:23] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:30:23] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:33:12] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:33:12] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:33:12] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 19:42:07] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:42:07] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:42:07] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 19:50:36] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:50:36] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:50:36] Response was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 19:53:52] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 19:53:52] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 19:53:52] Response was received: {"rtype":10}

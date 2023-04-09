@@ -34,7 +34,7 @@ int mx_get_chat_id_from_btn(GtkWidget* w, client_t* client) {
 		index++;
 	}
 
-	return index;
+	return client->chat_id_chat_btn_map[index];
 }
 
 void mx_handle_get_joined_chats(client_t* client) {
