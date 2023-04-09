@@ -11,6 +11,8 @@ void mx_handle_get_joined_chats(client_t* client, request_t* req) {
 
 	asprintf(&sql_req, "SELECT * FROM 'room' WHERE room.id IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '%d')", client->user_id );
 
+	mx_log(SERV_LOG_FILE, LOG_TRACE, sql_req);
+
 	mx_get_chats_array(response, sql_req);
 
 	free(sql_req);

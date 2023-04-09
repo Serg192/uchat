@@ -48,6 +48,14 @@ typedef struct ossl_s {
 	SSL_CTX* ctx;
 }                ossl_t;
 
+typedef struct get_msg_params_s {
+	int chat_id;
+	int mode;
+	int start_id;
+	int count; 
+	int recipient; 
+}              get_msg_params_t;
+
 //-----DATE AND TIME SECTION ---------------
 typedef struct date_and_time_s {
 	int day;

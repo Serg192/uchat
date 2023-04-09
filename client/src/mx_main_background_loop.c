@@ -1,8 +1,35 @@
 #include "../inc/client.h"
 
-static inline void test(client_t* client) {
-	
+
+//for debug only
+static void print_json_array(const char *json_str, const char *array_name) {
+    // parse the JSON string
+    cJSON *root = cJSON_Parse(json_str);
+    if (root == NULL) {
+        printf("Error parsing JSON: %s\n", cJSON_GetErrorPtr());
+        return;
+    }
+
+    // get the array from the JSON object
+    cJSON *array = cJSON_GetObjectItemCaseSensitive(root, array_name);
+    if (array == NULL || !cJSON_IsArray(array)) {
+        printf("Error getting array from JSON\n");
+        cJSON_Delete(root);
+        return;
+    }
+
+    // print each element of the array in a separate row
+    cJSON *item = NULL;
+    cJSON_ArrayForEach(item, array) {
+        char *json_string = cJSON_Print(item);
+        printf("%s\n", json_string);
+        free(json_string);
+    }
+
+    // free the JSON object
+    cJSON_Delete(root);
 }
+
 
 static inline void handle_response(client_t* client) {
 
@@ -32,6 +59,11 @@ static inline void handle_response(client_t* client) {
 			break;
 		case ADD_CHAT_MEM_SUCCESS_RESP:
 			mx_handle_get_joined_chats(client);
+			break;
+		case GET_CHAT_MSG_RES:
+			printf("\n\n************************************\n");
+			print_json_array(client->current_response->str_res, "messages");
+			printf("\n*****************************************\n");
 			break;
 		default:
 			break;

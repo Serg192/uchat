@@ -37,4 +37,14 @@ typedef enum respond_type_e {
 }			  respond_type;
 
 
+enum {
+	MSG_LOAD_ALL,
+	MSG_LOAD_ABOVE,
+	MSG_LOAD_BELOW
+};
+
+enum {
+	MSG_ID_LAST = -2
+};
+
 #endif

@@ -14,7 +14,7 @@ void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data) {
 	(void)w;
 	client_t* client = (client_t*)data;
 
-	client->join_chat_id = client->chat_id_chat_btn_map[mx_get_chat_id_from_btn(w, client)];
+	client->join_chat_id = mx_get_chat_id_from_btn(w, client);
 
 	const char *text = (char*)gtk_button_get_label(w);
 

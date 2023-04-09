@@ -1,5 +1,15 @@
 #include "../../inc/client.h"
 
+//Example of usage mx_create_get_chat_msg_req
+//see mx_create_get_chat_msg_req.c file to know more
+static inline void test_load_msg(client_t* client){
+	request_t* request = (request_t*)malloc(sizeof(request_t));
+
+	request->req = mx_create_get_chat_msg_req(client->current_chat_id, MSG_LOAD_ABOVE, MSG_ID_LAST, 3);
+
+	mx_queue_push(client->request_queue, request);
+}
+
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data) {
 	(void)w;
 	//client_t* client = (client_t*)data;
@@ -20,6 +30,9 @@ void mx_on_chat_list_clicked(GtkWidget* w, gpointer data) {
 
 		//set current chat id
 		client->current_chat_id = mx_get_chat_id_from_btn(w, client);
+
+		//test function
+		test_load_msg(client);
 	}
 }
 

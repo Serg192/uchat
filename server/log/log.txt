@@ -1,518 +1,217 @@
-TRACE: [Apr  9 2023 | 18:06:06] Starting the server
-TRACE: [Apr  9 2023 | 18:06:06] Creating daemon process
-TRACE: [Apr  9 2023 | 18:06:06] Child pid: 10996
-ERROR: [Apr  9 2023 | 18:06:06] Address already in use
-INFO: [Apr  9 2023 | 16:12:36] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 16:12:36] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 16:12:36] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 16:12:36] Request was received
-TRACE: [Apr  9 2023 | 16:12:36] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 16:12:36] Handling logging in
-TRACE: [Apr  9 2023 | 16:12:36] Admin
-TRACE: [Apr  9 2023 | 16:12:36] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 16:12:36] Checking password
-TRACE: [Apr  9 2023 | 16:12:36] Everything is fine
-TRACE: [Apr  9 2023 | 16:12:36] {"rtype":3}
-TRACE: [Apr  9 2023 | 16:12:36] Sending response
-TRACE: [Apr  9 2023 | 16:12:36] {"rtype":3}
-TRACE: [Apr  9 2023 | 16:12:36] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 16:12:36] Request was received
-TRACE: [Apr  9 2023 | 16:12:36] {"rtype":9}
-TRACE: [Apr  9 2023 | 16:12:36] Get joined chats request
-TRACE: [Apr  9 2023 | 16:12:36] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 16:12:36] Sending response
-TRACE: [Apr  9 2023 | 16:12:36] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 16:12:36] Request was received: {"rtype":6,"room_id":1,"sending_time":999,"sending_date":999,"context":"Are you OK?"}
-TRACE: [Apr  9 2023 | 16:12:36] Request was received
-TRACE: [Apr  9 2023 | 16:12:36] {"rtype":6,"room_id":1,"sending_time":999,"sending_date":999,"context":"Are you OK?"}
-TRACE: [Apr  9 2023 | 16:12:36] executing sql sequence
-TRACE: [Apr  9 2023 | 16:12:36] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '1', '999', '999', 'Are you OK?')
-TRACE: [Apr  9 2023 | 16:12:36] {"rtype":10}
-TRACE: [Apr  9 2023 | 16:12:36] Sending response
-TRACE: [Apr  9 2023 | 16:12:36] {"rtype":10}
-TRACE: [Apr  9 2023 | 16:12:36] Request was received: {"rtype":6,"room_id":1,"sending_time":999,"sending_date":999,"context":"'"}
-TRACE: [Apr  9 2023 | 16:12:36] Request was received
-TRACE: [Apr  9 2023 | 16:12:36] {"rtype":6,"room_id":1,"sending_time":999,"sending_date":999,"context":"'"}
-TRACE: [Apr  9 2023 | 16:12:36] executing sql sequence
-TRACE: [Apr  9 2023 | 16:12:36] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '1', '999', '999', ''')
-TRACE: [Apr  9 2023 | 18:22:33] Starting the server
-TRACE: [Apr  9 2023 | 18:22:33] Creating daemon process
-TRACE: [Apr  9 2023 | 18:22:33] Child pid: 11642
-TRACE: [Apr  9 2023 | 18:22:33] Database initialization
-TRACE: [Apr  9 2023 | 18:22:33] Wainitng for connection ...
-INFO: [Apr  9 2023 | 18:22:33] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 18:22:33] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Handling logging in
-TRACE: [Apr  9 2023 | 18:22:33] Admin
-TRACE: [Apr  9 2023 | 18:22:33] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 18:22:33] Checking password
-TRACE: [Apr  9 2023 | 18:22:33] Everything is fine
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Get joined chats request
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"Hey"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"Hey"}
-TRACE: [Apr  9 2023 | 18:22:33] executing sql sequence
-TRACE: [Apr  9 2023 | 18:22:33] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '2', '999', '999', 'Hey')
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"Hey''"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"Hey''"}
-TRACE: [Apr  9 2023 | 18:22:33] executing sql sequence
-TRACE: [Apr  9 2023 | 18:22:33] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '2', '999', '999', 'Hey''')
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"Hey''\\\\0\\\\"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"Hey''\\\\0\\\\"}
-TRACE: [Apr  9 2023 | 18:22:33] executing sql sequence
-TRACE: [Apr  9 2023 | 18:22:33] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '2', '999', '999', 'Hey''\\0\\')
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-INFO: [Apr  9 2023 | 18:22:33] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 18:22:33] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Handling logging in
-TRACE: [Apr  9 2023 | 18:22:33] Admin
-TRACE: [Apr  9 2023 | 18:22:33] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 18:22:33] Checking password
-TRACE: [Apr  9 2023 | 18:22:33] Everything is fine
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Get joined chats request
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"j"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"j"}
-TRACE: [Apr  9 2023 | 18:22:33] executing sql sequence
-TRACE: [Apr  9 2023 | 18:22:33] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '2', '999', '999', 'j')
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"''''''''"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"''''''''"}
-TRACE: [Apr  9 2023 | 18:22:33] executing sql sequence
-TRACE: [Apr  9 2023 | 18:22:33] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '2', '999', '999', '''''''''')
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-INFO: [Apr  9 2023 | 18:22:33] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 18:22:33] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Handling logging in
-TRACE: [Apr  9 2023 | 18:22:33] Admin
-TRACE: [Apr  9 2023 | 18:22:33] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 18:22:33] Checking password
-TRACE: [Apr  9 2023 | 18:22:33] Everything is fine
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Get joined chats request
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-INFO: [Apr  9 2023 | 18:22:33] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 18:22:33] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":0,"login":"Root","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":0,"login":"Root","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Handling logging in
-TRACE: [Apr  9 2023 | 18:22:33] Root
-TRACE: [Apr  9 2023 | 18:22:33] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 18:22:33] Checking password
-TRACE: [Apr  9 2023 | 18:22:33] Everything is fine
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Get joined chats request
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"Test message"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":6,"room_id":2,"sending_time":999,"sending_date":999,"context":"Test message"}
-TRACE: [Apr  9 2023 | 18:22:33] executing sql sequence
-TRACE: [Apr  9 2023 | 18:22:33] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('2', '2', '999', '999', 'Test message')
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":10}
-INFO: [Apr  9 2023 | 18:22:33] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 18:22:33] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":0,"login":"Root","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":0,"login":"Root","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 18:22:33] Handling logging in
-TRACE: [Apr  9 2023 | 18:22:33] Root
-TRACE: [Apr  9 2023 | 18:22:33] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 18:22:33] Checking password
-TRACE: [Apr  9 2023 | 18:22:33] Everything is fine
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":3}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":9}
-TRACE: [Apr  9 2023 | 18:22:33] Get joined chats request
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Sending response
-TRACE: [Apr  9 2023 | 18:22:33] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received: {"rtype":6,"room_id":4,"context":"Test serv date and time"}
-TRACE: [Apr  9 2023 | 18:22:33] Request was received
-TRACE: [Apr  9 2023 | 18:22:33] {"rtype":6,"room_id":4,"context":"Test serv date and time"}
-TRACE: [Apr  9 2023 | 19:18:16] Starting the server
-TRACE: [Apr  9 2023 | 19:18:16] Creating daemon process
-TRACE: [Apr  9 2023 | 19:18:16] Child pid: 14213
-TRACE: [Apr  9 2023 | 19:18:16] Database initialization
-TRACE: [Apr  9 2023 | 19:18:16] Wainitng for connection ...
-INFO: [Apr  9 2023 | 19:18:16] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:18:16] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:18:16] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:18:16] Request was received
-TRACE: [Apr  9 2023 | 19:18:16] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:18:16] Handling logging in
-TRACE: [Apr  9 2023 | 19:18:16] Admin
-TRACE: [Apr  9 2023 | 19:18:16] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:18:16] Checking password
-TRACE: [Apr  9 2023 | 19:18:16] Everything is fine
-TRACE: [Apr  9 2023 | 19:18:16] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:18:16] Sending response
-TRACE: [Apr  9 2023 | 19:18:16] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:18:16] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 19:18:16] Request was received
-TRACE: [Apr  9 2023 | 19:18:16] {"rtype":9}
-TRACE: [Apr  9 2023 | 19:18:16] Get joined chats request
-TRACE: [Apr  9 2023 | 19:18:16] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:18:16] Sending response
-TRACE: [Apr  9 2023 | 19:18:16] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:18:16] Request was received: {"rtype":6,"room_id":4,"context":"Serv date and time check"}
-TRACE: [Apr  9 2023 | 19:18:16] Request was received
-TRACE: [Apr  9 2023 | 19:18:16] {"rtype":6,"room_id":4,"context":"Serv date and time check"}
-TRACE: [Apr  9 2023 | 19:18:16] Handling send msg request
-TRACE: [Apr  9 2023 | 19:18:16] Date and time get
-TRACE: [Apr  9 2023 | 19:18:16] Date => 9042023, Time => 20900
-TRACE: [Apr  9 2023 | 19:18:16] executing sql sequence
-TRACE: [Apr  9 2023 | 19:18:16] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '4', '9042023', '20900', 'Serv date and time check')
-TRACE: [Apr  9 2023 | 19:18:16] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:18:16] Sending response
-TRACE: [Apr  9 2023 | 19:18:16] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:18:16] Request was received: {"rtype":6,"room_id":4,"context":"''''''''"}
-TRACE: [Apr  9 2023 | 19:18:16] Request was received
-TRACE: [Apr  9 2023 | 19:18:16] {"rtype":6,"room_id":4,"context":"''''''''"}
-TRACE: [Apr  9 2023 | 19:18:16] Handling send msg request
-TRACE: [Apr  9 2023 | 19:18:16] Date and time get
-TRACE: [Apr  9 2023 | 19:18:16] Date => 9042023, Time => 20900
-TRACE: [Apr  9 2023 | 19:18:16] executing sql sequence
-TRACE: [Apr  9 2023 | 19:18:16] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '4', '9042023', '20900', '''''''''')
-TRACE: [Apr  9 2023 | 19:21:42] Starting the server
-TRACE: [Apr  9 2023 | 19:21:42] Creating daemon process
-TRACE: [Apr  9 2023 | 19:21:42] Child pid: 14502
-TRACE: [Apr  9 2023 | 19:21:42] Database initialization
-TRACE: [Apr  9 2023 | 19:21:42] Wainitng for connection ...
-INFO: [Apr  9 2023 | 19:21:42] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:21:42] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:21:42] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:21:42] Handling logging in
-TRACE: [Apr  9 2023 | 19:21:42] Admin
-TRACE: [Apr  9 2023 | 19:21:42] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:21:42] Checking password
-TRACE: [Apr  9 2023 | 19:21:42] Everything is fine
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:21:42] Sending response
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received: 
-TRACE: [Apr  9 2023 | 19:21:42] Request was received
-TRACE: [Apr  9 2023 | 19:21:42] Starting the server
-TRACE: [Apr  9 2023 | 19:21:42] Creating daemon process
-TRACE: [Apr  9 2023 | 19:21:42] Child pid: 14554
-TRACE: [Apr  9 2023 | 19:21:42] Database initialization
-TRACE: [Apr  9 2023 | 19:21:42] Wainitng for connection ...
-INFO: [Apr  9 2023 | 19:21:42] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:21:42] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:21:42] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:21:42] Handling logging in
-TRACE: [Apr  9 2023 | 19:21:42] Admin
-TRACE: [Apr  9 2023 | 19:21:42] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:21:42] Checking password
-TRACE: [Apr  9 2023 | 19:21:42] Everything is fine
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:21:42] Sending response
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":9}
-TRACE: [Apr  9 2023 | 19:21:42] Get joined chats request
-TRACE: [Apr  9 2023 | 19:21:42] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:21:42] Sending response
-TRACE: [Apr  9 2023 | 19:21:42] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received: {"rtype":6,"room_id":4,"context":"Another try to test date and time"}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":6,"room_id":4,"context":"Another try to test date and time"}
-TRACE: [Apr  9 2023 | 19:21:42] Handling send msg request
-TRACE: [Apr  9 2023 | 19:21:42] Date and time get
-TRACE: [Apr  9 2023 | 19:21:42] Date => 9042023, Time => 1923
-TRACE: [Apr  9 2023 | 19:21:42] executing sql sequence
-TRACE: [Apr  9 2023 | 19:21:42] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '4', '9042023', '1923', 'Another try to test date and time')
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:21:42] Sending response
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":10}
-INFO: [Apr  9 2023 | 19:21:42] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:21:42] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:21:42] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:21:42] Handling logging in
-TRACE: [Apr  9 2023 | 19:21:42] Admin
-TRACE: [Apr  9 2023 | 19:21:42] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:21:42] Checking password
-TRACE: [Apr  9 2023 | 19:21:42] Everything is fine
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:21:42] Sending response
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":9}
-TRACE: [Apr  9 2023 | 19:21:42] Get joined chats request
-TRACE: [Apr  9 2023 | 19:21:42] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:21:42] Sending response
-TRACE: [Apr  9 2023 | 19:21:42] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received: {"rtype":6,"room_id":3,"context":"Test"}
-TRACE: [Apr  9 2023 | 19:21:42] Request was received
-TRACE: [Apr  9 2023 | 19:21:42] {"rtype":6,"room_id":3,"context":"Test"}
-TRACE: [Apr  9 2023 | 19:21:42] Handling send msg request
-TRACE: [Apr  9 2023 | 19:21:42] Date and time get
-TRACE: [Apr  9 2023 | 19:21:42] Date => 9042023, Time => 1931
-TRACE: [Apr  9 2023 | 19:21:42] executing sql sequence
-TRACE: [Apr  9 2023 | 19:21:42] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '3', '9042023', '1931', 'Test')
-TRACE: [Apr  9 2023 | 19:30:23] Starting the server
-TRACE: [Apr  9 2023 | 19:30:23] Creating daemon process
-TRACE: [Apr  9 2023 | 19:30:23] Child pid: 15325
-ERROR: [Apr  9 2023 | 19:30:23] Address already in use
-TRACE: [Apr  9 2023 | 19:30:23] Starting the server
-TRACE: [Apr  9 2023 | 19:30:23] Creating daemon process
-TRACE: [Apr  9 2023 | 19:30:23] Child pid: 15334
-TRACE: [Apr  9 2023 | 19:30:23] Database initialization
-TRACE: [Apr  9 2023 | 19:30:23] Wainitng for connection ...
-INFO: [Apr  9 2023 | 19:30:23] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:30:23] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:30:23] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:30:23] Request was received
-TRACE: [Apr  9 2023 | 19:30:23] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:30:23] Handling logging in
-TRACE: [Apr  9 2023 | 19:30:23] Admin
-TRACE: [Apr  9 2023 | 19:30:23] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:30:23] Checking password
-TRACE: [Apr  9 2023 | 19:30:23] Everything is fine
-TRACE: [Apr  9 2023 | 19:30:23] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:30:23] Sending response
-TRACE: [Apr  9 2023 | 19:30:23] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:30:23] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 19:30:23] Request was received
-TRACE: [Apr  9 2023 | 19:30:23] {"rtype":9}
-TRACE: [Apr  9 2023 | 19:30:23] Get joined chats request
-TRACE: [Apr  9 2023 | 19:30:23] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:30:23] Sending response
-TRACE: [Apr  9 2023 | 19:30:23] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:30:23] Request was received: {"rtype":6,"room_id":3,"context":"Test"}
-TRACE: [Apr  9 2023 | 19:30:23] Request was received
-TRACE: [Apr  9 2023 | 19:30:23] {"rtype":6,"room_id":3,"context":"Test"}
-TRACE: [Apr  9 2023 | 19:30:23] Handling send msg request
-TRACE: [Apr  9 2023 | 19:30:23] Date and time get
-TRACE: [Apr  9 2023 | 19:33:12] Starting the server
-TRACE: [Apr  9 2023 | 19:33:12] Creating daemon process
-TRACE: [Apr  9 2023 | 19:33:12] Child pid: 15592
-TRACE: [Apr  9 2023 | 19:33:12] Database initialization
-TRACE: [Apr  9 2023 | 19:33:12] Wainitng for connection ...
-INFO: [Apr  9 2023 | 19:33:12] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:33:12] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:33:12] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:33:12] Handling logging in
-TRACE: [Apr  9 2023 | 19:33:12] Admin
-TRACE: [Apr  9 2023 | 19:33:12] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:33:12] Checking password
-TRACE: [Apr  9 2023 | 19:33:12] Everything is fine
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:33:12] Sending response
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":9}
-TRACE: [Apr  9 2023 | 19:33:12] Get joined chats request
-TRACE: [Apr  9 2023 | 19:33:12] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:33:12] Sending response
-TRACE: [Apr  9 2023 | 19:33:12] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received: {"rtype":6,"room_id":3,"context":"Test"}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":6,"room_id":3,"context":"Test"}
-TRACE: [Apr  9 2023 | 19:33:12] Handling send msg request
-TRACE: [Apr  9 2023 | 19:33:12] Date and time get
-TRACE: [Apr  9 2023 | 19:33:12] executing sql sequence
-TRACE: [Apr  9 2023 | 19:33:12] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '3', '9042023', '1934', 'Test')
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:33:12] Sending response
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:42:07] Starting the server
-TRACE: [Apr  9 2023 | 19:42:07] Creating daemon process
-TRACE: [Apr  9 2023 | 19:42:07] Child pid: 16129
-ERROR: [Apr  9 2023 | 19:42:07] Address already in use
-INFO: [Apr  9 2023 | 19:33:12] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:33:12] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:33:12] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:33:12] Handling logging in
-TRACE: [Apr  9 2023 | 19:33:12] Admin
-TRACE: [Apr  9 2023 | 19:33:12] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:33:12] Checking password
-TRACE: [Apr  9 2023 | 19:33:12] Everything is fine
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:33:12] Sending response
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":9}
-TRACE: [Apr  9 2023 | 19:33:12] Get joined chats request
-TRACE: [Apr  9 2023 | 19:33:12] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:33:12] Sending response
-TRACE: [Apr  9 2023 | 19:33:12] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received: {"rtype":6,"room_id":3,"context":"Final test"}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":6,"room_id":3,"context":"Final test"}
-TRACE: [Apr  9 2023 | 19:33:12] Handling send msg request
-TRACE: [Apr  9 2023 | 19:33:12] Date and time get
-TRACE: [Apr  9 2023 | 19:33:12] executing sql sequence
-TRACE: [Apr  9 2023 | 19:33:12] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '3', '9042023', '1942', 'Final test')
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:33:12] Sending response
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 19:33:12] Request was received
-TRACE: [Apr  9 2023 | 19:33:12] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:49:08] Starting the server
-TRACE: [Apr  9 2023 | 19:49:08] Creating daemon process
-TRACE: [Apr  9 2023 | 19:49:08] Child pid: 16908
-TRACE: [Apr  9 2023 | 19:49:08] Database initialization
-TRACE: [Apr  9 2023 | 19:49:08] Wainitng for connection ...
-INFO: [Apr  9 2023 | 19:49:08] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:49:08] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":10}
-INFO: [Apr  9 2023 | 19:49:08] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:49:08] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":0,"login":"Root","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":0,"login":"Root","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:49:08] Handling logging in
-TRACE: [Apr  9 2023 | 19:49:08] Root
-TRACE: [Apr  9 2023 | 19:49:08] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:49:08] Checking password
-TRACE: [Apr  9 2023 | 19:49:08] Everything is fine
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:49:08] Sending response
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":9}
-TRACE: [Apr  9 2023 | 19:49:08] Get joined chats request
-TRACE: [Apr  9 2023 | 19:49:08] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:49:08] Sending response
-TRACE: [Apr  9 2023 | 19:49:08] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":6,"room_id":1,"context":"This is message test with problematic chars '' and / and /0 and \\\""}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":6,"room_id":1,"context":"This is message test with problematic chars '' and / and /0 and \\\""}
-TRACE: [Apr  9 2023 | 19:49:08] Handling send msg request
-TRACE: [Apr  9 2023 | 19:49:08] Date and time get
-TRACE: [Apr  9 2023 | 19:49:08] executing sql sequence
-TRACE: [Apr  9 2023 | 19:49:08] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('2', '1', '9042023', '1951', 'This is message test with problematic chars '' and / and /0 and \"')
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:49:08] Sending response
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":10}
-INFO: [Apr  9 2023 | 19:49:08] New client was connected: 127.0.0.1
-TRACE: [Apr  9 2023 | 19:49:08] Wainitng for connection ...
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
-TRACE: [Apr  9 2023 | 19:49:08] Handling logging in
-TRACE: [Apr  9 2023 | 19:49:08] Admin
-TRACE: [Apr  9 2023 | 19:49:08] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-TRACE: [Apr  9 2023 | 19:49:08] Checking password
-TRACE: [Apr  9 2023 | 19:49:08] Everything is fine
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:49:08] Sending response
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":3}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":9}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":9}
-TRACE: [Apr  9 2023 | 19:49:08] Get joined chats request
-TRACE: [Apr  9 2023 | 19:49:08] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:49:08] Sending response
-TRACE: [Apr  9 2023 | 19:49:08] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":6,"room_id":4,"context":"Send message test with clearing the text view widget buffer"}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":6,"room_id":4,"context":"Send message test with clearing the text view widget buffer"}
-TRACE: [Apr  9 2023 | 19:49:08] Handling send msg request
-TRACE: [Apr  9 2023 | 19:49:08] Date and time get
-TRACE: [Apr  9 2023 | 19:49:08] executing sql sequence
-TRACE: [Apr  9 2023 | 19:49:08] INSERT INTO 'message' ('from_id', 'room_id', 'sending_date', 'sending_time', 'context') VALUES ('1', '4', '9042023', '1954', 'Send message test with clearing the text view widget buffer')
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:49:08] Sending response
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":10}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received: {"rtype":10}
-TRACE: [Apr  9 2023 | 19:49:08] Request was received
-TRACE: [Apr  9 2023 | 19:49:08] {"rtype":10}
+TRACE: [Apr  9 2023 | 23:27:34] Starting the server
+TRACE: [Apr  9 2023 | 23:27:34] Creating daemon process
+TRACE: [Apr  9 2023 | 23:27:34] Child pid: 4499
+TRACE: [Apr  9 2023 | 23:27:34] Database initialization
+TRACE: [Apr  9 2023 | 23:27:34] Wainitng for connection ...
+INFO: [Apr  9 2023 | 23:27:34] New client was connected: 127.0.0.1
+TRACE: [Apr  9 2023 | 23:27:34] Wainitng for connection ...
+TRACE: [Apr  9 2023 | 23:27:34] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:27:34] Handling logging in
+TRACE: [Apr  9 2023 | 23:27:34] Admin
+TRACE: [Apr  9 2023 | 23:27:34] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+TRACE: [Apr  9 2023 | 23:27:34] Checking password
+TRACE: [Apr  9 2023 | 23:27:34] Everything is fine
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:27:34] Sending response
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received: {"rtype":9}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":9}
+TRACE: [Apr  9 2023 | 23:27:34] Get joined chats request
+TRACE: [Apr  9 2023 | 23:27:34] SELECT * FROM 'room' WHERE room.id IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '1')
+TRACE: [Apr  9 2023 | 23:27:34] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:27:34] Sending response
+TRACE: [Apr  9 2023 | 23:27:34] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received: {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:27:34] Chat search request
+TRACE: [Apr  9 2023 | 23:27:34] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:27:34] Sending response
+TRACE: [Apr  9 2023 | 23:27:34] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+INFO: [Apr  9 2023 | 23:27:34] New client was connected: 127.0.0.1
+TRACE: [Apr  9 2023 | 23:27:34] Wainitng for connection ...
+TRACE: [Apr  9 2023 | 23:27:34] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:27:34] Handling logging in
+TRACE: [Apr  9 2023 | 23:27:34] Admin
+TRACE: [Apr  9 2023 | 23:27:34] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+TRACE: [Apr  9 2023 | 23:27:34] Checking password
+TRACE: [Apr  9 2023 | 23:27:34] Everything is fine
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:27:34] Sending response
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received: {"rtype":9}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":9}
+TRACE: [Apr  9 2023 | 23:27:34] Get joined chats request
+TRACE: [Apr  9 2023 | 23:27:34] SELECT * FROM 'room' WHERE room.id IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '1')
+TRACE: [Apr  9 2023 | 23:27:34] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:27:34] Sending response
+TRACE: [Apr  9 2023 | 23:27:34] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received: {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:27:34] Chat search request
+TRACE: [Apr  9 2023 | 23:27:34] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:27:34] Sending response
+TRACE: [Apr  9 2023 | 23:27:34] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received: {"rtype":4,"room_id":2112109}
+TRACE: [Apr  9 2023 | 23:27:34] Request was received
+TRACE: [Apr  9 2023 | 23:27:34] {"rtype":4,"room_id":2112109}
+TRACE: [Apr  9 2023 | 23:33:50] Starting the server
+TRACE: [Apr  9 2023 | 23:33:50] Creating daemon process
+TRACE: [Apr  9 2023 | 23:33:50] Child pid: 4849
+TRACE: [Apr  9 2023 | 23:33:50] Database initialization
+TRACE: [Apr  9 2023 | 23:33:50] Wainitng for connection ...
+INFO: [Apr  9 2023 | 23:33:50] New client was connected: 127.0.0.1
+TRACE: [Apr  9 2023 | 23:33:50] Wainitng for connection ...
+TRACE: [Apr  9 2023 | 23:33:50] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:33:50] Handling logging in
+TRACE: [Apr  9 2023 | 23:33:50] Admin
+TRACE: [Apr  9 2023 | 23:33:50] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+TRACE: [Apr  9 2023 | 23:33:50] Checking password
+TRACE: [Apr  9 2023 | 23:33:50] Everything is fine
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:33:50] Sending response
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received: {"rtype":9}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":9}
+TRACE: [Apr  9 2023 | 23:33:50] Get joined chats request
+TRACE: [Apr  9 2023 | 23:33:50] SELECT * FROM 'room' WHERE room.id IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '1')
+TRACE: [Apr  9 2023 | 23:33:50] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:33:50] Sending response
+TRACE: [Apr  9 2023 | 23:33:50] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received: {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:33:50] Chat search request
+TRACE: [Apr  9 2023 | 23:33:50] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:33:50] Sending response
+TRACE: [Apr  9 2023 | 23:33:50] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received: {"rtype":4,"room_id":5}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":4,"room_id":5}
+TRACE: [Apr  9 2023 | 23:33:50] Starting the server
+TRACE: [Apr  9 2023 | 23:33:50] Creating daemon process
+TRACE: [Apr  9 2023 | 23:33:50] Child pid: 4888
+TRACE: [Apr  9 2023 | 23:33:50] Database initialization
+TRACE: [Apr  9 2023 | 23:33:50] Wainitng for connection ...
+INFO: [Apr  9 2023 | 23:33:50] New client was connected: 127.0.0.1
+TRACE: [Apr  9 2023 | 23:33:50] Wainitng for connection ...
+TRACE: [Apr  9 2023 | 23:33:50] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:33:50] Handling logging in
+TRACE: [Apr  9 2023 | 23:33:50] Admin
+TRACE: [Apr  9 2023 | 23:33:50] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+TRACE: [Apr  9 2023 | 23:33:50] Checking password
+TRACE: [Apr  9 2023 | 23:33:50] Everything is fine
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:33:50] Sending response
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received: {"rtype":9}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":9}
+TRACE: [Apr  9 2023 | 23:33:50] Get joined chats request
+TRACE: [Apr  9 2023 | 23:33:50] SELECT * FROM 'room' WHERE room.id IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '1')
+TRACE: [Apr  9 2023 | 23:33:50] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:33:50] Sending response
+TRACE: [Apr  9 2023 | 23:33:50] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received: {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:33:50] Chat search request
+TRACE: [Apr  9 2023 | 23:33:50] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:33:50] Sending response
+TRACE: [Apr  9 2023 | 23:33:50] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received: {"rtype":4,"room_id":5}
+TRACE: [Apr  9 2023 | 23:33:50] Request was received
+TRACE: [Apr  9 2023 | 23:33:50] {"rtype":4,"room_id":5}
+TRACE: [Apr  9 2023 | 23:37:38] Starting the server
+TRACE: [Apr  9 2023 | 23:37:38] Creating daemon process
+TRACE: [Apr  9 2023 | 23:37:38] Child pid: 5204
+TRACE: [Apr  9 2023 | 23:37:38] Database initialization
+TRACE: [Apr  9 2023 | 23:37:38] Wainitng for connection ...
+INFO: [Apr  9 2023 | 23:37:38] New client was connected: 127.0.0.1
+TRACE: [Apr  9 2023 | 23:37:38] Wainitng for connection ...
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":0,"login":"Admin","password":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"}
+TRACE: [Apr  9 2023 | 23:37:38] Handling logging in
+TRACE: [Apr  9 2023 | 23:37:38] Admin
+TRACE: [Apr  9 2023 | 23:37:38] 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+TRACE: [Apr  9 2023 | 23:37:38] Checking password
+TRACE: [Apr  9 2023 | 23:37:38] Everything is fine
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:37:38] Sending response
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":3}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":9}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":9}
+TRACE: [Apr  9 2023 | 23:37:38] Get joined chats request
+TRACE: [Apr  9 2023 | 23:37:38] SELECT * FROM 'room' WHERE room.id IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '1')
+TRACE: [Apr  9 2023 | 23:37:38] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:37:38] Sending response
+TRACE: [Apr  9 2023 | 23:37:38] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":3,"pattern":"N"}
+TRACE: [Apr  9 2023 | 23:37:38] Chat search request
+TRACE: [Apr  9 2023 | 23:37:38] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:37:38] Sending response
+TRACE: [Apr  9 2023 | 23:37:38] {"chats":[{"name":"New","color":0,"id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":4,"room_id":5}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":4,"room_id":5}
+TRACE: [Apr  9 2023 | 23:37:38] mx_add_room_member()
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":7}
+TRACE: [Apr  9 2023 | 23:37:38] Sending response
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":7}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":9}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":9}
+TRACE: [Apr  9 2023 | 23:37:38] Get joined chats request
+TRACE: [Apr  9 2023 | 23:37:38] SELECT * FROM 'room' WHERE room.id IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '1')
+TRACE: [Apr  9 2023 | 23:37:38] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4},{"name":"New","color":0,"id":5}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:37:38] Sending response
+TRACE: [Apr  9 2023 | 23:37:38] {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4},{"name":"New","color":0,"id":5}],"rtype":12}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":7,"room_id":5,"mode":1,"start_id":-2,"count":3}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":7,"room_id":5,"mode":1,"start_id":-2,"count":3}
+TRACE: [Apr  9 2023 | 23:37:38] Hadling get chat messages
+TRACE: [Apr  9 2023 | 23:37:38] ID
+TRACE: [Apr  9 2023 | 23:37:38] 5
+TRACE: [Apr  9 2023 | 23:37:38] Building message array
+TRACE: [Apr  9 2023 | 23:37:38] {"messages":[],"rtype":11}
+TRACE: [Apr  9 2023 | 23:37:38] Sending response
+TRACE: [Apr  9 2023 | 23:37:38] {"messages":[],"rtype":11}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":7,"room_id":4,"mode":1,"start_id":-2,"count":3}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":7,"room_id":4,"mode":1,"start_id":-2,"count":3}
+TRACE: [Apr  9 2023 | 23:37:38] Hadling get chat messages
+TRACE: [Apr  9 2023 | 23:37:38] ID
+TRACE: [Apr  9 2023 | 23:37:38] 4
+TRACE: [Apr  9 2023 | 23:37:38] Building message array
+TRACE: [Apr  9 2023 | 23:37:38] {"messages":[{"id":14,"from_id":1,"sending_date":9042023,"sending_time":1954,"context":"Send message test with clearing the text view widget buffer","username":"You"},{"id":10,"from_id":1,"sending_date":9042023,"sending_time":1923,"context":"Another try to test date and time","username":"You"},{"id":9,"from_id":1,"sending_date":9042023,"sending_time":20900,"context":"Serv date and time check","username":"You"}],"rtype":11}
+TRACE: [Apr  9 2023 | 23:37:38] Sending response
+TRACE: [Apr  9 2023 | 23:37:38] {"messages":[{"id":14,"from_id":1,"sending_date":9042023,"sending_time":1954,"context":"Send message test with clearing the text view widget buffer","username":"You"},{"id":10,"from_id":1,"sending_date":9042023,"sending_time":1923,"context":"Another try to test date and time","username":"You"},{"id":9,"from_id":1,"sending_date":9042023,"sending_time":20900,"context":"Serv date and time check","username":"You"}],"rtype":11}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":7,"room_id":3,"mode":1,"start_id":-2,"count":3}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":7,"room_id":3,"mode":1,"start_id":-2,"count":3}
+TRACE: [Apr  9 2023 | 23:37:38] Hadling get chat messages
+TRACE: [Apr  9 2023 | 23:37:38] ID
+TRACE: [Apr  9 2023 | 23:37:38] 3
+TRACE: [Apr  9 2023 | 23:37:38] Building message array
+TRACE: [Apr  9 2023 | 23:37:38] {"messages":[{"id":12,"from_id":1,"sending_date":9042023,"sending_time":1942,"context":"Final test","username":"You"},{"id":11,"from_id":1,"sending_date":9042023,"sending_time":1934,"context":"Test","username":"You"}],"rtype":11}
+TRACE: [Apr  9 2023 | 23:37:38] Sending response
+TRACE: [Apr  9 2023 | 23:37:38] {"messages":[{"id":12,"from_id":1,"sending_date":9042023,"sending_time":1942,"context":"Final test","username":"You"},{"id":11,"from_id":1,"sending_date":9042023,"sending_time":1934,"context":"Test","username":"You"}],"rtype":11}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received: {"rtype":10}
+TRACE: [Apr  9 2023 | 23:37:38] Request was received
+TRACE: [Apr  9 2023 | 23:37:38] {"rtype":10}
