@@ -5,18 +5,10 @@ static inline gboolean change_windows(gpointer data) {
 	client_t* client = (client_t*) data;
 
 
-
-
-////////////////////////
-	if(client->can_send_req) {
-		request_t* request = malloc(sizeof(request_t));
-		request->req =  mx_create_get_joined_chats_req();
-		client->current_request = request;
-	}
-
-	/////////////////////
-
-
+	request_t* request = malloc(sizeof(request_t));
+	request->req =  mx_create_get_joined_chats_req();
+	mx_queue_push(client->request_queue, request);
+	
     gtk_widget_hide(client->a_window->window);
     gtk_widget_show_all(client->c_window->window);
 

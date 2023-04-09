@@ -7,7 +7,6 @@ static inline void test(client_t* client) {
 static inline void handle_response(client_t* client) {
 
 	serv_res_t* response = client->current_response;
-	client->can_send_req = true;
 
 	switch(response->type) {
 		case LOGIN_SUCESS_RESP:
@@ -26,13 +25,9 @@ static inline void handle_response(client_t* client) {
 			mx_handle_chat_creation(client);
 			break;
 		case JOINED_CHATS_RESP: 
-		//case CHAT_SEARCH_RESP:
 			mx_handle_get_joined_chats(client);
-			printf("Joined chats resp\n");
 			break;
 		case CHAT_SEARCH_RESP: 
-			printf("Search resp\n");
-		//case CHAT_SEARCH_RESP:
 			mx_handle_get_joined_chats(client);
 			break;
 		case ADD_CHAT_MEM_SUCCESS_RESP:
@@ -42,39 +37,57 @@ static inline void handle_response(client_t* client) {
 			break;
 	}
 
-	printf("Deleting json\n");
+	//printf("Deleting json\n");
 	cJSON_Delete(response->json);
-	printf("Deleting current_response_str\n");
+	//printf("Deleting current_response_str\n");
 	free(client->current_response->str_res);
 	client->current_response->str_res = NULL;
-	printf("Deleting current_response\n");
+	//printf("Deleting current_response\n");
 	free(client->current_response);
 	client->current_response = NULL;
 
-	printf("Handled\n");
+	//printf("Handled\n");
 }
 
 void mx_main_background_loop(void* data) {
 
 	client_t* client = (client_t*) data;
 
-	while(1) {
-		if(client->current_request != NULL) {
-			printf("Request != NULL\n");
-			mx_send_req(client->ssl, client->current_request->req);
-			free(client->current_request->req);
-			free(client->current_request);
-			client->current_request = NULL;
-			client->can_send_req = false;
-		} else if(client->current_response == NULL && !client->can_send_req) {
-			printf("Getting response\n");
-			client->current_response = mx_get_server_response(client->ssl);
-			//printf("Here\n");
-		} else if(client->current_response != NULL){
-			printf("Handling response\n");
-			handle_response(client);
-		}
+	bool can_handle_next = true;
+	bool is_running = true;
 
+	while(is_running){
+		if(!client->request_queue->empty) {
+			if(can_handle_next){
+				request_t* request = mx_queue_peek(client->request_queue);
+				printf("Sending request => %s\n", request->req);
+				mx_send_req(client->ssl, request->req);
+
+				if(request->type == QUIT_REQ)
+					is_running = false;
+				
+				free(request->req);
+				free(request);
+				can_handle_next = false;
+			} else {
+				client->current_response = mx_get_server_response(client->ssl);
+
+				if(client->current_response != NULL) {
+					mx_queue_pop(client->request_queue);
+					printf("response received => %s\n", client->current_response->str_res);
+					handle_response(client);
+					can_handle_next = true;
+				}
+			}
+		} else {
+			//push request for to update chat messages
+			// 
+		}
 	}
+
+	int ret = SSL_shutdown(client->ssl);
+	if (ret == 0) 
+    	ret = SSL_shutdown(client->ssl);			
+	close(client->serv);
 }
 

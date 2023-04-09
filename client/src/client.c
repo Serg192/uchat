@@ -17,10 +17,7 @@ int main(int argc, char** argv) {
 	client.create_chat_window = mx_build_create_chat_window(&client);
 	client.d_window = mx_build_dialog_window(&client);
 
-	client.current_request = NULL;
 	client.current_response = NULL;
-	client.can_send_req = true;
-	//client.chat_container = NULL;
 	client.search_mode = false;
 
 	client.chat_id_chat_btn_map = NULL;
@@ -33,7 +30,7 @@ int main(int argc, char** argv) {
 	gtk_widget_show(client.a_window->window);
 
 	gtk_main();
-
+	pthread_join(thread, NULL);
 	return 0;
 }
 

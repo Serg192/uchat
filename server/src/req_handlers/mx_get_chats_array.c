@@ -16,7 +16,8 @@ void mx_get_chats_array(cJSON* parent_json, const char* search_condition) {
 
     while(sqlite3_step(stmt) == SQLITE_ROW) {
     	cJSON* item = cJSON_CreateObject();
-    	cJSON_AddStringToObject(item, "name", sqlite3_column_text(stmt, 1));
+    	cJSON_AddStringToObject(item, "name", sqlite3_column_text(stmt, 2));
+		cJSON_AddNumberToObject(item, "color", sqlite3_column_int64(stmt, 1));
     	cJSON_AddNumberToObject(item, "id", sqlite3_column_int64(stmt, 0));
 
     	cJSON_AddItemToArray(chats_array, item);

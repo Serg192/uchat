@@ -6,15 +6,18 @@ void mx_on_signup_btn_clicked(GtkButton* b, gpointer data) {
 
 		client_t* client = (client_t*)data;
 
-		if(!client->can_send_req)
-			return;
+		//TODO: handling cases when password or username lenght is > 33 char
+		//display error 
 
 		sprintf(username_buffer, "%s", gtk_entry_get_text(client->a_window->username_entry));
 		sprintf(password_buffer, "%s", gtk_entry_get_text(client->a_window->password_entry));
 
 		//printf("Username = %s, password = %s\n", username_buffer, password_buffer);
 
+		char* hash = mx_hash_sha256(password_buffer);
+
 		request_t* request = malloc(sizeof(request_t));
-		request->req =  mx_create_signup_req(username_buffer, password_buffer);
-		client->current_request = request;
+		request->req =  mx_create_signup_req(username_buffer, hash);
+		
+		mx_queue_push(client->request_queue, request);
 }

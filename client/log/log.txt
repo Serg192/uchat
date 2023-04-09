@@ -475,3 +475,756 @@ TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"room1"
 TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"chat","id":19},{"name":"chat","id":21},{"name":"UCHAT","id":27}],"rtype":8}
 TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"chat","id":19},{"name":"chat","id":21},{"name":"UCHAT","id":27}],"rtype":8}
 TRACE: [Apr  8 2023 | 16:31:08] Response was received: {"chats":[{"name":"room1","id":1},{"name":"room2","id":3},{"name":"Chess","id":4},{"name":"Chess2","id":5},{"name":"room3","id":6},{"name":"room4","id":7},{"name":"room5","id":8},{"name":"test404","id":9},{"name":"random","id":28}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:42:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 11:42:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 11:42:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 11:42:35] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 11:42:35] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:42:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 11:42:35] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":8}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":8}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"NewRoom","id":2}],"rtype":8}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"NewRoom","id":2}],"rtype":8}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"NewRoom","id":2}],"rtype":8}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"NewRoom","id":2}],"rtype":8}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 11:48:00] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"MyChat","id":5}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"MyChat","id":5},{"name":"Root","id":6}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"Uchat Team","id":4}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"Root","id":6}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"Root","id":6}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom1","id":3},{"name":"Trash","id":7}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:09:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"MyChat","id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"MyChat","id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"MyChat","id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"MyChat","id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"MyChat","id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"MyChat","id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"MyChat","id":5}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:21:41] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:33:17] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"QueueTest","id":9}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"QueueTest","id":9}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"TestRoom1","id":3},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:38:10] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:41:23] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:41:23] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:41:23] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:41:23] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:41:23] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:41:23] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:41:23] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Root2TestChat","id":12}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Root2TestChat","id":12}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Root2TestChat","id":12}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:46:13] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Root2TestChat","id":12}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root3","id":13}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Uchat Team","id":4}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Uchat Team","id":4}],"rtype":8}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 12:52:35] Response was received: {"chats":[{"name":"Uchat Team","id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:00:02] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:00:02] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:00:02] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:00:02] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"NewRoom","id":2},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"NewRoom","id":2},{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"NewRoom","id":2},{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"NewRoom","id":2},{"name":"NewChatQ","id":8}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"NewRoom","id":2},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"NewRoom","id":2},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Trash","id":7}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Trash","id":7}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Trash","id":7}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Trash","id":7}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Trash","id":7}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"Trash","id":7}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:03:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:22:49] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:32:17] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:32:17] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:34:38] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:34:38] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:34:38] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:37:10] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:37:10] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:37:10] Response was received: {"chats":[{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:38:57] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"MyChat","id":5},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"TestRoom1","id":3},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"QueueTest","id":9}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Root","id":6},{"name":"TestCanSendReqRemoved","id":10},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"Uchat Team","id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 13:42:24] Response was received: {"chats":[{"name":"NewChatQ","id":8}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[{"name":"MyChat","id":5},{"name":"Root2TestChat","id":12},{"name":"Root4","id":14}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[{"name":"Root2TestChat","id":12}],"rtype":8}
+TRACE: [Apr  9 2023 | 13:51:52] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:19:13] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:19:13] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:21:33] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:21:33] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:21:33] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:21:33] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:28:14] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:28:14] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:30:14] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:30:14] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:30:14] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:30:14] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:37:37] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:37:37] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:37:37] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:37:37] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:37:37] Response was received: {"chats":[{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10}],"rtype":8}
+TRACE: [Apr  9 2023 | 14:37:37] Response was received: {"chats":[{"name":"Uchat Team","id":4},{"name":"Root2TestChat","id":12},{"name":"Root3","id":13},{"name":"Root4","id":14}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:42:19] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:42:19] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 14:55:54] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 14:55:54] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:05:10] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:05:10] Response was received: {"chats":[{"name":"TestRoom","id":1},{"name":"NewRoom","id":2},{"name":"TestRoom1","id":3},{"name":"Uchat Team","id":4},{"name":"Root","id":6},{"name":"Trash","id":7},{"name":"NewChatQ","id":8},{"name":"QueueTest","id":9},{"name":"TestCanSendReqRemoved","id":10},{"name":"Rem","id":11},{"name":"Root3","id":13}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":8}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":1,"message":"This username already exists"}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":8}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":8}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":8}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":8}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":8}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":8}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[{"name":"Uchat","id":1},{"name":"Uchat2","id":2}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:11:35] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:30:08] Response was received: {"rtype":0,"message":"The username or password is incorrect"}
+TRACE: [Apr  9 2023 | 15:45:28] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:45:28] Response was received: {"chats":[{"name":"Uchat","id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"rtype":2}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"chats":[],"rtype":12}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2}],"rtype":8}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 15:56:05] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":1,"message":"This username already exists"}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":3}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"UchatTeam","color":0,"id":2}],"rtype":8}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":4}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"Test room","color":0,"id":3},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"UlsTeam","color":0,"id":4}],"rtype":8}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"rtype":7}
+TRACE: [Apr  9 2023 | 16:12:36] Response was received: {"chats":[{"name":"Uchat","color":0,"id":1},{"name":"UchatTeam","color":0,"id":2},{"name":"UlsTeam","color":0,"id":4}],"rtype":12}

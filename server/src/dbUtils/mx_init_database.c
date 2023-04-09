@@ -19,10 +19,11 @@ void mx_init_database() {
 	char* client =  	"CREATE TABLE IF NOT EXISTS 'user' ("
 				    	"'id' INTEGER PRIMARY KEY AUTOINCREMENT,"
 				    	"'username' VARCHAR(32) NOT NULL,"
-				    	"'password' VARCHAR(32) NOT NULL);";
+				    	"'password' TEXT NOT NULL);";
 
 	char* room =    	"CREATE TABLE IF NOT EXISTS 'room' ("
 				    	"'id' INTEGER PRIMARY KEY AUTOINCREMENT,"
+						"'color' INTEGER NOT NULL,"
 				    	"'name' VARCHAR(32) NOT NULL);";
 	
 	char* message = 	"CREATE TABLE IF NOT EXISTS 'message' ("

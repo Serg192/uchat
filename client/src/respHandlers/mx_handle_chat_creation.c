@@ -11,6 +11,7 @@ void mx_handle_chat_creation(client_t* client) {
 
 	request_t* request = malloc(sizeof(request_t));
 	request->req =  mx_create_get_joined_chats_req();
-	client->current_request = request;
+
+	mx_queue_push(client->request_queue, request);
 }
 

@@ -13,7 +13,7 @@ auth_window_t* mx_build_auth_window(client_t* client) {
 	//gtk_window_set_resizable(window->window, FALSE);
 
 	//JUST TEST, add own handler in the future
-	g_signal_connect(window->window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+	g_signal_connect(window->window, "destroy", G_CALLBACK(mx_app_on_destroy), client);
 
 	gtk_builder_connect_signals(window->builder, NULL);
 
@@ -24,9 +24,13 @@ auth_window_t* mx_build_auth_window(client_t* client) {
 	window->login_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "login_btn"));
 	window->username_entry = GTK_WIDGET(gtk_builder_get_object(window->builder, "username_entry"));
 	window->password_entry = GTK_WIDGET(gtk_builder_get_object(window->builder, "password_entry"));
+	window->show_psw_bnt = GTK_WIDGET(gtk_builder_get_object(window->builder, "show_passw_check_btn"));
+
+	gtk_entry_set_visibility(GTK_ENTRY(window->password_entry), FALSE);
 
 	g_signal_connect(window->signup_btn, "released", G_CALLBACK(mx_on_signup_btn_clicked), client);
 	g_signal_connect(window->login_btn, "released", G_CALLBACK(mx_on_login_btn_clicked), client);
+	g_signal_connect(window->show_psw_bnt, "toggled", G_CALLBACK(mx_on_show_psw_btn_clicked), client);
 
 	return window;
 }

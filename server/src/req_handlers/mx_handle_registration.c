@@ -78,11 +78,12 @@ void mx_handle_registration(client_t* client, request_t* req) {
 		cJSON_AddNumberToObject(response, "rtype", SIGNUP_ERR_RESP);
 		cJSON_AddStringToObject(response, "message", "Username length should be more than 3 and less than 32");
 	}
+	/*
 	else if(mx_strlen(password) >= 32) {
 		mx_log(SERV_LOG_FILE, LOG_TRACE, "password >= 32");
 		cJSON_AddNumberToObject(response, "rtype", SIGNUP_ERR_RESP);
 		cJSON_AddStringToObject(response, "message", "Password length should be less than 32 characters");
-	}
+	}*/
 	else if(!mx_check_if_row_exists(sql_req)) {
 		    mx_log(SERV_LOG_FILE, LOG_TRACE, "add user");
 			add_user(username, password);

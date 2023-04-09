@@ -1,5 +1,17 @@
 #include "../inc/client.h"
 
+void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
+    client_t* client = (client_t*)data;
+
+	request_t* request = (request_t*)malloc(sizeof(request));
+	request->req = mx_create_quit_request();
+	request->type = QUIT_REQ;
+	mx_queue_push(client->request_queue, request);
+    gtk_widget_destroy(widget);
+	gtk_main_quit();
+}
+
+
 chat_window_t* mx_build_chat_window(client_t* client) {
 
 
@@ -10,7 +22,8 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 
 	window->window = GTK_WIDGET(gtk_builder_get_object(window->builder, "chat_window"));
 
-	g_signal_connect(window->window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+	g_signal_connect(window->window, "destroy", G_CALLBACK(mx_app_on_destroy), client);
+	//g_signal_connect(window->window, "delete_event", G_CALLBACK(on_window_close), client);
 
 	gtk_window_set_position(GTK_WINDOW(window->window), GTK_WIN_POS_CENTER_ALWAYS);
 

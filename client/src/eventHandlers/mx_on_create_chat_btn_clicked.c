@@ -1,6 +1,7 @@
 #include "../../inc/client.h"
 
 void mx_on_create_chat_btn_clicked(GtkButton* b, gpointer data) {
+	(void)b;
 
 	client_t* client = (client_t*) data;
 

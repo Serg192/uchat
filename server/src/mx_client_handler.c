@@ -50,7 +50,19 @@ void* mx_client_handler(void* client) {
 		request_t* client_req = mx_get_client_req((client_t*)client);
 
 		if(client_req != NULL) {
-			dispatch(client, client_req);
+			mx_log(SERV_LOG_FILE, LOG_TRACE, "Request was received");
+			mx_log(SERV_LOG_FILE, LOG_TRACE, client_req->str_req);
+
+			if(client_req->type == QUIT_REQ){
+				int ret = SSL_shutdown(((client_t*)client)->ssl);
+				if (ret == 0) 
+    				ret = SSL_shutdown(((client_t*)client)->ssl);
+				
+				close(((client_t*)client)->sock);
+				client_disconnect_req = true;
+			} else {
+				dispatch(client, client_req);
+			}
 			cJSON_Delete(client_req->json);
 			free(client_req->str_req);
 			free(client_req);

@@ -20,6 +20,8 @@
 
 #include <openssl/ssl.h>
 #include <openssl/err.h>
+#include <openssl/sha.h>
+
 #include <cJSON.h>
 #include <gtk/gtk.h>
 
@@ -41,6 +43,7 @@ typedef struct serv_res_s {
 
 typedef struct request_s {
 	char* req;
+	int type;
 
 	//for test purpose
 	//bool handled;
@@ -53,6 +56,7 @@ typedef struct auth_window_s {
 	GtkWidget *login_btn;
 	GtkWidget *username_entry;
 	GtkWidget *password_entry;
+	GtkWidget *show_psw_bnt;
 
 	GtkBuilder *builder;
 }			   auth_window_t;
@@ -112,9 +116,8 @@ typedef struct client_s {
 	queue_t* request_queue;
 
 	////////////////////////
-	request_t* current_request;
+	
 	serv_res_t* current_response;
-	bool can_send_req;
 
 	auth_window_t* a_window;
 	chat_window_t* c_window;
@@ -159,11 +162,15 @@ void mx_on_chat_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_search_changed(GtkWidget *w, gpointer data);
 
+void mx_on_show_psw_btn_clicked(GtkWidget *w, gpointer data);
+
 void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data);
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data);
 
 void mx_add_message_to_list(chat_window_t* window, const char *sender_name, const char *message_text, const char *sending_time, gboolean is_your_message);
+
+void mx_app_on_destroy(GtkWidget *widget, gpointer data);
 
 //button inside popup window
 void mx_on_create_new_chat_btn_clicked(GtkButton* b, gpointer data);
@@ -182,7 +189,7 @@ void mx_main_background_loop(void* data);
 void mx_hide_hint_window(GtkWidget* widget, gpointer data);
 
 //
-char* mx_create_chat_req(const char* chat_name);
+char* mx_create_chat_req(const char* chat_name, int color);
 
 char* mx_create_signup_req(const char* login, const char* password);
 
@@ -195,6 +202,8 @@ char* mx_create_join_chat_req(const int chat_id);
 char* mx_create_get_chat_participants_req(int chat_id);
 
 char* mx_create_get_joined_chats_req();
+
+char* mx_create_quit_request();
 
 //TEST
 void create_new_chat_window(client_t* client);
@@ -215,6 +224,10 @@ void mx_handle_auth_err(client_t* client);
 void mx_handle_auth_success(client_t* client);
 
 void mx_handle_chat_creation(client_t* client);
+
+//_____Pasword hash function______
+char* mx_hash_sha256(const char *password);
+//________________________________
 
 
 #endif
