@@ -1,5 +1,54 @@
 #include "../inc/client.h"
 
+void mx_on_selection_changed(GtkListBox *listbox, gpointer data) {
+	client_t* client = (client_t*)data;
+	GtkStack *stack = client->c_window->entry_edit_stack;
+	GList *selected_rows = gtk_list_box_get_selected_rows(listbox);
+
+	if (selected_rows != NULL) {
+    	gtk_stack_set_visible_child_name(stack, "page1");
+		
+		if (g_list_length(selected_rows) > 1) {
+			gtk_widget_hide(client->c_window->selected_msg_edit_btn);
+		}
+		else {
+			gtk_widget_show(client->c_window->selected_msg_edit_btn);
+		}
+    	
+		g_list_free(selected_rows);
+  	} else {
+    	gtk_stack_set_visible_child_name(stack, "page0");
+  	}
+}
+
+gboolean mx_on_button_press_event(GtkWidget *widget, GdkEventButton *event, gpointer data) {
+  	GtkListBox *list_box = GTK_LIST_BOX(widget);
+  	GtkListBoxRow *row = gtk_list_box_get_row_at_y(list_box, event->y);
+
+  	if (row != NULL && event->type == GDK_BUTTON_PRESS && event->button == GDK_BUTTON_PRIMARY) {
+    	gboolean selected = gtk_list_box_row_is_selected(row);
+
+    	if (selected) {
+    	  gtk_list_box_unselect_row(list_box, row);
+    	} else {
+    	  gtk_list_box_select_row(list_box, row);
+    	}
+
+    	return TRUE;
+  	}
+
+  	return FALSE;
+}
+
+void mx_on_selected_msg_close_btn_clicked(GtkButton* b, gpointer data) {
+	client_t* client = (client_t*)data;
+	gtk_list_box_unselect_all(client->c_window->msgs_list_box);
+}
+
+void mx_on_selected_msg_select_all_btn_clicked(GtkButton* b, gpointer data) {
+	client_t* client = (client_t*)data;
+	gtk_list_box_select_all(client->c_window->msgs_list_box);
+}
 
 void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
     client_t* client = (client_t*)data;
@@ -45,6 +94,10 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->msgs_list_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "msgs_list_box"));
 	window->msgs_list_scrlld_wnd = GTK_WIDGET(gtk_builder_get_object(window->builder, "msgs_list_scrlld_wnd"));
 	window->send_message_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "send_message_btn"));
+	window->entry_edit_stack = GTK_WIDGET(gtk_builder_get_object(window->builder, "entry_edit_stack"));
+	window->selected_msg_close_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_close_btn"));
+	window->selected_msg_edit_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_edit_btn"));
+	window->selected_msg_select_all_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_select_all_btn"));
 	window->message_input_field = GTK_WIDGET(gtk_builder_get_object(window->builder, "message_input_field"));
 
 	//just test
@@ -70,8 +123,11 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	
 	g_signal_connect(window->add_chat_btn, "released", G_CALLBACK(mx_on_create_chat_btn_clicked), client);
 	g_signal_connect(window->search_entry, "search-changed", G_CALLBACK(mx_on_search_changed), client);
-	//g_signal_connect(window->send_message_btn, "released", G_CALLBACK(add_message_to_list), client->c_window);
-
+	g_signal_connect(window->msgs_list_box, "button-press-event", G_CALLBACK(mx_on_button_press_event), NULL);
+	g_signal_connect(window->msgs_list_box, "selected-rows-changed", G_CALLBACK(mx_on_selection_changed), client);
+	g_signal_connect(window->selected_msg_close_btn, "released", G_CALLBACK(mx_on_selected_msg_close_btn_clicked), client);
+	g_signal_connect(window->selected_msg_select_all_btn, "released", G_CALLBACK(mx_on_selected_msg_select_all_btn_clicked), client);
+	
 	return window;
 }
 
