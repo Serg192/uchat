@@ -66,7 +66,7 @@ static inline void  mx_push_message(chat_window_t* window, message_t* message, i
 
 void mx_handle_msg_update(client_t* client){
 
-	printf("Handling msg update\n");
+	//printf("Handling msg update\n");
 
 	cJSON* msg_json = client->current_response->json;
 	cJSON* msg_array = cJSON_GetObjectItemCaseSensitive(msg_json, "messages");
@@ -77,7 +77,7 @@ void mx_handle_msg_update(client_t* client){
 
     int messages_count = cJSON_GetArraySize(msg_array);
 
-    printf("Array len is %d\n", messages_count);
+    //printf("Array len is %d\n", messages_count);
 
   	for(int i = 0; i < messages_count; i++) {
   		 cJSON *message = cJSON_GetArrayItem(msg_array, i);
@@ -92,21 +92,25 @@ void mx_handle_msg_update(client_t* client){
         
         int mode = client->current_response->type == GET_ABOVE_MSG_RESP ? PUSH_FRONT : PUSH_BACK;
 
-        if(client->last_msg_in_chat_id != msg_struct.id)
+        if(client->last_msg_in_chat_id != msg_struct.id && client->first_msg_in_chat_id != msg_struct.id)
         	mx_push_message(client->c_window, &msg_struct, mode);
 
-        if(mode == PUSH_BACK)
+        if(mode == PUSH_BACK){
+        	if(client->first_msg_in_chat_id == 1 && i == 0)
+        		client->first_msg_in_chat_id = msg_struct.id;
         	client->last_msg_in_chat_id = msg_struct.id;
+        }
 
         if(mode == PUSH_FRONT){
         	if(client->last_msg_in_chat_id == -1 && i == 0)
         		client->last_msg_in_chat_id = msg_struct.id;
+        	client->first_msg_in_chat_id = msg_struct.id;
         }
 
   	}
 
   	//gtk_list_box_scroll_to_row(client->c_window->msgs_list_box, gtk_list_box_get_row_at_index(client->c_window->msgs_list_box, -1), 0.0, FALSE, 0.0, 0.0);
-  	printf("After update last msg is %d\n", client->last_msg_in_chat_id);
+  //	printf("After update last msg is %d\n", client->last_msg_in_chat_id);
 
     //cJSON_Delete(msg_array);
 }

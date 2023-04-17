@@ -35,6 +35,8 @@
 #define CREATE_CHAT_WIND_XML_PATH "client/res/windows/create_chat_window.glade"
 #define DIALOG_WIND_XML_PATH "client/res/windows/dialog_window.glade"
 
+#define MSG_LOAD_LIMIT 10
+
 typedef struct serv_res_s {
 	cJSON* json;
 	const char* str_res;
@@ -137,6 +139,7 @@ typedef struct client_s {
 
 	int current_chat_id;
 	int last_msg_in_chat_id;
+	int first_msg_in_chat_id;
 
 }			   client_t;
 
@@ -174,6 +177,8 @@ void mx_on_show_psw_btn_clicked(GtkWidget *w, gpointer data);
 void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data);
 
 void mx_on_send_msg_btn_clicked(GtkButton* b, gpointer data);
+
+void mx_on_msg_list_edge_was_reached(GtkScrolledWindow* scrolled_window, GtkPositionType pos, gpointer user_data);
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data);
 

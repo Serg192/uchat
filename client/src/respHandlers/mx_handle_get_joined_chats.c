@@ -39,13 +39,13 @@ int mx_get_chat_id_from_btn(GtkWidget* w, client_t* client) {
 
 void mx_handle_get_joined_chats(client_t* client) {
 
-	printf("Get joined chats\n");
+	//printf("Get joined chats\n");
 
 	cJSON *item = cJSON_GetObjectItem(client->current_response->json,"chats");
 
 	const int chat_count = cJSON_GetArraySize(item);
 
-	printf("Array len %d\n", chat_count);
+	//printf("Array len %d\n", chat_count);
 
 	GtkWidget *button;
 	GtkWidget *icon;

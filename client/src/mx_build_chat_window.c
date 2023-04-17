@@ -61,6 +61,8 @@ void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
 	gtk_main_quit();
 }
 
+
+
 chat_window_t* mx_build_chat_window(client_t* client) {
 
 
@@ -107,27 +109,14 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	//gtk_search_entry_set_search_delay(window->search_entry, (guint)400);
 
 
-	//TEST	 
-	/*
-	mx_add_message_to_list(window, "You", "Hello", "20:00", TRUE);
-	mx_add_message_to_list(window, "Someone", "", "22:44", FALSE);
-	mx_add_message_to_list(window, "Someone", "Create a program that works as a system utility ls . You must implement:•the usage: usage: uls [-l] [file ...]•basic functionality of this command - list of directory contents without flags•processing of file operands for files and directories•the -l  flag, which is one of the most useful flags•the view of extended file attributes and access control lists (ACL)•error handling, as in the original ls . Output uls as the program name instead of ls  where necessary•the multicolumn output format when the option -l  isn't specified","22:45", FALSE);
-	mx_add_message_to_list(window, "You", "Create a program that works as a system utility ls . You must implement:•the usage: usage: uls [-l] [file ...]•basic functionality of this command - list of directory contents without flags•processing of file operands for files and directories•the -l  flag, which is one of the most useful flags•the view of extended file attributes and access control lists (ACL)•error handling, as in the original ls . Output uls as the program name instead of ls  where necessary•the multicolumn output format when the option -l  isn't specified","23:20", TRUE);
-	mx_add_message_to_list(window, "You", "Hello", "20:00", TRUE);
-	mx_add_message_to_list(window, "Someone", "", "22:44", FALSE);
-	mx_add_message_to_list(window, "Someone", "Create a program that works as a system utility ls . You must implement:•the usage: usage: uls [-l] [file ...]•basic functionality of this command - list of directory contents without flags•processing of file operands for files and directories•the -l  flag, which is one of the most useful flags•the view of extended file attributes and access control lists (ACL)•error handling, as in the original ls . Output uls as the program name instead of ls  where necessary•the multicolumn output format when the option -l  isn't specified","22:45", FALSE);
-	mx_add_message_to_list(window, "You", "Create a program that works as a system utility ls . You must implement:•the usage: usage: uls [-l] [file ...]•basic functionality of this command - list of mx_add_message_to_list contents without flags•processing of file operands for files and directories•the -l  flag, which is one of the most useful flags•the view of extended file attributes and access control lists (ACL)•error handling, as in the original ls . Output uls as the program name instead of ls  where necessary•the multicolumn output format when the option -l  isn't specified","23:20", TRUE);
-	mx_add_message_to_list(window, "You", "Hello", "20:00", TRUE);
-	mx_add_message_to_list(window, "Someone", "", "22:44", FALSE);
-	mx_add_message_to_list(window, "Someone", "Create a program that works as a system utility ls . You must implement:•the usage: usage: uls [-l] [file ...]•basic functionality of this command - list of directory contents without flags•processing of file operands for files and directories•the -l  flag, which is one of the most useful flags•the view of extended file attributes and access control lists (ACL)•error handling, as in the original ls . Output uls as the program name instead of ls  where necessary•the multicolumn output format when the option -l  isn't specified","22:45", FALSE);
-	mx_add_message_to_list(window, "You", "Create a program that works as a system utility ls . You must implement:•the usage: usage: uls [-l] [file ...]•basic functionality of this command - list of directory contents without flags•processing of file operands for files and directories•the -l  flag, which is one of the most useful flags•the view of extended file attributes and access control lists (ACL)•error handling, as in the original ls . Output uls as the program name instead of ls  where necessary•the multicolumn output format when the option -l  isn't specified","23:20", TRUE);
-	*/
 	g_signal_connect(window->add_chat_btn, "released", G_CALLBACK(mx_on_create_chat_btn_clicked), client);
 	g_signal_connect(window->search_entry, "search-changed", G_CALLBACK(mx_on_search_changed), client);
 	g_signal_connect(window->msgs_list_box, "button-press-event", G_CALLBACK(mx_on_button_press_event), NULL);
 	g_signal_connect(window->msgs_list_box, "selected-rows-changed", G_CALLBACK(mx_on_selection_changed), client);
 	g_signal_connect(window->selected_msg_close_btn, "released", G_CALLBACK(mx_on_selected_msg_close_btn_clicked), client);
 	g_signal_connect(window->selected_msg_select_all_btn, "released", G_CALLBACK(mx_on_selected_msg_select_all_btn_clicked), client);
+
+	g_signal_connect(window->msgs_list_scrlld_wnd, "edge-reached", G_CALLBACK(mx_on_msg_list_edge_was_reached), client);
 	
 	return window;
 }

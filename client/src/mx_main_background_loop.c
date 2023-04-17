@@ -123,7 +123,7 @@ void mx_main_background_loop(void* data) {
 			if (client->current_chat_id != -1 &&
 			    client->last_msg_in_chat_id != -1 &&
 			    (double)(current_time - start_time) / CLOCKS_PER_SEC >= 1.0) {
-            	printf("Should update chat, last msg id is %d\n", client->last_msg_in_chat_id);
+            	//printf("Should update chat, last msg id is %d\n", client->last_msg_in_chat_id);
 
             	request_t* request = (request_t*)malloc(sizeof(request_t));
 

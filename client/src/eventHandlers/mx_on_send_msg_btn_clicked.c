@@ -34,6 +34,12 @@ void mx_on_send_msg_btn_clicked(GtkButton* b, gpointer data){
 		request->req = mx_create_send_msg_req(client->current_chat_id, prepared_text);
 		mx_queue_push(client->request_queue, request);
 		gtk_text_buffer_set_text(input_txt_buf, "", 0);
+
+		request_t* update_request = (request_t*)malloc(sizeof(request_t));
+
+		update_request->req = mx_create_get_chat_msg_req(client->current_chat_id, MSG_LOAD_BELOW, MSG_ID_LAST, 10000);
+
+		mx_queue_push(client->request_queue, update_request);
 	}
 
 	if(text)
