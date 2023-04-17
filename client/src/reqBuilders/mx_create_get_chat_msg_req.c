@@ -5,11 +5,11 @@
 // MSG_LOAD_ALL     - load all messages from give chat,                             //
 //                  in this case start_id and count can be                          //
 //                  any value                                                       //
-// MSG_LOAD_ABOVE   - load messages with id less than given start id                //
+// MSG_LOAD_ABOVE   - load messages with id less equal than given start id          //
 //                  all messages in database have their own id                      //
 //                  older messages have id always less than id of new               //
 //                  messages.                                                       //
-// MSG_LOAD_BELOW   - load messages with id greater than given start id             //
+// MSG_LOAD_BELOW   - load messages with id greater equal than given start id       //
 //__________________________________________________________________________________//
 // int start_id     - works only with flag set to MSG_LOAD_ABOVE and MSG_LOAD_BELOW //
 //                  can receive integer id or MSG_ID_LAST which sets start_id to be //

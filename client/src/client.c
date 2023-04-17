@@ -19,6 +19,8 @@ int main(int argc, char** argv) {
 
 	client.current_response = NULL;
 	client.search_mode = false;
+	client.current_chat_id = -1;
+	client.last_msg_in_chat_id = -1;
 
 	client.chat_id_chat_btn_map = NULL;
 

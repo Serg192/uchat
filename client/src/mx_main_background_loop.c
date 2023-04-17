@@ -60,9 +60,11 @@ static inline void handle_response(client_t* client) {
 		case ADD_CHAT_MEM_SUCCESS_RESP:
 			mx_handle_get_joined_chats(client);
 			break;
-		case GET_CHAT_MSG_RES:
+		case GET_ABOVE_MSG_RESP:
+		case GET_BELOW_MSG_RESP:
 			printf("\n\n************************************\n");
 			print_json_array(client->current_response->str_res, "messages");
+			mx_handle_msg_update(client);
 			printf("\n*****************************************\n");
 			break;
 		default:
@@ -88,7 +90,11 @@ void mx_main_background_loop(void* data) {
 	bool can_handle_next = true;
 	bool is_running = true;
 
+	clock_t start_time = clock(); 
+    clock_t current_time;
+
 	while(is_running){
+		current_time = clock();
 		if(!client->request_queue->empty) {
 			if(can_handle_next){
 				request_t* request = mx_queue_peek(client->request_queue);
@@ -114,6 +120,20 @@ void mx_main_background_loop(void* data) {
 		} else {
 			//push request for to update chat messages
 			// 
+			if (client->current_chat_id != -1 &&
+			    client->last_msg_in_chat_id != -1 &&
+			    (double)(current_time - start_time) / CLOCKS_PER_SEC >= 1.0) {
+            	printf("Should update chat, last msg id is %d\n", client->last_msg_in_chat_id);
+
+            	request_t* request = (request_t*)malloc(sizeof(request_t));
+
+				request->req = mx_create_get_chat_msg_req(client->current_chat_id, MSG_LOAD_BELOW, client->last_msg_in_chat_id, 10000);
+
+				mx_queue_push(client->request_queue, request);
+
+            	start_time = current_time;
+        	}
+
 		}
 	}
 

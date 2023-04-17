@@ -50,12 +50,12 @@ static inline char* build_sql_req(int chat_id, int start_id, int count, int mode
 		case MSG_LOAD_BELOW:
 			 asprintf(&sql_req, "SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username "
                        		    "FROM 'message' INNER JOIN 'user' ON user.id = message.from_id "
-                                "WHERE message.room_id = '%d' AND message.id > %d ORDER BY message.id ASC LIMIT %d", chat_id, start_id, count);
+                                "WHERE message.room_id = '%d' AND message.id >= %d ORDER BY message.id ASC LIMIT %d", chat_id, start_id, count);
 			break;
 		case MSG_LOAD_ABOVE:
 			  asprintf(&sql_req, "SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username "
                        			 "FROM 'message' INNER JOIN 'user' ON user.id = message.from_id "
-                       			 "WHERE message.room_id = '%d' AND message.id < %d ORDER BY message.id DESC LIMIT %d", chat_id, start_id, count);
+                       			 "WHERE message.room_id = '%d' AND message.id <= %d ORDER BY message.id DESC LIMIT %d", chat_id, start_id, count);
 			break;
 		default:
 			mx_log(SERV_LOG_FILE, LOG_ERROR, "Invalid mode specified");
@@ -86,12 +86,26 @@ static inline void build_msg_array(int chat_id,
         exit(-1);
     }
 
+  //  t_list* list = NULL;
 
     while(sqlite3_step(stmt) == SQLITE_ROW){
     	const int this_id = sqlite3_column_int64(stmt, 0);
 
-    	cJSON_AddItemToArray(msg_array, make_message_item(own_id, stmt));
+    //	if(mode == MSG_LOAD_BELOW){
+    //		mx_push_back(&list, make_message_item(own_id, stmt));
+    //	} else {
+    		cJSON_AddItemToArray(msg_array, make_message_item(own_id, stmt));
+    //	}
     }
+
+    //if(mode == MSG_LOAD_BELOW){
+    //	while(list != NULL){
+    //		cJSON* tmp_json = (cJSON*)list->data;
+    //		cJSON_AddItemToArray(msg_array, tmp_json);
+    //		mx_pop_front(&list);
+    //	}
+    //}
+
 
     cJSON_AddItemReferenceToObject(response, "messages", msg_array);
 
@@ -127,7 +141,7 @@ void mx_handle_get_chat_msg(client_t* client, request_t* req){
 
 	build_msg_array(chat_id, client->user_id, start_id, mode, count, response);
 
-	cJSON_AddNumberToObject(response, "rtype", GET_CHAT_MSG_RES);
+	cJSON_AddNumberToObject(response, "rtype", (mode == MSG_LOAD_BELOW ? GET_BELOW_MSG_RESP : GET_ABOVE_MSG_RESP));
 
 
 	char* response_str = cJSON_PrintUnformatted(response);

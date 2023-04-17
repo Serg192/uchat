@@ -136,6 +136,7 @@ typedef struct client_s {
 	bool search_mode;
 
 	int current_chat_id;
+	int last_msg_in_chat_id;
 
 }			   client_t;
 
@@ -232,6 +233,8 @@ void mx_handle_auth_err(client_t* client);
 void mx_handle_auth_success(client_t* client);
 
 void mx_handle_chat_creation(client_t* client);
+
+void mx_handle_msg_update(client_t* client);
 
 //_____Pasword hash function______
 char* mx_hash_sha256(const char *password);
