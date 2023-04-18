@@ -91,6 +91,7 @@ void mx_main_background_loop(void* data) {
 	bool is_running = true;
 
 	clock_t start_time = clock(); 
+	clock_t time_to_wait_for_response = clock();
     clock_t current_time;
 
 	while(is_running){
@@ -115,6 +116,12 @@ void mx_main_background_loop(void* data) {
 					printf("response received => %s\n", client->current_response->str_res);
 					handle_response(client);
 					can_handle_next = true;
+					time_to_wait_for_response = current_time;
+				} if((double)(current_time - time_to_wait_for_response) / CLOCKS_PER_SEC >= RESP_TIMEOUT) {
+					//Just ignore and send next
+					printf("____________________RESPONSE IGNORE_________________\n");
+					can_handle_next = true;
+					time_to_wait_for_response = current_time;
 				}
 			}
 		} else {
@@ -122,7 +129,7 @@ void mx_main_background_loop(void* data) {
 			// 
 			if (client->current_chat_id != -1 &&
 			    client->last_msg_in_chat_id != -1 &&
-			    (double)(current_time - start_time) / CLOCKS_PER_SEC >= 1.0) {
+			    (double)(current_time - start_time) / CLOCKS_PER_SEC >= 1.0f) {
             	//printf("Should update chat, last msg id is %d\n", client->last_msg_in_chat_id);
 
             	request_t* request = (request_t*)malloc(sizeof(request_t));
@@ -142,4 +149,3 @@ void mx_main_background_loop(void* data) {
     	ret = SSL_shutdown(client->ssl);			
 	close(client->serv);
 }
-

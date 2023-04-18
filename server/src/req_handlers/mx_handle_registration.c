@@ -7,6 +7,8 @@ static inline bool has_user(const char* login) {
 
 	sqlite3* db = mx_open_db();
 
+	pthread_mutex_lock(&db_mutex);
+
 	char* sql_req = NULL;
 
 	asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", login);
@@ -24,6 +26,8 @@ static inline bool has_user(const char* login) {
     free(sql_req);
 
     sqlite3_finalize(answ);
+
+    pthread_mutex_unlock(&db_mutex);
 
 	mx_close_db(db);
 

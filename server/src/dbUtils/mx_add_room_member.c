@@ -13,6 +13,7 @@ static inline bool has_pair(const char* table,
 	asprintf(&sql_req, "SELECT 1 FROM %s WHERE %s = '%d' AND %s = '%d'", table, field1, val1, field2, val2);
 
 	sqlite3* db = mx_open_db();
+	pthread_mutex_lock(&db_mutex);
 
 
 	sqlite3_stmt* stmt;
@@ -27,6 +28,9 @@ static inline bool has_pair(const char* table,
 
     free(sql_req);
     sqlite3_finalize(stmt);
+
+    pthread_mutex_unlock(&db_mutex);
+
     mx_close_db(db);
 
     return result;
@@ -40,6 +44,8 @@ void mx_add_room_member(int client_id, int room_id) {
 			return;
 
 	sqlite3* db = mx_open_db();
+	pthread_mutex_lock(&db_mutex);
+
 
 	char* sql_req = NULL;
 	asprintf(&sql_req, "INSERT INTO room_member (client_id, room_id) VALUES ('%d', '%d')", client_id, room_id);
@@ -52,6 +58,8 @@ void mx_add_room_member(int client_id, int room_id) {
     }
 
     free(sql_req);
+    pthread_mutex_unlock(&db_mutex);
+
 	mx_close_db(db);
 }
 

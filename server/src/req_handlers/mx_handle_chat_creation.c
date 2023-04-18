@@ -6,6 +6,8 @@ static inline int create_chat(const char* name, const int room_color) {
 
 	sqlite3* db = mx_open_db();
 
+	pthread_mutex_lock(&db_mutex);
+
 	char* sql_req = NULL;
 
 	asprintf(&sql_req, "INSERT INTO 'room' ('name', 'color') VALUES ('%s', '%d')", name, room_color);
@@ -20,6 +22,8 @@ static inline int create_chat(const char* name, const int room_color) {
     id = (int)sqlite3_last_insert_rowid(db);
 
     free(sql_req);
+
+    pthread_mutex_unlock(&db_mutex);
 	mx_close_db(db);
 
 	return id;

@@ -29,6 +29,8 @@
 #define SERV_LOG_FILE "server/log/log.txt"
 #define DATABASE_FILE "server/db/database.db"
 
+pthread_mutex_t db_mutex;
+
 typedef struct request_s {
 	int type;
 	char* str_req;

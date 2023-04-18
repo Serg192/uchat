@@ -5,6 +5,8 @@ void mx_get_chats_array(cJSON* parent_json, const char* search_condition) {
 
 	sqlite3* db = mx_open_db();
 
+	pthread_mutex_lock(&db_mutex);
+
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, search_condition, -1, &stmt, 0) != SQLITE_OK) {
@@ -26,6 +28,8 @@ void mx_get_chats_array(cJSON* parent_json, const char* search_condition) {
     cJSON_AddItemReferenceToObject(parent_json, "chats", chats_array);
 	
 	sqlite3_finalize(stmt);
+
+	pthread_mutex_unlock(&db_mutex);
 
 	mx_close_db(db);
 }

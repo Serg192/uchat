@@ -5,6 +5,8 @@ static inline void build_users_array(int chat_id, cJSON* response){
 
 	sqlite3* db = mx_open_db();
 
+	pthread_mutex_lock(&db_mutex);
+
 	char* sql_req = NULL;
 	asprintf(&sql_req, "SELECT * FROM room_member WHERE room_id = '%d'", chat_id);
 	sqlite3_stmt* stmt;
@@ -49,6 +51,8 @@ static inline void build_users_array(int chat_id, cJSON* response){
 
     free(sql_req);
     sqlite3_finalize(stmt);
+
+    pthread_mutex_unlock(&db_mutex);
     mx_close_db(db);
 }
 

@@ -50,7 +50,14 @@ static inline void  mx_push_message(chat_window_t* window, message_t* message, i
 	gtk_box_pack_end(GTK_BOX(msg_main_box), msg_sending_time_label, FALSE, TRUE, 0);
     
     //FOR TESTS
-	gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, "#1ddecb");
+    //Doesn't work
+	//gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, "#1ddecb");
+
+	GdkRGBA color;
+	gdk_rgba_parse(&color, "#FF0F00");
+	gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, &color);
+
+
 	
 	GtkListBoxRow* row = gtk_list_box_row_new();
 	gtk_container_add(row, msg_main_box);
@@ -77,8 +84,6 @@ void mx_handle_msg_update(client_t* client){
 
     int messages_count = cJSON_GetArraySize(msg_array);
 
-    //printf("Array len is %d\n", messages_count);
-
   	for(int i = 0; i < messages_count; i++) {
   		 cJSON *message = cJSON_GetArrayItem(msg_array, i);
 
@@ -96,7 +101,7 @@ void mx_handle_msg_update(client_t* client){
         	mx_push_message(client->c_window, &msg_struct, mode);
 
         if(mode == PUSH_BACK){
-        	if(client->first_msg_in_chat_id == 1 && i == 0)
+        	if(client->first_msg_in_chat_id == -1 && i == 0)
         		client->first_msg_in_chat_id = msg_struct.id;
         	client->last_msg_in_chat_id = msg_struct.id;
         }
@@ -109,6 +114,8 @@ void mx_handle_msg_update(client_t* client){
 
   	}
 
+  	if(client->last_msg_in_chat_id == -1)
+  		client->last_msg_in_chat_id = MSG_ID_LAST;
   	//gtk_list_box_scroll_to_row(client->c_window->msgs_list_box, gtk_list_box_get_row_at_index(client->c_window->msgs_list_box, -1), 0.0, FALSE, 0.0, 0.0);
   //	printf("After update last msg is %d\n", client->last_msg_in_chat_id);
 

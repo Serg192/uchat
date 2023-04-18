@@ -63,10 +63,14 @@ int main(int argc, char *argv[]) {
 		exit(-1);
 	}
     
+	pthread_mutex_init(&db_mutex, NULL);
+
     mx_log(SERV_LOG_FILE, LOG_TRACE, "Starting the server");
-	make_daemon();
+	//make_daemon();
 
    	mx_run_serv(create_ssocket(atoi(argv[1])));
+
+   	pthread_mutex_destroy(&db_mutex);
 
 	return 0;
 }

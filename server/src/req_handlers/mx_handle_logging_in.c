@@ -11,6 +11,7 @@ static inline bool check_password_for(const char* username, const char* password
 
 	sqlite3* db = mx_open_db();
 
+	
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {

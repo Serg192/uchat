@@ -4,6 +4,8 @@ static inline int find_last_msg_id(const int chat_id) {
 	int result;
 	sqlite3* db = mx_open_db();
 
+	pthread_mutex_lock(&db_mutex);
+
 	char* sql_req = "SELECT message.id FROM 'message' ORDER BY message.id DESC LIMIT 1";
 
 	sqlite3_stmt* stmt;
@@ -19,6 +21,8 @@ static inline int find_last_msg_id(const int chat_id) {
     }
 
     sqlite3_finalize(stmt);
+
+    pthread_mutex_unlock(&db_mutex);
     mx_close_db(db);
 
     return result;
@@ -76,6 +80,8 @@ static inline void build_msg_array(int chat_id,
 
 	sqlite3* db = mx_open_db();
 
+	pthread_mutex_lock(&db_mutex);
+
 	char* sql_req = build_sql_req(chat_id, start_id, count, mode);
 
 	sqlite3_stmt* stmt;
@@ -111,6 +117,8 @@ static inline void build_msg_array(int chat_id,
 
     free(sql_req);
     sqlite3_finalize(stmt);
+
+    pthread_mutex_unlock(&db_mutex);
     mx_close_db(db);
 }
 

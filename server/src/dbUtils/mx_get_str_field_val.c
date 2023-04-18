@@ -12,6 +12,7 @@ char* mx_get_str_field_val(const char* table,
 	asprintf(&sql_req, "SELECT %s FROM '%s' WHERE %s = '%s'", fieldname, table, key, val);
 
 	sqlite3* db = mx_open_db();
+	pthread_mutex_lock(&db_mutex);
 
 	sqlite3_stmt* answ;
 
@@ -30,6 +31,8 @@ char* mx_get_str_field_val(const char* table,
  	free(sql_req);
 
     sqlite3_finalize(answ);
+
+    pthread_mutex_unlock(&db_mutex);
 
 	mx_close_db(db);
 

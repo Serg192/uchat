@@ -5,6 +5,8 @@ bool mx_check_if_row_exists(char* sql_req) {
 	bool result;
 
 	sqlite3* db = mx_open_db();
+	pthread_mutex_lock(&db_mutex);
+
 
 	sqlite3_stmt* answ;
 
@@ -20,6 +22,7 @@ bool mx_check_if_row_exists(char* sql_req) {
 
     sqlite3_finalize(answ);
 
+	pthread_mutex_unlock(&db_mutex);
 	mx_close_db(db);
 
 	return result;

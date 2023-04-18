@@ -36,6 +36,7 @@
 #define DIALOG_WIND_XML_PATH "client/res/windows/dialog_window.glade"
 
 #define MSG_LOAD_LIMIT 10
+#define RESP_TIMEOUT 3.0f
 
 typedef struct serv_res_s {
 	cJSON* json;

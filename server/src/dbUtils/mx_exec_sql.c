@@ -6,6 +6,7 @@ void mx_exec_sql(char* sql_req) {
 	mx_log(SERV_LOG_FILE, LOG_TRACE, sql_req);
 
 	sqlite3* db = mx_open_db();
+	pthread_mutex_lock(&db_mutex);
 
 	 char* err;
 	 if (sqlite3_exec(db, sql_req, NULL, NULL, &err) != SQLITE_OK) {
@@ -20,6 +21,7 @@ void mx_exec_sql(char* sql_req) {
     }
 
     free(sql_req);
+    pthread_mutex_unlock(&db_mutex);
 	mx_close_db(db);
 
 }

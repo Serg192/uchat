@@ -3,20 +3,26 @@
 static inline void handle_new_connection(int c_sock, SSL* ssl) {
 	pthread_t thread;
 
+	mx_log(SERV_LOG_FILE, LOG_TRACE, "Allocating memory for new client");
+
 	client_t* client = malloc(sizeof(client_t*));
 	client->sock = c_sock;
 	client->ssl = ssl;
 
-	if(SSL_accept(ssl) == -1) {
+	mx_log(SERV_LOG_FILE, LOG_TRACE, "SSL_accept() function");
+
+	if(SSL_accept(client->ssl) == -1) {
 		mx_log(SERV_LOG_FILE, LOG_ERROR, "Server SSL_accept() failed");
 		mx_log(SERV_LOG_FILE, LOG_ERROR, strerror(errno));
 	}
 
+	mx_log(SERV_LOG_FILE, LOG_TRACE, "Setting up flags");
 
 	int flags = fcntl(c_sock, F_GETFL, 0);
 	fcntl(c_sock, F_SETFL, flags | O_NONBLOCK);
 	fcntl(c_sock, F_SETFD, O_NONBLOCK);
 
+	mx_log(SERV_LOG_FILE, LOG_TRACE, "Everything was configured, starting a new thread");
 	pthread_create(&thread, NULL, &mx_client_handler, (void*)client);
 }
 
@@ -40,9 +46,10 @@ void mx_run_serv(int s_sock) {
     		mx_log(SERV_LOG_FILE, LOG_INFO, log);
     		mx_strdel(&log);
 
-
     		ossl.ssl = SSL_new(ossl.ctx);
     		SSL_set_fd(ossl.ssl, c_sock);
+
+    		mx_log(SERV_LOG_FILE, LOG_TRACE, "Creating client handler");
 
     		handle_new_connection(c_sock, ossl.ssl);
     	}
