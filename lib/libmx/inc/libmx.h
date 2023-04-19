@@ -11,6 +11,7 @@
 //#include <malloc/malloc.h>
 #include <malloc.h>
 
+
 typedef struct s_list {
     void *data;
     struct s_list *next;
@@ -23,7 +24,7 @@ enum log_level_e {
     LOG_TRACE
 };
 
-//________queue________
+//________QUEUE_______
 
 typedef struct queue_s {
     bool empty;
@@ -42,6 +43,34 @@ void* mx_queue_pop(queue_t* queue);
 void mx_destroy_queue(queue_t** queue);
 
 //_____________________
+
+
+//_______INT MAP_______________
+
+#define MAP_SIZE 1000
+
+typedef struct map_node_s {
+    int key;
+    void* value;
+    struct map_node_s* next;
+} map_node_t;
+
+typedef struct map_s {
+    map_node_t* table[MAP_SIZE];
+} map_t;
+
+map_t* mx_create_map();
+
+void mx_map_put(map_t* map, int key, void *value);
+
+void* mx_map_get(map_t* map, int key);
+
+void mx_map_remove(map_t* map, int key);
+
+void mx_map_clear(map_t* map);
+
+void mx_print_map(map_t* map);
+//-------------------------------
 
 void mx_printchar(char c);
 

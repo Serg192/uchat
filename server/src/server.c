@@ -56,12 +56,16 @@ static inline int create_ssocket(int port) {
 	return r_sock;
 }
 
+
+
 int main(int argc, char *argv[]) {
 
 	if(argc != 2) {
 		mx_printerr("usage: ./uchat_server [port]\n");
 		exit(-1);
 	}
+
+	client_map = mx_create_map();
     
 	pthread_mutex_init(&db_mutex, NULL);
 
@@ -70,7 +74,12 @@ int main(int argc, char *argv[]) {
 
    	mx_run_serv(create_ssocket(atoi(argv[1])));
 
+   	printf("Just to make sure\n");
+
    	pthread_mutex_destroy(&db_mutex);
+
+   	mx_map_clear(client_map);
+   	
 
 	return 0;
 }

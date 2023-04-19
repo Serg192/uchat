@@ -46,9 +46,14 @@ static inline void dispatch(client_t* client, request_t* req) {
 
 void* mx_client_handler(void* client) {
 
+	client_t* cl = (client_t*)client;
+
+	cl->deleted_msg_notify_q = mx_create_queue();
+
 	bool client_disconnect_req = false;
 
 	while(!client_disconnect_req) {
+
 		request_t* client_req = mx_get_client_req((client_t*)client);
 
 		if(client_req != NULL) {
@@ -56,12 +61,20 @@ void* mx_client_handler(void* client) {
 			mx_log(SERV_LOG_FILE, LOG_TRACE, client_req->str_req);
 
 			if(client_req->type == QUIT_REQ){
+
+				printf("__QUIT_REQUEST___\n");
+				printf("SSL shut down\n");
 				int ret = SSL_shutdown(((client_t*)client)->ssl);
 				if (ret == 0) 
     				ret = SSL_shutdown(((client_t*)client)->ssl);
 				
 				close(((client_t*)client)->sock);
 				client_disconnect_req = true;
+
+				if(cl->user_id != -1)
+					mx_map_remove(client_map, cl->user_id);
+				client_t* c = (client_t*)client;
+				mx_destroy_queue(&(c->deleted_msg_notify_q));
 			} else {
 				dispatch(client, client_req);
 			}
@@ -71,5 +84,8 @@ void* mx_client_handler(void* client) {
 		}
 	}
 
-	pthread_detach(pthread_self());
+	
+	free(client);
+	//pthread_detach(pthread_self());
+	pthread_exit(NULL); 
 }

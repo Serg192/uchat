@@ -108,6 +108,7 @@ void mx_main_background_loop(void* data) {
 				free(request->req);
 				free(request);
 				can_handle_next = false;
+				time_to_wait_for_response = current_time;
 			} else {
 				client->current_response = mx_get_server_response(client->ssl);
 

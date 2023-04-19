@@ -1,5 +1,21 @@
 #include "../../inc/server.h"
 
+static inline cJSON* build_deleted_msg_array(client_t* client){
+	cJSON* deleted_msg_array = cJSON_CreateArray();
+
+	while(!client->deleted_msg_notify_q->empty){
+		int deleted_msg_id = (int)mx_queue_peek(client->deleted_msg_notify_q);
+
+		cJSON* array_item = cJSON_CreateObject();
+		cJSON_AddNumberToObject(array_item, "msg_id", deleted_msg_id);
+		cJSON_AddItemToArray(deleted_msg_array, array_item);
+		mx_queue_pop(client->deleted_msg_notify_q);
+	}
+
+
+	return deleted_msg_array;
+}
+
 static inline int find_last_msg_id(const int chat_id) {
 	int result;
 	sqlite3* db = mx_open_db();
@@ -149,6 +165,7 @@ void mx_handle_get_chat_msg(client_t* client, request_t* req){
 
 	build_msg_array(chat_id, client->user_id, start_id, mode, count, response);
 
+	cJSON_AddItemReferenceToObject(response, "deleted", build_deleted_msg_array(client));
 	cJSON_AddNumberToObject(response, "rtype", (mode == MSG_LOAD_BELOW ? GET_BELOW_MSG_RESP : GET_ABOVE_MSG_RESP));
 
 

@@ -100,6 +100,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->selected_msg_close_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_close_btn"));
 	window->selected_msg_edit_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_edit_btn"));
 	window->selected_msg_select_all_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_select_all_btn"));
+	window->selected_msg_delete_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_delete_btn"));
 	window->message_input_field = GTK_WIDGET(gtk_builder_get_object(window->builder, "message_input_field"));
 
 	//just test
@@ -117,6 +118,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	g_signal_connect(window->selected_msg_select_all_btn, "released", G_CALLBACK(mx_on_selected_msg_select_all_btn_clicked), client);
 
 	g_signal_connect(window->msgs_list_scrlld_wnd, "edge-reached", G_CALLBACK(mx_on_msg_list_edge_was_reached), client);
+	g_signal_connect(window->selected_msg_delete_btn, "released", G_CALLBACK(mx_on_delete_btn_clicked), client);
 	
 	return window;
 }

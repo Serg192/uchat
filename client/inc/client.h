@@ -38,6 +38,16 @@
 #define MSG_LOAD_LIMIT 10
 #define RESP_TIMEOUT 3.0f
 
+typedef struct message_s {
+	int id;
+	int sending_time;
+	int sending_date;
+	char* username_from;
+	char* messages_str;
+
+}              message_t;
+
+
 typedef struct serv_res_s {
 	cJSON* json;
 	const char* str_res;
@@ -103,6 +113,7 @@ typedef struct chat_window_s {
 	GtkWidget *selected_msg_close_btn;
 	GtkWidget *selected_msg_edit_btn;
 	GtkWidget *selected_msg_select_all_btn;
+	GtkWidget *selected_msg_delete_btn;
 	GtkWidget *message_input_field;
 	GtkWidget *send_message_btn;
 	
@@ -142,6 +153,9 @@ typedef struct client_s {
 	int last_msg_in_chat_id;
 	int first_msg_in_chat_id;
 
+	t_list* messages_in_current_chat;
+
+	map_t* message_id_row_map;
 }			   client_t;
 
 
@@ -170,6 +184,8 @@ void mx_on_signup_btn_clicked(GtkButton* b, gpointer data);
 void mx_on_login_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_chat_btn_clicked(GtkButton* b, gpointer data);
+
+void mx_on_delete_btn_clicked(GtkWidget* w, gpointer data);
 
 void mx_on_search_changed(GtkWidget *w, gpointer data);
 
@@ -219,6 +235,8 @@ char* mx_create_get_chat_participants_req(int chat_id);
 char* mx_create_get_joined_chats_req();
 
 char* mx_create_quit_request();
+
+char* mx_create_delete_chat_msg_req(const int chat_id, const int message_id);
 
 //TEST
 void create_new_chat_window(client_t* client);

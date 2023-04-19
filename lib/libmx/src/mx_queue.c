@@ -1,5 +1,7 @@
 #include "../inc/libmx.h"
 
+#include <stdio.h>
+
 queue_t* mx_create_queue() {
     queue_t* queue = (queue_t*)malloc(sizeof(queue_t));
     queue->empty = true;
@@ -34,13 +36,12 @@ void* mx_queue_pop(queue_t* queue){
 
 void mx_destroy_queue(queue_t** queue) {
     t_list* head = (*queue)->elements;
-
+    
     while(head) {
         t_list* to_del = head;
         head = head->next;
         free(to_del);
     }
-
     free(*queue);
     *queue = NULL;
 }

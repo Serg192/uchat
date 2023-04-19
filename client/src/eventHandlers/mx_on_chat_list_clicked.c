@@ -11,6 +11,19 @@ static inline room_data_clear(client_t* client){
 	    client->first_msg_in_chat_id = -1;
 
 	    msg_list_clear(client);
+
+	    while(client->messages_in_current_chat){
+
+	    	message_t* msg = (message_t*)(client->messages_in_current_chat->data);
+
+	    	//printf("id %d\n", msg->id);
+	    	free(msg->username_from);
+	    	free(msg);
+
+	    	mx_pop_front(&(client->messages_in_current_chat));
+	    }
+
+	    client->messages_in_current_chat = NULL;
 }
 
 static inline void push_load_recent_request(client_t* client){

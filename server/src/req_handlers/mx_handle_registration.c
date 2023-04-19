@@ -95,6 +95,9 @@ void mx_handle_registration(client_t* client, request_t* req) {
 			client->username = username;
 			client->user_id = mx_atoi(mx_get_str_field_val("user", "id", "username", username));
 
+			mx_map_put(client_map, client->user_id, client);
+
+
 	} else {
 		mx_log(SERV_LOG_FILE, LOG_TRACE, "user exist");
 		cJSON_AddNumberToObject(response, "rtype", SIGNUP_ERR_RESP);

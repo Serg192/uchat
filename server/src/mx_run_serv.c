@@ -5,9 +5,10 @@ static inline void handle_new_connection(int c_sock, SSL* ssl) {
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Allocating memory for new client");
 
-	client_t* client = malloc(sizeof(client_t*));
+	client_t* client = malloc(sizeof(client_t));
 	client->sock = c_sock;
 	client->ssl = ssl;
+	client->user_id = -1;
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "SSL_accept() function");
 
@@ -23,6 +24,7 @@ static inline void handle_new_connection(int c_sock, SSL* ssl) {
 	fcntl(c_sock, F_SETFD, O_NONBLOCK);
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Everything was configured, starting a new thread");
+
 	pthread_create(&thread, NULL, &mx_client_handler, (void*)client);
 }
 

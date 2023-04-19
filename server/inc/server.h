@@ -12,6 +12,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <time.h>
+#include <limits.h>
 
 #include <openssl/ssl.h>
 #include <openssl/err.h>
@@ -31,6 +32,14 @@
 
 pthread_mutex_t db_mutex;
 
+//int Map
+
+
+
+//
+
+map_t* client_map;
+
 typedef struct request_s {
 	int type;
 	char* str_req;
@@ -43,6 +52,8 @@ typedef struct client_s {
 	SSL* ssl;
 	const char* username;
 	int user_id;
+
+	queue_t* deleted_msg_notify_q;
 }              client_t;
 
 typedef struct ossl_s {
