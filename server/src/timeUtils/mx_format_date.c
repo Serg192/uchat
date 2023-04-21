@@ -1,8 +1,9 @@
 #include "../../inc/server.h"
 
-int mx_format_time(date_and_time_t* dt){
-	int h = dt->hour;
-	int m = dt->min;
+int mx_format_date(date_and_time_t* dt) {
+	int day = dt->day;
+	int month = dt->month;
+	int year = dt->year;
 
-	return h * 100 + m;
+	return day * 1000000 + month * 10000 + year;
 }

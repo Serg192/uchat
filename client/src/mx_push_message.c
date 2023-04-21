@@ -9,7 +9,10 @@ static inline gboolean push_message_in_gtk_loop(gpointer data){
 	chat_window_t* window = client->c_window;
 	char *sender_name = message->username_from; 
 	char *message_text = message->messages_str;
-	char *sending_time = mx_itoa(message->sending_time);
+	//char *sending_time = mx_itoa(message->sending_time);
+	char sending_time[6];
+    //snprintf(sending_time, 6, "%02d:%02d", message->sending_time / 60, message->sending_time % 60);
+    snprintf(sending_time, 6, "%02d:%02d", 034 / 60, 034 % 60);
 	gboolean is_your_message = mx_strcmp(sender_name, "You") == 0;
 	                                
 
