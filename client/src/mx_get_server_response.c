@@ -1,11 +1,12 @@
 #include "../inc/client.h"
 
+/*
 static inline int get_res_len(SSL* ssl) {
 
     char buffer[256];
     int bytes_was_read = 0;
 
-    //printf("Start\n");
+    printf("Start\n");
 
     while((bytes_was_read = SSL_read(ssl, buffer, 256)) <= 0) {
     	if ((errno == EAGAIN) || (errno == EWOULDBLOCK)) {
@@ -14,10 +15,60 @@ static inline int get_res_len(SSL* ssl) {
         return 0;
     }
 
-    //printf("End\n");
+    printf("End\n");
 
     return atoi(buffer);
 }
+*/
+
+static inline int get_res_len(SSL* ssl) {
+
+    char buffer[256];
+    int bytes_was_read = 0;
+
+    // Set the read timeout
+    struct timeval tv;
+    tv.tv_sec = 3;
+    tv.tv_usec = 0;
+    SSL_set_timeout(ssl, 3);
+
+    // Set non-blocking mode
+    SSL_set_mode(ssl, SSL_MODE_AUTO_RETRY | SSL_MODE_ENABLE_PARTIAL_WRITE | SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER);
+
+    while (1) {
+        bytes_was_read = SSL_read(ssl, buffer, sizeof(buffer) - 1);
+
+        if (bytes_was_read > 0) {
+            return atoi(buffer);
+        } else if (bytes_was_read == 0) {
+            mx_log(CLIENT_LOG_FILE, LOG_TRACE, "Connection was closed");
+            return 0;
+        } else {
+            // Error occurred
+            int err = SSL_get_error(ssl, bytes_was_read);
+
+            if (err == SSL_ERROR_WANT_READ || err == SSL_ERROR_WANT_WRITE) {
+                // Check if the timeout has occurred
+                fd_set readfds;
+                FD_ZERO(&readfds);
+                FD_SET(SSL_get_fd(ssl), &readfds);
+                int ret = select(SSL_get_fd(ssl) + 1, &readfds, NULL, NULL, &tv);
+                if (ret == -1) {
+                    mx_log(CLIENT_LOG_FILE, LOG_ERROR, "get_res_len(), select error");
+                    return 0;
+                } else if (ret == 0) {
+                    mx_log(CLIENT_LOG_FILE, LOG_TRACE, "Response timeout");
+                    printf("Response timeout\n");
+                    return 0;
+                }
+            } else {
+                mx_log(CLIENT_LOG_FILE, LOG_ERROR, "get_res_len(), SSL read failed");
+                return 0;
+            }
+        }
+    }
+}
+
 
 static inline void read_server_res(serv_res_t* res, SSL* ssl, int res_length) {
 

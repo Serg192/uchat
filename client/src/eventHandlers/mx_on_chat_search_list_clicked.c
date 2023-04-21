@@ -11,10 +11,13 @@ static inline void test(GtkWidget* w, gpointer data) {
 }
 
 void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data) {
+	
 	(void)w;
 	client_t* client = (client_t*)data;
 
-	client->join_chat_id = mx_get_chat_id_from_btn(w, client);
+	int *chat_id = (int *)g_object_get_data(G_OBJECT(w), "chat_id");
+
+	client->join_chat_id = GPOINTER_TO_INT(chat_id); //mx_get_chat_id_from_btn(w, client);
 
 	const char *text = (char*)gtk_button_get_label(w);
 

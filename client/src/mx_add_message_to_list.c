@@ -1,5 +1,6 @@
 #include "../inc/client.h"
 
+//deprecated
 void mx_add_message_to_list(chat_window_t* window, const char *sender_name, const char *message_text, const char *sending_time, gboolean is_your_message) {
 
 	GtkWidget* msg_main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);

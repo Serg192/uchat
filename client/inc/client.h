@@ -16,6 +16,7 @@
 #include <sys/socket.h>
 #include <resolv.h> 
 #include <netdb.h>
+#include <sys/select.h> 
 #include <time.h>
 
 #include <openssl/ssl.h>
@@ -37,6 +38,11 @@
 
 #define MSG_LOAD_LIMIT 10
 #define RESP_TIMEOUT 3.0f
+
+enum {
+	PUSH_FRONT,
+	PUSH_BACK
+};
 
 typedef struct message_s {
 	int id;
@@ -144,7 +150,7 @@ typedef struct client_s {
 
 	bool destroy_cnw;
 
-	int* chat_id_chat_btn_map;
+	//int* chat_id_chat_btn_map;
 	int join_chat_id;
 
 	bool search_mode;
@@ -159,9 +165,26 @@ typedef struct client_s {
 }			   client_t;
 
 
+typedef struct push_msg_data_s {
+	client_t* client;
+	message_t* message;
+	int mode;
+}			   push_msg_data_t;
+
+
+typedef struct del_msg_from_list_box_data_s {
+	client_t* client;
+	int message_id;
+}              del_msg_from_list_box_data_t;
+
+
 int mx_get_chat_id_from_btn(GtkWidget* w, client_t* client);
 
+//deprecated
 void mx_handle_get_joined_chats(client_t* client);
+
+//improved version of mx_handle_get_joined_chats function
+void mx_handle_update_chat_list(client_t* client);
 
 serv_res_t* mx_get_server_response(SSL* ssl);
 
@@ -199,7 +222,12 @@ void mx_on_msg_list_edge_was_reached(GtkScrolledWindow* scrolled_window, GtkPosi
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data);
 
+//deprecated
 void mx_add_message_to_list(chat_window_t* window, const char *sender_name, const char *message_text, const char *sending_time, gboolean is_your_message);
+
+void  mx_push_message(client_t* client, message_t* message, int mode);
+
+void mx_delete_msg_from_list_box(client_t* client, int message_id);
 
 void mx_app_on_destroy(GtkWidget *widget, gpointer data);
 

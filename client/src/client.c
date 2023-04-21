@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 	client.last_msg_in_chat_id = -1;
 	client.first_msg_in_chat_id = -1;
 
-	client.chat_id_chat_btn_map = NULL;
+	//client.chat_id_chat_btn_map = NULL;
 	client.messages_in_current_chat = NULL;
 	client.message_id_row_map = mx_create_map();
 	
