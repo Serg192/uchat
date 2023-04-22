@@ -1,5 +1,15 @@
 #include "../inc/client.h"
 
+static char* format_sending_time(int sending_time) {
+    char* sending_time_str = (char*)malloc(sizeof(char) * 6);
+    int hour = sending_time / 100;
+    int minute = sending_time % 100;
+
+    snprintf(sending_time_str, 6, "%02d:%02d", hour, minute);
+
+    return sending_time_str;
+}
+
 static inline gboolean push_message_in_gtk_loop(gpointer data){
 	push_msg_data_t* msg_data = (push_msg_data_t*)data;
 	client_t* client = msg_data->client;
@@ -9,10 +19,13 @@ static inline gboolean push_message_in_gtk_loop(gpointer data){
 	chat_window_t* window = client->c_window;
 	char *sender_name = message->username_from; 
 	char *message_text = message->messages_str;
-	char *sending_time = mx_itoa(message->sending_time);
+    //char *sending_time = mx_itoa(message->sending_time);
+    char* sending_time = format_sending_time(message->sending_time);
+    //Test with "00:mm" format
+    //char* sending_time = format_sending_time(45);
+    
 	gboolean is_your_message = mx_strcmp(sender_name, "You") == 0;
-	                                
-
+	
 	GtkWidget* msg_main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
 	gtk_widget_set_margin_start(msg_main_box, 50);
 	gtk_widget_set_margin_end(msg_main_box, 50);
@@ -63,6 +76,7 @@ static inline gboolean push_message_in_gtk_loop(gpointer data){
    	gtk_widget_show_all(window->msgs_list_box);
 
 	free(msg_data);
+	free(sending_time);
 	return FALSE;
 }
 

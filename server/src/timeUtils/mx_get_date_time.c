@@ -13,3 +13,4 @@ void mx_get_date_time(date_and_time_t* dt){
     dt->hour = local_time->tm_hour;
     dt->min = local_time->tm_min;
 }
+
