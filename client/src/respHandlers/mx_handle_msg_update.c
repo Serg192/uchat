@@ -1,5 +1,6 @@
 #include "../../inc/client.h"
 
+/*
 static inline void del_msg_from_list_box(client_t* client, int message_id){
 	//gtk_container_remove(GTK_CONTAINER(client->c_window->msgs_list_box), GTK_WIDGET(row));
 
@@ -9,7 +10,7 @@ static inline void del_msg_from_list_box(client_t* client, int message_id){
 		gtk_widget_destroy(GTK_WIDGET(row));
 		mx_map_remove(client->message_id_row_map, message_id);
 	}
-}
+}*/
 
 void mx_handle_msg_update(client_t* client){
 
@@ -69,6 +70,6 @@ void mx_handle_msg_update(client_t* client){
 
   	for(int i = 0; i < deleted_msg_count; i++){
   		cJSON *deleted_msg = cJSON_GetArrayItem(deleted_msg_array, i);
-  		del_msg_from_list_box(client, cJSON_GetObjectItem(deleted_msg, "msg_id")->valueint);
+  		mx_delete_msg_from_list_box(client, cJSON_GetObjectItem(deleted_msg, "msg_id")->valueint);
   	}
 }
