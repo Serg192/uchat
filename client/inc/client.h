@@ -51,6 +51,9 @@ typedef struct message_s {
 	char* username_from;
 	char* messages_str;
 
+	//pointer to gtk label that is used when edit text
+	GtkWidget* text_label;
+
 }              message_t;
 
 
@@ -155,6 +158,13 @@ typedef struct client_s {
 
 	bool search_mode;
 
+	//Editing
+	bool edit_mode;
+	message_t* message_to_edit;
+	//
+
+
+
 	int current_chat_id;
 	int last_msg_in_chat_id;
 	int first_msg_in_chat_id;
@@ -222,6 +232,8 @@ void mx_on_msg_list_edge_was_reached(GtkScrolledWindow* scrolled_window, GtkPosi
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data);
 
+void mx_on_edit_btn_clicked(GtkWidget* w, gpointer data);
+
 //deprecated
 void mx_add_message_to_list(chat_window_t* window, const char *sender_name, const char *message_text, const char *sending_time, gboolean is_your_message);
 
@@ -263,6 +275,8 @@ char* mx_create_get_chat_participants_req(int chat_id);
 char* mx_create_get_joined_chats_req();
 
 char* mx_create_quit_request();
+
+char* mx_cteate_message_edit_req(int chat_id, int message_id, char* new_text);
 
 char* mx_create_delete_chat_msg_req(const int chat_id, const int message_id);
 

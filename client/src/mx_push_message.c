@@ -61,6 +61,8 @@ static inline gboolean push_message_in_gtk_loop(gpointer data){
 	
 	GtkListBoxRow* row = gtk_list_box_row_new();
 
+	message->text_label = msg_text_label;
+
 	g_object_set_data(G_OBJECT(row), "message_data", message);
 
 	mx_map_put(client->message_id_row_map, message->id, row);

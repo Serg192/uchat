@@ -54,6 +54,7 @@ typedef struct client_s {
 	int user_id;
 
 	queue_t* deleted_msg_notify_q;
+	queue_t* edited_msg_notify_q;
 }              client_t;
 
 typedef struct ossl_s {
@@ -78,6 +79,12 @@ typedef struct date_and_time_s {
 	int hour;
 	int min;
 }              date_and_time_t;
+
+typedef struct msg_edit_data_s {
+	int id;
+	char* text;
+}              msg_edit_data_t;
+
 
 void mx_get_date_time(date_and_time_t* dt);
 
@@ -139,6 +146,8 @@ void mx_handle_get_chat_msg(client_t* client, request_t* req);
 void mx_handle_delete_chat_msg(client_t* client, request_t* req);
 
 void mx_handle_get_joined_chats(client_t* client, request_t* req);
+
+void mx_handle_msg_edit(client_t* client, request_t* req);
 
 #endif
 

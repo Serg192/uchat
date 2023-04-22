@@ -72,4 +72,13 @@ void mx_handle_msg_update(client_t* client){
   		cJSON *deleted_msg = cJSON_GetArrayItem(deleted_msg_array, i);
   		mx_delete_msg_from_list_box(client, cJSON_GetObjectItem(deleted_msg, "msg_id")->valueint);
   	}
+
+  	cJSON* edited_msg_array = cJSON_GetObjectItemCaseSensitive(msg_json, "edited");
+  	int edited_msg_count = cJSON_GetArraySize(edited_msg_array);
+
+  	for(int i = 0; i < edited_msg_count; i++){
+  		cJSON* edited_msg = cJSON_GetArrayItem(edited_msg_array, i);
+  		mx_msg_edit_update_list(client, cJSON_GetObjectItem(edited_msg, "msg_id")->valueint,
+  										cJSON_GetObjectItem(edited_msg, "text")->valuestring);
+  	}
 }
