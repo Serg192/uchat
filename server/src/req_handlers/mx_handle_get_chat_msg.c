@@ -16,6 +16,26 @@ static inline cJSON* build_deleted_msg_array(client_t* client){
 	return deleted_msg_array;
 }
 
+static inline cJSON* build_edited_msg_array(client_t* client){
+	cJSON* edited_msg_array = cJSON_CreateArray();
+
+	while(!client->edited_msg_notify_q->empty){
+		msg_edit_data_t* data = (msg_edit_data_t*)mx_queue_peek(client->edited_msg_notify_q);
+
+		cJSON* array_item = cJSON_CreateObject();
+		cJSON_AddNumberToObject(array_item, "msg_id", data->id);
+		cJSON_AddStringToObject(array_item, "text", data->text);
+
+		cJSON_AddItemToArray(edited_msg_array, array_item);
+		mx_queue_pop(client->edited_msg_notify_q);
+		free(data->text);
+		free(data);
+	}
+
+
+	return edited_msg_array;
+}
+
 static inline int find_last_msg_id(const int chat_id) {
 	int result;
 	sqlite3* db = mx_open_db();
@@ -166,6 +186,7 @@ void mx_handle_get_chat_msg(client_t* client, request_t* req){
 	build_msg_array(chat_id, client->user_id, start_id, mode, count, response);
 
 	cJSON_AddItemReferenceToObject(response, "deleted", build_deleted_msg_array(client));
+	cJSON_AddItemReferenceToObject(response, "edited", build_edited_msg_array(client));
 	cJSON_AddNumberToObject(response, "rtype", (mode == MSG_LOAD_BELOW ? GET_BELOW_MSG_RESP : GET_ABOVE_MSG_RESP));
 
 

@@ -19,6 +19,7 @@ int main(int argc, char** argv) {
 
 	client.current_response = NULL;
 	client.search_mode = false;
+	client.edit_mode = false;
 	client.current_chat_id = -1;
 	client.last_msg_in_chat_id = -1;
 	client.first_msg_in_chat_id = -1;

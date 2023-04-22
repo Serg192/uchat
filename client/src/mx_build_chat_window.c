@@ -2,6 +2,8 @@
 
 void mx_on_selection_changed(GtkListBox *listbox, gpointer data) {
 	client_t* client = (client_t*)data;
+	
+
 	GtkStack *stack = client->c_window->entry_edit_stack;
 	GList *selected_rows = gtk_list_box_get_selected_rows(listbox);
 
@@ -22,6 +24,9 @@ void mx_on_selection_changed(GtkListBox *listbox, gpointer data) {
 }
 
 gboolean mx_on_button_press_event(GtkWidget *widget, GdkEventButton *event, gpointer data) {
+
+	client_t* client = (client_t*)data;
+
   	GtkListBox *list_box = GTK_LIST_BOX(widget);
   	GtkListBoxRow *row = gtk_list_box_get_row_at_y(list_box, event->y);
 
@@ -32,6 +37,12 @@ gboolean mx_on_button_press_event(GtkWidget *widget, GdkEventButton *event, gpoi
     	  gtk_list_box_unselect_row(list_box, row);
     	} else {
     	  gtk_list_box_select_row(list_box, row);
+    	  if(client->edit_mode){
+  				GtkTextView* text_view = (GtkTextView*)client->c_window->message_input_field;
+	    		GtkTextBuffer* input_txt_buf = gtk_text_view_get_buffer(text_view);
+	   			gtk_text_buffer_set_text(input_txt_buf, "", 0);
+	   			client->edit_mode = false;
+  		  }
     	}
 
     	return TRUE;
@@ -109,13 +120,13 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 
 	//gtk_search_entry_set_search_delay(window->search_entry, (guint)400);
 
-
 	g_signal_connect(window->add_chat_btn, "released", G_CALLBACK(mx_on_create_chat_btn_clicked), client);
 	g_signal_connect(window->search_entry, "search-changed", G_CALLBACK(mx_on_search_changed), client);
-	g_signal_connect(window->msgs_list_box, "button-press-event", G_CALLBACK(mx_on_button_press_event), NULL);
+	g_signal_connect(window->msgs_list_box, "button-press-event", G_CALLBACK(mx_on_button_press_event), client);
 	g_signal_connect(window->msgs_list_box, "selected-rows-changed", G_CALLBACK(mx_on_selection_changed), client);
 	g_signal_connect(window->selected_msg_close_btn, "released", G_CALLBACK(mx_on_selected_msg_close_btn_clicked), client);
 	g_signal_connect(window->selected_msg_select_all_btn, "released", G_CALLBACK(mx_on_selected_msg_select_all_btn_clicked), client);
+	g_signal_connect(window->selected_msg_edit_btn, "released", G_CALLBACK(mx_on_edit_btn_clicked), client);
 
 	g_signal_connect(window->msgs_list_scrlld_wnd, "edge-reached", G_CALLBACK(mx_on_msg_list_edge_was_reached), client);
 	g_signal_connect(window->selected_msg_delete_btn, "released", G_CALLBACK(mx_on_delete_btn_clicked), client);

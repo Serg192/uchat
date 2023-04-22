@@ -3,7 +3,7 @@
 static inline void dispatch(client_t* client, request_t* req) {
 	//mx_log(SERV_LOG_FILE, LOG_TRACE, "Request dispatching...");
 
-	printf("Request was received: %s\n", req->str_req);
+	printf("Request was received: %s, %d\n", req->str_req, mx_strlen(req->str_req));
 
 	switch(req->type) {
 				case SIGNUP_REQ:
@@ -36,6 +36,9 @@ static inline void dispatch(client_t* client, request_t* req) {
 				case GET_JOINED_CHATS:
 					mx_handle_get_joined_chats(client, req);
 					break;
+				case EDIT_MSG_REQ:
+					mx_handle_msg_edit(client, req);
+					break;
 				default:
 					break;
 
@@ -49,6 +52,7 @@ void* mx_client_handler(void* client) {
 	client_t* cl = (client_t*)client;
 
 	cl->deleted_msg_notify_q = mx_create_queue();
+	cl->edited_msg_notify_q = mx_create_queue();
 
 	bool client_disconnect_req = false;
 
@@ -75,6 +79,7 @@ void* mx_client_handler(void* client) {
 					mx_map_remove(client_map, cl->user_id);
 				client_t* c = (client_t*)client;
 				mx_destroy_queue(&(c->deleted_msg_notify_q));
+				mx_destroy_queue(&(cl->edited_msg_notify_q));
 			} else {
 				dispatch(client, client_req);
 			}

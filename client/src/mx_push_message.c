@@ -41,7 +41,6 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
     //Works only firstly (in one chat)
     static char* last_date_str = NULL;
     if (last_date_str == NULL || mx_strcmp(sending_date, last_date_str) != 0) {
-        // Create a new message box for displaying the date
         GtkWidget* date_main_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
         GtkWidget* date_label = gtk_label_new(sending_date);
         GdkRGBA color;
@@ -51,7 +50,6 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
         gtk_box_pack_start(GTK_BOX(date_main_box), date_label, TRUE, TRUE, 0);
         gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), date_main_box, (mode == PUSH_BACK ? -1 : 0));
         
-        // Update the last displayed date
         if (last_date_str != NULL) {
             free(last_date_str);
         }
@@ -88,7 +86,7 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	gtk_box_pack_end(GTK_BOX(msg_main_box), msg_sending_time_label, FALSE, TRUE, 0);
 	
 	//DATE
-	gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), msg_main_box, (mode == PUSH_BACK ? -1 : 0));
+	//gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), msg_main_box, (mode == PUSH_BACK ? -1 : 0));
     
     //print in messages
     /*GtkWidget* msg_sending_date_label = gtk_label_new(sending_date);
@@ -102,6 +100,8 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, &color);
 	
 	GtkListBoxRow* row = gtk_list_box_row_new();
+
+	message->text_label = msg_text_label;
 
 	g_object_set_data(G_OBJECT(row), "message_data", message);
 
