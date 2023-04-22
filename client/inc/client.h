@@ -126,6 +126,7 @@ typedef struct chat_window_s {
 	GtkBuilder *builder;
 
 	int elements_were_attached;
+	//int last_displayed_date;
 
 	clock_t search_t;
 }			   chat_window_t;
