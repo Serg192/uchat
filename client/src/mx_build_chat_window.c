@@ -130,6 +130,9 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 
 	g_signal_connect(window->msgs_list_scrlld_wnd, "edge-reached", G_CALLBACK(mx_on_msg_list_edge_was_reached), client);
 	g_signal_connect(window->selected_msg_delete_btn, "released", G_CALLBACK(mx_on_delete_btn_clicked), client);
+
+	//Doesn't work
+	//g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_leave_btn_clicked), client);
 	
 	return window;
 }

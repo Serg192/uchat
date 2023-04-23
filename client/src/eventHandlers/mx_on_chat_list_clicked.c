@@ -6,7 +6,7 @@ static inline gboolean clear_msg_list(gpointer data){
 	return FALSE;
 }
 
-static inline room_data_clear(client_t* client){
+void mx_room_data_clear(client_t* client){
 	    client->current_chat_id = -1;
 	    client->last_msg_in_chat_id = -1;
 	    client->first_msg_in_chat_id = -1;
@@ -49,12 +49,12 @@ void mx_on_chat_list_clicked(GtkWidget* w, gpointer data) {
 
 		//set current chat id
 	    
-		room_data_clear(client);
+		mx_room_data_clear(client);
 	}
 	else {
 
 		if(client->current_chat_id != -1) {
-			room_data_clear(client);
+			mx_room_data_clear(client);
 		}
 
 		gtk_label_set_text(client->c_window->chat_name_label, gtk_button_get_label(w));

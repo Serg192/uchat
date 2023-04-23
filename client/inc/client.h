@@ -172,6 +172,7 @@ typedef struct client_s {
 	t_list* messages_in_current_chat;
 
 	map_t* message_id_row_map;
+
 }			   client_t;
 
 
@@ -249,6 +250,9 @@ void mx_on_create_new_chat_btn_clicked(GtkButton* b, gpointer data);
 //create new chat button
 void mx_on_create_chat_btn_clicked(GtkButton* b, gpointer data);
 
+void mx_on_leave_btn_clicked(GtkButton* b, gpointer data);
+
+
 //
 
 int mx_create_connection_with_serv(const char* host, int port);
@@ -280,6 +284,8 @@ char* mx_cteate_message_edit_req(int chat_id, int message_id, char* new_text);
 
 char* mx_create_delete_chat_msg_req(const int chat_id, const int message_id);
 
+char* mx_create_leave_chat_req(const int chat_id); 
+
 //TEST
 void create_new_chat_window(client_t* client);
 //
@@ -308,5 +314,6 @@ char* mx_hash_sha256(const char *password);
 
 char *mx_prepare_str_for_sql(const char *input);
 
+void mx_room_data_clear(client_t* client);
 
 #endif

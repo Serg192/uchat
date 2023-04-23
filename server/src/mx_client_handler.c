@@ -4,6 +4,7 @@ static inline void dispatch(client_t* client, request_t* req) {
 	//mx_log(SERV_LOG_FILE, LOG_TRACE, "Request dispatching...");
 
 	printf("Request was received: %s, %d\n", req->str_req, mx_strlen(req->str_req));
+	printf("Request == NULL ? %d\n", req->str_req == NULL);
 
 	switch(req->type) {
 				case SIGNUP_REQ:
@@ -38,6 +39,9 @@ static inline void dispatch(client_t* client, request_t* req) {
 					break;
 				case EDIT_MSG_REQ:
 					mx_handle_msg_edit(client, req);
+					break;
+				case LEAVE_CHAT_REQ:
+					mx_handle_leave_chat(client, req);
 					break;
 				default:
 					break;

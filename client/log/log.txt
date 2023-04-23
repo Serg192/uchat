@@ -17754,3 +17754,578 @@ TRACE: [Apr 22 2023 | 18:07:48] Response was received: {"messages":[{"id":51,"fr
 TRACE: [Apr 22 2023 | 18:07:48] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
 TRACE: [Apr 22 2023 | 18:07:48] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
 TRACE: [Apr 22 2023 | 18:07:48] Connection was closed
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"Admin"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:20:57] Connection was closed
+TRACE: [Apr 22 2023 | 18:57:04] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 18:57:04] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 18:57:04] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 18:57:04] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:57:04] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:57:04] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:57:04] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:57:04] Connection was closed
+TRACE: [Apr 22 2023 | 18:57:04] Connection was closed
+TRACE: [Apr 22 2023 | 18:59:16] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 18:59:16] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 18:59:16] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 18:59:16] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:59:16] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 18:59:16] Connection was closed
+TRACE: [Apr 22 2023 | 18:59:16] Connection was closed
+ERROR: [Apr 22 2023 | 18:59:16] get_res_len(), SSL read failed
+TRACE: [Apr 22 2023 | 19:02:32] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:02:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:02:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:02:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:02:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:02:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:02:32] Connection was closed
+TRACE: [Apr 22 2023 | 19:02:32] Connection was closed
+ERROR: [Apr 22 2023 | 19:02:32] get_res_len(), SSL read failed
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:05:45] Connection was closed
+TRACE: [Apr 22 2023 | 19:05:45] Connection was closed
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:05:45] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:05:45] Connection was closed
+TRACE: [Apr 22 2023 | 19:05:45] Connection was closed
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Connection was closed
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response timeout
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:13:07] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:13:07] Connection was closed
+TRACE: [Apr 22 2023 | 19:13:07] Connection was closed
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:18:51] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:18:51] Connection was closed
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:22:32] Connection was closed
+TRACE: [Apr 22 2023 | 19:22:32] Connection was closed
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:22:32] Connection was closed
+TRACE: [Apr 22 2023 | 19:22:32] Connection was closed
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:22:32] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:22:32] Connection was closed
+TRACE: [Apr 22 2023 | 19:22:32] Connection was closed
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:29:53] Connection was closed
+TRACE: [Apr 22 2023 | 19:29:53] Connection was closed
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:29:53] Connection was closed
+TRACE: [Apr 22 2023 | 19:29:53] Connection was closed
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"Admin"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"rtype":10}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"Admin"},{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:29:53] Connection was closed
+TRACE: [Apr 22 2023 | 19:29:53] Connection was closed
+TRACE: [Apr 22 2023 | 19:29:53] Connection was closed
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"},{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:40:02] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:40:02] Connection was closed
+TRACE: [Apr 22 2023 | 19:40:02] Connection was closed
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"},{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:53:19] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:53:19] Connection was closed
+TRACE: [Apr 22 2023 | 19:53:19] Connection was closed
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"rtype":3}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"rtype":7}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"},{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 22 2023 | 19:58:25] Response was received: {"rtype":14}
+TRACE: [Apr 22 2023 | 19:58:25] Connection was closed
+TRACE: [Apr 22 2023 | 19:58:25] Connection was closed
+ERROR: [Apr 22 2023 | 19:58:25] get_res_len(), SSL read failed
+ERROR: [Apr 22 2023 | 19:58:25] get_res_len(), SSL read failed
+ERROR: [Apr 22 2023 | 19:58:25] get_res_len(), SSL read failed
+ERROR: [Apr 22 2023 | 19:58:25] get_res_len(), SSL read failed
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"rtype":7}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"},{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:40:09] Response was received: {"rtype":14}
+TRACE: [Apr 23 2023 | 14:40:09] Connection was closed
+TRACE: [Apr 23 2023 | 14:40:09] Connection was closed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+ERROR: [Apr 23 2023 | 14:40:09] get_res_len(), SSL read failed
+TRACE: [Apr 23 2023 | 14:46:11] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 14:46:11] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 23 2023 | 14:46:11] Response timeout
+TRACE: [Apr 23 2023 | 14:46:11] Response timeout
+TRACE: [Apr 23 2023 | 14:46:11] Response timeout
+TRACE: [Apr 23 2023 | 14:46:11] Response timeout
+TRACE: [Apr 23 2023 | 14:46:11] Response timeout
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2}],"rtype":13}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"chats":[{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":8}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"rtype":7}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":59,"from_id":1,"sending_date":22042023,"sending_time":1810,"context":"Hi","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"},{"id":63,"from_id":1,"sending_date":22042023,"sending_time":1812,"context":"Edited","username":"You"},{"id":62,"from_id":2,"sending_date":22042023,"sending_time":1811,"context":"Edited","username":"Root"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Response was received: {"messages":[{"id":64,"from_id":2,"sending_date":22042023,"sending_time":1933,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:48:18] Connection was closed
+TRACE: [Apr 23 2023 | 14:51:12] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 14:51:12] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 23 2023 | 14:51:12] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:51:12] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:51:12] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"},{"id":50,"from_id":1,"sending_date":22042023,"sending_time":1501,"context":"Edited","username":"You"},{"id":24,"from_id":3,"sending_date":22042023,"sending_time":1324,"context":"Now it's 13:24","username":"User1"},{"id":23,"from_id":1,"sending_date":22042023,"sending_time":1320,"context":"Time is 13:20 rn","username":"You"},{"id":22,"from_id":1,"sending_date":22042023,"sending_time":1051,"context":"Time is 10:51","username":"You"},{"id":21,"from_id":1,"sending_date":22042023,"sending_time":1007,"context":"00:45","username":"You"},{"id":20,"from_id":1,"sending_date":22042023,"sending_time":1006,"context":"00:45 again","username":"You"},{"id":19,"from_id":1,"sending_date":22042023,"sending_time":957,"context":"Edited","username":"You"},{"id":18,"from_id":1,"sending_date":22042023,"sending_time":956,"context":"00:45 should be","username":"You"},{"id":17,"from_id":1,"sending_date":22042023,"sending_time":954,"context":"00:51 should be","username":"You"}],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 14:51:12] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:51:12] Response was received: {"messages":[{"id":51,"from_id":1,"sending_date":22042023,"sending_time":1522,"context":"Edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 14:51:12] Connection was closed
+TRACE: [Apr 23 2023 | 15:04:04] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 15:04:04] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 23 2023 | 15:04:04] Connection was closed
+TRACE: [Apr 23 2023 | 15:07:45] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 15:07:45] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 23 2023 | 15:07:45] Connection was closed
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"rtype":4}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4},{"name":"ColorTest","color":4,"id":5}],"rtype":13}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"rtype":4}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4},{"name":"ColorTest","color":4,"id":5},{"name":"ColorTest2","color":5,"id":6}],"rtype":13}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"rtype":10}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[{"id":65,"from_id":1,"sending_date":23042023,"sending_time":1511,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[{"id":65,"from_id":1,"sending_date":23042023,"sending_time":1511,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:10:15] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Connection was closed
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4}],"rtype":13}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"rtype":3}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"ChatWithUser1","color":0,"id":2},{"name":"Test2","color":0,"id":4},{"name":"ColorTest","color":4,"id":5},{"name":"ColorTest2","color":5,"id":6}],"rtype":13}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"chats":[{"name":"ChatWithUser1","color":0,"id":2},{"name":"ColorTest","color":4,"id":5},{"name":"ColorTest2","color":5,"id":6}],"rtype":8}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"rtype":7}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"chats":[{"name":"Test1","color":0,"id":1},{"name":"Test1","color":0,"id":3},{"name":"Test2","color":0,"id":4},{"name":"ColorTest","color":4,"id":5}],"rtype":13}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":11}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"rtype":10}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"Hey","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"rtype":14}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"You"}],"deleted":[],"edited":[{"msg_id":66,"text":"hey, edited"}],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"Root"}],"deleted":[],"edited":[{"msg_id":66,"text":"hey, edited"}],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"You"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Connection was closed
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Response was received: {"messages":[{"id":66,"from_id":2,"sending_date":23042023,"sending_time":1513,"context":"hey, edited","username":"Root"}],"deleted":[],"edited":[],"rtype":12}
+TRACE: [Apr 23 2023 | 15:11:55] Connection was closed

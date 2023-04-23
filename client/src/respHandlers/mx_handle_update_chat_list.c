@@ -10,7 +10,18 @@ gboolean draw_callback(GtkWidget *widget, cairo_t *cr, gpointer data) {
 	GdkRGBA color;
 	GtkStyleContext *context;
 
-	gdk_rgba_parse(&color, "rgba(255,0,0,1)");
+	const char* color_names[] = {
+    	"red",
+    	"green",
+    	"blue",
+    	"yellow",
+    	"orange",
+    	"purple",
+    	"pink",
+    	"gray",
+	};
+
+	gdk_rgba_parse(&color, color_names[(int)data]);
 
 	width = gtk_widget_get_allocated_width(widget);
 	height = gtk_widget_get_allocated_height(widget);
@@ -54,6 +65,8 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 
 		button = gtk_button_new_with_label(cJSON_GetObjectItem(chat_info, "name")->valuestring);
 
+		const int color = cJSON_GetObjectItem(chat_info, "color")->valueint;
+
 		g_object_set_data(G_OBJECT(button), "chat_id", GINT_TO_POINTER(cJSON_GetObjectItem(chat_info, "id")->valueint));
 
 		char *str = mx_strndup(gtk_button_get_label(button), 2);
@@ -73,7 +86,7 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 		gtk_button_set_alignment(GTK_BUTTON(button), 0.0, 0.5);
 		gtk_grid_attach(GTK_GRID(client->c_window->chats_list_grid), button, 1, i, 1, 1);
 
-		g_signal_connect(G_OBJECT(icon), "draw", G_CALLBACK(draw_callback), NULL);
+		g_signal_connect(G_OBJECT(icon), "draw", G_CALLBACK(draw_callback), (gpointer)color);
 		g_signal_connect(button, "released", client->search_mode ? G_CALLBACK(mx_on_chat_search_list_clicked) : G_CALLBACK(mx_on_chat_list_clicked), client);
 
 	}

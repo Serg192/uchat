@@ -12,6 +12,7 @@ typedef enum request_type_e {
 	EDIT_MSG_REQ,
 	GET_CHAT_MSG_REQ,
 	DEL_CHAT_MSG_REQ,
+	LEAVE_CHAT_REQ,
 	GET_JOINED_CHATS,
 	QUIT_REQ
 }            request_type;
@@ -49,5 +50,7 @@ enum {
 enum {
 	MSG_ID_LAST = -2
 };
+
+
 
 #endif
