@@ -151,5 +151,7 @@ void mx_handle_msg_edit(client_t* client, request_t* req);
 
 void mx_handle_leave_chat(client_t* client, request_t* req);
 
+void mx_handle_del_account(client_t* client, request_t* req);
+
 #endif
 

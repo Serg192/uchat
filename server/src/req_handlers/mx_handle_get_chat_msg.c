@@ -73,11 +73,16 @@ static inline cJSON* make_message_item(const int own_id, sqlite3_stmt* stmt){
     cJSON_AddNumberToObject(message, "sending_date", sqlite3_column_int64(stmt, 2));
     cJSON_AddNumberToObject(message, "sending_time", sqlite3_column_int64(stmt, 3));
     cJSON_AddStringToObject(message, "context", sqlite3_column_text(stmt, 4));
-    cJSON_AddStringToObject(message, "username", (own_id == from_id ? "You" : sqlite3_column_text(stmt, 5)));
+
+    char* username = sqlite3_column_text(stmt, 5);
+    username = username == NULL ? "Deleted" : username;
+    cJSON_AddStringToObject(message, "username", (own_id == from_id ? "You" : username));
 
     return message;
 }
 
+
+/*
 static inline char* build_sql_req(int chat_id, int start_id, int count, int mode){
 	char* sql_req = NULL;
 
@@ -103,7 +108,33 @@ static inline char* build_sql_req(int chat_id, int start_id, int count, int mode
 
 	return sql_req;
 }
+*/
 
+static inline char* build_sql_req(int chat_id, int start_id, int count, int mode){
+	char* sql_req = NULL;
+
+	switch(mode) {
+		case MSG_LOAD_ALL:
+			asprintf(&sql_req, "SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username"
+					   		   " FROM 'message' LEFT JOIN 'user' ON user.id = message.from_id "
+					           "WHERE message.room_id = '%d' ORDER BY message.id ASC", chat_id);
+			break;
+		case MSG_LOAD_BELOW:
+			 asprintf(&sql_req, "SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username "
+                       		    "FROM 'message' LEFT JOIN 'user' ON user.id = message.from_id "
+                                "WHERE message.room_id = '%d' AND message.id >= %d ORDER BY message.id ASC LIMIT %d", chat_id, start_id, count);
+			break;
+		case MSG_LOAD_ABOVE:
+			  asprintf(&sql_req, "SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username "
+                       			 "FROM 'message' LEFT JOIN 'user' ON user.id = message.from_id "
+                       			 "WHERE message.room_id = '%d' AND message.id <= %d ORDER BY message.id DESC LIMIT %d", chat_id, start_id, count);
+			break;
+		default:
+			mx_log(SERV_LOG_FILE, LOG_ERROR, "Invalid mode specified");
+	}
+
+	return sql_req;
+}
 static inline void build_msg_array(int chat_id,
  								   const int own_id,
  								   const int start_id,

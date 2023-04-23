@@ -12,8 +12,9 @@ typedef enum request_type_e {
 	EDIT_MSG_REQ,
 	GET_CHAT_MSG_REQ,
 	DEL_CHAT_MSG_REQ,
-	LEAVE_CHAT_REQ,
+	LEAVE_CHAT_REQ,   //doesn't work
 	GET_JOINED_CHATS,
+	DEL_ACCOUNT_REQ,
 	QUIT_REQ
 }            request_type;
 

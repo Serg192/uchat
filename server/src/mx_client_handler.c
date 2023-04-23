@@ -43,6 +43,9 @@ static inline void dispatch(client_t* client, request_t* req) {
 				case LEAVE_CHAT_REQ:
 					mx_handle_leave_chat(client, req);
 					break;
+				case DEL_ACCOUNT_REQ:
+					mx_handle_del_account(client, req);
+					break;
 				default:
 					break;
 

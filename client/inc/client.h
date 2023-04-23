@@ -134,6 +134,8 @@ typedef struct chat_window_s {
 }			   chat_window_t;
 
 typedef struct client_s {
+	char* host;
+	int port;
 	int serv;
 	SSL* ssl;
 	SSL_CTX* ctx;
@@ -252,7 +254,7 @@ void mx_on_create_chat_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_leave_btn_clicked(GtkButton* b, gpointer data);
 
-
+void mx_on_del_account_btn_clicked(GtkWidget* w, gpointer data);
 //
 
 int mx_create_connection_with_serv(const char* host, int port);
@@ -285,6 +287,8 @@ char* mx_cteate_message_edit_req(int chat_id, int message_id, char* new_text);
 char* mx_create_delete_chat_msg_req(const int chat_id, const int message_id);
 
 char* mx_create_leave_chat_req(const int chat_id); 
+
+char* mx_create_delete_account_req();
 
 //TEST
 void create_new_chat_window(client_t* client);

@@ -26,6 +26,7 @@ int main(int argc, char** argv) {
 
 	//client.chat_id_chat_btn_map = NULL;
 	client.messages_in_current_chat = NULL;
+	client.request_queue = mx_create_queue();
 	client.message_id_row_map = mx_create_map();
 
 	srand(time(NULL));
