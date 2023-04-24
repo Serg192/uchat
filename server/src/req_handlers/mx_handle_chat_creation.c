@@ -48,7 +48,7 @@ void mx_handle_chat_creation(client_t* client, request_t* req) {
 	} else {
 		int chat_id = create_chat(room_name, room_color);
 
-		mx_add_room_member(client->user_id, chat_id);
+		mx_add_room_member(client->user_id, chat_id, TYPE_OWNER);
 		//add group member
 		
 		cJSON_AddNumberToObject(response, "rtype", CHAT_CREATION_SUCCESS_RESP);

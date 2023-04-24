@@ -83,6 +83,9 @@ void mx_handle_delete_chat_msg(client_t* client, request_t* req) {
 	const int msg_id = cJSON_GetObjectItem(req->json, "id")->valueint;
 	const int chat_id = cJSON_GetObjectItem(req->json, "chat_id")->valueint;
 
+	if(mx_check_if_user_is_in_ban(chat_id, client->user_id))
+		return;
+
 	char* sql_req = NULL;
 
 	asprintf(&sql_req, "DELETE FROM 'message' WHERE message.id = '%d'", msg_id);

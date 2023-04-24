@@ -46,6 +46,12 @@ static inline void dispatch(client_t* client, request_t* req) {
 				case DEL_ACCOUNT_REQ:
 					mx_handle_del_account(client, req);
 					break;
+				case BAN_REQ:
+					mx_handle_ban(client, req);
+					break;
+				case SET_PERM_REQ:
+					mx_handle_perm_change(client, req);
+					break;
 				default:
 					break;
 

@@ -15,6 +15,8 @@ typedef enum request_type_e {
 	LEAVE_CHAT_REQ,   //doesn't work
 	GET_JOINED_CHATS,
 	DEL_ACCOUNT_REQ,
+	BAN_REQ, //for unban too
+	SET_PERM_REQ,
 	QUIT_REQ
 }            request_type;
 
@@ -52,6 +54,11 @@ enum {
 	MSG_ID_LAST = -2
 };
 
+enum {
+	TYPE_USER,
+ 	TYPE_ADMIN,
+ 	TYPE_OWNER
+};
 
 
 #endif

@@ -70,6 +70,9 @@ static inline void handle_response(client_t* client) {
 			mx_handle_msg_update(client);
 			printf("\n*****************************************\n");
 			break;
+		case PARTICIPANTS_RESP:
+			mx_handle_create_chat_info_window(client);
+			break;
 		default:
 			break;
 	}

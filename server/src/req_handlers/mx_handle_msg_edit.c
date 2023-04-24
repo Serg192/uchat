@@ -160,6 +160,11 @@ void mx_handle_msg_edit(client_t* client, request_t* req){
 	const int message_id = cJSON_GetObjectItem(req->json, "message_id")->valueint;
 	char* new_text = cJSON_GetObjectItem(req->json, "text")->valuestring;
 
+
+	if(mx_check_if_user_is_in_ban(chat_id, client->user_id)){
+		return;
+	}
+
 	char* sql_req = NULL;
 
 	asprintf(&sql_req, "UPDATE message SET context = '%s' WHERE id = '%d'", new_text, message_id);

@@ -5,7 +5,7 @@ void mx_handle_add_room_member(client_t* client, request_t* req) {
 	int room_id = cJSON_GetObjectItem(req->json, "room_id")->valueint;
 
 	//TODO: handle errors
-	mx_add_room_member(client->user_id, room_id);
+	mx_add_room_member(client->user_id, room_id, TYPE_USER);
 
 	cJSON* response = cJSON_CreateObject();
 

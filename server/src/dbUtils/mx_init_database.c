@@ -36,7 +36,9 @@ void mx_init_database() {
 
 	char* room_member = "CREATE TABLE IF NOT EXISTS 'room_member' ("
 						"'client_id' INTEGER NOT NULL,"
-						"'room_id' INTEGER NOT NULL);";
+						"'room_id' INTEGER NOT NULL, "
+						"'banned' INTEGER NOT NULL,"
+						"'permissions' INTEGER NOT NULL);";
 
 	create_table(db, client);
 	create_table(db, room);

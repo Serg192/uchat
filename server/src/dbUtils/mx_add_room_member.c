@@ -36,7 +36,7 @@ static inline bool has_pair(const char* table,
     return result;
 }
 
-void mx_add_room_member(int client_id, int room_id) {
+void mx_add_room_member(int client_id, int room_id, int perm) {
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "mx_add_room_member()");
 	
@@ -48,7 +48,7 @@ void mx_add_room_member(int client_id, int room_id) {
 
 
 	char* sql_req = NULL;
-	asprintf(&sql_req, "INSERT INTO room_member (client_id, room_id) VALUES ('%d', '%d')", client_id, room_id);
+	asprintf(&sql_req, "INSERT INTO room_member (client_id, room_id, banned, permissions) VALUES ('%d', '%d','%d', '%d')", client_id, room_id, 0, perm);
 
 	char* err;
 	 if (sqlite3_exec(db, sql_req, NULL, NULL, &err) != SQLITE_OK) {

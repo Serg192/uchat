@@ -145,6 +145,8 @@ typedef struct chat_info_window_s {
 
 
 	GtkBuilder* builder;
+
+	bool visible;
 }			   chat_info_window_t;
 
 typedef struct client_s {
@@ -187,6 +189,7 @@ typedef struct client_s {
 	int first_msg_in_chat_id;
 
 	t_list* messages_in_current_chat;
+	t_list* p_change_clear_list;
 
 	map_t* message_id_row_map;
 
@@ -205,6 +208,25 @@ typedef struct del_msg_from_list_box_data_s {
 	int message_id;
 }              del_msg_from_list_box_data_t;
 
+typedef struct members_list_entry_s {
+	client_t* client;
+	int this_client_permissions;
+	int member_permissions;
+	char* user_to_add;
+	int userID_to_add;
+	int banned;
+}              members_list_entry_t;
+
+typedef struct perm_change_s {
+	int this_client_permissions;
+	int user_permissions;
+	GtkWidget* p_label;
+	int userID;
+}			   perm_change_t;
+
+
+
+void mx_user_info_add_user(members_list_entry_t* m);
 
 int mx_get_chat_id_from_btn(GtkWidget* w, client_t* client);
 
@@ -272,7 +294,16 @@ void mx_on_create_chat_btn_clicked(GtkButton* b, gpointer data);
 void mx_on_leave_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_del_account_btn_clicked(GtkWidget* w, gpointer data);
-//
+
+void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data);
+
+void mx_on_ban_btn_clicked(GtkButton* b, gpointer data);
+
+void mx_on_unban_btn_clicked(GtkButton* b, gpointer data);
+
+void mx_on_promote_btn_cliked(GtkButton* b, gpointer data);
+
+void mx_on_demote_btn_clicked(GtkButton* b, gpointer data);
 
 int mx_create_connection_with_serv(const char* host, int port);
 
@@ -321,6 +352,8 @@ char* mx_create_get_chat_msg_req(const int chat_id, const int flag, const int st
 //Response handlers
 
 void mx_handle_auth_err(client_t* client);
+
+void mx_handle_create_chat_info_window(client_t* client);
 
 //also used when signup success
 void mx_handle_auth_success(client_t* client);

@@ -120,7 +120,7 @@ bool mx_sql_ex(const char* sql_req);
 
 char* mx_get_str_field_val(const char* table, const char* fieldname, const char* key, const char* val);
 
-void mx_add_room_member(int client_id, int room_id);
+void mx_add_room_member(int client_id, int room_id, int perm);
 
 
 //handlers
@@ -152,6 +152,10 @@ void mx_handle_msg_edit(client_t* client, request_t* req);
 void mx_handle_leave_chat(client_t* client, request_t* req);
 
 void mx_handle_del_account(client_t* client, request_t* req);
+
+void mx_handle_ban(client_t* client, request_t* req);
+
+void mx_handle_perm_change(client_t* client, request_t* req);
 
 #endif
 
