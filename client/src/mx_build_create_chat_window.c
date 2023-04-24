@@ -14,12 +14,12 @@ create_chat_window_t* mx_build_create_chat_window(client_t* client) {
 
 	window->window = GTK_WIDGET(gtk_builder_get_object(window->builder, "create_new_chat_window"));
 
-	gtk_widget_set_name(GTK_WIDGET(window->window), "popup_window");
+	//gtk_widget_set_name(GTK_WIDGET(window->window), "popup_window");
 	gtk_window_set_transient_for(GTK_WINDOW(window->window), GTK_WINDOW(client->c_window->window));
-	gtk_window_set_skip_taskbar_hint(GTK_WINDOW(window->window), TRUE);
+	//gtk_window_set_skip_taskbar_hint(GTK_WINDOW(window->window), TRUE);
 	//gtk_window_set_position(GTK_WINDOW(window->window), GTK_WIN_POS_CENTER_ON_PARENT);
-	gtk_window_set_position(GTK_WINDOW(window->window), GTK_WIN_POS_CENTER_ALWAYS);
-	gtk_window_set_decorated(GTK_WINDOW(window->window), FALSE);
+	//gtk_window_set_position(GTK_WINDOW(window->window), GTK_WIN_POS_CENTER_ALWAYS);
+	//gtk_window_set_decorated(GTK_WINDOW(window->window), FALSE);
 
 	g_signal_connect(G_OBJECT(window->window), "focus-out-event", G_CALLBACK(mx_hide_hint_window), NULL);
 

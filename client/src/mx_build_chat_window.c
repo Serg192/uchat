@@ -72,7 +72,11 @@ void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
 	gtk_main_quit();
 }
 
-
+void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
+	client_t* client = (client_t*)data;
+	gtk_label_set_text(client->i_window->chat_name_label, gtk_label_get_text(client->c_window->chat_name_label));
+	gtk_widget_show_all(client->i_window->window);
+}
 
 chat_window_t* mx_build_chat_window(client_t* client) {
 
@@ -134,6 +138,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	//Doesn't work 
 	//g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_leave_btn_clicked), client);
 	g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_del_account_btn_clicked), client);
+	g_signal_connect(window->chat_info_btn, "released", G_CALLBACK(mx_on_chat_info_btn_clicked), client);
 	
 	return window;
 }

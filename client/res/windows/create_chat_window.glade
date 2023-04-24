@@ -3,10 +3,14 @@
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkWindow" id="create_new_chat_window">
+    <property name="name">create_new_chat_window</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
+    <property name="window_position">center-on-parent</property>
     <property name="default_width">370</property>
     <property name="default_height">180</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="decorated">False</property>
     <child type="titlebar">
       <placeholder/>
     </child>
