@@ -25,7 +25,7 @@ chat_info_window_t* mx_build_chat_info_window(client_t* client) {
     window->cancel_info_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "cancel_info_btn"));
 
 
-	g_signal_connect(G_OBJECT(window->cancel_info_btn), "released", G_CALLBACK(mx_on_cancel_info_btn_clicked), client);
+	g_signal_connect(G_OBJECT(window->cancel_info_btn), "released", G_CALLBACK(mx_hide_hint_window), client);
 
 	return window;
 }

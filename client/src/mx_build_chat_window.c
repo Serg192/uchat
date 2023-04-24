@@ -78,6 +78,17 @@ void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
 	gtk_widget_show_all(client->i_window->window);
 }
 
+void mx_on_user_info_btn_clicked(GtkWidget* widget, gpointer data) {
+	client_t* client = (client_t*)data;
+
+	gint main_window_x, main_window_y;
+	gtk_window_get_position(GTK_WINDOW(client->c_window->window), &main_window_x, &main_window_y);
+	gtk_window_set_position(GTK_WINDOW(client->u_window->window), GTK_WIN_POS_MOUSE);
+	gtk_window_move(GTK_WINDOW(client->u_window->window), main_window_x + 10, main_window_y + 35);
+
+	gtk_widget_show_all(client->u_window->window);
+}
+
 chat_window_t* mx_build_chat_window(client_t* client) {
 
 
@@ -102,6 +113,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->chats_list_grid = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_grid"));
 	window->add_chat_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "add_chat_btn"));
 	window->search_entry = GTK_WIDGET(gtk_builder_get_object(window->builder, "search_entry"));
+	window->user_info_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "user_info_btn"));
 	window->elements_were_attached = 0;
 	
 	window->selected_chat_box = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_chat_box"));
@@ -139,6 +151,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	//g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_leave_btn_clicked), client);
 	g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_del_account_btn_clicked), client);
 	g_signal_connect(window->chat_info_btn, "released", G_CALLBACK(mx_on_chat_info_btn_clicked), client);
+	g_signal_connect(window->user_info_btn, "released", G_CALLBACK(mx_on_user_info_btn_clicked), client);
 	
 	return window;
 }

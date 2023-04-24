@@ -36,6 +36,7 @@
 #define CREATE_CHAT_WIND_XML_PATH "client/res/windows/create_chat_window.glade"
 #define DIALOG_WIND_XML_PATH "client/res/windows/dialog_window.glade"
 #define CHAT_INFO_WIND_XML_PATH "client/res/windows/chat_info_window.glade"
+#define USER_INFO_WIND_XML_PATH "client/res/windows/user_info_window.glade"
 
 #define MSG_LOAD_LIMIT 10
 #define RESP_TIMEOUT 3.0f
@@ -110,6 +111,7 @@ typedef struct chat_window_s {
 	GtkWidget *chats_list_scrlldwnd;	//Not used anywhere
 	GtkWidget *chats_list_view;		//Not used anywhere
 	GtkWidget *chats_list_grid;
+	GtkWidget* user_info_btn;
 	GtkWidget *search_entry;	
 	GtkWidget* add_chat_btn;
 	//Right side(current chat)
@@ -143,9 +145,18 @@ typedef struct chat_info_window_s {
 	GtkWidget* leave_chat_btn;
 	GtkWidget* cancel_info_btn;
 
-
 	GtkBuilder* builder;
 }			   chat_info_window_t;
+
+typedef struct user_info_window_s {
+	GtkWidget* window;
+	GtkWidget* username_label;
+	GtkWidget* log_out_btn;
+	GtkWidget* delet_acc_btn;
+	GtkWidget* version_label;
+
+	GtkBuilder* builder;
+}			   user_info_window_t;
 
 typedef struct client_s {
 	char* host;
@@ -167,6 +178,7 @@ typedef struct client_s {
 	create_chat_window_t* create_chat_window;
 	dialog_window_t* d_window;
 	chat_info_window_t* i_window;
+	user_info_window_t* u_window;
 
 	bool destroy_cnw;
 
@@ -225,6 +237,8 @@ create_chat_window_t* mx_build_create_chat_window(client_t* client);
 dialog_window_t* mx_build_dialog_window(client_t* client);
 
 chat_info_window_t* mx_build_chat_info_window(client_t* client);
+
+user_info_window_t* mx_build_user_info_window(client_t* client);
 
 void mx_send_req(SSL* ssl, const char* req);
 
