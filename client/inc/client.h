@@ -38,7 +38,7 @@
 #define CHAT_INFO_WIND_XML_PATH "client/res/windows/chat_info_window.glade"
 #define USER_INFO_WIND_XML_PATH "client/res/windows/user_info_window.glade"
 
-#define MSG_LOAD_LIMIT 10
+#define MSG_LOAD_LIMIT 20
 #define RESP_TIMEOUT 3.0f
 
 enum {
@@ -123,6 +123,7 @@ typedef struct chat_window_s {
 	GtkWidget *msgs_list_box;
 	GtkWidget *entry_edit_stack;
 	GtkWidget *selected_msg_close_btn;
+	GtkWidget *selected_msg_number_label;
 	GtkWidget *selected_msg_edit_btn;
 	GtkWidget *selected_msg_select_all_btn;
 	GtkWidget *selected_msg_delete_btn;

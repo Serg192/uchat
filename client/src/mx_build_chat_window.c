@@ -16,7 +16,10 @@ void mx_on_selection_changed(GtkListBox *listbox, gpointer data) {
 		else {
 			gtk_widget_show(client->c_window->selected_msg_edit_btn);
 		}
-    	
+		
+		char *selected_count_str = mx_strjoin("Selected: ", mx_itoa(g_list_length(selected_rows)));
+		gtk_label_set_text(client->c_window->selected_msg_number_label, selected_count_str);
+		free(selected_count_str);
 		g_list_free(selected_rows);
   	} else {
     	gtk_stack_set_visible_child_name(stack, "page0");
@@ -34,15 +37,17 @@ gboolean mx_on_button_press_event(GtkWidget *widget, GdkEventButton *event, gpoi
     	gboolean selected = gtk_list_box_row_is_selected(row);
 
     	if (selected) {
-    	  gtk_list_box_unselect_row(list_box, row);
-    	} else {
-    	  gtk_list_box_select_row(list_box, row);
-    	  if(client->edit_mode){
+    	  	gtk_list_box_unselect_row(list_box, row);
+    	} 
+		else {
+    	
+			gtk_list_box_select_row(list_box, row);
+		 	if(client->edit_mode) {
   				GtkTextView* text_view = (GtkTextView*)client->c_window->message_input_field;
 	    		GtkTextBuffer* input_txt_buf = gtk_text_view_get_buffer(text_view);
 	   			gtk_text_buffer_set_text(input_txt_buf, "", 0);
 	   			client->edit_mode = false;
-  		  }
+  		  	}
     	}
 
     	return TRUE;
@@ -121,6 +126,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->send_message_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "send_message_btn"));
 	window->entry_edit_stack = GTK_WIDGET(gtk_builder_get_object(window->builder, "entry_edit_stack"));
 	window->selected_msg_close_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_close_btn"));
+	window->selected_msg_number_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_number_label"));
 	window->selected_msg_edit_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_edit_btn"));
 	window->selected_msg_select_all_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_select_all_btn"));
 	window->selected_msg_delete_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_delete_btn"));
