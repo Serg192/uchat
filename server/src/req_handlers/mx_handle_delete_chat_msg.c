@@ -75,19 +75,6 @@ static inline void notify_all_members(client_t* client,
 
 
 static inline bool user_has_permission_to_del_message(const int chat_id, const int message_id, const int user_id){
-/*
-SELECT rm1.permissions AS user_permission, m.from_id, rm2.permissions AS from_permission
-FROM message AS m
-JOIN room_member AS rm1 ON rm1.client_id = <user_id> AND rm1.room_id = <room_id>
-JOIN room_member AS rm2 ON rm2.client_id = m.from_id AND rm2.room_id = <room_id>
-WHERE m.id = <message_id>;
-
-
-SELECT rm1.permissions AS user_permission, m.from_id, rm2.permissions AS from_permission FROM message AS m JOIN room_member AS rm1 ON rm1.client_id = 1 AND rm1.room_id = 2 JOIN room_member AS rm2 ON rm2.client_id = m.from_id AND rm2.room_id = 2 WHERE m.id = 3
-
-SELECT rm1.permissions AS user_permission, m.from_id, rm2.permissions AS from_permission FROM message AS m JOIN room_member AS rm1 ON rm1.client_id = 1 AND rm1.room_id = 1 JOIN room_member AS rm2 ON rm2.client_id = m.from_id AND rm2.room_id = 1 WHERE m.id = 1
-
-	*/
 
 	bool result = false;
 
@@ -109,6 +96,7 @@ SELECT rm1.permissions AS user_permission, m.from_id, rm2.permissions AS from_pe
     }
 
 
+    bool found = false;
     while(sqlite3_step(stmt) == SQLITE_ROW) {
     	const int this_user_permissions = sqlite3_column_int64(stmt, 0);
     	const int message_from_user_id = sqlite3_column_int64(stmt, 1);
@@ -117,6 +105,35 @@ SELECT rm1.permissions AS user_permission, m.from_id, rm2.permissions AS from_pe
     	if(user_id == message_from_user_id || this_user_permissions > message_owner_permissions){
     		result = true;
     	}
+
+    	found = true;
+    }
+
+    if(!found){
+    	
+    	//message from user who left this chat
+    	char* sql_req2 = NULL;
+    	asprintf(&sql_req2, "SELECT room_member.permissions FROM room_member "
+    		                " WHERE room_member.room_id = '%d' AND room_member.client_id = '%d'",
+    		                chat_id, user_id);
+
+    	sqlite3_stmt* stmt2;
+
+		if (sqlite3_prepare_v2(db, sql_req2, -1, &stmt2, 0) != SQLITE_OK) {
+	 		mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+        	mx_close_db(db);
+       		exit(-1);
+    	}
+
+    	while(sqlite3_step(stmt2) == SQLITE_ROW){
+    		const int this_user_permissions = sqlite3_column_int64(stmt2, 0);
+
+    		if(this_user_permissions >= TYPE_ADMIN)
+    			result = true;
+    	}
+    	
+    	free(sql_req2);
+        sqlite3_finalize(stmt2);
     }
 
 

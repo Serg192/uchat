@@ -27,7 +27,7 @@ chat_info_window_t* mx_build_chat_info_window(client_t* client) {
 
 
 	g_signal_connect(G_OBJECT(window->cancel_info_btn), "released", G_CALLBACK(mx_on_cancel_info_btn_clicked), client);
-	//g_signal_connect(G_OBJECT(window->cancel_info_btn), "released", G_CALLBACK(mx_hide_hint_window), client);
+    g_signal_connect(G_OBJECT(window->leave_chat_btn), "released", G_CALLBACK(mx_on_leave_btn_clicked), client);
 
 	return window;
 }

@@ -29,6 +29,5 @@ void mx_handle_leave_chat(client_t* client, request_t* req){
 
 	cJSON_Delete(response);
 	free(response_str);
-	free(sql_req);
 }
 
