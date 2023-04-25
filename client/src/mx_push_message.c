@@ -21,6 +21,26 @@ static char* format_sending_date(int sending_date) {
     return date_str;
 }
 
+static void set_new_adjustment(chat_window_t *window, GtkAdjustment *adjustment, GtkListBoxRow* row, gdouble old_value, int mode) {
+	gtk_adjustment_set_page_size(adjustment, 0);
+
+	GList *count_rows = gtk_container_get_children(GTK_CONTAINER(window->msgs_list_box));
+	int num_rows = g_list_length(count_rows);
+	
+	gint added_message_height = -1;
+	gtk_widget_get_preferred_height(row, NULL, &added_message_height);
+	gtk_adjustment_set_upper(adjustment, gtk_adjustment_get_upper(adjustment) + added_message_height);
+
+	if (mode == PUSH_BACK || num_rows <= MSG_LOAD_LIMIT) {
+		gtk_adjustment_set_value(adjustment, gtk_adjustment_get_upper(adjustment) + added_message_height);
+	}
+	else {
+		gtk_adjustment_set_value(adjustment, old_value + added_message_height);
+	}
+
+	g_list_free(count_rows);
+}
+
 static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	push_msg_data_t* msg_data = (push_msg_data_t*)data;
 	client_t* client = msg_data->client;
@@ -38,23 +58,23 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
     //char *sending_date = mx_itoa(message->sending_date);
     char* sending_date = format_sending_date(message->sending_date);
     
-    //Works only firstly (in one chat)
-    static char* last_date_str = NULL;
-    if (last_date_str == NULL || mx_strcmp(sending_date, last_date_str) != 0) {
-        GtkWidget* date_main_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
-        GtkWidget* date_label = gtk_label_new(sending_date);
-        GdkRGBA color;
-        gdk_rgba_parse(&color, "#A3A3A3");
-        gtk_widget_override_background_color(date_main_box, GTK_STATE_FLAG_NORMAL, &color);
-        gtk_widget_set_margin_start(date_label, 10);
-        gtk_box_pack_start(GTK_BOX(date_main_box), date_label, TRUE, TRUE, 0);
-        gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), date_main_box, (mode == PUSH_BACK ? -1 : 0));
+    // //Works only firstly (in one chat)
+    // static char* last_date_str = NULL;
+    // if (last_date_str == NULL || mx_strcmp(sending_date, last_date_str) != 0) {
+    //     GtkWidget* date_main_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
+    //     GtkWidget* date_label = gtk_label_new(sending_date);
+    //     GdkRGBA color;
+    //     gdk_rgba_parse(&color, "#A3A3A3");
+    //     gtk_widget_override_background_color(date_main_box, GTK_STATE_FLAG_NORMAL, &color);
+    //     gtk_widget_set_margin_start(date_label, 10);
+    //     gtk_box_pack_start(GTK_BOX(date_main_box), date_label, TRUE, TRUE, 0);
+    //     gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), date_main_box, (mode == PUSH_BACK ? -1 : 0));
         
-        if (last_date_str != NULL) {
-            free(last_date_str);
-        }
-        last_date_str = mx_strdup(sending_date);
-    }
+    //     if (last_date_str != NULL) {
+    //         free(last_date_str);
+    //     }
+    //     last_date_str = mx_strdup(sending_date);
+    // }
     
 	gboolean is_your_message = mx_strcmp(sender_name, "You") == 0;
     
@@ -106,14 +126,16 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	g_object_set_data(G_OBJECT(row), "message_data", message);
 
 	mx_map_put(client->message_id_row_map, message->id, row);
-	
+
+	GtkAdjustment *adjustment = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW(window->msgs_list_scrlld_wnd));
+	gdouble old_value = gtk_adjustment_get_value(adjustment);
+
 	gtk_container_add(row, msg_main_box);
 	gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), row, (mode == PUSH_BACK ? -1 : 0));
-	
-	GtkAdjustment *adj = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW(window->msgs_list_scrlld_wnd));
-   	gtk_adjustment_set_value(adj, gtk_adjustment_get_upper(adj) - gtk_adjustment_get_page_size(adj));
 
    	gtk_widget_show_all(window->msgs_list_box);
+
+	set_new_adjustment(window, adjustment, row, old_value, mode);
 
 	free(msg_data);
 	free(sending_time);

@@ -9,7 +9,7 @@ static inline gboolean del_msg_from_list_box_in_gtk_loop(gpointer data){
 	GtkListBoxRow* row = GTK_LIST_BOX_ROW(mx_map_get(client->message_id_row_map, message_id));
 	if(row != NULL){
 		gtk_container_remove(GTK_CONTAINER(client->c_window->msgs_list_box), GTK_WIDGET(row));
-		gtk_widget_destroy(GTK_WIDGET(row));
+		//gtk_widget_destroy(GTK_WIDGET(row));
 		mx_map_remove(client->message_id_row_map, message_id);
 	}
 
