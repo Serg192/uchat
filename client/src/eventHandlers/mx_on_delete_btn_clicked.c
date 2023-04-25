@@ -11,7 +11,7 @@ void mx_on_delete_btn_clicked(GtkWidget* w, gpointer data){
     	message_t *message = (message_t*) g_object_get_data(G_OBJECT(row), "message_data");
     	
     	//Can delete only your own messages
-    	if(mx_strcmp(message->username_from, "You") == 0) {
+    	//if(mx_strcmp(message->username_from, "You") == 0) {
 
     		//Create request to delete message
     		//printf("************************************DELETE WITH INDEX %d\n", message->id);
@@ -25,7 +25,7 @@ void mx_on_delete_btn_clicked(GtkWidget* w, gpointer data){
 		    printf("[FROM DELETE], request is %s\n", request->req);
 
 		    mx_queue_push(client->request_queue, request);
-    	}
+    	//}
     	
 	}
 	g_list_free(selected_rows);
