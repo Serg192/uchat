@@ -15,7 +15,11 @@ user_info_window_t* mx_build_user_info_window(client_t* client) {
 	window->delet_acc_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "delet_acc_btn"));
     window->version_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "version_label"));
 
+    
 	//g_signal_connect(G_OBJECT(window->cancel_info_btn), "released", G_CALLBACK(mx_on_cancel_info_btn_clicked), client);
+	g_signal_connect(window->delet_acc_btn, "released", G_CALLBACK(mx_on_del_account_btn_clicked), client);
+
+	g_signal_connect(window->log_out_btn, "released", G_CALLBACK(mx_on_log_out_btn_clicked), client);
 
 	return window;
 }

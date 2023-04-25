@@ -151,7 +151,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 
 	//Doesn't work 
 	//g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_leave_btn_clicked), client);
-	g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_del_account_btn_clicked), client);
+	
 	g_signal_connect(window->chat_info_btn, "released", G_CALLBACK(mx_on_chat_info_btn_clicked), client);
 	g_signal_connect(window->user_info_btn, "released", G_CALLBACK(mx_on_user_info_btn_clicked), client);
 	

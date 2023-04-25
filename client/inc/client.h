@@ -283,6 +283,8 @@ void mx_on_show_psw_btn_clicked(GtkWidget *w, gpointer data);
 
 void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data);
 
+void mx_on_log_out_btn_clicked(GtkWidget* w, gpointer data);
+
 void mx_on_send_msg_btn_clicked(GtkButton* b, gpointer data);
 
 void mx_on_msg_list_edge_was_reached(GtkScrolledWindow* scrolled_window, GtkPositionType pos, gpointer user_data);
