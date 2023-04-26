@@ -29,7 +29,8 @@ void mx_on_search_changed(GtkWidget *w, gpointer data){
 	client_t* client = (client_t*)data;
 
 	char pattern[33];
-	sprintf(pattern, "%s", gtk_entry_get_text(w));
+	//sprintf(pattern, "%s", gtk_entry_get_text(w));
+	sprintf(pattern, "%s", gtk_entry_get_text(GTK_ENTRY(w)));
 
 	char* trimmed_str = mx_strtrim(pattern);
 	char* prepared_text = mx_prepare_str_for_sql(trimmed_str);
@@ -48,3 +49,4 @@ void mx_on_search_changed(GtkWidget *w, gpointer data){
 	if(prepared_text)
 		free(prepared_text);
 }
+

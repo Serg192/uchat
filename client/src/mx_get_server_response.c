@@ -30,7 +30,8 @@ static inline int get_res_len(SSL* ssl) {
     struct timeval tv;
     tv.tv_sec = 3;
     tv.tv_usec = 0;
-    SSL_set_timeout(ssl, 3);
+    //SSL_set_timeout(ssl, 3);
+    SSL_SESSION_set_timeout(SSL_get_session(ssl), 3);
 
     // Set non-blocking mode
     SSL_set_mode(ssl, SSL_MODE_AUTO_RETRY | SSL_MODE_ENABLE_PARTIAL_WRITE | SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER);

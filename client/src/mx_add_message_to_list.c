@@ -31,11 +31,14 @@ void mx_add_message_to_list(chat_window_t* window, const char *sender_name, cons
 	gtk_box_pack_end(GTK_BOX(msg_main_box), msg_sending_time_label, FALSE, TRUE, 0);
     
     //FOR TESTS
-	gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, "#1ddecb");
+    GdkRGBA color;
+    gdk_rgba_parse(&color, "#1ddecb");
+    gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, &color);
+	//gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, "#1ddecb");
 	gtk_widget_show_all(window->msgs_list_box);
-	GtkListBoxRow* row = gtk_list_box_row_new();
-	gtk_container_add(row, msg_main_box);
-	gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), row, -1);
+    GtkListBoxRow* row = GTK_LIST_BOX_ROW(gtk_list_box_row_new());
+    gtk_container_add(GTK_CONTAINER(row), msg_main_box);
+    gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), GTK_WIDGET(row), -1);
 	
 	GtkAdjustment *adj = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW(window->msgs_list_scrlld_wnd));
    	gtk_adjustment_set_value(adj, gtk_adjustment_get_upper(adj) - gtk_adjustment_get_page_size(adj));

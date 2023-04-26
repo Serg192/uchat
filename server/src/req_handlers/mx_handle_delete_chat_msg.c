@@ -59,7 +59,7 @@ static inline void notify_all_members(client_t* client,
     		if(client_to_notify != NULL){
     		    //void* msg_id_ptr = &msg_id;
     		    const int* msg_id_ptr = &msg_id;
-    			mx_queue_push(client_to_notify->deleted_msg_notify_q, msg_id_ptr);
+    			mx_queue_push(client_to_notify->deleted_msg_notify_q, (void*)msg_id_ptr);
     		}
     		
     	}

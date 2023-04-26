@@ -30,6 +30,10 @@
 
 #include "../../common/common.h"
 
+
+#include <strings.h> //added for function bzero in mx_create_connection_with_serv.c
+
+
 #define CLIENT_LOG_FILE "client/log/log.txt"
 #define AUTH_WIND_XML_PATH "client/res/windows/auth_window.glade"
 #define CHAT_WIND_XML_PATH "client/res/windows/chat_window.glade"
@@ -267,6 +271,8 @@ void mx_send_req(SSL* ssl, const char* req);
 
 void mx_client_init(client_t* client, const char* host, const int port);
 
+void mx_msg_edit_update_list(client_t* client, int message_id, char* text);
+
 //btn handlers
 
 void mx_on_signup_btn_clicked(GtkButton* b, gpointer data);
@@ -331,6 +337,10 @@ void* mx_main_background_loop(void* data);
 void mx_hide_hint_window(GtkWidget* widget, gpointer data);
 
 //
+char* mx_create_ban_req(int chat_id, int user_id, int banned);
+
+char* mx_create_permissions_change_req(int chat_id, int user_id, int perm);
+
 char* mx_create_chat_req(const char* chat_name, int color);
 
 char* mx_create_signup_req(const char* login, const char* password);

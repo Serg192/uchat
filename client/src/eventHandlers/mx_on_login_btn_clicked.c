@@ -8,8 +8,13 @@ void mx_on_login_btn_clicked(GtkButton* b, gpointer data) {
 
 		client_t* client = (client_t*)data;
 
-		sprintf(username_buffer, "%s", gtk_entry_get_text(client->a_window->username_entry));
-		sprintf(password_buffer, "%s", gtk_entry_get_text(client->a_window->password_entry));
+		//sprintf(username_buffer, "%s", gtk_entry_get_text(client->a_window->username_entry));
+		//sprintf(password_buffer, "%s", gtk_entry_get_text(client->a_window->password_entry));
+		GtkEntry* username_entry = GTK_ENTRY(client->a_window->username_entry);
+        GtkEntry* password_entry = GTK_ENTRY(client->a_window->password_entry);
+		sprintf(username_buffer, "%s", gtk_entry_get_text(username_entry));
+        sprintf(password_buffer, "%s", gtk_entry_get_text(password_entry));
+
 
 		printf("Username = %s, password = %s, %d\n", username_buffer, password_buffer, mx_strlen(password_buffer));
 
@@ -26,3 +31,4 @@ void mx_on_login_btn_clicked(GtkButton* b, gpointer data) {
 		request->req =  mx_create_login_req(username_buffer, hash);
 		mx_queue_push(client->request_queue, request);
 }
+

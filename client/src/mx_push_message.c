@@ -21,7 +21,7 @@ static char* format_sending_date(int sending_date) {
     return date_str;
 }
 
-static inline void set_new_adjustment(chat_window_t *window, GtkListBoxRow* row, gdouble old_value, int mode) {
+static inline void set_new_adjustment(chat_window_t *window, GtkWidget* row, gdouble old_value, int mode) {
 	GtkAdjustment *adjustment = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW(window->msgs_list_scrlld_wnd));
 	gtk_adjustment_set_page_size(adjustment, 0);
 
@@ -120,8 +120,9 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	gdk_rgba_parse(&color, "#FF0F00");
 	gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, &color);
 	
-	GtkListBoxRow* row = gtk_list_box_row_new();
-
+	//GtkListBoxRow* row = gtk_list_box_row_new();
+    GtkWidget* row = GTK_WIDGET(gtk_list_box_row_new());
+    
 	message->text_label = msg_text_label;
 
 	g_object_set_data(G_OBJECT(row), "message_data", message);
@@ -131,12 +132,15 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	GtkAdjustment *adjustment = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW(window->msgs_list_scrlld_wnd));
 	gdouble old_value = gtk_adjustment_get_value(adjustment);
 
-	gtk_container_add(row, msg_main_box);
-	gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), row, (mode == PUSH_BACK ? -1 : 0));
-
-   	gtk_widget_show_all(window->msgs_list_box);
-
-	set_new_adjustment(window, row, old_value, mode);
+	//gtk_container_add(row, msg_main_box);
+	//gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), row, (mode == PUSH_BACK ? -1 : 0));
+	
+	gtk_container_add(GTK_CONTAINER(row), msg_main_box);
+	gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), GTK_WIDGET(row), (mode == PUSH_BACK ? -1 : 0));
+    gtk_widget_show_all(window->msgs_list_box);
+   
+	//set_new_adjustment(window, row, old_value, mode);
+	set_new_adjustment(window, GTK_WIDGET(row), old_value, mode);
 
 	free(msg_data);
 	free(sending_time);
