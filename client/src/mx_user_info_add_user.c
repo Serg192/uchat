@@ -135,10 +135,10 @@ static inline gboolean push_uifo_in_gtk_loop(gpointer data){
 
 	}
 	
-	GtkListBoxRow* row = gtk_list_box_row_new();
+	GtkListBoxRow* row = (GtkListBoxRow*) gtk_list_box_row_new();
 	gtk_container_add(GTK_CONTAINER(row), user_main_box);
 
-	gtk_list_box_insert(GTK_LIST_BOX(m->client->i_window->members_list_box), row, -1);
+	gtk_list_box_insert(GTK_LIST_BOX(m->client->i_window->members_list_box), GTK_WIDGET(row), -1);
 
 	gtk_widget_show_all(m->client->i_window->members_list_box);
 

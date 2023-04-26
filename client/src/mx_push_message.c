@@ -28,7 +28,7 @@ static void set_new_adjustment(chat_window_t *window, GtkAdjustment *adjustment,
 	int num_rows = g_list_length(count_rows);
 	
 	gint added_message_height = -1;
-	gtk_widget_get_preferred_height(row, NULL, &added_message_height);
+	gtk_widget_get_preferred_height(GTK_WIDGET(row), NULL, &added_message_height);
 	gtk_adjustment_set_upper(adjustment, gtk_adjustment_get_upper(adjustment) + added_message_height);
 
 	if (mode == PUSH_BACK || num_rows <= MSG_LOAD_LIMIT) {
@@ -119,7 +119,7 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	gdk_rgba_parse(&color, "#FF0F00");
 	gtk_widget_override_background_color(msg_main_box, GTK_STATE_FLAG_NORMAL, &color);
 	
-	GtkListBoxRow* row = gtk_list_box_row_new();
+	GtkListBoxRow* row = GTK_LIST_BOX_ROW(gtk_list_box_row_new());
 
 	message->text_label = msg_text_label;
 
@@ -130,8 +130,8 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	GtkAdjustment *adjustment = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW(window->msgs_list_scrlld_wnd));
 	gdouble old_value = gtk_adjustment_get_value(adjustment);
 
-	gtk_container_add(row, msg_main_box);
-	gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), row, (mode == PUSH_BACK ? -1 : 0));
+	gtk_container_add(GTK_CONTAINER(msg_main_box), GTK_WIDGET(row));
+	gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), GTK_WIDGET(row), (mode == PUSH_BACK ? -1 : 0));
 
    	gtk_widget_show_all(window->msgs_list_box);
 

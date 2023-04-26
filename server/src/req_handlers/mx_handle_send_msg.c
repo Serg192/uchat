@@ -93,3 +93,4 @@ void mx_handle_send_msg(client_t* client, request_t* req) {
 	cJSON_Delete(response);
 	free(response_str);
 }
+

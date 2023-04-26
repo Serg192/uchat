@@ -55,7 +55,7 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 	printf("Hide\n");
 
 	gtk_widget_hide(client->c_window->chats_list_grid);
-	gtk_grid_remove_column(client->c_window->chats_list_grid, 1);
+	gtk_grid_remove_column((GtkGrid *)client->c_window->chats_list_grid, 1);
 
 	printf("Loop\n");
 	for(int i = 0; i < chat_count; i++){
@@ -69,7 +69,7 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 
 		g_object_set_data(G_OBJECT(button), "chat_id", GINT_TO_POINTER(cJSON_GetObjectItem(chat_info, "id")->valueint));
 
-		char *str = mx_strndup(gtk_button_get_label(button), 2);
+		char *str = mx_strndup(gtk_button_get_label(GTK_BUTTON(button)), 2);
 		str[0] = (char)mx_toupper((int)str[0]);
 		str[1] = (char)mx_toupper((int)str[1]);
 		icon = gtk_label_new(str);
@@ -77,7 +77,7 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 		gtk_widget_set_size_request(icon, 50, 50);
 		GdkRGBA icon_text_color;
 		gdk_rgba_parse(&icon_text_color, "rgba(255,255,255,1)");
-		gtk_widget_override_color(GTK_WIDGET(icon), GTK_STATE_FLAG_NORMAL, &icon_text_color);
+		gtk_widget_override_background_color(GTK_WIDGET(icon), GTK_STATE_FLAG_NORMAL, &icon_text_color);
 
 		gtk_button_set_image(GTK_BUTTON(button), icon);
 
@@ -86,7 +86,7 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 		gtk_button_set_alignment(GTK_BUTTON(button), 0.0, 0.5);
 		gtk_grid_attach(GTK_GRID(client->c_window->chats_list_grid), button, 1, i, 1, 1);
 
-		g_signal_connect(G_OBJECT(icon), "draw", G_CALLBACK(draw_callback), (gpointer)color);
+		g_signal_connect(G_OBJECT(icon), "draw", G_CALLBACK(draw_callback), (gpointer)(intptr_t)color);
 		g_signal_connect(button, "released", client->search_mode ? G_CALLBACK(mx_on_chat_search_list_clicked) : G_CALLBACK(mx_on_chat_list_clicked), client);
 
 	}

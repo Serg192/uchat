@@ -38,7 +38,7 @@ void mx_handle_chat_creation(client_t* client, request_t* req) {
 
 	int room_name_len = mx_strlen(room_name);
 
-	mx_log(SERV_LOG_FILE, LOG_TRACE, room_name);
+	mx_log(SERV_LOG_FILE, LOG_TRACE, (char *)room_name);
 
 	cJSON* response = cJSON_CreateObject();
 

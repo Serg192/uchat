@@ -1,6 +1,6 @@
 #include "../../inc/server.h"
 
-static inline bool has_user(const char* login) {
+__attribute__((unused)) static inline bool has_user(const char* login) {
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Checking if database has this user");
 	bool result;
@@ -16,7 +16,7 @@ static inline bool has_user(const char* login) {
 	sqlite3_stmt* answ;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &answ, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char *)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -66,8 +66,8 @@ void mx_handle_registration(client_t* client, request_t* req) {
 	const char* username = cJSON_GetObjectItem(req->json, "login")->valuestring;
 	const char* password = cJSON_GetObjectItem(req->json, "password")->valuestring;
 
-	mx_log(SERV_LOG_FILE, LOG_TRACE, username);
-	mx_log(SERV_LOG_FILE, LOG_TRACE, password);
+	mx_log(SERV_LOG_FILE, LOG_TRACE, (char *)username);
+	mx_log(SERV_LOG_FILE, LOG_TRACE, (char *)password);
 
 	int username_len = mx_strlen(username);
 
@@ -110,3 +110,4 @@ void mx_handle_registration(client_t* client, request_t* req) {
 
 	cJSON_Delete(response);
 }
+

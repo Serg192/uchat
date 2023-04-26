@@ -1,6 +1,6 @@
 #include "../../inc/client.h"
 
-void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
+void mx_on_chat_info_btn_clicked(GtkWidget* widget __attribute__((unused)), gpointer data) {
 	client_t* client = (client_t*)data;
 
 	if(client->i_window->visible){
@@ -10,7 +10,8 @@ void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
 
 
 		 while(client->p_change_clear_list){
-	    	perm_change_t* p = (message_t*)(client->p_change_clear_list->data);
+	    	message_t* m = client->p_change_clear_list->data;
+		perm_change_t* p = (perm_change_t*)m;
 	    	free(p);
 	    	mx_pop_front(&(client->p_change_clear_list));
 	    }
@@ -20,7 +21,7 @@ void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
 		return;
 	}
 
-	gtk_label_set_text(client->i_window->chat_name_label, gtk_label_get_text(client->c_window->chat_name_label));
+	gtk_label_set_text(GTK_LABEL(client->i_window->chat_name_label), gtk_label_get_text(GTK_LABEL(client->c_window->chat_name_label)));
 
 
 	request_t* request = (request_t*)malloc(sizeof(request));
@@ -30,3 +31,4 @@ void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
 	gtk_widget_show_all(client->i_window->window);
 	client->i_window->visible = true;
 }
+

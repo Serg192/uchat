@@ -80,7 +80,7 @@ static inline void handle_response(client_t* client) {
 	//printf("Deleting json\n");
 	cJSON_Delete(response->json);
 	//printf("Deleting current_response_str\n");
-	free(client->current_response->str_res);
+	free((void *)client->current_response->str_res);
 	client->current_response->str_res = NULL;
 	//printf("Deleting current_response\n");
 	free(client->current_response);
@@ -217,3 +217,4 @@ void mx_main_background_loop(void* data) {
 	close(client->serv);
 }
 */
+

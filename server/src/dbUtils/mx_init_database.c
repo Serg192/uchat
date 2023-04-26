@@ -47,3 +47,4 @@ void mx_init_database() {
 
 	mx_close_db(db);
 }
+

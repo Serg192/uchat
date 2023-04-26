@@ -1,7 +1,7 @@
 #include "../inc/server.h"
 
 
-static inline void make_daemon() {
+__attribute__((unused)) static inline void make_daemon() {
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Creating daemon process");
 
@@ -83,3 +83,4 @@ int main(int argc, char *argv[]) {
 
 	return 0;
 }
+

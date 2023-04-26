@@ -1,7 +1,7 @@
 #include "../../inc/client.h"
 
-void mx_on_log_out_btn_clicked(GtkWidget* w, gpointer data){
-	client_t* client = (client_t*)data;
+void mx_on_log_out_btn_clicked(GtkWidget* w __attribute__((unused)), gpointer data){
+	client_t* client = (client_t*)data; 
 
 	gtk_widget_hide(client->c_window->selected_chat_box);    
     mx_room_data_clear(client);

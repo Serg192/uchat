@@ -13,3 +13,4 @@ char* mx_create_ban_req(int chat_id, int user_id, int banned) {
 
     return req_str;
 }
+

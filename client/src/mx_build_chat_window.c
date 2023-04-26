@@ -4,7 +4,7 @@ void mx_on_selection_changed(GtkListBox *listbox, gpointer data) {
 	client_t* client = (client_t*)data;
 	
 
-	GtkStack *stack = client->c_window->entry_edit_stack;
+	GtkStack *stack = GTK_STACK(client->c_window->entry_edit_stack);
 	GList *selected_rows = gtk_list_box_get_selected_rows(listbox);
 
 	if (selected_rows != NULL) {
@@ -18,7 +18,7 @@ void mx_on_selection_changed(GtkListBox *listbox, gpointer data) {
 		}
 		
 		char *selected_count_str = mx_strjoin("Selected: ", mx_itoa(g_list_length(selected_rows)));
-		gtk_label_set_text(client->c_window->selected_msg_number_label, selected_count_str);
+		gtk_label_set_text(GTK_LABEL(client->c_window->selected_msg_number_label), selected_count_str);
 		free(selected_count_str);
 		g_list_free(selected_rows);
   	} else {
@@ -56,14 +56,16 @@ gboolean mx_on_button_press_event(GtkWidget *widget, GdkEventButton *event, gpoi
   	return FALSE;
 }
 
-void mx_on_selected_msg_close_btn_clicked(GtkButton* b, gpointer data) {
+void mx_on_selected_msg_close_btn_clicked(GtkButton* b __attribute__((unused)), gpointer data) {
 	client_t* client = (client_t*)data;
-	gtk_list_box_unselect_all(client->c_window->msgs_list_box);
+	gtk_list_box_unselect_all(GTK_LIST_BOX(client->c_window->msgs_list_box));
+
 }
 
-void mx_on_selected_msg_select_all_btn_clicked(GtkButton* b, gpointer data) {
+void mx_on_selected_msg_select_all_btn_clicked(GtkButton* b __attribute__((unused)), gpointer data) {
 	client_t* client = (client_t*)data;
-	gtk_list_box_select_all(client->c_window->msgs_list_box);
+	gtk_list_box_select_all(GTK_LIST_BOX(client->c_window->msgs_list_box));
+
 }
 
 void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
@@ -79,7 +81,7 @@ void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
 
 
 
-void mx_on_user_info_btn_clicked(GtkWidget* widget, gpointer data) {
+void mx_on_user_info_btn_clicked(GtkWidget* widget __attribute__((unused)), gpointer data) {
 	client_t* client = (client_t*)data;
 
 	gint main_window_x, main_window_y;

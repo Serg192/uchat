@@ -19,7 +19,7 @@ typedef struct cds_hash_tl_s {
 //for test
 
 
-static inline void notify_all_members(client_t* client,
+static inline void notify_all_members(client_t* client __attribute__((unused)),
 	                                  const int chat_id, 
 	                                  const int msg_id){
 	
@@ -32,7 +32,7 @@ static inline void notify_all_members(client_t* client,
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char *)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -44,7 +44,7 @@ static inline void notify_all_members(client_t* client,
     	asprintf(&sql_req, "SELECT * FROM user WHERE id = '%d'", client_id);
 
     	if (sqlite3_prepare_v2(db, sql_req, -1, &inner_stmt, 0) != SQLITE_OK) {
-	 		mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 		mx_log(SERV_LOG_FILE, LOG_ERROR, (char *)sqlite3_errmsg(db));
         	mx_close_db(db);
         	exit(-1);
     	}
@@ -56,7 +56,7 @@ static inline void notify_all_members(client_t* client,
     		client_t* client_to_notify = (client_t*)mx_map_get(client_map, key);
 
     		if(client_to_notify != NULL){
-    			mx_queue_push(client_to_notify->deleted_msg_notify_q, (void*)msg_id);
+    			mx_queue_push(client_to_notify->deleted_msg_notify_q, (void*)(intptr_t)msg_id);
     		}
     		
     	}
@@ -111,3 +111,4 @@ void mx_handle_delete_chat_msg(client_t* client, request_t* req) {
 	free(response_str);
 
 }
+

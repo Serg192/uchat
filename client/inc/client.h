@@ -387,4 +387,16 @@ char *mx_prepare_str_for_sql(const char *input);
 
 void mx_room_data_clear(client_t* client);
 
+void bzero(void *s, size_t n);
+
+char* mx_create_ban_req(int chat_id, int user_id, int banned);
+
+char* mx_create_permissions_change_req(int chat_id, int user_id, int perm);
+
+int asprintf(char **strp, const char *fmt, ...);
+
+void mx_msg_edit_update_list(client_t* client, int message_id, char* text);
+
+void gtk_container_unselect_all (GtkContainer *container);
+
 #endif

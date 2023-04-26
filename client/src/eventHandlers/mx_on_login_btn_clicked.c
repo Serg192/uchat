@@ -8,9 +8,8 @@ void mx_on_login_btn_clicked(GtkButton* b, gpointer data) {
 
 		client_t* client = (client_t*)data;
 
-		sprintf(username_buffer, "%s", gtk_entry_get_text(client->a_window->username_entry));
-		sprintf(password_buffer, "%s", gtk_entry_get_text(client->a_window->password_entry));
-
+		sprintf(username_buffer, "%s", gtk_entry_get_text(GTK_ENTRY(client->a_window->username_entry)));
+		sprintf(password_buffer, "%s", gtk_entry_get_text(GTK_ENTRY(client->a_window->password_entry)));
 		printf("Username = %s, password = %s, %d\n", username_buffer, password_buffer, mx_strlen(password_buffer));
 
 		if(mx_strlen(password_buffer) < 6) {

@@ -1,7 +1,7 @@
 #include "../inc/client.h"
 
 
-void mx_hide_hint_window(GtkWidget* widget, gpointer data) {
+void mx_hide_hint_window(GtkWidget* widget, gpointer data __attribute__((unused))) {
   	 GtkWidget* top_level = gtk_widget_get_toplevel(widget);
    // gtk_widget_destroy(top_level);
   	 gtk_widget_hide(top_level);

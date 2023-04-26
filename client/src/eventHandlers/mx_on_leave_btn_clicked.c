@@ -1,6 +1,6 @@
 #include "../../inc/client.h"
 
-void mx_on_leave_btn_clicked(GtkButton* b, gpointer data){
+void mx_on_leave_btn_clicked(GtkButton* b __attribute__((unused)), gpointer data){
 	client_t* client = (client_t*)data;
 
 	const int chat_to_leave = client->current_chat_id;

@@ -1,7 +1,6 @@
 #include "../../inc/server.h"
 
-void mx_handle_del_account(client_t* client, request_t* req){
-
+void mx_handle_del_account(client_t* client, request_t* req __attribute__((unused))){
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Handling delete message request");
 
 
@@ -31,3 +30,4 @@ void mx_handle_del_account(client_t* client, request_t* req){
 	//mx_strdel(response_str);
 	free(response_str);
 }
+

@@ -4,7 +4,7 @@ static inline bool check_password_for(const char* username, const char* password
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Checking password");
 
-	bool result;
+	bool result = false;
 	char* sql_req = NULL;
 
 	asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", username);
@@ -15,7 +15,7 @@ static inline bool check_password_for(const char* username, const char* password
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char *)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -23,7 +23,7 @@ static inline bool check_password_for(const char* username, const char* password
     if(sqlite3_step(stmt) == SQLITE_ROW) {
     	const char* db_pass = mx_strdup((const char*)sqlite3_column_text(stmt, 2));
     	result = mx_strcmp(db_pass, password) == 0;
-    	mx_strdel(&db_pass);
+    	mx_strdel((char **)&db_pass);
     
     }
 
@@ -42,8 +42,8 @@ void mx_handle_logging_in(client_t* client, request_t* req) {
 	const char* password = cJSON_GetObjectItem(req->json, "password")->valuestring;
 	const char* error_msg = "The username or password is incorrect";
 
-	mx_log(SERV_LOG_FILE, LOG_TRACE, username);
-	mx_log(SERV_LOG_FILE, LOG_TRACE, password);
+	mx_log(SERV_LOG_FILE, LOG_TRACE, (char *)username);
+	mx_log(SERV_LOG_FILE, LOG_TRACE, (char *)password);
 
 	cJSON* response = cJSON_CreateObject();
 
@@ -76,3 +76,4 @@ void mx_handle_logging_in(client_t* client, request_t* req) {
 	cJSON_Delete(response);
 	free(response_str);
 }
+

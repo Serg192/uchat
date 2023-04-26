@@ -6,7 +6,7 @@ void mx_client_init(client_t* client, const char* host, const int port){
 
 	client->ctx = mx_init_ctx();
 	client->serv = mx_create_connection_with_serv(host, port);
-    client->host = host;
+    client->host = (char *)host;
     client->port = port;
 
 	client->ssl = SSL_new(client->ctx);

@@ -1,6 +1,6 @@
 #include "../../inc/client.h"
 
-void mx_on_send_msg_btn_clicked(GtkButton* b, gpointer data){
+void mx_on_send_msg_btn_clicked(GtkButton* b __attribute__((unused)), gpointer data){
 	client_t* client = (client_t*)data;
 
 	GtkTextView* text_view = (GtkTextView*)client->c_window->message_input_field;

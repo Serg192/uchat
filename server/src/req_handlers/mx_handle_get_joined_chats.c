@@ -1,7 +1,7 @@
 #include "../../inc/server.h"
 
 
-void mx_handle_get_joined_chats(client_t* client, request_t* req) {
+void mx_handle_get_joined_chats(client_t* client, request_t* req __attribute__((unused))) {
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Get joined chats request");
 
 	printf("Checkpoint one\n");
@@ -34,3 +34,4 @@ void mx_handle_get_joined_chats(client_t* client, request_t* req) {
 	//mx_strdel(response_str);
 	free(response_str);
 }
+

@@ -14,7 +14,7 @@ static inline int build_users_array(int chat_id, cJSON* response, const int m_id
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char *)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -33,7 +33,7 @@ static inline int build_users_array(int chat_id, cJSON* response, const int m_id
     	asprintf(&sql_req, "SELECT * FROM user WHERE id = '%d'", client_id);
 
     	if (sqlite3_prepare_v2(db, sql_req, -1, &inner_stmt, 0) != SQLITE_OK) {
-	 		mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 		mx_log(SERV_LOG_FILE, LOG_ERROR, (char *)sqlite3_errmsg(db));
         	mx_close_db(db);
         	exit(-1);
     	}
@@ -45,12 +45,12 @@ static inline int build_users_array(int chat_id, cJSON* response, const int m_id
     			client_perm = perm;
     		}
 
-    		cJSON_AddStringToObject(item, "username", sqlite3_column_text(inner_stmt, 1));
+    		cJSON_AddStringToObject(item, "username", (const char *)sqlite3_column_text(inner_stmt, 1));
     		cJSON_AddNumberToObject(item, "id", sqlite3_column_int64(inner_stmt, 0));
     		cJSON_AddNumberToObject(item, "permissions", perm);
     		cJSON_AddNumberToObject(item, "banned", banned);
 
-    		mx_log(SERV_LOG_FILE, LOG_TRACE, sqlite3_column_text(inner_stmt, 1));
+    		mx_log(SERV_LOG_FILE, LOG_TRACE, (char *)sqlite3_column_text(inner_stmt, 1));
 
     		cJSON_AddItemToArray(users_array, item);
     	}
@@ -102,3 +102,4 @@ void mx_handle_get_chat_participants(client_t* client, request_t* req) {
 	cJSON_Delete(response);
 	free(response_str);
 }
+

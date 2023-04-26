@@ -1,7 +1,7 @@
 #include "../../inc/server.h"
 
 
-static inline void notify_all_members(client_t* client,
+static inline void notify_all_members(client_t* client __attribute__((unused)),
 	                                  const int chat_id,
 	                                  const int msg_id,
 	                                  char* text){
@@ -14,7 +14,7 @@ static inline void notify_all_members(client_t* client,
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char *)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -26,7 +26,7 @@ static inline void notify_all_members(client_t* client,
     	asprintf(&sql_req, "SELECT * FROM user WHERE id = '%d'", client_id);
 
     	if (sqlite3_prepare_v2(db, sql_req, -1, &inner_stmt, 0) != SQLITE_OK) {
-	 		mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 		mx_log(SERV_LOG_FILE, LOG_ERROR, (char *)sqlite3_errmsg(db));
         	mx_close_db(db);
         	exit(-1);
     	}

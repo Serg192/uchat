@@ -157,5 +157,9 @@ void mx_handle_ban(client_t* client, request_t* req);
 
 void mx_handle_perm_change(client_t* client, request_t* req);
 
+int asprintf(char **strp, const char *fmt, ...);
+
+bool mx_check_if_user_is_in_ban(const int chat_id, const int user_id);
+
 #endif
 

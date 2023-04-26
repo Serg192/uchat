@@ -1,6 +1,6 @@
 #include "../../inc/client.h"
 
-void mx_on_delete_btn_clicked(GtkWidget* w, gpointer data){
+void mx_on_delete_btn_clicked(GtkWidget* w __attribute__((unused)), gpointer data){
 	client_t* client = (client_t*)data;
 
 	GList* selected_rows = gtk_list_box_get_selected_rows(GTK_LIST_BOX(client->c_window->msgs_list_box));
@@ -29,6 +29,6 @@ void mx_on_delete_btn_clicked(GtkWidget* w, gpointer data){
     	
 	}
 	g_list_free(selected_rows);
-	gtk_list_box_unselect_all(client->c_window->msgs_list_box);
+	gtk_list_box_unselect_all(GTK_LIST_BOX(client->c_window->msgs_list_box));
 }
 
