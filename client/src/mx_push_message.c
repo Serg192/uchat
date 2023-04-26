@@ -21,7 +21,8 @@ static char* format_sending_date(int sending_date) {
     return date_str;
 }
 
-static void set_new_adjustment(chat_window_t *window, GtkAdjustment *adjustment, GtkListBoxRow* row, gdouble old_value, int mode) {
+static inline void set_new_adjustment(chat_window_t *window, GtkListBoxRow* row, gdouble old_value, int mode) {
+	GtkAdjustment *adjustment = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW(window->msgs_list_scrlld_wnd));
 	gtk_adjustment_set_page_size(adjustment, 0);
 
 	GList *count_rows = gtk_container_get_children(GTK_CONTAINER(window->msgs_list_box));
@@ -135,7 +136,7 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 
    	gtk_widget_show_all(window->msgs_list_box);
 
-	set_new_adjustment(window, adjustment, row, old_value, mode);
+	set_new_adjustment(window, row, old_value, mode);
 
 	free(msg_data);
 	free(sending_time);

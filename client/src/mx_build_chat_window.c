@@ -56,7 +56,34 @@ gboolean mx_on_button_press_event(GtkWidget *widget, GdkEventButton *event, gpoi
   	return FALSE;
 }
 
-void mx_on_selected_msg_close_btn_clicked(GtkButton* b __attribute__((unused)), gpointer data) {
+gboolean mx_enter_key_press(GtkWidget *widget, GdkEventKey *event, gpointer data) {
+	client_t* client = (client_t*)data;
+	GtkTextBuffer *buffer;
+  	GtkTextIter iter;
+
+	// GtkTextView* text_view = (GtkTextView*)client->c_window->message_input_field;
+	// GtkTextIter start, end;
+	// gtk_text_buffer_get_bounds(input_txt_buf, &start, &end);
+	// char *text = gtk_text_buffer_get_text(input_txt_buf, &start, &end, FALSE);
+
+	if (event->keyval == GDK_KEY_Return) {
+		if (event->state & GDK_SHIFT_MASK) {
+			buffer = gtk_text_view_get_buffer(GTK_TEXT_VIEW(widget));
+      		gtk_text_buffer_get_iter_at_mark(buffer, &iter, gtk_text_buffer_get_insert(buffer));
+      		gtk_text_buffer_insert(buffer, &iter, "\n", 1);
+
+			return TRUE;
+		}
+		else {
+			mx_on_send_msg_btn_clicked(client->c_window->send_message_btn, client);
+			return TRUE;
+		}
+  	}
+
+  	return FALSE;
+}
+
+void mx_on_selected_msg_close_btn_clicked(GtkButton* b __attribute__((unused)), gpointer data)) {
 	client_t* client = (client_t*)data;
 	gtk_list_box_unselect_all(GTK_LIST_BOX(client->c_window->msgs_list_box));
 
@@ -147,13 +174,14 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	g_signal_connect(window->selected_msg_close_btn, "released", G_CALLBACK(mx_on_selected_msg_close_btn_clicked), client);
 	g_signal_connect(window->selected_msg_select_all_btn, "released", G_CALLBACK(mx_on_selected_msg_select_all_btn_clicked), client);
 	g_signal_connect(window->selected_msg_edit_btn, "released", G_CALLBACK(mx_on_edit_btn_clicked), client);
+	g_signal_connect(window->message_input_field, "key-press-event", G_CALLBACK(mx_enter_key_press), client);
 
 	g_signal_connect(window->msgs_list_scrlld_wnd, "edge-reached", G_CALLBACK(mx_on_msg_list_edge_was_reached), client);
 	g_signal_connect(window->selected_msg_delete_btn, "released", G_CALLBACK(mx_on_delete_btn_clicked), client);
 
 	//Doesn't work 
 	//g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_leave_btn_clicked), client);
-	
+	g_signal_connect(window->chat_settings_btn, "released", G_CALLBACK(mx_on_del_account_btn_clicked), client);
 	g_signal_connect(window->chat_info_btn, "released", G_CALLBACK(mx_on_chat_info_btn_clicked), client);
 	g_signal_connect(window->user_info_btn, "released", G_CALLBACK(mx_on_user_info_btn_clicked), client);
 	
