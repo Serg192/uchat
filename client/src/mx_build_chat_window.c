@@ -83,7 +83,7 @@ gboolean mx_enter_key_press(GtkWidget *widget, GdkEventKey *event, gpointer data
   	return FALSE;
 }
 
-void mx_on_selected_msg_close_btn_clicked(GtkButton* b __attribute__((unused)), gpointer data)) {
+void mx_on_selected_msg_close_btn_clicked(GtkButton* b __attribute__((unused)), gpointer data) {
 	client_t* client = (client_t*)data;
 	gtk_list_box_unselect_all(GTK_LIST_BOX(client->c_window->msgs_list_box));
 
