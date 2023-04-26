@@ -1,6 +1,8 @@
 #include "../../inc/client.h"
 
 void mx_on_leave_btn_clicked(GtkButton* b, gpointer data){
+    //added to prevent warning
+    (void)b;
 	client_t* client = (client_t*)data;
 
 	const int chat_to_leave = client->current_chat_id;

@@ -89,7 +89,7 @@ static inline void handle_response(client_t* client) {
 	//printf("Handled\n");
 }
 
-void mx_main_background_loop(void* data){
+void* mx_main_background_loop(void* data){
 	printf("Here\n");
 	client_t* client = (client_t*)data;
 
@@ -217,3 +217,4 @@ void mx_main_background_loop(void* data) {
 	close(client->serv);
 }
 */
+

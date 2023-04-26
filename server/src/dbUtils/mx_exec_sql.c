@@ -12,10 +12,10 @@ void mx_exec_sql(char* sql_req) {
 	 if (sqlite3_exec(db, sql_req, NULL, NULL, &err) != SQLITE_OK) {
        // fprintf(stderr, "Failed to execute sql: %s", err);
 
-	 	const char* err_msg;
-	 	sprintf(err_msg, "Failed to execute sql: %s", err);
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, err_msg);
-	 	free(err_msg);
+	 	const char* err_msg = NULL;
+	 	sprintf((char*)err_msg, "Failed to execute sql: %s", err);
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)err_msg);
+	 	free((char*)err_msg);
         mx_close_db(db);
         exit(-1);
     }

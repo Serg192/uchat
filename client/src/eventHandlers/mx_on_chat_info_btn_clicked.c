@@ -1,6 +1,8 @@
 #include "../../inc/client.h"
 
 void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
+    //added to prevent warning
+    (void)widget;
 	client_t* client = (client_t*)data;
 
 	if(client->i_window->visible){

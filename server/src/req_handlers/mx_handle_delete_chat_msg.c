@@ -22,7 +22,8 @@ typedef struct cds_hash_tl_s {
 static inline void notify_all_members(client_t* client,
 	                                  const int chat_id, 
 	                                  const int msg_id){
-	
+	//added to prevent warning
+    (void)client;
 	sqlite3* db = mx_open_db();
 
 	pthread_mutex_lock(&db_mutex);
@@ -32,7 +33,7 @@ static inline void notify_all_members(client_t* client,
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -44,7 +45,7 @@ static inline void notify_all_members(client_t* client,
     	asprintf(&sql_req, "SELECT * FROM user WHERE id = '%d'", client_id);
 
     	if (sqlite3_prepare_v2(db, sql_req, -1, &inner_stmt, 0) != SQLITE_OK) {
-	 		mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 		mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
         	mx_close_db(db);
         	exit(-1);
     	}
@@ -56,7 +57,9 @@ static inline void notify_all_members(client_t* client,
     		client_t* client_to_notify = (client_t*)mx_map_get(client_map, key);
 
     		if(client_to_notify != NULL){
-    			mx_queue_push(client_to_notify->deleted_msg_notify_q, (void*)msg_id);
+    		    //void* msg_id_ptr = &msg_id;
+    		    const int* msg_id_ptr = &msg_id;
+    			mx_queue_push(client_to_notify->deleted_msg_notify_q, msg_id_ptr);
     		}
     		
     	}
@@ -90,7 +93,7 @@ static inline bool user_has_permission_to_del_message(const int chat_id, const i
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -120,7 +123,7 @@ static inline bool user_has_permission_to_del_message(const int chat_id, const i
     	sqlite3_stmt* stmt2;
 
 		if (sqlite3_prepare_v2(db, sql_req2, -1, &stmt2, 0) != SQLITE_OK) {
-	 		mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 		mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
         	mx_close_db(db);
        		exit(-1);
     	}
@@ -147,7 +150,8 @@ static inline bool user_has_permission_to_del_message(const int chat_id, const i
 }
 
 void mx_handle_delete_chat_msg(client_t* client, request_t* req) {
-
+    //added to prevent warning
+    (void)client;
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Handling delete message request");
 
@@ -187,3 +191,4 @@ void mx_handle_delete_chat_msg(client_t* client, request_t* req) {
 	free(response_str);
 
 }
+

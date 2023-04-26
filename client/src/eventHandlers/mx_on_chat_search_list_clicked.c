@@ -1,6 +1,8 @@
 #include "../../inc/client.h"
 
 static inline void test(GtkWidget* w, gpointer data) {
+    //added to prevent warning
+    (void)w;
 	client_t* client = (client_t*)data;
 
 	request_t* request = (request_t*)malloc(sizeof(request_t));

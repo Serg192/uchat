@@ -1,6 +1,8 @@
 #include "../../inc/client.h"
 
 void mx_on_signup_btn_clicked(GtkButton* b, gpointer data) {
+        //added to prevent warning
+        (void)b;
 		char username_buffer[33];
 		char password_buffer[33];
 

@@ -1,7 +1,8 @@
 #include "../../inc/client.h"
 
 void mx_on_edit_btn_clicked(GtkWidget* w, gpointer data){
-
+    //added to prevent warning
+    (void)w;
 	client_t* client = (client_t*)data;
 
 	GtkTextView* text_view = (GtkTextView*)client->c_window->message_input_field;

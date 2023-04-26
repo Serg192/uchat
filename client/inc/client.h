@@ -326,7 +326,7 @@ int mx_create_connection_with_serv(const char* host, int port);
 
 SSL_CTX* mx_init_ctx(void);
 
-void mx_main_background_loop(void* data);
+void* mx_main_background_loop(void* data);
 
 void mx_hide_hint_window(GtkWidget* widget, gpointer data);
 

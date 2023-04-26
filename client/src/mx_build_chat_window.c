@@ -84,11 +84,15 @@ gboolean mx_enter_key_press(GtkWidget *widget, GdkEventKey *event, gpointer data
 }
 
 void mx_on_selected_msg_close_btn_clicked(GtkButton* b, gpointer data) {
+    //added to prevent warning
+    (void)b;
 	client_t* client = (client_t*)data;
 	gtk_list_box_unselect_all(client->c_window->msgs_list_box);
 }
 
 void mx_on_selected_msg_select_all_btn_clicked(GtkButton* b, gpointer data) {
+    //added to prevent warning
+    (void)b;
 	client_t* client = (client_t*)data;
 	gtk_list_box_select_all(client->c_window->msgs_list_box);
 }
@@ -107,6 +111,8 @@ void mx_app_on_destroy(GtkWidget *widget, gpointer data) {
 
 
 void mx_on_user_info_btn_clicked(GtkWidget* widget, gpointer data) {
+    //added to prevent warning
+    (void) widget;
 	client_t* client = (client_t*)data;
 
 	gint main_window_x, main_window_y;

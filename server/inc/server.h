@@ -93,6 +93,7 @@ int mx_format_time(date_and_time_t* dt);
 int mx_format_date(date_and_time_t* dt);
 
 //------------------------------------------
+bool mx_check_if_user_is_in_ban(const int chat_id, const int user_id);
 
 void mx_init_openssl(ossl_t* ossl);
 

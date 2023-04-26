@@ -41,3 +41,4 @@ void mx_init_openssl(ossl_t* ossl) {
 	ossl->ctx = init_ctx();
 	load_key(ossl->ctx);
 }
+

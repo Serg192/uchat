@@ -94,7 +94,7 @@ static inline void read_server_res(serv_res_t* res, SSL* ssl, int res_length) {
 	res->str_res = resp;
 
 	if(res->json == NULL) {
-		mx_log(CLIENT_LOG_FILE, LOG_ERROR, cJSON_GetErrorPtr());
+		mx_log(CLIENT_LOG_FILE, LOG_ERROR, (char*)cJSON_GetErrorPtr());
 		return;
 	}
 
@@ -126,3 +126,4 @@ serv_res_t* mx_get_server_response(SSL* ssl) {
 
 	return serv_res;
 }
+

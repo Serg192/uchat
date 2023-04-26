@@ -1,6 +1,8 @@
 #include "../../inc/server.h"
 
 void mx_handle_del_account(client_t* client, request_t* req){
+    //added to prevent warning
+    (void)req;
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Handling delete message request");
 
