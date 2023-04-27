@@ -1,7 +1,6 @@
 #include "../../inc/server.h"
 
 void mx_get_chats_array(cJSON* parent_json, const char* search_condition) {
-	printf("Get chats_array\n");
 	cJSON* chats_array = cJSON_CreateArray();
 
 	sqlite3* db = mx_open_db();
@@ -33,6 +32,5 @@ void mx_get_chats_array(cJSON* parent_json, const char* search_condition) {
 	pthread_mutex_unlock(&db_mutex);
 
 	mx_close_db(db);
-	printf("Finosh\n");
 }
 

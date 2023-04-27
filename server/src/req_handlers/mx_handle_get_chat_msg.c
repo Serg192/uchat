@@ -4,12 +4,13 @@ static inline cJSON* build_deleted_msg_array(client_t* client){
 	cJSON* deleted_msg_array = cJSON_CreateArray();
 
 	while(!client->deleted_msg_notify_q->empty){
-		int deleted_msg_id = (int)mx_queue_peek(client->deleted_msg_notify_q);
+		int* deleted_msg_id = (int*)mx_queue_peek(client->deleted_msg_notify_q);
 
 		cJSON* array_item = cJSON_CreateObject();
-		cJSON_AddNumberToObject(array_item, "msg_id", deleted_msg_id);
+		cJSON_AddNumberToObject(array_item, "msg_id", *deleted_msg_id);
 		cJSON_AddItemToArray(deleted_msg_array, array_item);
 		mx_queue_pop(client->deleted_msg_notify_q);
+		free(deleted_msg_id);
 	}
 
 
@@ -117,17 +118,18 @@ static inline char* build_sql_req(int chat_id, int start_id, int count, int mode
 
 	switch(mode) {
 		case MSG_LOAD_ALL:
-			asprintf(&sql_req, "SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username"
+			sql_req = sqlite3_mprintf("SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username"
 					   		   " FROM 'message' LEFT JOIN 'user' ON user.id = message.from_id "
 					           "WHERE message.room_id = '%d' ORDER BY message.id ASC", chat_id);
 			break;
 		case MSG_LOAD_BELOW:
-			 asprintf(&sql_req, "SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username "
+			sql_req = sqlite3_mprintf("SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username "
                        		    "FROM 'message' LEFT JOIN 'user' ON user.id = message.from_id "
                                 "WHERE message.room_id = '%d' AND message.id >= %d ORDER BY message.id ASC LIMIT %d", chat_id, start_id, count);
 			break;
 		case MSG_LOAD_ABOVE:
-			  asprintf(&sql_req, "SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username "
+			
+			sql_req = sqlite3_mprintf("SELECT message.id, message.from_id, message.sending_date, message.sending_time, message.context, user.username "
                        			 "FROM 'message' LEFT JOIN 'user' ON user.id = message.from_id "
                        			 "WHERE message.room_id = '%d' AND message.id <= %d ORDER BY message.id DESC LIMIT %d", chat_id, start_id, count);
 			break;
@@ -184,7 +186,7 @@ static inline void build_msg_array(int chat_id,
 
     cJSON_AddItemReferenceToObject(response, "messages", msg_array);
 
-    free(sql_req);
+    sqlite3_free(sql_req);
     sqlite3_finalize(stmt);
 
     pthread_mutex_unlock(&db_mutex);

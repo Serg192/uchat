@@ -8,8 +8,8 @@ void mx_handle_perm_change(client_t* client, request_t* req){
 	const int user_id = cJSON_GetObjectItem(req->json, "user_id")->valueint;
 	const int permissions = cJSON_GetObjectItem(req->json, "permissions")->valueint;
 
-	char* sql_req = NULL;
-	asprintf(&sql_req, "UPDATE room_member SET permissions = '%d' WHERE client_id = '%d' AND room_id = '%d'", permissions, user_id, chat_id);
+	char* sql_req = sqlite3_mprintf("UPDATE room_member SET permissions = '%d' WHERE client_id = '%d' AND room_id = '%d'", permissions, user_id, chat_id);
+	
 	mx_exec_sql(sql_req);
 
 	cJSON* response = cJSON_CreateObject();

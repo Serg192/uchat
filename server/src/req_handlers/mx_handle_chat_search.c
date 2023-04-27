@@ -19,9 +19,9 @@ void mx_handle_chat_search(client_t* client, request_t* req) {
 	char* sql_req = NULL;
 
 	char* s_pattern = make_search_pattern(pattern);
-
-	asprintf(&sql_req, "SELECT * FROM 'room' WHERE room.name LIKE '%s' AND room.id NOT IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '%d') ", s_pattern, client->user_id);
-
+	
+	sql_req = sqlite3_mprintf("SELECT * FROM 'room' WHERE room.name LIKE '%s' AND room.id NOT IN (SELECT room_member.room_id FROM 'room_member' WHERE client_id = '%d') ", s_pattern, client->user_id);
+	
 	mx_get_chats_array(response, sql_req);
 
 	cJSON_AddNumberToObject(response, "rtype", CHAT_SEARCH_RESP);
@@ -39,6 +39,7 @@ void mx_handle_chat_search(client_t* client, request_t* req) {
 
 	free(s_pattern);
 
-	free(sql_req);
+	//free(sql_req);
+	sqlite3_free(sql_req);
 }
 

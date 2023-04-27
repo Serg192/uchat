@@ -1,6 +1,6 @@
 #include "../inc/server.h"
 
-
+/*
 static inline void make_daemon() {
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Creating daemon process");
@@ -29,7 +29,7 @@ static inline void make_daemon() {
 	close(STDOUT_FILENO);
 	close(STDERR_FILENO);
 }
-
+*/
 static inline int create_ssocket(int port) {
 	struct sockaddr_in address;
 	int r_sock = 0;

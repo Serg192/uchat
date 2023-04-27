@@ -3,8 +3,8 @@
 static inline void dispatch(client_t* client, request_t* req) {
 	//mx_log(SERV_LOG_FILE, LOG_TRACE, "Request dispatching...");
 
-	printf("Request was received: %s, %d\n", req->str_req, mx_strlen(req->str_req));
-	printf("Request == NULL ? %d\n", req->str_req == NULL);
+	//printf("Request was received: %s, %d\n", req->str_req, mx_strlen(req->str_req));
+	//printf("Request == NULL ? %d\n", req->str_req == NULL);
 
 	switch(req->type) {
 				case SIGNUP_REQ:
@@ -79,8 +79,7 @@ void* mx_client_handler(void* client) {
 
 			if(client_req->type == QUIT_REQ){
 
-				printf("__QUIT_REQUEST___\n");
-				printf("SSL shut down\n");
+	
 				int ret = SSL_shutdown(((client_t*)client)->ssl);
 				if (ret == 0) 
     				ret = SSL_shutdown(((client_t*)client)->ssl);

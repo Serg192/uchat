@@ -18,7 +18,7 @@ bool mx_check_if_row_exists(char* sql_req) {
 
     result = sqlite3_step(answ) == SQLITE_ROW;
 
-    free(sql_req);
+    sqlite3_free(sql_req);
 
     sqlite3_finalize(answ);
 

@@ -28,8 +28,8 @@ static inline void notify_all_members(client_t* client,
 
 	pthread_mutex_lock(&db_mutex);
 
-	char* sql_req = NULL;
-	asprintf(&sql_req, "SELECT * FROM room_member WHERE room_id = '%d'", chat_id);
+	char* sql_req = sqlite3_mprintf("SELECT * FROM room_member WHERE room_id = '%d'", chat_id);
+
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
@@ -42,7 +42,9 @@ static inline void notify_all_members(client_t* client,
     while(sqlite3_step(stmt) == SQLITE_ROW) {
     	int client_id = sqlite3_column_int64(stmt, 0);
     	sqlite3_stmt* inner_stmt;
-    	asprintf(&sql_req, "SELECT * FROM user WHERE id = '%d'", client_id);
+
+    	sqlite3_free(sql_req);
+    	sql_req = sqlite3_mprintf("SELECT * FROM user WHERE id = '%d'", client_id);
 
     	if (sqlite3_prepare_v2(db, sql_req, -1, &inner_stmt, 0) != SQLITE_OK) {
 	 		mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
@@ -57,9 +59,9 @@ static inline void notify_all_members(client_t* client,
     		client_t* client_to_notify = (client_t*)mx_map_get(client_map, key);
 
     		if(client_to_notify != NULL){
-    		    //void* msg_id_ptr = &msg_id;
-    		    const int* msg_id_ptr = &msg_id;
-    			mx_queue_push(client_to_notify->deleted_msg_notify_q, (void*)msg_id_ptr);
+    			int* h_msg_id = (int*)malloc(sizeof(int));
+    			*h_msg_id = msg_id;
+    			mx_queue_push(client_to_notify->deleted_msg_notify_q, h_msg_id);
     		}
     		
     	}
@@ -69,7 +71,7 @@ static inline void notify_all_members(client_t* client,
     }
 
 
-    free(sql_req);
+    sqlite3_free(sql_req);
     sqlite3_finalize(stmt);
 
     pthread_mutex_unlock(&db_mutex);
@@ -85,8 +87,7 @@ static inline bool user_has_permission_to_del_message(const int chat_id, const i
 
 	pthread_mutex_lock(&db_mutex);
 
-	char* sql_req = NULL;
-	asprintf(&sql_req, "SELECT rm1.permissions AS user_permission, m.from_id, rm2.permissions AS from_permission"
+	char* sql_req = sqlite3_mprintf("SELECT rm1.permissions AS user_permission, m.from_id, rm2.permissions AS from_permission"
 		               " FROM message AS m JOIN room_member AS rm1 ON rm1.client_id = '%d' AND rm1.room_id = '%d'"
 		               " JOIN room_member AS rm2 ON rm2.client_id = m.from_id AND rm2.room_id = '%d' WHERE m.id = '%d'",
 		                user_id, chat_id, chat_id, message_id);
@@ -115,8 +116,7 @@ static inline bool user_has_permission_to_del_message(const int chat_id, const i
     if(!found){
     	
     	//message from user who left this chat
-    	char* sql_req2 = NULL;
-    	asprintf(&sql_req2, "SELECT room_member.permissions FROM room_member "
+    	char* sql_req2 = sqlite3_mprintf("SELECT room_member.permissions FROM room_member "
     		                " WHERE room_member.room_id = '%d' AND room_member.client_id = '%d'",
     		                chat_id, user_id);
 
@@ -135,12 +135,12 @@ static inline bool user_has_permission_to_del_message(const int chat_id, const i
     			result = true;
     	}
     	
-    	free(sql_req2);
+    	sqlite3_free(sql_req2);
         sqlite3_finalize(stmt2);
     }
 
 
-    free(sql_req);
+    sqlite3_free(sql_req);
     sqlite3_finalize(stmt);
 
     pthread_mutex_unlock(&db_mutex);
@@ -168,8 +168,7 @@ void mx_handle_delete_chat_msg(client_t* client, request_t* req) {
 		return;
 	}
 
-	asprintf(&sql_req, "DELETE FROM 'message' WHERE message.id = '%d'", msg_id);
-
+	sql_req = sqlite3_mprintf("DELETE FROM 'message' WHERE message.id = '%d'", msg_id);
 
 	//TODO: check if success
 	mx_exec_sql(sql_req);

@@ -7,14 +7,10 @@ void mx_handle_leave_chat(client_t* client, request_t* req){
 	const int room_id = cJSON_GetObjectItem(req->json, "chat_id")->valueint;
 	const int client_id = client->user_id;
 
-	printf("room_id is %d, client_id is %d\n", room_id, client_id);
-
-	char* sql_req = NULL;
-	asprintf(&sql_req, "DELETE FROM room_member WHERE client_id = '%d' AND room_id = '%d'", client_id, room_id);
-
-	printf("Executing sql_req\n");
+	char* sql_req = sqlite3_mprintf("DELETE FROM room_member WHERE client_id = '%d' AND room_id = '%d'", client_id, room_id);
+	
+	
 	mx_exec_sql(sql_req);
-	printf("Success\n");
 
 
 	cJSON* response = cJSON_CreateObject();

@@ -9,8 +9,8 @@ static inline int build_users_array(int chat_id, cJSON* response, const int m_id
 
 	pthread_mutex_lock(&db_mutex);
 
-	char* sql_req = NULL;
-	asprintf(&sql_req, "SELECT * FROM room_member WHERE room_id = '%d'", chat_id);
+	char* sql_req = sqlite3_mprintf("SELECT * FROM room_member WHERE room_id = '%d'", chat_id);
+	//asprintf(&sql_req, "SELECT * FROM room_member WHERE room_id = '%d'", chat_id);
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
@@ -30,7 +30,10 @@ static inline int build_users_array(int chat_id, cJSON* response, const int m_id
     	mx_log(SERV_LOG_FILE, LOG_TRACE, "Chat user");
     	mx_log(SERV_LOG_FILE, LOG_TRACE, mx_itoa(sqlite3_column_int64(stmt, 0)));
     	sqlite3_stmt* inner_stmt;
-    	asprintf(&sql_req, "SELECT * FROM user WHERE id = '%d'", client_id);
+    	
+    	sqlite3_free(sql_req);
+    	sql_req = sqlite3_mprintf("SELECT * FROM user WHERE id = '%d'", client_id);
+    	//asprintf(&sql_req, "SELECT * FROM user WHERE id = '%d'", client_id);
 
     	if (sqlite3_prepare_v2(db, sql_req, -1, &inner_stmt, 0) != SQLITE_OK) {
 	 		mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
@@ -61,7 +64,7 @@ static inline int build_users_array(int chat_id, cJSON* response, const int m_id
 
     cJSON_AddItemReferenceToObject(response, "users", users_array);
 
-    free(sql_req);
+    sqlite3_free(sql_req);
     sqlite3_finalize(stmt);
 
     pthread_mutex_unlock(&db_mutex);
@@ -78,8 +81,8 @@ void mx_handle_get_chat_participants(client_t* client, request_t* req) {
 	cJSON* response = cJSON_CreateObject();
 
 
-	char* sql_req = NULL;
-	asprintf(&sql_req, "SELECT * FROM room WHERE id = '%d'", chat_id);
+	char* sql_req = sqlite3_mprintf("SELECT * FROM room WHERE id = '%d'", chat_id);
+	//asprintf(&sql_req, "SELECT * FROM room WHERE id = '%d'", chat_id);
 
 	if(!mx_check_if_row_exists(sql_req)) {
 		// There is no nuch room

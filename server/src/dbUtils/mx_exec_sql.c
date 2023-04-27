@@ -20,7 +20,7 @@ void mx_exec_sql(char* sql_req) {
         exit(-1);
     }
 
-    free(sql_req);
+    sqlite3_free(sql_req);
     pthread_mutex_unlock(&db_mutex);
 	mx_close_db(db);
 

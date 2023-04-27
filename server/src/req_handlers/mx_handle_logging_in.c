@@ -7,7 +7,8 @@ static inline bool check_password_for(const char* username, const char* password
 	bool result = false;
 	char* sql_req = NULL;
 
-	asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", username);
+	//asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", username);
+	sql_req = sqlite3_mprintf("SELECT * FROM 'user' WHERE username = '%s'", username);
 
 	sqlite3* db = mx_open_db();
 
@@ -27,7 +28,8 @@ static inline bool check_password_for(const char* username, const char* password
     
     }
 
-    free(sql_req);
+    //free(sql_req);
+    sqlite3_free(sql_req);
     sqlite3_finalize(stmt);
     mx_close_db(db);
 
@@ -47,8 +49,8 @@ void mx_handle_logging_in(client_t* client, request_t* req) {
 
 	cJSON* response = cJSON_CreateObject();
 
-	char* sql_req;
-	asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", username);
+	char* sql_req = sqlite3_mprintf("SELECT * FROM 'user' WHERE username = '%s'", username);
+	//asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", username);
 
 	if(!mx_check_if_row_exists(sql_req)) {
 		cJSON_AddNumberToObject(response, "rtype", LOGIN_ERR_RESP);

@@ -7,9 +7,8 @@ bool mx_check_if_user_is_in_ban(const int chat_id, const int user_id){
 	sqlite3* db = mx_open_db();
 	pthread_mutex_lock(&db_mutex);
 
-	char* sql_req = NULL;
-	asprintf(&sql_req, "SELECT banned FROM room_member WHERE client_id = '%d' AND room_id = '%d'", user_id, chat_id);
-
+	char* sql_req = sqlite3_mprintf("SELECT banned FROM room_member WHERE client_id = '%d' AND room_id = '%d'", user_id, chat_id);
+	
 	sqlite3_stmt* answ;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &answ, 0) != SQLITE_OK) {
@@ -22,7 +21,7 @@ bool mx_check_if_user_is_in_ban(const int chat_id, const int user_id){
     	result = sqlite3_column_int(answ, 0) == 1;
     }
 
-    free(sql_req);
+    sqlite3_free(sql_req);
 
     sqlite3_finalize(answ);
 

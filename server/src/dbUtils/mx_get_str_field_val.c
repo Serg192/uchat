@@ -7,9 +7,7 @@ char* mx_get_str_field_val(const char* table,
 	                       const char* val) {
 
 	char* result = NULL;
-	char* sql_req = NULL;
-
-	asprintf(&sql_req, "SELECT %s FROM '%s' WHERE %s = '%s'", fieldname, table, key, val);
+	char* sql_req = sqlite3_mprintf("SELECT %s FROM '%s' WHERE %s = '%s'", fieldname, table, key, val);
 
 	sqlite3* db = mx_open_db();
 	pthread_mutex_lock(&db_mutex);
@@ -28,7 +26,7 @@ char* mx_get_str_field_val(const char* table,
     }
 
 
- 	free(sql_req);
+ 	sqlite3_free(sql_req);
 
     sqlite3_finalize(answ);
 
