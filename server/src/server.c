@@ -74,8 +74,6 @@ int main(int argc, char *argv[]) {
 
    	mx_run_serv(create_ssocket(atoi(argv[1])));
 
-   	printf("Just to make sure\n");
-
    	pthread_mutex_destroy(&db_mutex);
 
    	mx_map_clear(client_map);

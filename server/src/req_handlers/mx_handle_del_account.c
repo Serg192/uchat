@@ -9,9 +9,6 @@ void mx_handle_del_account(client_t* client, request_t* req){
 
 	char* sql_req = sqlite3_mprintf("DELETE FROM user WHERE id = '%d'", client->user_id);
 
-	//asprintf(&sql_req, "DELETE FROM user WHERE id = '%d'", client->user_id);
-
-
 	//TODO: check if success
 	mx_exec_sql(sql_req);
 

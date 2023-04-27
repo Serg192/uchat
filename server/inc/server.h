@@ -158,5 +158,7 @@ void mx_handle_ban(client_t* client, request_t* req);
 
 void mx_handle_perm_change(client_t* client, request_t* req);
 
+sqlite3_stmt* mx_prepare_stmt(sqlite3* db, char* sql_req);
+
 #endif
 

@@ -45,26 +45,18 @@ static inline int find_last_msg_id(const int chat_id) {
 
 	pthread_mutex_lock(&db_mutex);
 
-	char* sql_req = "SELECT message.id FROM 'message' ORDER BY message.id DESC LIMIT 1";
+	sqlite3_stmt* stmt = mx_prepare_stmt(db, sqlite3_mprintf("SELECT message.id FROM 'message' ORDER BY message.id DESC LIMIT 1"));
 
-	sqlite3_stmt* stmt;
+  if(sqlite3_step(stmt) == SQLITE_ROW){
+    result = sqlite3_column_int64(stmt, 0);
+  }
 
-	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
-        mx_close_db(db);
-        exit(-1);
-    }
+  sqlite3_finalize(stmt);
 
-    if(sqlite3_step(stmt) == SQLITE_ROW){
-    	result = sqlite3_column_int64(stmt, 0);
-    }
+  pthread_mutex_unlock(&db_mutex);
+  mx_close_db(db);
 
-    sqlite3_finalize(stmt);
-
-    pthread_mutex_unlock(&db_mutex);
-    mx_close_db(db);
-
-    return result;
+  return result;
 }
 
 static inline cJSON* make_message_item(const int own_id, sqlite3_stmt* stmt){
@@ -153,44 +145,17 @@ static inline void build_msg_array(int chat_id,
 
 	pthread_mutex_lock(&db_mutex);
 
-	char* sql_req = build_sql_req(chat_id, start_id, count, mode);
-
-	sqlite3_stmt* stmt;
-
-	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
-        mx_close_db(db);
-        exit(-1);
-    }
-
-  //  t_list* list = NULL;
-
-    while(sqlite3_step(stmt) == SQLITE_ROW){
-    	//const int this_id = sqlite3_column_int64(stmt, 0);
-
-    //	if(mode == MSG_LOAD_BELOW){
-    //		mx_push_back(&list, make_message_item(own_id, stmt));
-    //	} else {
-    		cJSON_AddItemToArray(msg_array, make_message_item(own_id, stmt));
-    //	}
-    }
-
-    //if(mode == MSG_LOAD_BELOW){
-    //	while(list != NULL){
-    //		cJSON* tmp_json = (cJSON*)list->data;
-    //		cJSON_AddItemToArray(msg_array, tmp_json);
-    //		mx_pop_front(&list);
-    //	}
-    //}
+	sqlite3_stmt* stmt = mx_prepare_stmt(db, build_sql_req(chat_id, start_id, count, mode));
 
 
-    cJSON_AddItemReferenceToObject(response, "messages", msg_array);
-
-    sqlite3_free(sql_req);
-    sqlite3_finalize(stmt);
-
-    pthread_mutex_unlock(&db_mutex);
-    mx_close_db(db);
+  while(sqlite3_step(stmt) == SQLITE_ROW){
+    cJSON_AddItemToArray(msg_array, make_message_item(own_id, stmt));  
+  }
+  
+  cJSON_AddItemReferenceToObject(response, "messages", msg_array);
+  sqlite3_finalize(stmt);
+  pthread_mutex_unlock(&db_mutex);
+  mx_close_db(db);
 }
 
 void mx_handle_get_chat_msg(client_t* client, request_t* req){

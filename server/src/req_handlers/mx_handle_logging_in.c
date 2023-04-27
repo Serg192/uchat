@@ -5,21 +5,12 @@ static inline bool check_password_for(const char* username, const char* password
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Checking password");
 
 	bool result = false;
-	char* sql_req = NULL;
-
-	//asprintf(&sql_req, "SELECT * FROM 'user' WHERE username = '%s'", username);
-	sql_req = sqlite3_mprintf("SELECT * FROM 'user' WHERE username = '%s'", username);
 
 	sqlite3* db = mx_open_db();
 
-	
-	sqlite3_stmt* stmt;
+	pthread_mutex_lock(&db_mutex);
 
-	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
-        mx_close_db(db);
-        exit(-1);
-    }
+	sqlite3_stmt* stmt = mx_prepare_stmt(db, sqlite3_mprintf("SELECT * FROM 'user' WHERE username = '%s'", username));
 
     if(sqlite3_step(stmt) == SQLITE_ROW) {
     	const char* db_pass = mx_strdup((const char*)sqlite3_column_text(stmt, 2));
@@ -28,13 +19,14 @@ static inline bool check_password_for(const char* username, const char* password
     
     }
 
-    //free(sql_req);
-    sqlite3_free(sql_req);
     sqlite3_finalize(stmt);
+
+    pthread_mutex_unlock(&db_mutex);
     mx_close_db(db);
 
     return result;
 }
+
 
 void mx_handle_logging_in(client_t* client, request_t* req) {
 

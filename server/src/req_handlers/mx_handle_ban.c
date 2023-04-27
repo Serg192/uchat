@@ -8,15 +8,11 @@ void mx_handle_ban(client_t* client, request_t* req){
 	const int user_id = cJSON_GetObjectItem(req->json, "user_id")->valueint;
 	const int banned = cJSON_GetObjectItem(req->json, "banned")->valueint;
 
-	char* sql_req = NULL;
-	sql_req = sqlite3_mprintf("UPDATE room_member SET banned = '%d' WHERE client_id = '%d' AND room_id = '%d'", banned, user_id, chat_id);
-	mx_exec_sql(sql_req);
+	mx_exec_sql(sqlite3_mprintf("UPDATE room_member SET banned = '%d' WHERE client_id = '%d' AND room_id = '%d'", banned, user_id, chat_id));
 
-	if(banned == 1){
-		sql_req = sqlite3_mprintf("UPDATE room_member SET permissions = '%d' WHERE client_id = '%d' AND room_id = '%d'", TYPE_USER, user_id, chat_id);
-		mx_exec_sql(sql_req);
-	}
-
+	if(banned == 1)
+		mx_exec_sql( sqlite3_mprintf("UPDATE room_member SET permissions = '%d' WHERE client_id = '%d' AND room_id = '%d'", TYPE_USER, user_id, chat_id));
+	
 	cJSON* response = cJSON_CreateObject();
 
 	cJSON_AddNumberToObject(response, "rtype", OK_RESP);

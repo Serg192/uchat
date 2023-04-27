@@ -11,29 +11,12 @@ static inline void notify_all_members(client_t* client,
 
 	pthread_mutex_lock(&db_mutex);
 
-	char* sql_req = sqlite3_mprintf("SELECT * FROM room_member WHERE room_id = '%d'", chat_id);
-	sqlite3_stmt* stmt;
-
-	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
-        mx_close_db(db);
-        exit(-1);
-    }
-
+	sqlite3_stmt* stmt = mx_prepare_stmt(db, sqlite3_mprintf("SELECT * FROM room_member WHERE room_id = '%d'", chat_id));
 
     while(sqlite3_step(stmt) == SQLITE_ROW) {
     	int client_id = sqlite3_column_int64(stmt, 0);
-    	sqlite3_stmt* inner_stmt;
-    	sqlite3_free(sql_req);
-   
-    	sql_req = sqlite3_mprintf("SELECT * FROM user WHERE id = '%d'", client_id);
-
-
-    	if (sqlite3_prepare_v2(db, sql_req, -1, &inner_stmt, 0) != SQLITE_OK) {
-	 		mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
-        	mx_close_db(db);
-        	exit(-1);
-    	}
+ 
+    	sqlite3_stmt* inner_stmt = mx_prepare_stmt(db, sqlite3_mprintf("SELECT * FROM user WHERE id = '%d'", client_id));
 
     	while(sqlite3_step(inner_stmt) == SQLITE_ROW) {
     	
@@ -46,8 +29,6 @@ static inline void notify_all_members(client_t* client,
     			msg_e->id = msg_id;
     			msg_e->text = mx_strdup(text);
     			mx_queue_push(client_to_notify->edited_msg_notify_q, msg_e);
-
-    			printf("EDITED: notify: id: %d, text:%s\n", msg_id, text);
     		}
     		
     	}
@@ -55,11 +36,7 @@ static inline void notify_all_members(client_t* client,
     	sqlite3_finalize(inner_stmt);
 
     }
-
-
-    sqlite3_free(sql_req);
     sqlite3_finalize(stmt);
-
     pthread_mutex_unlock(&db_mutex);
     mx_close_db(db);
 }
@@ -78,8 +55,6 @@ void mx_handle_msg_edit(client_t* client, request_t* req){
 
 	char* sql_req = sqlite3_mprintf("UPDATE message SET context = '%s' WHERE id = '%d'", new_text, message_id);
 
-	//asprintf(&sql_req, "UPDATE message SET context = '%s' WHERE id = '%d'", new_text, message_id);
-
 	mx_exec_sql(sql_req);
 
 	notify_all_members(client, chat_id, message_id, new_text);
@@ -95,7 +70,6 @@ void mx_handle_msg_edit(client_t* client, request_t* req){
 
 	cJSON_Delete(response);
 
-	//mx_strdel(response_str);
 	free(response_str);
 
 }
