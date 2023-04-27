@@ -12,7 +12,7 @@ char* mx_hash_sha256(const char *password){
     EVP_DigestFinal_ex(mdctx, hash, &hash_len);
 
     char *hash_str = malloc(hash_len * 2 + 1);
-    for (int i = 0; i < hash_len; i++) {
+    for (unsigned int i = 0; i < hash_len; i++) {
         sprintf(&hash_str[i * 2], "%02x", hash[i]);
     }
 

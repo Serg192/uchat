@@ -39,7 +39,7 @@ static inline void read_client_req(request_t* client_req, SSL* ssl, int req_leng
 	client_req->json = cJSON_Parse(request);
 
 	if(client_req->json == NULL) {
-		mx_log(SERV_LOG_FILE, LOG_ERROR, cJSON_GetErrorPtr());
+		mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)cJSON_GetErrorPtr());
 		return;
 	}
 

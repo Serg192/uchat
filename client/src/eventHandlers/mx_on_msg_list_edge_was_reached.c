@@ -1,6 +1,8 @@
 #include "../../inc/client.h"
 
 void mx_on_msg_list_edge_was_reached(GtkScrolledWindow* scrolled_window, GtkPositionType pos, gpointer data) {
+    //added to prevent warning
+    (void)scrolled_window;
     if (pos == GTK_POS_TOP) {
     	client_t* client = (client_t*)data;
 

@@ -8,7 +8,8 @@ char* mx_create_login_req(const char* login, const char* password) {
 
     char* req_str = cJSON_PrintUnformatted(req);
     cJSON_Delete(req);
-    free(password);
+    free((void*)password);
 
     return req_str;
 }
+

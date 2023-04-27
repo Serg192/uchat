@@ -1,6 +1,7 @@
 #include "../../inc/server.h"
 
-static inline bool has_user(const char* login) {
+//Unused function
+/*static inline bool has_user(const char* login) {
 
 	mx_log(SERV_LOG_FILE, LOG_TRACE, "Checking if database has this user");
 	bool result;
@@ -34,7 +35,7 @@ static inline bool has_user(const char* login) {
 	mx_log(SERV_LOG_FILE, LOG_TRACE, mx_itoa(result));
 
 	return result;
-}
+}*/
 
 
 static inline bool add_user(const char* username, const char* password){
@@ -66,8 +67,8 @@ void mx_handle_registration(client_t* client, request_t* req) {
 	const char* username = cJSON_GetObjectItem(req->json, "login")->valuestring;
 	const char* password = cJSON_GetObjectItem(req->json, "password")->valuestring;
 
-	mx_log(SERV_LOG_FILE, LOG_TRACE, username);
-	mx_log(SERV_LOG_FILE, LOG_TRACE, password);
+	mx_log(SERV_LOG_FILE, LOG_TRACE, (char*)username);
+	mx_log(SERV_LOG_FILE, LOG_TRACE, (char*)password);
 
 	int username_len = mx_strlen(username);
 

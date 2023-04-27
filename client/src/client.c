@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
 	
 
 	pthread_t thread;
-	pthread_create(&thread, NULL, &mx_main_background_loop, (void*)&client);
+	pthread_create(&thread, NULL, mx_main_background_loop, (void*)&client);
 
 	//create_new_chat_window(&client);
 

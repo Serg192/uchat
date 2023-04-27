@@ -30,7 +30,8 @@ static inline int get_res_len(SSL* ssl) {
     struct timeval tv;
     tv.tv_sec = 3;
     tv.tv_usec = 0;
-    SSL_set_timeout(ssl, 3);
+    //SSL_set_timeout(ssl, 3);
+    SSL_SESSION_set_timeout(SSL_get_session(ssl), 3);
 
     // Set non-blocking mode
     SSL_set_mode(ssl, SSL_MODE_AUTO_RETRY | SSL_MODE_ENABLE_PARTIAL_WRITE | SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER);
@@ -94,7 +95,7 @@ static inline void read_server_res(serv_res_t* res, SSL* ssl, int res_length) {
 	res->str_res = resp;
 
 	if(res->json == NULL) {
-		mx_log(CLIENT_LOG_FILE, LOG_ERROR, cJSON_GetErrorPtr());
+		mx_log(CLIENT_LOG_FILE, LOG_ERROR, (char*)cJSON_GetErrorPtr());
 		return;
 	}
 
@@ -126,3 +127,4 @@ serv_res_t* mx_get_server_response(SSL* ssl) {
 
 	return serv_res;
 }
+

@@ -25,7 +25,8 @@ static inline SSL_CTX* init_ctx(void) {
     OpenSSL_add_all_algorithms();
     SSL_load_error_strings();
   
-    SSL_CTX* ctx = SSL_CTX_new(TLSv1_2_server_method());
+    //SSL_CTX* ctx = SSL_CTX_new(TLSv1_2_server_method());
+    SSL_CTX* ctx = SSL_CTX_new(TLS_server_method());
     if (ctx == NULL){
         ERR_print_errors_fp(stderr);
         abort();
@@ -41,3 +42,4 @@ void mx_init_openssl(ossl_t* ossl) {
 	ossl->ctx = init_ctx();
 	load_key(ossl->ctx);
 }
+

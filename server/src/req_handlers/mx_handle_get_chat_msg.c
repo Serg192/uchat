@@ -37,7 +37,9 @@ static inline cJSON* build_edited_msg_array(client_t* client){
 }
 
 static inline int find_last_msg_id(const int chat_id) {
-	int result;
+    //added to prevent warning
+    (void)chat_id;
+	int result = 0;
 	sqlite3* db = mx_open_db();
 
 	pthread_mutex_lock(&db_mutex);
@@ -47,7 +49,7 @@ static inline int find_last_msg_id(const int chat_id) {
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -72,9 +74,9 @@ static inline cJSON* make_message_item(const int own_id, sqlite3_stmt* stmt){
     cJSON_AddNumberToObject(message, "from_id", from_id);
     cJSON_AddNumberToObject(message, "sending_date", sqlite3_column_int64(stmt, 2));
     cJSON_AddNumberToObject(message, "sending_time", sqlite3_column_int64(stmt, 3));
-    cJSON_AddStringToObject(message, "context", sqlite3_column_text(stmt, 4));
+    cJSON_AddStringToObject(message, "context", (const char*)sqlite3_column_text(stmt, 4));
 
-    char* username = sqlite3_column_text(stmt, 5);
+    const char* username = (const char*)sqlite3_column_text(stmt, 5);
     username = username == NULL ? "Deleted" : username;
     cJSON_AddStringToObject(message, "username", (own_id == from_id ? "You" : username));
 
@@ -154,7 +156,7 @@ static inline void build_msg_array(int chat_id,
 	sqlite3_stmt* stmt;
 
 	if (sqlite3_prepare_v2(db, sql_req, -1, &stmt, 0) != SQLITE_OK) {
-	 	mx_log(SERV_LOG_FILE, LOG_ERROR, sqlite3_errmsg(db));
+	 	mx_log(SERV_LOG_FILE, LOG_ERROR, (char*)sqlite3_errmsg(db));
         mx_close_db(db);
         exit(-1);
     }
@@ -162,7 +164,7 @@ static inline void build_msg_array(int chat_id,
   //  t_list* list = NULL;
 
     while(sqlite3_step(stmt) == SQLITE_ROW){
-    	const int this_id = sqlite3_column_int64(stmt, 0);
+    	//const int this_id = sqlite3_column_int64(stmt, 0);
 
     //	if(mode == MSG_LOAD_BELOW){
     //		mx_push_back(&list, make_message_item(own_id, stmt));

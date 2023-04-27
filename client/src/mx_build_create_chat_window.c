@@ -2,6 +2,8 @@
 
 
 void mx_hide_hint_window(GtkWidget* widget, gpointer data) {
+    //added to prevent warning
+    (void)data;
   	 GtkWidget* top_level = gtk_widget_get_toplevel(widget);
    // gtk_widget_destroy(top_level);
   	 gtk_widget_hide(top_level);
@@ -35,3 +37,4 @@ create_chat_window_t* mx_build_create_chat_window(client_t* client) {
 
 	return window;
 }
+

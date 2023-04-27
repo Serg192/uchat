@@ -1,6 +1,8 @@
 #include "../../inc/client.h"
 
 static inline void test(GtkWidget* w, gpointer data) {
+    //added to prevent warning
+    (void)w;
 	client_t* client = (client_t*)data;
 
 	request_t* request = (request_t*)malloc(sizeof(request_t));
@@ -19,12 +21,15 @@ void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data) {
 
 	client->join_chat_id = GPOINTER_TO_INT(chat_id); //mx_get_chat_id_from_btn(w, client);
 
-	const char *text = (char*)gtk_button_get_label(w);
+	//const char *text = (char*)gtk_button_get_label(w);
+	//const char *text = (char*)gtk_button_get_label(GTK_BUTTON(w));
+    const char *text = gtk_button_get_label(GTK_BUTTON(w));
 
 	char* title;
 	asprintf(&title, "Join the %s grop?", text);
 
-	gtk_label_set_text(client->d_window->info_lable, title);
+	//gtk_label_set_text(client->d_window->info_lable, title);
+	gtk_label_set_text(GTK_LABEL(client->d_window->info_lable), title);
 
 	free(title);
 
