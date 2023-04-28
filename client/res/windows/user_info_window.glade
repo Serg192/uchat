@@ -3,10 +3,11 @@
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkWindow" id="user_info_window">
+    <property name="name">user_info_window</property>
+    <property name="width_request">280</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
-    <property name="default_width">270</property>
     <property name="skip_taskbar_hint">True</property>
     <property name="decorated">False</property>
     <child type="titlebar">
@@ -20,6 +21,7 @@
         <property name="spacing">5</property>
         <child>
           <object class="GtkLabel" id="username_label">
+            <property name="name">username_label</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="margin_left">5</property>
@@ -36,6 +38,7 @@
         <child>
           <object class="GtkButton" id="log_out_btn">
             <property name="label" translatable="yes">Log Out</property>
+            <property name="name">log_out_btn</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
@@ -49,8 +52,9 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="delet_acc_btn">
+          <object class="GtkButton" id="delete_acc_btn">
             <property name="label" translatable="yes">Delete Account</property>
+            <property name="name">delete_acc_btn</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
@@ -65,8 +69,10 @@
         </child>
         <child>
           <object class="GtkLabel" id="version_label">
+            <property name="name">version_label</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">10</property>
             <property name="label" translatable="yes">UCHAT (beta version 27.04) ^_^</property>
           </object>
           <packing>

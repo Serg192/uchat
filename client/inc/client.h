@@ -41,6 +41,7 @@
 #define DIALOG_WIND_XML_PATH "client/res/windows/dialog_window.glade"
 #define CHAT_INFO_WIND_XML_PATH "client/res/windows/chat_info_window.glade"
 #define USER_INFO_WIND_XML_PATH "client/res/windows/user_info_window.glade"
+#define STYLES_FILE_PATH "client/res/styles.css"
 
 #define MSG_LOAD_LIMIT 20
 #define RESP_TIMEOUT 3.0f
@@ -90,47 +91,48 @@ typedef struct auth_window_s {
 }			   auth_window_t;
 
 typedef struct create_chat_window_s {
-	GtkWidget* window;
-	GtkWidget* create_btn;
-	GtkWidget* cancel_btn;
-	GtkWidget* chat_name_entry;
+	GtkWidget *window;
+	GtkWidget *create_btn;
+	GtkWidget *cancel_btn;
+	GtkWidget *chat_name_entry;
+	GtkWidget *create_chat_label;
 
-	GtkBuilder* builder;
+	GtkBuilder *builder;
 }			   create_chat_window_t;
 
 typedef struct dialog_window_s {
-	GtkWidget* window;
-	GtkWidget* info_lable;
-	GtkWidget* ok_btn;
-	GtkWidget* cancel_btn;
+	GtkWidget *window;
+	GtkWidget *info_label;
+	GtkWidget *ok_btn;
+	GtkWidget *cancel_btn;
 
-	GtkBuilder* builder;
+	GtkBuilder *builder;
 }			   dialog_window_t;
 
 typedef struct chat_window_s {
 	GtkWidget* window;
-	GtkWidget *main_box;
 	//Left side(chats list, search, add chat)
-	GtkWidget *chats_list_box;		//Not used anywhere
-	GtkWidget *chats_list_scrlldwnd;	//Not used anywhere
-	GtkWidget *chats_list_view;		//Not used anywhere
+	GtkWidget *chats_list_box;
+	GtkWidget *chats_list_scrlldwnd;
 	GtkWidget *chats_list_grid;
-	GtkWidget* user_info_btn;
+	GtkWidget *user_info_btn;
 	GtkWidget *search_entry;	
-	GtkWidget* add_chat_btn;
+	GtkWidget *add_chat_btn;
 	//Right side(current chat)
 	GtkWidget *selected_chat_box;
+	GtkWidget *chat_header_box;
 	GtkWidget *chat_name_label;
-	GtkWidget *chat_settings_btn;
 	GtkWidget *chat_info_btn;
 	GtkWidget *msgs_list_scrlld_wnd;
 	GtkWidget *msgs_list_box;
 	GtkWidget *entry_edit_stack;
+	GtkWidget *selected_msg_edit_box;
 	GtkWidget *selected_msg_close_btn;
 	GtkWidget *selected_msg_number_label;
 	GtkWidget *selected_msg_edit_btn;
 	GtkWidget *selected_msg_select_all_btn;
 	GtkWidget *selected_msg_delete_btn;
+	GtkWidget *msg_input_scrlld_wnd;
 	GtkWidget *message_input_field;
 	GtkWidget *send_message_btn;
 	
@@ -142,27 +144,27 @@ typedef struct chat_window_s {
 }			   chat_window_t;
 
 typedef struct chat_info_window_s {
-	GtkWidget* window;
-	GtkWidget* chat_name_label;
-	GtkWidget* members_list_label;
-	GtkWidget* members_list_scrlld_wnd;
-	GtkWidget* members_list_box;
-	GtkWidget* leave_chat_btn;
-	GtkWidget* cancel_info_btn;
+	GtkWidget *window;
+	GtkWidget *chat_info_name_label;
+	GtkWidget *members_list_label;
+	GtkWidget *members_list_scrlld_wnd;
+	GtkWidget *members_list_box;
+	GtkWidget *leave_chat_btn;
+	GtkWidget *cancel_info_btn;
 
-	GtkBuilder* builder;
+	GtkBuilder *builder;
 
 	bool visible;
 }			   chat_info_window_t;
 
 typedef struct user_info_window_s {
-	GtkWidget* window;
-	GtkWidget* username_label;
-	GtkWidget* log_out_btn;
-	GtkWidget* delet_acc_btn;
-	GtkWidget* version_label;
+	GtkWidget *window;
+	GtkWidget *username_label;
+	GtkWidget *log_out_btn;
+	GtkWidget *delete_acc_btn;
+	GtkWidget *version_label;
 
-	GtkBuilder* builder;
+	GtkBuilder *builder;
 }			   user_info_window_t;
 
 typedef struct client_s {
@@ -293,14 +295,25 @@ void mx_on_log_out_btn_clicked(GtkWidget* w, gpointer data);
 
 void mx_on_send_msg_btn_clicked(GtkButton* b, gpointer data);
 
+void mx_on_selected_msg_close_btn_clicked(GtkButton* b, gpointer data);
+
+gboolean mx_enter_key_press(GtkWidget *widget, GdkEventKey *event, gpointer data);
+
+void mx_on_user_info_btn_clicked(GtkWidget* widget, gpointer data);
+
+void mx_on_cancel_info_btn_clicked(GtkWidget* widget, gpointer data);
+
+gboolean mx_on_button_press_event(GtkWidget *widget, GdkEventButton *event, gpointer data);
+
+void mx_on_selection_changed(GtkListBox *listbox, gpointer data);
+
+void mx_on_selected_msg_select_all_btn_clicked(GtkButton* b, gpointer data);
+
 void mx_on_msg_list_edge_was_reached(GtkScrolledWindow* scrolled_window, GtkPositionType pos, gpointer user_data);
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data);
 
 void mx_on_edit_btn_clicked(GtkWidget* w, gpointer data);
-
-//deprecated
-void mx_add_message_to_list(chat_window_t* window, const char *sender_name, const char *message_text, const char *sending_time, gboolean is_your_message);
 
 void  mx_push_message(client_t* client, message_t* message, int mode);
 
@@ -396,5 +409,7 @@ char* mx_hash_sha256(const char *password);
 char *mx_prepare_str_for_sql(const char *input);
 
 void mx_room_data_clear(client_t* client);
+
+void mx_widget_add_styles(GtkWidget *widget);
 
 #endif

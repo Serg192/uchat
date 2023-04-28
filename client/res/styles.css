@@ -1,0 +1,366 @@
+
+/* Entries */
+
+#username_entry, #password_entry, #search_entry, #new_chat_name {
+  background: #2a2727;
+  box-shadow: none;
+  outline-style: none;
+  
+  color: white;
+  caret-color: white;
+  border: 2px solid #595959;
+  border-radius: 10px;
+
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+#username_entry:focus, #password_entry:focus, #search_entry:focus, #new_chat_name:focus {
+  border-color: #445dc5;
+}
+
+
+/* Buttons */
+
+button {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+#signup_btn, #login_btn, #ok_btn, #cancel_btn, #create_chat_create_btn, #create_chat_cancel_btn, 
+#log_out_btn, #delete_acc_btn, #leave_chat_btn, #cancel_info_btn {
+  background: #554f4f;
+  color: white;
+  border-radius: 10px;
+}
+
+#user_info_btn, #chat_info_btn, #selected_msg_close_btn  {
+  background: #554f4f;
+  border-radius: 100%;
+}
+
+#add_chat_btn {
+  background: #3e3a3a;
+
+  color: white;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#chat_btn {
+  background: #554f4f;
+
+  color: white;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+  font-weight: bold;
+}
+
+#send_message_btn {
+  background: #445dc5;
+  border-radius: 100%;
+}
+
+#selected_msg_delete_btn {
+  background: #554f4f;
+
+  color: rgb(179, 41, 41);
+  border-radius: 20px;
+
+  font-weight: bold;
+}
+
+#selected_msg_edit_btn, #selected_msg_select_all_btn {
+  background: #554f4f;
+
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+#demote_btn, #promote_btn, #ban_bth {
+  background: #554f4f;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#demote_btn {
+  margin-left: 5px;
+}
+
+#promote_btn {
+  margin-left: 5px;
+  margin-right: 5px;
+} 
+
+#ban_bth {
+  margin-right: 5px;
+}
+
+#selected_msg_delete_btn:hover {
+  background-color: #926363;
+}
+
+#selected_msg_delete_btn:active {
+  background-color: #e44c4c;
+}
+
+#send_message_btn:hover {
+  background-color: #324fc4;
+}
+
+#send_message_btn:active {
+  background-color: #4d6adf;
+}
+
+#signup_btn:hover, #login_btn:hover, #chat_btn:hover, #user_info_btn:hover, #add_chat_btn:hover,
+#ok_btn:hover, #cancel_btn:hover, #chat_info_btn:hover, #selected_msg_edit_btn:hover, 
+#selected_msg_select_all_btn:hover, #selected_msg_close_btn:hover, #create_chat_create_btn:hover, 
+#create_chat_cancel_btn:hover, #log_out_btn:hover, #delete_acc_btn:hover, #leave_chat_btn:hover, 
+#cancel_info_btn:hover, #demote_btn:hover, #promote_btn:hover, #ban_bth:hover {
+  background-color: #595959;
+} 
+
+#signup_btn:active, #login_btn:active, #chat_btn:active, #user_info_btn:active, #add_chat_btn:active,
+#ok_btn:active, #cancel_btn:active, #chat_info_btn:active, #selected_msg_edit_btn:active, 
+#selected_msg_select_all_btn:active, #selected_msg_close_btn:active, #create_chat_create_btn:active, 
+#create_chat_cancel_btn:active, #log_out_btn:active, #delete_acc_btn:active,#leave_chat_btn:active, 
+#cancel_info_btn:active, #demote_btn:active, #promote_btn:active, #ban_bth:active {
+  background-color: #445dc5;
+}
+
+
+/*______________Dialog_Window______________*/
+
+#dialog_window {
+  background: #464141;
+}
+
+#info_label {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+
+/*______________Create_Chat_Window______________*/
+
+#create_new_chat_window {
+  background: #464141;
+}
+
+#create_chat_label {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+
+/*______________User_Info_Window______________*/
+
+#user_info_window {
+  background: #464141;
+}
+
+#username_label, #version_label {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+
+/*______________Chat_Info_Window______________*/
+
+#chat_info_window {
+  background: #464141;
+}
+
+#chat_info_name_label {
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#members_list_label {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+#members_list_box, #members_list_scrlld_wnd {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+  background: #464141;
+}
+
+#username_label, #user_per_label {
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#user_row {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+  margin: 5px;
+}
+
+/*______________Authorization_window______________*/
+
+#auth_window {
+  background: #464141;
+}
+
+#show_passw_check_btn {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+  color: white;
+  font-size: 16px;
+}
+
+#error_txt {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+
+/*______________Chat_Window______________*/
+
+#chat_window {
+  background: #464141;
+}
+
+/* Left */
+#chats_list_box {
+  border: none;
+  background: #554f4f;
+  box-shadow: none;
+  outline-style: none;
+
+  border-right: 1px solid white;
+}
+
+#chats_list_scrlldwnd {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+}
+
+#chat_icon {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 50%;
+
+  font-family: Arial, sans-serif;
+}
+
+/* Right */
+#selected_chat_box, #msgs_list_box, #msgs_list_scrlld_wnd, #msg_input_scrlld_wnd {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+  background: #464141;
+}
+
+#msgs_list_box row:selected {
+  background: rgb(119, 228, 247);
+}
+
+#chat_header_box {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+  background: #554f4f;
+}
+
+#chat_name_label {
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#msg_main_box_you {
+  background: #445dc5;
+  margin-left: 50px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+#msg_main_box_other {
+  background: #554f4f;
+  margin-left: 25px;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+
+#msg_sender_name_label {
+  margin: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#msg_text_label {
+  margin: 5px;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+#msg_sending_time_label {
+  margin-right: 5px;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+}
+
+#message_input_field, #message_input_field text {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+
+  border-radius: 10px;
+  background: #554f4f;
+
+  color: white;
+  caret-color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#selected_msg_edit_box {
+  border: none;
+  box-shadow: none;
+  outline-style: none;
+
+  border-radius: 10px;
+  background: #554f4f;
+}
+
+#selected_msg_number_label {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
