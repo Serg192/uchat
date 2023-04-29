@@ -29,7 +29,7 @@ void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data) {
 	asprintf(&title, "Join the %s grop?", text);
 
 	//gtk_label_set_text(client->d_window->info_lable, title);
-	gtk_label_set_text(GTK_LABEL(client->d_window->info_lable), title);
+	gtk_label_set_text(GTK_LABEL(client->d_window->info_label), title);
 
 	free(title);
 

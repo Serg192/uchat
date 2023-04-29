@@ -3,6 +3,7 @@
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkWindow" id="chat_info_window">
+    <property name="name">chat_info_window</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
@@ -20,10 +21,13 @@
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkLabel" id="chat_name_label">
+          <object class="GtkLabel" id="chat_info_name_label">
+            <property name="name">chat_info_name_label</property>
             <property name="height_request">25</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">10</property>
+            <property name="margin_bottom">10</property>
             <property name="label" translatable="yes">Chat Name</property>
           </object>
           <packing>
@@ -34,12 +38,11 @@
         </child>
         <child>
           <object class="GtkLabel" id="members_list_label">
-            <property name="height_request">50</property>
+            <property name="name">members_list_label</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_bottom">5</property>
             <property name="label" translatable="yes">List of members:</property>
-            <property name="xalign">0.5</property>
-            <property name="yalign">0.80000001192092896</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -49,6 +52,7 @@
         </child>
         <child>
           <object class="GtkScrolledWindow" id="members_list_scrlld_wnd">
+            <property name="name">members_list_scrlld_wnd</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="shadow_type">in</property>
@@ -58,9 +62,11 @@
                 <property name="can_focus">False</property>
                 <child>
                   <object class="GtkListBox" id="members_list_box">
+                    <property name="name">members_list_box</property>
                     <property name="width_request">350</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="selection_mode">none</property>
                     <property name="activate_on_single_click">False</property>
                   </object>
                 </child>
@@ -74,41 +80,50 @@
           </packing>
         </child>
         <child>
-          <object class="GtkFixed">
-            <property name="height_request">50</property>
+          <object class="GtkBox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
               <object class="GtkButton" id="leave_chat_btn">
                 <property name="label" translatable="yes">Leave</property>
+                <property name="name">leave_chat_btn</property>
                 <property name="width_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="margin_top">5</property>
+                <property name="margin_bottom">5</property>
               </object>
               <packing>
-                <property name="x">70</property>
-                <property name="y">10</property>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="cancel_info_btn">
                 <property name="label" translatable="yes">Cancel</property>
+                <property name="name">cancel_info_btn</property>
                 <property name="width_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="margin_top">5</property>
+                <property name="margin_bottom">5</property>
               </object>
               <packing>
-                <property name="x">280</property>
-                <property name="y">10</property>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
               </packing>
             </child>
           </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">3</property>
+            <property name="position">4</property>
           </packing>
         </child>
       </object>
