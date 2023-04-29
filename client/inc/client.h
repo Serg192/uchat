@@ -132,6 +132,7 @@ typedef struct chat_window_s {
 	GtkWidget *selected_msg_edit_btn;
 	GtkWidget *selected_msg_select_all_btn;
 	GtkWidget *selected_msg_delete_btn;
+	GtkWidget *selected_msg_forward_btn;
 	GtkWidget *msg_input_scrlld_wnd;
 	GtkWidget *message_input_field;
 	GtkWidget *send_message_btn;

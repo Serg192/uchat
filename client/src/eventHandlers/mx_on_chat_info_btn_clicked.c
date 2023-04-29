@@ -12,7 +12,6 @@ void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
 
 
 		 while(client->p_change_clear_list){
-	    	//perm_change_t* p = (message_t*)(client->p_change_clear_list->data);
 	    	perm_change_t* p = (perm_change_t*)(client->p_change_clear_list->data);
 	    	free(p);
 	    	mx_pop_front(&(client->p_change_clear_list));
@@ -23,7 +22,6 @@ void mx_on_chat_info_btn_clicked(GtkWidget* widget, gpointer data) {
 		return;
 	}
 
-	//gtk_label_set_text(client->i_window->chat_name_label, gtk_label_get_text(client->c_window->chat_name_label));
     gtk_label_set_text(GTK_LABEL(client->i_window->chat_info_name_label), 
     gtk_label_get_text(GTK_LABEL(client->c_window->chat_name_label)));
 
