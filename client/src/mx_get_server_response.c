@@ -59,7 +59,7 @@ static inline int get_res_len(SSL* ssl) {
                     return 0;
                 } else if (ret == 0) {
                     mx_log(CLIENT_LOG_FILE, LOG_TRACE, "Response timeout");
-                    printf("Response timeout\n");
+                    //printf("Response timeout\n");
                     return 0;
                 }
             } else {

@@ -16,7 +16,7 @@ void mx_on_login_btn_clicked(GtkButton* b, gpointer data) {
         sprintf(password_buffer, "%s", gtk_entry_get_text(password_entry));
 
 
-		printf("Username = %s, password = %s, %d\n", username_buffer, password_buffer, mx_strlen(password_buffer));
+		//printf("Username = %s, password = %s, %d\n", username_buffer, password_buffer, mx_strlen(password_buffer));
 
 		if(mx_strlen(password_buffer) < 6) {
 			gtk_label_set_text(GTK_LABEL(client->a_window->err_label), (const gchar*)"Password must be 6 - 24 characters long");
@@ -31,7 +31,7 @@ void mx_on_login_btn_clicked(GtkButton* b, gpointer data) {
 		client->password = mx_strdup(gtk_entry_get_text(password_entry));
 
 		const char* hash = mx_hash_sha256(password_buffer);
-		printf("Hash => %s\n", hash);
+		//printf("Hash => %s\n", hash);
 
 
 		request_t* request = malloc(sizeof(request_t));

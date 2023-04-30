@@ -12,7 +12,7 @@ static inline int create_chat(const char* name, const int room_color) {
 	
 	char* err;
 	 if (sqlite3_exec(db, sql_req, NULL, NULL, &err) != SQLITE_OK) {
-        fprintf(stderr, "Failed to execute sql: %s", err);
+        //fprintf(stderr, "Failed to execute sql: %s", err);
         mx_close_db(db);
         exit(-1);
     }

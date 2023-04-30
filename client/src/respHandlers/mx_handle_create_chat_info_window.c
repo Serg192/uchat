@@ -19,7 +19,7 @@ void mx_handle_create_chat_info_window(client_t* client){
 		mi->banned = cJSON_GetObjectItem(user, "banned")->valueint;
 		mi->member_permissions = cJSON_GetObjectItem(user, "permissions")->valueint;
 
-		printf("MY PERMISSIONS: %d, MEMBER_PERMISSIONS: %d\n", own_permissions, mi->member_permissions);
+		//printf("MY PERMISSIONS: %d, MEMBER_PERMISSIONS: %d\n", own_permissions, mi->member_permissions);
 		mx_user_info_add_user(mi);
 	} 
 

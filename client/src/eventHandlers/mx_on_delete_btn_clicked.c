@@ -24,7 +24,7 @@ void mx_on_delete_btn_clicked(GtkWidget* w, gpointer data){
 
 		    request->req = mx_create_delete_chat_msg_req(client->current_chat_id, message->id);
 
-		    printf("[FROM DELETE], request is %s\n", request->req);
+		    //printf("[FROM DELETE], request is %s\n", request->req);
 
 		    mx_queue_push(client->request_queue, request);
     	//}

@@ -55,18 +55,14 @@ void mx_room_list_data_clear(client_t* client){
 
 static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 
-	printf("Update chat list\n");
 	upd_chat_list_data_t* d = (upd_chat_list_data_t*)data;
 	client_t* client = d->client;
 	
 	cJSON* chats_array = cJSON_GetObjectItem(d->json, "chats");
-	printf("Get array len\n");
 	const int chat_count = cJSON_GetArraySize(chats_array);
 
 	GtkWidget *button;
 	GtkWidget *icon;
-
-	printf("Hide\n");
 
 	gtk_widget_hide(client->c_window->chats_list_grid);
 
@@ -76,7 +72,7 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 
 	gtk_grid_remove_column(GTK_GRID(client->c_window->chats_list_grid), 1);
 
-	printf("Loop\n");
+	
 	for(int i = 0; i < chat_count; i++){
 		cJSON* chat_info = cJSON_GetArrayItem(chats_array, i);
 		on_chat_clicked_data_t* c_data = (on_chat_clicked_data_t*)malloc(sizeof(on_chat_clicked_data_t));

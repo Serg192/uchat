@@ -169,6 +169,5 @@ static inline gboolean push_uifo_in_gtk_loop(gpointer data){
 }
 
 void mx_user_info_add_user(members_list_entry_t* m){
-	printf("Add user to list %s\n", m->user_to_add);
 	g_idle_add(push_uifo_in_gtk_loop, m);
 }
