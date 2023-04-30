@@ -20,7 +20,7 @@ void mx_on_edit_btn_clicked(GtkWidget* w, gpointer data){
     		client->edit_mode = true;
     		client->message_to_edit = message;
     		gtk_text_buffer_set_text(input_txt_buf, message->messages_str, mx_strlen(message->messages_str));
-
+    		client->edit_row = row;
     	}
     	
 	}

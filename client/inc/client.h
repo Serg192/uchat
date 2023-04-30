@@ -231,6 +231,8 @@ typedef struct client_s {
 
 	map_t* message_id_row_map;
 
+	GtkListBoxRow* edit_row;
+
 }			   client_t;
 
 

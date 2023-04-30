@@ -45,6 +45,11 @@ void mx_on_send_msg_btn_clicked(GtkButton* b, gpointer data){
 			} else {
 				request->req = mx_cteate_message_edit_req(client->current_chat_id, client->message_to_edit->id, prepared_text);
 				req_was_created = true;
+
+				message_t* m = (message_t*)g_object_get_data(G_OBJECT(client->edit_row), "message_data");
+				free(m->messages_str);
+				m->messages_str = mx_strdup(text);
+				g_object_set_data(G_OBJECT(client->edit_row), "message_data", m);
 			}
 			client->edit_mode = false;
 		} else {
