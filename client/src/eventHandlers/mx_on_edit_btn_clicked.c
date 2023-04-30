@@ -25,6 +25,8 @@ void mx_on_edit_btn_clicked(GtkWidget* w, gpointer data){
     	
 	}
 	g_list_free(selected_rows);
+	gtk_widget_show(client->c_window->editing_close_btn);
+	gtk_widget_show(client->c_window->editing_label);
 	gtk_list_box_unselect_all(GTK_LIST_BOX(client->c_window->msgs_list_box));
 }
 

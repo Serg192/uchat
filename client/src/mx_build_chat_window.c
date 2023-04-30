@@ -24,6 +24,8 @@ static inline void add_styles_to_chat_window(chat_window_t* window) {
 	mx_widget_add_styles(window->selected_msg_forward_btn);
 	mx_widget_add_styles(window->message_input_field);
 	mx_widget_add_styles(window->msg_input_scrlld_wnd);
+	mx_widget_add_styles(window->editing_label);
+	mx_widget_add_styles(window->editing_close_btn);
 }
 
 chat_window_t* mx_build_chat_window(client_t* client) {
@@ -62,13 +64,9 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->selected_msg_forward_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_forward_btn"));
 	window->msg_input_scrlld_wnd = GTK_WIDGET(gtk_builder_get_object(window->builder, "msg_input_scrlld_wnd"));
 	window->message_input_field = GTK_WIDGET(gtk_builder_get_object(window->builder, "message_input_field"));
+	window->editing_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "editing_label"));
+	window->editing_close_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "editing_close_btn"));
 
-	GtkCssProvider *provider = gtk_css_provider_new();
-	gtk_css_provider_load_from_path(provider, STYLES_FILE_PATH, NULL);
-	GtkStyleContext *context = gtk_widget_get_style_context(window->message_input_field);
-	gtk_widget_set_name (window->message_input_field, "message_input_field");
-	gtk_style_context_add_provider(context, GTK_STYLE_PROVIDER(provider), GTK_STYLE_PROVIDER_PRIORITY_USER);
-	g_object_unref(provider);
 
 	g_signal_connect(window->add_chat_btn, "released", G_CALLBACK(mx_on_create_chat_btn_clicked), client);
 	g_signal_connect(window->search_entry, "search-changed", G_CALLBACK(mx_on_search_changed), client);
