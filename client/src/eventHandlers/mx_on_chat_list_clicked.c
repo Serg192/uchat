@@ -1,10 +1,5 @@
 #include "../../inc/client.h"
 
-typedef struct clicked_data_s {
-	client_t* client;
-	const char *chat_name;
-}              clicked_data_t;
-
 static inline gboolean clear_msg_list(gpointer data){
 	client_t* client = (client_t*)data;
 	gtk_container_foreach(GTK_CONTAINER(client->c_window->msgs_list_box), (GtkCallback)gtk_widget_destroy, NULL);
@@ -43,7 +38,7 @@ static inline void push_load_recent_request(client_t* client){
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data) {
 	(void)w;
-	clicked_data_t* c_data = (clicked_data_t*)data;
+	on_chat_clicked_data_t* c_data = (on_chat_clicked_data_t*)data;
 	client_t* client = c_data->client;
 	const char* text = c_data->chat_name;
     

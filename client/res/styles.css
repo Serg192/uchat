@@ -38,7 +38,7 @@ button {
   border-radius: 10px;
 }
 
-#menu_btn, #chat_info_btn, #selected_msg_close_btn  {
+#menu_btn, #chat_info_btn, #selected_msg_close_btn {
   background: #554f4f;
   border-radius: 100%;
 }
@@ -161,6 +161,12 @@ button {
   color: white;
   font-size: 18px;
   font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#create_chat_length_label {
+  color: white;
+  font-size: 16px;
   font-family: Arial, sans-serif;
 }
 

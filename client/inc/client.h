@@ -97,6 +97,7 @@ typedef struct create_chat_window_s {
 	GtkWidget *cancel_btn;
 	GtkWidget *chat_name_entry;
 	GtkWidget *create_chat_label;
+	GtkWidget *create_chat_length_label;
 
 	GtkBuilder *builder;
 }			   create_chat_window_t;
@@ -261,7 +262,10 @@ typedef struct perm_change_s {
 	int userID;
 }			   perm_change_t;
 
-
+typedef struct on_chat_clicked_data_s {
+	client_t* client;
+	const char *chat_name;
+}              on_chat_clicked_data_t;
 
 void mx_user_info_add_user(members_list_entry_t* m);
 

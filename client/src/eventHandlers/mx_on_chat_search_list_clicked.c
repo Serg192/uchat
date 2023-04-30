@@ -1,6 +1,6 @@
 #include "../../inc/client.h"
 
-static inline void test(GtkWidget* w, gpointer data) {
+static inline void on_join_btn_clicked(GtkWidget* w, gpointer data) {
     //added to prevent warning
     (void)w;
 	client_t* client = (client_t*)data;
@@ -15,16 +15,13 @@ static inline void test(GtkWidget* w, gpointer data) {
 void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data) {
 	
 	(void)w;
-	client_t* client = (client_t*)data;
+	on_chat_clicked_data_t* c_data = (on_chat_clicked_data_t*)data;
+	client_t* client = c_data->client;
+	const char* text = c_data->chat_name;
 
 	int *chat_id = (int *)g_object_get_data(G_OBJECT(w), "chat_id");
 
 	client->join_chat_id = GPOINTER_TO_INT(chat_id); //mx_get_chat_id_from_btn(w, client);
-
-	GList* children = gtk_container_get_children(GTK_CONTAINER(GTK_BUTTON(w)));
-	GtkWidget* label = GTK_WIDGET(children->data);
-	const char* text = gtk_label_get_text(GTK_LABEL(label));
-	g_list_free(children);
 
 	char* title;
 	asprintf(&title, "Join the %s grop?", text);
@@ -33,7 +30,7 @@ void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data) {
 
 	free(title);
 
-	g_signal_connect(client->d_window->ok_btn, "released", G_CALLBACK(test), client);
+	g_signal_connect(client->d_window->ok_btn, "released", G_CALLBACK(on_join_btn_clicked), client);
 
 	gtk_widget_show_all(client->d_window->window);
 	gtk_widget_grab_focus (client->d_window->window);
