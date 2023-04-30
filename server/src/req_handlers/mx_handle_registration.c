@@ -24,7 +24,7 @@ void mx_handle_registration(client_t* client, request_t* req) {
 	if(username_len <= 3 || username_len >= 32) {
 		mx_log(SERV_LOG_FILE, LOG_TRACE, "login <= 3 | >= 32");
 		cJSON_AddNumberToObject(response, "rtype", SIGNUP_ERR_RESP);
-		cJSON_AddStringToObject(response, "message", "Username length should be more than 3 and less than 32");
+		cJSON_AddStringToObject(response, "message", "Username must be 4 - 31 characters long");
 	}
 	
 	else if(!mx_check_if_row_exists(sql_req)) {

@@ -39,6 +39,20 @@ gboolean draw_callback(GtkWidget *widget, cairo_t *cr, gpointer data) {
 	return FALSE;
 }
 
+void mx_room_list_data_clear(client_t* client){
+
+	    while(client->current_room_list){
+
+	    	on_chat_clicked_data_t* c_data = (on_chat_clicked_data_t*)(client->current_room_list->data);
+	    	free(c_data->chat_name);
+			free(c_data);
+
+	    	mx_pop_front(&(client->current_room_list));
+	    }
+
+	    client->current_room_list = NULL;
+}
+
 static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 
 	printf("Update chat list\n");
@@ -55,6 +69,11 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 	printf("Hide\n");
 
 	gtk_widget_hide(client->c_window->chats_list_grid);
+
+	if (client->current_room_list != NULL) {
+		mx_room_list_data_clear(client);
+	}
+
 	gtk_grid_remove_column(GTK_GRID(client->c_window->chats_list_grid), 1);
 
 	printf("Loop\n");
@@ -75,7 +94,7 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 		g_object_set_data(G_OBJECT(button), "chat_id", GINT_TO_POINTER(cJSON_GetObjectItem(chat_info, "id")->valueint));
 
 		GtkWidget *chat_name = gtk_label_new(cJSON_GetObjectItem(chat_info, "name")->valuestring);
-		c_data->chat_name = gtk_label_get_text(GTK_LABEL(chat_name));
+		c_data->chat_name = mx_strdup(gtk_label_get_text(GTK_LABEL(chat_name)));
 		gtk_widget_set_halign(chat_name, GTK_ALIGN_START);
 
 		char *str = mx_strndup(c_data->chat_name, 2);
@@ -100,12 +119,12 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 		g_signal_connect(button, "released", client->search_mode ? G_CALLBACK(mx_on_chat_search_list_clicked) : G_CALLBACK(mx_on_chat_list_clicked), c_data);
 		mx_widget_add_styles(icon);
 		mx_widget_add_styles(button);
+		mx_push_back(&(client->current_room_list), c_data);
 	}
 	gtk_widget_show_all(client->c_window->chats_list_grid);
 
 	cJSON_Delete(d->json);
 	free(d);
-	printf("UPDATE EXIT");
 	return FALSE;
 }
 

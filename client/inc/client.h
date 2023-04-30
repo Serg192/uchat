@@ -135,7 +135,6 @@ typedef struct chat_window_s {
 	GtkWidget *selected_msg_edit_btn;
 	GtkWidget *selected_msg_select_all_btn;
 	GtkWidget *selected_msg_delete_btn;
-	GtkWidget *selected_msg_forward_btn;
 	GtkWidget *msg_input_scrlld_wnd;
 	GtkWidget *message_input_field;
 	GtkWidget *send_message_btn;
@@ -231,6 +230,7 @@ typedef struct client_s {
 
 	t_list* messages_in_current_chat;
 	t_list* p_change_clear_list;
+	t_list* current_room_list;
 
 	map_t* message_id_row_map;
 
@@ -274,7 +274,7 @@ typedef struct perm_change_s {
 
 typedef struct on_chat_clicked_data_s {
 	client_t* client;
-	const char *chat_name;
+	char *chat_name;
 }              on_chat_clicked_data_t;
 
 void mx_user_info_add_user(members_list_entry_t* m);

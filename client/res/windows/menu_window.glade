@@ -73,9 +73,11 @@
             <property name="name">version_label</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_left">10</property>
+            <property name="margin_right">10</property>
             <property name="margin_top">10</property>
             <property name="margin_bottom">10</property>
-            <property name="label" translatable="yes">Message Mania (beta version 27.04) ^_^</property>
+            <property name="label" translatable="yes">Message Mania (beta version 03.05) ^_^</property>
           </object>
           <packing>
             <property name="expand">False</property>

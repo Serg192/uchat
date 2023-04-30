@@ -1,24 +1,16 @@
 #include "../inc/client.h"
 
-static char* format_sending_time(int sending_time) {
-    char* sending_time_str = (char*)malloc(sizeof(char) * 6);
-    int hour = sending_time / 100;
+static char* format_sending_time(int sending_time, int sending_date) {
+	int hour = sending_time / 100;
     int minute = sending_time % 100;
-
-    snprintf(sending_time_str, 6, "%02d:%02d", hour, minute);
-
-    return sending_time_str;
-}
-
-static char* format_sending_date(int sending_date) {
-    char* date_str = (char*)malloc(sizeof(char) * 11);
     int year = sending_date % 10000;
     int month = sending_date % 1000000 / 10000;
     int day = sending_date / 1000000;
 
-    snprintf(date_str, 11, "%02d/%02d/%04d", day, month, year);
+	char *sending_time_str = (char*)malloc(sizeof(char) * 18);
+    snprintf(sending_time_str, 18, "%02d/%02d/%04d  %02d:%02d", day, month, year, hour, minute);
 
-    return date_str;
+    return sending_time_str;
 }
 
 static inline void set_new_adjustment(chat_window_t *window, GtkWidget* row, gdouble old_value, int mode) {
@@ -51,31 +43,7 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	chat_window_t* window = client->c_window;
 	char *sender_name = message->username_from; 
 	char *message_text = message->messages_str;
-    //char *sending_time = mx_itoa(message->sending_time);
-    char* sending_time = format_sending_time(message->sending_time);
-    //Test with "00:mm" format
-    //char* sending_time = format_sending_time(45);
-    
-    //char *sending_date = mx_itoa(message->sending_date);
-    char* sending_date = format_sending_date(message->sending_date);
-    
-    // //Works only firstly (in one chat)
-    // static char* last_date_str = NULL;
-    // if (last_date_str == NULL || mx_strcmp(sending_date, last_date_str) != 0) {
-    //     GtkWidget* date_main_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
-    //     GtkWidget* date_label = gtk_label_new(sending_date);
-    //     GdkRGBA color;
-    //     gdk_rgba_parse(&color, "#A3A3A3");
-    //     gtk_widget_override_background_color(date_main_box, GTK_STATE_FLAG_NORMAL, &color);
-    //     gtk_widget_set_margin_start(date_label, 10);
-    //     gtk_box_pack_start(GTK_BOX(date_main_box), date_label, TRUE, TRUE, 0);
-    //     gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), date_main_box, (mode == PUSH_BACK ? -1 : 0));
-        
-    //     if (last_date_str != NULL) {
-    //         free(last_date_str);
-    //     }
-    //     last_date_str = mx_strdup(sending_date);
-    // }
+    char* sending_time = format_sending_time(message->sending_time, message->sending_date);
     
 	gboolean is_your_message = mx_strcmp(sender_name, "You") == 0;
     
@@ -105,16 +73,7 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 	gtk_box_pack_start(GTK_BOX(msg_main_box), msg_sending_time_label, FALSE, TRUE, 0);
 	gtk_widget_set_name(msg_sending_time_label, "msg_sending_time_label");
 	mx_widget_add_styles(msg_sending_time_label);
-	
-	//DATE
-	//gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), msg_main_box, (mode == PUSH_BACK ? -1 : 0));
-    
-    //print in messages
-    /*GtkWidget* msg_sending_date_label = gtk_label_new(sending_date);
-    gtk_widget_set_halign(msg_sending_date_label, GTK_ALIGN_END);
-    gtk_widget_set_margin_start(msg_sending_date_label, 50);
-    gtk_widget_set_margin_end(msg_sending_date_label, 5);
-    gtk_box_pack_end(GTK_BOX(msg_main_box), msg_sending_date_label, FALSE, TRUE, 0);*/
+
 	
 	GtkWidget *row = GTK_WIDGET(gtk_list_box_row_new());
 	gtk_widget_set_name(GTK_WIDGET(row), "msg_row");
@@ -137,7 +96,6 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 
 	free(msg_data);
 	free(sending_time);
-	free(sending_date);
 	return FALSE;
 }
 
