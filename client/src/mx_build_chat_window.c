@@ -28,6 +28,21 @@ static inline void add_styles_to_chat_window(chat_window_t* window) {
 	mx_widget_add_styles(window->editing_close_btn);
 }
 
+void mx_on_edit_cancel_btn_clicked(GtkButton* b, gpointer data){
+	(void)b;
+	client_t* client = (client_t*)data;
+	client->edit_mode = false;
+
+	GtkTextView* text_view = (GtkTextView*)client->c_window->message_input_field;
+	GtkTextBuffer* input_txt_buf = gtk_text_view_get_buffer(text_view);
+
+	gtk_text_buffer_set_text(input_txt_buf, "", 0);
+
+	gtk_widget_hide(client->c_window->editing_close_btn);
+	gtk_widget_hide(client->c_window->editing_label);
+
+}
+
 chat_window_t* mx_build_chat_window(client_t* client) {
 	chat_window_t* window = malloc(sizeof(chat_window_t));
 	window->search_t = clock();
@@ -80,6 +95,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	g_signal_connect(window->selected_msg_delete_btn, "released", G_CALLBACK(mx_on_delete_btn_clicked), client);
 	g_signal_connect(window->message_input_field, "key-press-event", G_CALLBACK(mx_enter_key_press), client);
 	g_signal_connect(window->send_message_btn, "released", G_CALLBACK(mx_on_send_msg_btn_clicked), client);
+	g_signal_connect(window->editing_close_btn, "released", G_CALLBACK(mx_on_edit_cancel_btn_clicked), client);
 
 	g_signal_connect(window->chat_info_btn, "released", G_CALLBACK(mx_on_chat_info_btn_clicked), client);
 	g_signal_connect(window->menu_btn, "released", G_CALLBACK(mx_on_menu_btn_clicked), client);
