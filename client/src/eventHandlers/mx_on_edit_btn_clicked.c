@@ -21,12 +21,13 @@ void mx_on_edit_btn_clicked(GtkWidget* w, gpointer data){
     		client->message_to_edit = message;
     		gtk_text_buffer_set_text(input_txt_buf, message->messages_str, mx_strlen(message->messages_str));
     		client->edit_row = row;
+			
+			gtk_widget_show(client->c_window->editing_close_btn);
+			gtk_widget_show(client->c_window->editing_label);
     	}
     	
 	}
 	g_list_free(selected_rows);
-	gtk_widget_show(client->c_window->editing_close_btn);
-	gtk_widget_show(client->c_window->editing_label);
 	gtk_list_box_unselect_all(GTK_LIST_BOX(client->c_window->msgs_list_box));
 }
 
