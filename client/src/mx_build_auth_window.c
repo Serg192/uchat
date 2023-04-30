@@ -2,6 +2,7 @@
 
 static inline void add_styles_to_auth_window(auth_window_t* window) {
 	mx_widget_add_styles(window->window);
+	mx_widget_add_styles(window->chat_title_label);
 	mx_widget_add_styles(window->signup_btn);
 	mx_widget_add_styles(window->login_btn);
 	mx_widget_add_styles(window->username_entry);
@@ -21,6 +22,7 @@ auth_window_t* mx_build_auth_window(client_t* client) {
 
 	gtk_builder_connect_signals(window->builder, NULL);
 
+    window->chat_title_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "chat_title"));
 	window->err_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "error_txt"));
 	window->signup_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "signup_btn"));
 	window->login_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "login_btn"));

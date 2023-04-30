@@ -276,6 +276,14 @@ button {
   font-family: Arial, sans-serif;
 }
 
+#chat_title {
+  color: rgb(68, 93, 197);
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
+  font-family: Arial, sans-serif;
+}
+
 
 /*______________Chat_Window______________*/
 

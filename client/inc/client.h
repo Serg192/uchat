@@ -81,13 +81,14 @@ typedef struct request_s {
 
 typedef struct auth_window_s {
 	GtkWidget *window;
+	GtkWidget *chat_title_label;
 	GtkWidget *err_label;
 	GtkWidget *signup_btn;
 	GtkWidget *login_btn;
 	GtkWidget *username_entry;
 	GtkWidget *password_entry;
 	GtkWidget *show_psw_bnt;
-
+	
 	GtkBuilder *builder;
 }			   auth_window_t;
 
