@@ -3,11 +3,14 @@
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkWindow" id="auth_window">
-    <property name="width_request">360</property>
-    <property name="height_request">350</property>
+    <property name="name">auth_window</property>
+    <property name="width_request">450</property>
+    <property name="height_request">400</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
-    <property name="default_height">250</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">450</property>
+    <property name="default_height">400</property>
     <child type="titlebar">
       <placeholder/>
     </child>
@@ -18,6 +21,7 @@
         <child>
           <object class="GtkButton" id="signup_btn">
             <property name="label" translatable="yes">Sign up</property>
+            <property name="name">signup_btn</property>
             <property name="width_request">100</property>
             <property name="height_request">40</property>
             <property name="visible">True</property>
@@ -25,13 +29,14 @@
             <property name="receives_default">True</property>
           </object>
           <packing>
-            <property name="x">50</property>
-            <property name="y">250</property>
+            <property name="x">100</property>
+            <property name="y">300</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="login_btn">
             <property name="label" translatable="yes">Log in</property>
+            <property name="name">login_btn</property>
             <property name="width_request">100</property>
             <property name="height_request">40</property>
             <property name="visible">True</property>
@@ -39,41 +44,50 @@
             <property name="receives_default">True</property>
           </object>
           <packing>
-            <property name="x">210</property>
-            <property name="y">250</property>
+            <property name="x">250</property>
+            <property name="y">300</property>
           </packing>
         </child>
         <child>
           <object class="GtkEntry" id="username_entry">
+            <property name="name">username_entry</property>
             <property name="width_request">290</property>
             <property name="height_request">45</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="max_width_chars">32</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="max_length">31</property>
+            <property name="max_width_chars">0</property>
             <property name="placeholder_text" translatable="yes">Username</property>
           </object>
           <packing>
-            <property name="x">33</property>
-            <property name="y">70</property>
+            <property name="x">80</property>
+            <property name="y">100</property>
           </packing>
         </child>
         <child>
           <object class="GtkEntry" id="password_entry">
+            <property name="name">password_entry</property>
             <property name="width_request">290</property>
             <property name="height_request">45</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="max_width_chars">32</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="max_length">24</property>
+            <property name="max_width_chars">0</property>
             <property name="placeholder_text" translatable="yes">Password</property>
           </object>
           <packing>
-            <property name="x">34</property>
-            <property name="y">154</property>
+            <property name="x">80</property>
+            <property name="y">180</property>
           </packing>
         </child>
         <child>
           <object class="GtkLabel" id="error_txt">
-            <property name="width_request">326</property>
+            <property name="name">error_txt</property>
+            <property name="width_request">400</property>
             <property name="height_request">20</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
@@ -82,8 +96,38 @@
             </attributes>
           </object>
           <packing>
-            <property name="x">15</property>
-            <property name="y">213</property>
+            <property name="x">25</property>
+            <property name="y">265</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="show_passw_check_btn">
+            <property name="label" translatable="yes">Show password</property>
+            <property name="name">show_passw_check_btn</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="app_paintable">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+          </object>
+          <packing>
+            <property name="x">80</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="chat_title">
+            <property name="name">chat_title</property>
+            <property name="width_request">400</property>
+            <property name="height_request">60</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Message Mania</property>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">20</property>
           </packing>
         </child>
       </object>

@@ -183,6 +183,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="halign">center</property>
+            <property name="margin_top">10</property>
             <child>
               <object class="GtkButton" id="save_btn">
                 <property name="label" translatable="yes">Save</property>
@@ -191,7 +192,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="margin_right">25</property>
+                <property name="margin_right">20</property>
                 <property name="margin_top">5</property>
                 <property name="margin_bottom">10</property>
               </object>
@@ -209,7 +210,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="margin_left">25</property>
+                <property name="margin_left">20</property>
                 <property name="margin_top">5</property>
                 <property name="margin_bottom">10</property>
               </object>

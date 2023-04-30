@@ -84,6 +84,7 @@
           <object class="GtkBox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="halign">center</property>
             <child>
               <object class="GtkButton" id="leave_chat_btn">
                 <property name="label" translatable="yes">Leave</property>
@@ -93,6 +94,7 @@
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="halign">center</property>
+                <property name="margin_right">25</property>
                 <property name="margin_top">5</property>
                 <property name="margin_bottom">5</property>
               </object>
@@ -111,6 +113,7 @@
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="halign">center</property>
+                <property name="margin_left">25</property>
                 <property name="margin_top">5</property>
                 <property name="margin_bottom">5</property>
               </object>
