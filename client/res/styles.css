@@ -38,7 +38,7 @@ button {
   border-radius: 10px;
 }
 
-#menu_btn, #chat_info_btn, #selected_msg_close_btn {
+#menu_btn, #chat_info_btn, #selected_msg_close_btn, #editing_close_btn {
   background: #554f4f;
   border-radius: 100%;
 }
@@ -123,7 +123,7 @@ button {
 #signup_btn:hover, #login_btn:hover, #chat_btn:hover, #menu_btn:hover, #add_chat_btn:hover,
 #ok_btn:hover, #cancel_btn:hover, #chat_info_btn:hover, #selected_msg_edit_btn:hover, 
 #selected_msg_select_all_btn:hover, #selected_msg_close_btn:hover, #selected_msg_forward_btn:hover, 
-#create_chat_create_btn:hover, #log_out_btn:hover, #save_btn:hover,
+#editing_close_btn:hover, #create_chat_create_btn:hover, #log_out_btn:hover, #save_btn:hover,
 #user_profile_btn:hover, #demote_btn:hover, #promote_btn:hover {
   background-color: #595959;
 } 
@@ -131,7 +131,7 @@ button {
 #signup_btn:active, #login_btn:active, #chat_btn:active, #menu_btn:active, #add_chat_btn:active,
 #ok_btn:active, #cancel_btn:active, #chat_info_btn:active, #selected_msg_edit_btn:active, 
 #selected_msg_select_all_btn:active, #selected_msg_close_btn:active, #selected_msg_forward_btn:active, 
-#create_chat_create_btn:active, #log_out_btn:active, #save_btn:active,
+#editing_close_btn:active, #create_chat_create_btn:active, #log_out_btn:active, #save_btn:active,
 #user_profile_btn:active, #demote_btn:active, #promote_btn:active {
   background-color: #445dc5;
 }
@@ -200,6 +200,18 @@ button {
 #username_label, #password_label {
   color: white;
   font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+#information_label_ok {
+  color: rgb(4, 182, 4);
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#information_label_error {
+  color: rgb(246, 45, 45);
+  font-size: 16px;
   font-family: Arial, sans-serif;
 }
 
@@ -373,10 +385,6 @@ button {
   font-family: Arial, sans-serif;
 }
 
-/* #entry_edit_stack {
-  margin-bottom: 10%;
-} */
-
 #selected_msg_edit_box {
   border: none;
   box-shadow: none;
@@ -386,7 +394,7 @@ button {
   background: #554f4f;
 }
 
-#selected_msg_number_label {
+#selected_msg_number_label, #editing_label {
   color: white;
   font-size: 18px;
   font-weight: bold;

@@ -8,7 +8,19 @@ void mx_on_save_profile_changes(GtkWidget* widget, gpointer data) {
 	const char* new_password = gtk_entry_get_text(GTK_ENTRY(client->u_window->password_entry));
 
 	if(mx_strcmp(new_username, client->login) == 0 && mx_strcmp(new_password, client->password) == 0){
-		gtk_label_set_text(GTK_LABEL(client->u_window->error_txt), "");
+		gtk_label_set_text(GTK_LABEL(client->u_window->information_label), "");
+		return;
+	}
+
+	if(mx_strlen(new_username) < 4) {
+		gtk_label_set_text(GTK_LABEL(client->u_window->information_label), (const gchar*)"Username must be 4 - 31 characters long");
+		gtk_widget_set_name(client->u_window->information_label, "information_label_error");
+		return;
+	}
+
+	if(mx_strlen(new_password) < 6) {
+		gtk_label_set_text(GTK_LABEL(client->u_window->information_label), (const gchar*)"Password must be 6 - 24 characters long");
+		gtk_widget_set_name(client->u_window->information_label, "information_label_error");
 		return;
 	}
 

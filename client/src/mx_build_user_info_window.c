@@ -10,7 +10,7 @@ static inline void add_styles_to_user_info_window(user_info_window_t* window) {
     mx_widget_add_styles(window->save_btn);
 	mx_widget_add_styles(window->cancel_btn);
 	mx_widget_add_styles(window->show_passw_check_btn);
-	mx_widget_add_styles(window->error_txt);
+	mx_widget_add_styles(window->information_label);
 }
 
 user_info_window_t* mx_build_user_info_window(client_t* client) {
@@ -29,7 +29,7 @@ user_info_window_t* mx_build_user_info_window(client_t* client) {
 	window->save_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "save_btn"));
 	window->cancel_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "cancel_btn"));
     window->show_passw_check_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "show_passw_check_btn"));
-    window->error_txt = GTK_WIDGET(gtk_builder_get_object(window->builder, "error_txt"));
+    window->information_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "information_label"));
 
 
     g_signal_connect(window->show_passw_check_btn, "toggled", G_CALLBACK(mx_on_show_psw_btn_clicked), client);

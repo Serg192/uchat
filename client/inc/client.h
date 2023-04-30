@@ -138,6 +138,8 @@ typedef struct chat_window_s {
 	GtkWidget *msg_input_scrlld_wnd;
 	GtkWidget *message_input_field;
 	GtkWidget *send_message_btn;
+	GtkWidget *editing_label;
+	GtkWidget *editing_close_btn;
 	
 	GtkBuilder *builder;
 
@@ -180,7 +182,7 @@ typedef struct user_info_window_s {
 	GtkWidget *save_btn;
 	GtkWidget *cancel_btn;
 	GtkWidget *show_passw_check_btn;
-	GtkWidget *error_txt;
+	GtkWidget *information_label;
 
 	GtkBuilder *builder;
 }			   user_info_window_t;

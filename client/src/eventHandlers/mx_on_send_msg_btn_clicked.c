@@ -52,6 +52,8 @@ void mx_on_send_msg_btn_clicked(GtkButton* b, gpointer data){
 				g_object_set_data(G_OBJECT(client->edit_row), "message_data", m);
 			}
 			client->edit_mode = false;
+			gtk_widget_hide(client->c_window->editing_close_btn);
+			gtk_widget_hide(client->c_window->editing_label);
 		} else {
 		    request->req = mx_create_send_msg_req(client->current_chat_id, prepared_text);
 			req_was_created = true;
