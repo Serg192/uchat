@@ -1,18 +1,5 @@
 #include "../inc/libmx.h"
 
-void mx_print_map(map_t* map) {
-	printf("__MAP__\n");
-    for (int i = 0; i < MAP_SIZE; i++) {
-        map_node_t* node = map->table[i];
-       
-        while (node != NULL) {
-        	printf("Key %d: ", i);
-            printf("(%d, %p) ", node->key, node->value);
-            node = node->next;
-            printf("\n");
-        }
-    }
-}
 
 
 map_t* mx_create_map() {
