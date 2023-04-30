@@ -21,7 +21,10 @@ void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data) {
 
 	client->join_chat_id = GPOINTER_TO_INT(chat_id); //mx_get_chat_id_from_btn(w, client);
 
-    const char *text = gtk_button_get_label(GTK_BUTTON(w));
+	GList* children = gtk_container_get_children(GTK_CONTAINER(GTK_BUTTON(w)));
+	GtkWidget* label = GTK_WIDGET(children->data);
+	const char* text = gtk_label_get_text(GTK_LABEL(label));
+	g_list_free(children);
 
 	char* title;
 	asprintf(&title, "Join the %s grop?", text);

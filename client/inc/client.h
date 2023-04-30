@@ -41,6 +41,7 @@
 #define DIALOG_WIND_XML_PATH "client/res/windows/dialog_window.glade"
 #define CHAT_INFO_WIND_XML_PATH "client/res/windows/chat_info_window.glade"
 #define USER_INFO_WIND_XML_PATH "client/res/windows/user_info_window.glade"
+#define MENU_WIND_XML_PATH "client/res/windows/menu_window.glade"
 #define STYLES_FILE_PATH "client/res/styles.css"
 
 #define MSG_LOAD_LIMIT 20
@@ -115,7 +116,7 @@ typedef struct chat_window_s {
 	GtkWidget *chats_list_box;
 	GtkWidget *chats_list_scrlldwnd;
 	GtkWidget *chats_list_grid;
-	GtkWidget *user_info_btn;
+	GtkWidget *menu_btn;
 	GtkWidget *search_entry;	
 	GtkWidget *add_chat_btn;
 	//Right side(current chat)
@@ -158,12 +159,27 @@ typedef struct chat_info_window_s {
 	bool visible;
 }			   chat_info_window_t;
 
-typedef struct user_info_window_s {
+typedef struct menu_window_s {
 	GtkWidget *window;
-	GtkWidget *username_label;
+	GtkWidget *user_profile_btn;
 	GtkWidget *log_out_btn;
 	GtkWidget *delete_acc_btn;
 	GtkWidget *version_label;
+
+	GtkBuilder *builder;
+}			   menu_window_t;
+
+typedef struct user_info_window_s {
+	GtkWidget *window;
+	GtkWidget *profile_label;
+	GtkWidget *username_entry;
+	GtkWidget *username_label;
+	GtkWidget *password_entry;
+	GtkWidget *password_label;
+	GtkWidget *save_btn;
+	GtkWidget *cancel_btn;
+	GtkWidget *show_passw_check_btn;
+	GtkWidget *error_txt;
 
 	GtkBuilder *builder;
 }			   user_info_window_t;
@@ -188,6 +204,7 @@ typedef struct client_s {
 	create_chat_window_t* create_chat_window;
 	dialog_window_t* d_window;
 	chat_info_window_t* i_window;
+	menu_window_t* m_window;
 	user_info_window_t* u_window;
 
 	bool destroy_cnw;
@@ -268,6 +285,8 @@ dialog_window_t* mx_build_dialog_window(client_t* client);
 
 chat_info_window_t* mx_build_chat_info_window(client_t* client);
 
+menu_window_t* mx_build_menu_window(client_t* client);
+
 user_info_window_t* mx_build_user_info_window(client_t* client);
 
 void mx_send_req(SSL* ssl, const char* req);
@@ -300,7 +319,9 @@ void mx_on_selected_msg_close_btn_clicked(GtkButton* b, gpointer data);
 
 gboolean mx_enter_key_press(GtkWidget *widget, GdkEventKey *event, gpointer data);
 
-void mx_on_user_info_btn_clicked(GtkWidget* widget, gpointer data);
+void mx_on_menu_btn_clicked(GtkWidget* widget, gpointer data);
+
+void mx_on_user_profile_btn_clicked(GtkWidget* widget, gpointer data);
 
 void mx_on_cancel_info_btn_clicked(GtkWidget* widget, gpointer data);
 

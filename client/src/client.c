@@ -17,6 +17,7 @@ int main(int argc, char** argv) {
 	client.create_chat_window = mx_build_create_chat_window(&client);
 	client.d_window = mx_build_dialog_window(&client);
 	client.i_window = mx_build_chat_info_window(&client);
+	client.m_window = mx_build_menu_window(&client);
 	client.u_window = mx_build_user_info_window(&client);
 
 	client.current_response = NULL;

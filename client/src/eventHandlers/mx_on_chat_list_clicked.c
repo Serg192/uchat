@@ -1,5 +1,10 @@
 #include "../../inc/client.h"
 
+typedef struct clicked_data_s {
+	client_t* client;
+	const char *chat_name;
+}              clicked_data_t;
+
 static inline gboolean clear_msg_list(gpointer data){
 	client_t* client = (client_t*)data;
 	gtk_container_foreach(GTK_CONTAINER(client->c_window->msgs_list_box), (GtkCallback)gtk_widget_destroy, NULL);
@@ -38,10 +43,11 @@ static inline void push_load_recent_request(client_t* client){
 
 void mx_on_chat_list_clicked(GtkWidget* w, gpointer data) {
 	(void)w;
-	client_t* client = (client_t*)data;
-
-	if (mx_strcmp(gtk_label_get_text(GTK_LABEL(client->c_window->chat_name_label)), 
-	gtk_button_get_label(GTK_BUTTON(w))) == 0 
+	clicked_data_t* c_data = (clicked_data_t*)data;
+	client_t* client = c_data->client;
+	const char* text = c_data->chat_name;
+    
+	if (mx_strcmp(gtk_label_get_text(GTK_LABEL(client->c_window->chat_name_label)), text) == 0 
 	&& (gtk_widget_is_visible(client->c_window->selected_chat_box))) {
 
         gtk_widget_hide(client->c_window->selected_chat_box);
@@ -53,7 +59,7 @@ void mx_on_chat_list_clicked(GtkWidget* w, gpointer data) {
 			mx_room_data_clear(client);
 		}
 
-		gtk_label_set_text(GTK_LABEL(client->c_window->chat_name_label), gtk_button_get_label(GTK_BUTTON(w)));
+		gtk_label_set_text(GTK_LABEL(client->c_window->chat_name_label), text);
         gtk_widget_show(client->c_window->selected_chat_box);
 
 		//set current chat id

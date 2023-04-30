@@ -7,7 +7,7 @@ static inline void add_styles_to_chat_window(chat_window_t* window) {
 	mx_widget_add_styles(window->chats_list_grid);
 	mx_widget_add_styles(window->add_chat_btn);
 	mx_widget_add_styles(window->search_entry);
-	mx_widget_add_styles(window->user_info_btn); 
+	mx_widget_add_styles(window->menu_btn); 
 	mx_widget_add_styles(window->chat_header_box);
 	mx_widget_add_styles(window->chat_name_label);
 	mx_widget_add_styles(window->chat_info_btn);
@@ -41,7 +41,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->chats_list_grid = GTK_WIDGET(gtk_builder_get_object(window->builder, "chats_list_grid"));
 	window->add_chat_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "add_chat_btn"));
 	window->search_entry = GTK_WIDGET(gtk_builder_get_object(window->builder, "search_entry"));
-	window->user_info_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "user_info_btn"));
+	window->menu_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "menu_btn"));
 	window->elements_were_attached = 0;
 	
 	//Right side(current chat)
@@ -84,7 +84,7 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	g_signal_connect(window->send_message_btn, "released", G_CALLBACK(mx_on_send_msg_btn_clicked), client);
 
 	g_signal_connect(window->chat_info_btn, "released", G_CALLBACK(mx_on_chat_info_btn_clicked), client);
-	g_signal_connect(window->user_info_btn, "released", G_CALLBACK(mx_on_user_info_btn_clicked), client);
+	g_signal_connect(window->menu_btn, "released", G_CALLBACK(mx_on_menu_btn_clicked), client);
 	g_signal_connect(window->window, "destroy", G_CALLBACK(mx_app_on_destroy), client);
 	
 	add_styles_to_chat_window(window);

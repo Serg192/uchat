@@ -5,6 +5,11 @@ typedef struct upd_chat_list_data_s {
 	cJSON* json;
 }              upd_chat_list_data_t;
 
+typedef struct clicked_data_s {
+	client_t* client;
+	const char *chat_name;
+}              clicked_data_t;
+
 gboolean draw_callback(GtkWidget *widget, cairo_t *cr, gpointer data) {
 	guint width, height;
 	GdkRGBA color;
@@ -60,19 +65,23 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 	printf("Loop\n");
 	for(int i = 0; i < chat_count; i++){
 		cJSON* chat_info = cJSON_GetArrayItem(chats_array, i);
+		clicked_data_t* c_data = (clicked_data_t*)malloc(sizeof(clicked_data_t));
+		c_data->client = client;
 
 		gtk_grid_insert_row(GTK_GRID(client->c_window->chats_list_grid), i);
 
-		button = gtk_button_new_with_label(cJSON_GetObjectItem(chat_info, "name")->valuestring);
+		//button = gtk_button_new_with_label(cJSON_GetObjectItem(chat_info, "name")->valuestring);
+		button = gtk_button_new();
 		gtk_widget_set_size_request(button, 200, 100);
-		gtk_button_set_alignment(GTK_BUTTON(button), 0.0, 0.5);
+		//gtk_button_set_alignment(GTK_BUTTON(button), 0.0, 0.5);
 		gtk_widget_set_name(button, "chat_btn");
+		GtkWidget *btn_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
 
 		const int color = cJSON_GetObjectItem(chat_info, "color")->valueint;
 
 		g_object_set_data(G_OBJECT(button), "chat_id", GINT_TO_POINTER(cJSON_GetObjectItem(chat_info, "id")->valueint));
 
-		char *str = mx_strndup(gtk_button_get_label(GTK_BUTTON(button)), 2);
+		char *str = mx_strndup(gtk_label_get_text(GTK_LABEL(client->c_window->chat_name_label)), 2);
 		str[0] = (char)mx_toupper((int)str[0]);
 		str[1] = (char)mx_toupper((int)str[1]);
 		icon = gtk_label_new(str);
@@ -80,13 +89,22 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 		gtk_widget_set_margin_end(icon, 10);
 
 		gtk_widget_set_size_request(icon, 60, 60);
-		gtk_button_set_image(GTK_BUTTON(button), icon);
+		gtk_widget_set_halign(icon, GTK_ALIGN_CENTER);
+		gtk_widget_set_valign(icon, GTK_ALIGN_CENTER);
+		gtk_widget_show_all(icon);
 
-		gtk_button_set_always_show_image(GTK_BUTTON(button), TRUE);
+		gtk_box_pack_start(GTK_BOX(btn_box), icon, FALSE, TRUE, 0);
+
+		GtkWidget *chat_name = gtk_label_new(cJSON_GetObjectItem(chat_info, "name")->valuestring);
+		c_data->chat_name = gtk_label_get_text(GTK_LABEL(chat_name));
+		gtk_widget_set_halign(chat_name, GTK_ALIGN_START);
+		gtk_box_pack_start(GTK_BOX(btn_box), chat_name, TRUE, TRUE, 0);
+
+		gtk_container_add(GTK_CONTAINER(button), btn_box);
 		gtk_grid_attach(GTK_GRID(client->c_window->chats_list_grid), button, 1, i, 1, 1);
 
 		g_signal_connect(G_OBJECT(icon), "draw", G_CALLBACK(draw_callback), GINT_TO_POINTER(color));
-		g_signal_connect(button, "released", client->search_mode ? G_CALLBACK(mx_on_chat_search_list_clicked) : G_CALLBACK(mx_on_chat_list_clicked), client);
+		g_signal_connect(button, "released", client->search_mode ? G_CALLBACK(mx_on_chat_search_list_clicked) : G_CALLBACK(mx_on_chat_list_clicked), c_data);
 		mx_widget_add_styles(icon);
 		mx_widget_add_styles(button);
 	}
@@ -94,6 +112,7 @@ static inline gboolean update_chat_list_in_gtk_loop(gpointer data){
 
 	cJSON_Delete(d->json);
 	free(d);
+	printf("UPDATE EXIT");
 	return FALSE;
 }
 

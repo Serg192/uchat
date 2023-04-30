@@ -57,8 +57,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkButton" id="user_info_btn">
-                    <property name="name">user_info_btn</property>
+                  <object class="GtkButton" id="menu_btn">
+                    <property name="name">menu_btn</property>
                     <property name="width_request">40</property>
                     <property name="height_request">40</property>
                     <property name="visible">True</property>
@@ -115,7 +115,6 @@
                 <property name="name">chats_list_scrlldwnd</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="hscrollbar_policy">never</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkViewport" id="chats_list_view">
@@ -130,30 +129,6 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="column_homogeneous">True</property>
-                        <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
                         <child>
                           <placeholder/>
                         </child>

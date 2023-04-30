@@ -49,7 +49,7 @@
         <child>
           <object class="GtkButton" id="create_chat_cancel_btn">
             <property name="label" translatable="yes">Cancel</property>
-            <property name="name">create_chat_cancel_btn</property>
+            <property name="name">cancel_btn</property>
             <property name="width_request">100</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
