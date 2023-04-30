@@ -50,7 +50,7 @@ typedef struct request_s {
 typedef struct client_s {
 	int sock;
 	SSL* ssl;
-	const char* username;
+	char* username;
 	int user_id;
 
 	queue_t* deleted_msg_notify_q;
@@ -155,6 +155,8 @@ void mx_handle_leave_chat(client_t* client, request_t* req);
 void mx_handle_del_account(client_t* client, request_t* req);
 
 void mx_handle_ban(client_t* client, request_t* req);
+
+void mx_handle_edit_profile(client_t* client, request_t* req);
 
 void mx_handle_perm_change(client_t* client, request_t* req);
 

@@ -17,6 +17,7 @@ typedef enum request_type_e {
 	DEL_ACCOUNT_REQ,
 	BAN_REQ, //for unban too
 	SET_PERM_REQ,
+	PROFILE_EDIT_REQ,
 	QUIT_REQ
 }            request_type;
 
@@ -40,6 +41,8 @@ typedef enum respond_type_e {
 	GET_ABOVE_MSG_RESP,
 	GET_BELOW_MSG_RESP,
 	JOINED_CHATS_RESP,
+	PROFILE_EDIT_ERR_RESP,
+	PROFILE_EDIT_OK_RESP,
 	OK_RESP
 }			  respond_type;
 

@@ -73,6 +73,12 @@ static inline void handle_response(client_t* client) {
 		case PARTICIPANTS_RESP:
 			mx_handle_create_chat_info_window(client);
 			break;
+		case PROFILE_EDIT_ERR_RESP:
+			mx_handle_profile_edit_err(client);
+			break;
+	    case PROFILE_EDIT_OK_RESP:
+	    	mx_handle_profile_edit_ok(client);
+	    	break;
 		default:
 			break;
 	}

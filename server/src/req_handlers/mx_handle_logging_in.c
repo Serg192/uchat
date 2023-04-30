@@ -55,7 +55,7 @@ void mx_handle_logging_in(client_t* client, request_t* req) {
 	} else {
 		cJSON_AddNumberToObject(response, "rtype", LOGIN_SUCESS_RESP);
 		mx_log(SERV_LOG_FILE, LOG_TRACE, "Everything is fine");
-		client->username = username;
+		client->username = mx_strdup(username);
 		client->user_id = mx_atoi(mx_get_str_field_val("user", "id", "username", username));
 
 		mx_map_put(client_map, client->user_id, client);

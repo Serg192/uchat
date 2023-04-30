@@ -33,7 +33,7 @@ user_info_window_t* mx_build_user_info_window(client_t* client) {
 
 
     g_signal_connect(window->show_passw_check_btn, "toggled", G_CALLBACK(mx_on_show_psw_btn_clicked), client);
-	g_signal_connect(window->save_btn, "released", G_CALLBACK(mx_hide_hint_window), client);
+	g_signal_connect(window->save_btn, "released", G_CALLBACK(mx_on_save_profile_changes), client);
 	g_signal_connect(window->cancel_btn, "released", G_CALLBACK(mx_hide_hint_window), client);
 	g_signal_connect(G_OBJECT(window->window), "focus-out-event", G_CALLBACK(mx_hide_hint_window), NULL);
 

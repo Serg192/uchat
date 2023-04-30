@@ -24,8 +24,11 @@ void mx_on_login_btn_clicked(GtkButton* b, gpointer data) {
 		}
 
 		//For Profile
-		gtk_entry_set_text(GTK_ENTRY(client->u_window->username_entry), gtk_entry_get_text(username_entry)); 
-		gtk_entry_set_text(GTK_ENTRY(client->u_window->password_entry), gtk_entry_get_text(password_entry)); 
+		//gtk_entry_set_text(GTK_ENTRY(client->u_window->username_entry), gtk_entry_get_text(username_entry)); 
+		//gtk_entry_set_text(GTK_ENTRY(client->u_window->password_entry), gtk_entry_get_text(password_entry)); 
+
+		client->login = mx_strdup(gtk_entry_get_text(username_entry));
+		client->password = mx_strdup(gtk_entry_get_text(password_entry));
 
 		const char* hash = mx_hash_sha256(password_buffer);
 		printf("Hash => %s\n", hash);

@@ -233,6 +233,11 @@ typedef struct client_s {
 
 	GtkListBoxRow* edit_row;
 
+	char* login;
+	char* password;
+	char* tmpLogin;
+	char* tmpPassword;
+
 }			   client_t;
 
 
@@ -347,6 +352,8 @@ void  mx_push_message(client_t* client, message_t* message, int mode);
 
 void mx_delete_msg_from_list_box(client_t* client, int message_id);
 
+void mx_on_save_profile_changes(GtkWidget* widget, gpointer data);
+
 void mx_app_on_destroy(GtkWidget *widget, gpointer data);
 
 //button inside popup window
@@ -417,6 +424,8 @@ char* mx_create_send_msg_req(const int room_id, const char* context);
 
 char* mx_create_get_chat_msg_req(const int chat_id, const int flag, const int start_id, const int count);
 
+char* mx_create_edit_profile_req(const char* new_username, const char* new_password);
+
 //Response handlers
 
 void mx_handle_auth_err(client_t* client);
@@ -429,6 +438,10 @@ void mx_handle_auth_success(client_t* client);
 void mx_handle_chat_creation(client_t* client);
 
 void mx_handle_msg_update(client_t* client);
+
+void mx_handle_profile_edit_ok(client_t* client);
+
+void mx_handle_profile_edit_err(client_t* client);
 
 //_____Pasword hash function______
 char* mx_hash_sha256(const char *password);

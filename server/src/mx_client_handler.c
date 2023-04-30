@@ -52,6 +52,9 @@ static inline void dispatch(client_t* client, request_t* req) {
 				case SET_PERM_REQ:
 					mx_handle_perm_change(client, req);
 					break;
+				case PROFILE_EDIT_REQ:
+					mx_handle_edit_profile(client, req);
+				    break;
 				default:
 					break;
 
