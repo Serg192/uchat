@@ -21,7 +21,6 @@ static inline void add_styles_to_chat_window(chat_window_t* window) {
 	mx_widget_add_styles(window->selected_msg_edit_btn);
 	mx_widget_add_styles(window->selected_msg_select_all_btn);
 	mx_widget_add_styles(window->selected_msg_delete_btn);
-	mx_widget_add_styles(window->selected_msg_forward_btn);
 	mx_widget_add_styles(window->message_input_field);
 	mx_widget_add_styles(window->msg_input_scrlld_wnd);
 	mx_widget_add_styles(window->editing_label);
@@ -76,7 +75,6 @@ chat_window_t* mx_build_chat_window(client_t* client) {
 	window->selected_msg_edit_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_edit_btn"));
 	window->selected_msg_select_all_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_select_all_btn"));
 	window->selected_msg_delete_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_delete_btn"));
-	window->selected_msg_forward_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "selected_msg_forward_btn"));
 	window->msg_input_scrlld_wnd = GTK_WIDGET(gtk_builder_get_object(window->builder, "msg_input_scrlld_wnd"));
 	window->message_input_field = GTK_WIDGET(gtk_builder_get_object(window->builder, "message_input_field"));
 	window->editing_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "editing_label"));

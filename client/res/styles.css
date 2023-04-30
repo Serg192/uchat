@@ -77,7 +77,7 @@ button {
   font-weight: bold;
 }
 
-#selected_msg_edit_btn, #selected_msg_select_all_btn, #selected_msg_forward_btn {
+#selected_msg_edit_btn, #selected_msg_select_all_btn {
   background: #554f4f;
 
   color: white;
@@ -122,7 +122,7 @@ button {
 
 #signup_btn:hover, #login_btn:hover, #chat_btn:hover, #menu_btn:hover, #add_chat_btn:hover,
 #ok_btn:hover, #cancel_btn:hover, #chat_info_btn:hover, #selected_msg_edit_btn:hover, 
-#selected_msg_select_all_btn:hover, #selected_msg_close_btn:hover, #selected_msg_forward_btn:hover, 
+#selected_msg_select_all_btn:hover, #selected_msg_close_btn:hover, 
 #editing_close_btn:hover, #create_chat_create_btn:hover, #log_out_btn:hover, #save_btn:hover,
 #user_profile_btn:hover, #demote_btn:hover, #promote_btn:hover {
   background-color: #595959;
@@ -130,7 +130,7 @@ button {
 
 #signup_btn:active, #login_btn:active, #chat_btn:active, #menu_btn:active, #add_chat_btn:active,
 #ok_btn:active, #cancel_btn:active, #chat_info_btn:active, #selected_msg_edit_btn:active, 
-#selected_msg_select_all_btn:active, #selected_msg_close_btn:active, #selected_msg_forward_btn:active, 
+#selected_msg_select_all_btn:active, #selected_msg_close_btn:active,
 #editing_close_btn:active, #create_chat_create_btn:active, #log_out_btn:active, #save_btn:active,
 #user_profile_btn:active, #demote_btn:active, #promote_btn:active {
   background-color: #445dc5;
@@ -373,6 +373,7 @@ button {
 
 #msg_sending_time_label {
   margin-right: 5px;
+  margin-left: 40px;
   color: white;
   font-size: 16px;
   font-style: italic;
