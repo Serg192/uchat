@@ -24,7 +24,9 @@ void mx_on_chat_search_list_clicked(GtkWidget* w, gpointer data) {
 	client->join_chat_id = GPOINTER_TO_INT(chat_id); //mx_get_chat_id_from_btn(w, client);
 
 	char* title;
-	asprintf(&title, "Join the %s grop?", text);
+    int len = snprintf(NULL, 0, "Join the %s group?", text);
+    title = malloc(len + 1);
+    sprintf(title, "Join the %s group?", text);
 
 	gtk_label_set_text(GTK_LABEL(client->d_window->info_label), title);
 
