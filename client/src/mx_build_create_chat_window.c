@@ -6,6 +6,7 @@ static inline void add_styles_to_create_chat_window(create_chat_window_t* window
 	mx_widget_add_styles(window->cancel_btn);
 	mx_widget_add_styles(window->chat_name_entry);
 	mx_widget_add_styles(window->create_chat_label);
+	mx_widget_add_styles(window->create_chat_length_label);
 }
 
 create_chat_window_t* mx_build_create_chat_window(client_t* client) {
@@ -20,6 +21,7 @@ create_chat_window_t* mx_build_create_chat_window(client_t* client) {
 	window->cancel_btn = GTK_WIDGET(gtk_builder_get_object(window->builder, "create_chat_cancel_btn"));
 	window->chat_name_entry = GTK_WIDGET(gtk_builder_get_object(window->builder, "new_chat_name"));
 	window->create_chat_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "create_chat_label"));
+	window->create_chat_length_label = GTK_WIDGET(gtk_builder_get_object(window->builder, "create_chat_length_label"));
 
 
 	g_signal_connect(G_OBJECT(window->cancel_btn), "released", G_CALLBACK(mx_hide_hint_window), NULL);

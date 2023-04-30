@@ -19,9 +19,16 @@
     <property name="valign">center</property>
     <property name="pixbuf">../selected_msg_close_icon.png</property>
   </object>
+  <object class="GtkImage" id="selected_msg_forward_icon">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="halign">center</property>
+    <property name="valign">center</property>
+    <property name="pixbuf">../selected_msg_forward_icon.png</property>
+  </object>
   <object class="GtkWindow" id="chat_window">
     <property name="name">chat_window</property>
-    <property name="width_request">1100</property>
+    <property name="width_request">1210</property>
     <property name="height_request">640</property>
     <property name="can_focus">False</property>
     <property name="window_position">center-always</property>
@@ -50,8 +57,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkButton" id="user_info_btn">
-                    <property name="name">user_info_btn</property>
+                  <object class="GtkButton" id="menu_btn">
+                    <property name="name">menu_btn</property>
                     <property name="width_request">40</property>
                     <property name="height_request">40</property>
                     <property name="visible">True</property>
@@ -108,7 +115,6 @@
                 <property name="name">chats_list_scrlldwnd</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="hscrollbar_policy">never</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkViewport" id="chats_list_view">
@@ -123,6 +129,24 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="column_homogeneous">True</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
                         <child>
                           <placeholder/>
                         </child>
@@ -173,7 +197,7 @@
         <child>
           <object class="GtkBox" id="selected_chat_box">
             <property name="name">selected_chat_box</property>
-            <property name="width_request">750</property>
+            <property name="width_request">860</property>
             <property name="can_focus">False</property>
             <property name="no_show_all">True</property>
             <property name="orientation">vertical</property>
@@ -270,8 +294,6 @@
                 <property name="name">entry_edit_stack</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">50</property>
-                <property name="margin_right">50</property>
                 <property name="transition_type">slide-up-down</property>
                 <child>
                   <object class="GtkBox" id="chat_entry_message_box">
@@ -279,8 +301,8 @@
                     <property name="height_request">55</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_left">80</property>
-                    <property name="margin_right">80</property>
+                    <property name="margin_left">150</property>
+                    <property name="margin_right">150</property>
                     <property name="margin_top">5</property>
                     <property name="margin_bottom">5</property>
                     <child>
@@ -296,6 +318,7 @@
                         <child>
                           <object class="GtkTextView" id="message_input_field">
                             <property name="name">message_input_field</property>
+                            <property name="width_request">450</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="events">GDK_KEY_PRESS_MASK</property>
@@ -351,7 +374,7 @@
                 <child>
                   <object class="GtkBox" id="selected_msg_edit_box">
                     <property name="name">selected_msg_edit_box</property>
-                    <property name="width_request">560</property>
+                    <property name="width_request">620</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
@@ -376,7 +399,7 @@
                       </object>
                       <packing>
                         <property name="expand">False</property>
-                        <property name="fill">False</property>
+                        <property name="fill">True</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -414,16 +437,17 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkButton" id="selected_msg_select_all_btn">
-                        <property name="label" translatable="yes">Select All</property>
-                        <property name="name">selected_msg_select_all_btn</property>
+                      <object class="GtkButton" id="selected_msg_forward_btn">
+                        <property name="label" translatable="yes">Forward</property>
+                        <property name="name">selected_msg_forward_btn</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <property name="margin_left">5</property>
                         <property name="margin_right">5</property>
                         <property name="margin_top">5</property>
                         <property name="margin_bottom">5</property>
+                        <property name="image">selected_msg_forward_icon</property>
+                        <property name="always_show_image">True</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -433,12 +457,31 @@
                       </packing>
                     </child>
                     <child>
+                      <object class="GtkButton" id="selected_msg_select_all_btn">
+                        <property name="label" translatable="yes">Select All</property>
+                        <property name="name">selected_msg_select_all_btn</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="margin_right">5</property>
+                        <property name="margin_top">5</property>
+                        <property name="margin_bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="pack_type">end</property>
+                        <property name="position">4</property>
+                      </packing>
+                    </child>
+                    <child>
                       <object class="GtkButton" id="selected_msg_edit_btn">
                         <property name="label" translatable="yes">Edit</property>
                         <property name="name">selected_msg_edit_btn</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="margin_right">5</property>
                         <property name="margin_top">5</property>
                         <property name="margin_bottom">5</property>
                         <property name="image">edit_msg_icon</property>
@@ -448,7 +491,7 @@
                         <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="pack_type">end</property>
-                        <property name="position">4</property>
+                        <property name="position">5</property>
                       </packing>
                     </child>
                   </object>

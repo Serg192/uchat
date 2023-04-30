@@ -17,11 +17,15 @@ void mx_on_signup_btn_clicked(GtkButton* b, gpointer data) {
         sprintf(password_buffer, "%s", gtk_entry_get_text(GTK_ENTRY(client->a_window->password_entry)));
 
 		if(mx_strlen(password_buffer) < 6) {
-			gtk_label_set_text(GTK_LABEL(client->a_window->err_label), (const gchar*)"Password should be at least 6 characters");
+			gtk_label_set_text(GTK_LABEL(client->a_window->err_label), (const gchar*)"Password must be 6 - 24 characters long");
 			return;
 		}
 
 		//printf("Username = %s, password = %s\n", username_buffer, password_buffer);
+
+		//For Profile
+		gtk_entry_set_text(GTK_ENTRY(client->u_window->username_entry), username_buffer); 
+		gtk_entry_set_text(GTK_ENTRY(client->u_window->password_entry), password_buffer); 
 
 		char* hash = mx_hash_sha256(password_buffer);
 

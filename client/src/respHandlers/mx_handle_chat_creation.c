@@ -5,7 +5,7 @@ static inline gboolean f(gpointer data) {
 
 	mx_hide_hint_window(client->create_chat_window->window, NULL);
 	
-	return TRUE;
+	return FALSE;
 }
 
 void mx_handle_chat_creation(client_t* client) {

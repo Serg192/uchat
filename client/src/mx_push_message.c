@@ -128,15 +128,11 @@ static inline gboolean push_message_in_gtk_loop(gpointer data) {
 
 	GtkAdjustment *adjustment = gtk_scrolled_window_get_vadjustment(GTK_SCROLLED_WINDOW(window->msgs_list_scrlld_wnd));
 	gdouble old_value = gtk_adjustment_get_value(adjustment);
-
-	//gtk_container_add(row, msg_main_box);
-	//gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), row, (mode == PUSH_BACK ? -1 : 0));
 	
 	gtk_container_add(GTK_CONTAINER(row), msg_main_box);
 	gtk_list_box_insert(GTK_LIST_BOX(window->msgs_list_box), GTK_WIDGET(row), (mode == PUSH_BACK ? -1 : 0));
     gtk_widget_show_all(window->msgs_list_box);
    
-	//set_new_adjustment(window, row, old_value, mode);
 	set_new_adjustment(window, GTK_WIDGET(row), old_value, mode);
 
 	free(msg_data);

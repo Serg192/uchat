@@ -55,6 +55,7 @@
             <property name="name">members_list_scrlld_wnd</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
+            <property name="hscrollbar_policy">never</property>
             <property name="shadow_type">in</property>
             <child>
               <object class="GtkViewport">
@@ -104,7 +105,7 @@
             <child>
               <object class="GtkButton" id="cancel_info_btn">
                 <property name="label" translatable="yes">Cancel</property>
-                <property name="name">cancel_info_btn</property>
+                <property name="name">cancel_btn</property>
                 <property name="width_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>

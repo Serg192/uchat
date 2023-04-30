@@ -31,14 +31,14 @@ button {
   font-family: Arial, sans-serif;
 }
 
-#signup_btn, #login_btn, #ok_btn, #cancel_btn, #create_chat_create_btn, #create_chat_cancel_btn, 
-#log_out_btn, #delete_acc_btn, #leave_chat_btn, #cancel_info_btn {
+#signup_btn, #login_btn, #ok_btn, #cancel_btn, #create_chat_create_btn, 
+#log_out_btn, #delete_acc_btn, #user_profile_btn, #leave_chat_btn, #save_btn {
   background: #554f4f;
   color: white;
   border-radius: 10px;
 }
 
-#user_info_btn, #chat_info_btn, #selected_msg_close_btn  {
+#menu_btn, #chat_info_btn, #selected_msg_close_btn {
   background: #554f4f;
   border-radius: 100%;
 }
@@ -77,7 +77,7 @@ button {
   font-weight: bold;
 }
 
-#selected_msg_edit_btn, #selected_msg_select_all_btn {
+#selected_msg_edit_btn, #selected_msg_select_all_btn, #selected_msg_forward_btn {
   background: #554f4f;
 
   color: white;
@@ -85,7 +85,7 @@ button {
   font-weight: bold;
 }
 
-#demote_btn, #promote_btn, #ban_bth {
+#ban_btn, #demote_btn, #promote_btn {
   background: #554f4f;
   border-radius: 20px;
   color: white;
@@ -95,7 +95,7 @@ button {
 }
 
 #demote_btn {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 #promote_btn {
@@ -103,15 +103,12 @@ button {
   margin-right: 5px;
 } 
 
-#ban_bth {
-  margin-right: 5px;
-}
-
-#selected_msg_delete_btn:hover {
+#ban_btn:hover, #delete_acc_btn:hover, #selected_msg_delete_btn:hover, #leave_chat_btn:hover {
   background-color: #926363;
+  color: rgb(179, 41, 41);
 }
 
-#selected_msg_delete_btn:active {
+#ban_btn:active, #delete_acc_btn:active, #selected_msg_delete_btn:active, #leave_chat_btn:active {
   background-color: #e44c4c;
 }
 
@@ -123,19 +120,19 @@ button {
   background-color: #4d6adf;
 }
 
-#signup_btn:hover, #login_btn:hover, #chat_btn:hover, #user_info_btn:hover, #add_chat_btn:hover,
+#signup_btn:hover, #login_btn:hover, #chat_btn:hover, #menu_btn:hover, #add_chat_btn:hover,
 #ok_btn:hover, #cancel_btn:hover, #chat_info_btn:hover, #selected_msg_edit_btn:hover, 
-#selected_msg_select_all_btn:hover, #selected_msg_close_btn:hover, #create_chat_create_btn:hover, 
-#create_chat_cancel_btn:hover, #log_out_btn:hover, #delete_acc_btn:hover, #leave_chat_btn:hover, 
-#cancel_info_btn:hover, #demote_btn:hover, #promote_btn:hover, #ban_bth:hover {
+#selected_msg_select_all_btn:hover, #selected_msg_close_btn:hover, #selected_msg_forward_btn:hover, 
+#create_chat_create_btn:hover, #log_out_btn:hover, #save_btn:hover,
+#user_profile_btn:hover, #demote_btn:hover, #promote_btn:hover {
   background-color: #595959;
 } 
 
-#signup_btn:active, #login_btn:active, #chat_btn:active, #user_info_btn:active, #add_chat_btn:active,
+#signup_btn:active, #login_btn:active, #chat_btn:active, #menu_btn:active, #add_chat_btn:active,
 #ok_btn:active, #cancel_btn:active, #chat_info_btn:active, #selected_msg_edit_btn:active, 
-#selected_msg_select_all_btn:active, #selected_msg_close_btn:active, #create_chat_create_btn:active, 
-#create_chat_cancel_btn:active, #log_out_btn:active, #delete_acc_btn:active,#leave_chat_btn:active, 
-#cancel_info_btn:active, #demote_btn:active, #promote_btn:active, #ban_bth:active {
+#selected_msg_select_all_btn:active, #selected_msg_close_btn:active, #selected_msg_forward_btn:active, 
+#create_chat_create_btn:active, #log_out_btn:active, #save_btn:active,
+#user_profile_btn:active, #demote_btn:active, #promote_btn:active {
   background-color: #445dc5;
 }
 
@@ -149,6 +146,7 @@ button {
 #info_label {
   color: white;
   font-size: 18px;
+  font-weight: bold;
   font-family: Arial, sans-serif;
 }
 
@@ -162,6 +160,26 @@ button {
 #create_chat_label {
   color: white;
   font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#create_chat_length_label {
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+
+/*______________Menu_Window______________*/
+
+#menu_window {
+  background: #464141;
+}
+
+#version_label {
+  color: white;
+  font-size: 18px;
   font-family: Arial, sans-serif;
 }
 
@@ -172,7 +190,14 @@ button {
   background: #464141;
 }
 
-#username_label, #version_label {
+#profile_label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#username_label, #password_label {
   color: white;
   font-size: 18px;
   font-family: Arial, sans-serif;
@@ -188,12 +213,14 @@ button {
 #chat_info_name_label {
   color: white;
   font-size: 20px;
+  font-weight: bold;
   font-family: Arial, sans-serif;
 }
 
 #members_list_label {
   color: white;
   font-size: 18px;
+  font-weight: bold;
   font-family: Arial, sans-serif;
 }
 
@@ -232,6 +259,7 @@ button {
 }
 
 #error_txt {
+  color: rgb(246, 45, 45);
   font-size: 16px;
   font-family: Arial, sans-serif;
 }
@@ -344,6 +372,10 @@ button {
   font-size: 20px;
   font-family: Arial, sans-serif;
 }
+
+/* #entry_edit_stack {
+  margin-bottom: 10%;
+} */
 
 #selected_msg_edit_box {
   border: none;

@@ -4,6 +4,7 @@
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkWindow" id="create_new_chat_window">
     <property name="name">create_new_chat_window</property>
+    <property name="width_request">370</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
@@ -25,6 +26,7 @@
             <property name="width_request">250</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
+            <property name="max_length">31</property>
             <property name="placeholder_text" translatable="yes">Chat name</property>
           </object>
           <packing>
@@ -40,24 +42,26 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="margin_bottom">5</property>
           </object>
           <packing>
             <property name="x">50</property>
-            <property name="y">130</property>
+            <property name="y">146</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="create_chat_cancel_btn">
             <property name="label" translatable="yes">Cancel</property>
-            <property name="name">create_chat_cancel_btn</property>
+            <property name="name">cancel_btn</property>
             <property name="width_request">100</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="margin_bottom">5</property>
           </object>
           <packing>
             <property name="x">220</property>
-            <property name="y">130</property>
+            <property name="y">146</property>
           </packing>
         </child>
         <child>
@@ -70,6 +74,20 @@
           </object>
           <packing>
             <property name="y">20</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="create_chat_length_label">
+            <property name="name">create_chat_length_label</property>
+            <property name="width_request">250</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Chat name length 1 - 31 characters</property>
+          </object>
+          <packing>
+            <property name="x">60</property>
+            <property name="y">115</property>
           </packing>
         </child>
       </object>
