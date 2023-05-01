@@ -1,9 +1,10 @@
 # uchat
 Chat “Message Mania” is developed by four students of Innovation Campus (NTU “Khpi”). The team members are:
-– sstohnij
-– ozelenskyj
-– ayefimenko
-– dstarosvit
+
+- sstohnij
+- ozelenskyj
+- ayefimenko
+- dstarosvit
 
 
 We have developed our chat for MacOS Catalina X, but you can also run it on Linux Ubuntu.
@@ -13,8 +14,8 @@ To run it on MacOS, just clone our repo by the “git clone {link}” command or
 
 
 To compile on Ubuntu, after cloning you need to modify some files:
-– lib/libmx/inc/libmx.h and client/inc/client.h: use #include <malloc.h>;
-– lib/libmx/src/mx_realloc.c: use function malloc_usable_size instead of malloc_size.
+- lib/libmx/inc/libmx.h and client/inc/client.h: use #include <malloc.h>;
+- lib/libmx/src/mx_realloc.c: use function malloc_usable_size instead of malloc_size.
 
 In some cases you might need to change makefiles according to our commit “Linux final”.
 
