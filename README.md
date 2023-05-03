@@ -21,8 +21,8 @@ In some cases you might need to change makefiles according to our commit “Linu
 
 
 You also have an opportunity to see all recently created chats and test our program with already registared user:
-  Login - Tester
-  Password - 123456
+ Login - Tester
+ Password - 123456
 
 
 If you found any problems while running, please, don’t be strict. Just reload the server and clients and check again. We hope you will enjoy using Message Mania!
