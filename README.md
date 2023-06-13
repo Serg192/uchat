@@ -26,3 +26,10 @@ You also have an opportunity to see all recently created chats and test our prog
 
 
 If you found any problems while running, please, don’t be strict. Just reload the server and clients and check again. We hope you will enjoy using Message Mania!
+<br><br>Screenshots:
+
+![Screenshot from 2023-06-13 21-05-32](https://github.com/Serg192/uchat/assets/66135825/b2299bc5-cc94-4b98-a687-34da63292240)
+
+<br><br>
+![Screenshot from 2023-06-13 21-07-53](https://github.com/Serg192/uchat/assets/66135825/e363bd9b-7e89-434d-a83d-351db50d8697)
+
